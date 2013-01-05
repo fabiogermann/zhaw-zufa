@@ -174,6 +174,10 @@ Es können Abgrenzungsprobleme insbesondere bei den Zusatzkosten entstehen,
 Ermittlung des kalkulatorischen Zinses
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
@@ -384,6 +388,49 @@ Kosten für verbrauchte Handelswaren
 \begin_layout Itemize
 ein Teil der Personalkosten (Lohnansatz und Zeitaufwand für die Leistung
  ist ja bekannt)
+\end_layout
+
+\begin_layout Standard
+Kosten, die sich nicht direkt zurechnen lassen, werden 
+\begin_inset Quotes eld
+\end_inset
+
+indirekte Kosten
+\begin_inset Quotes erd
+\end_inset
+
+ oder 
+\begin_inset Quotes eld
+\end_inset
+
+Gemeinkosten
+\begin_inset Quotes erd
+\end_inset
+
+ genannt.
+ Dazu gehören:
+\end_layout
+
+\begin_layout Itemize
+Kosten, die durch den Einkaufsvorgang ausgelöst werden (Marktforschung,
+ Aufgabe der Bestellung)
+\end_layout
+
+\begin_layout Itemize
+Kosten der Lagerung (Raumkosten, Kühlgeräte)
+\end_layout
+
+\begin_layout Itemize
+Abschreibungen, Reparatur & Unterhalt, Energieverbrauch, Kapitalkosten
+\end_layout
+
+\begin_layout Itemize
+Verpacken, Kassieren etc (kann nicht auf einzelne Leistungsträger umgeweltzt
+ werden)
+\end_layout
+
+\begin_layout Itemize
+Buchhaltung, Administration, Lohnabrechnung
 \end_layout
 
 \end_body
