@@ -174,8 +174,8 @@ Es können Abgrenzungsprobleme insbesondere bei den Zusatzkosten entstehen,
 Ermittlung des kalkulatorischen Zinses
 \end_layout
 
-\begin_layout --Separator--
-
+\begin_layout Standard
+(siehe Tabelle)
 \end_layout
 
 \begin_layout Standard
@@ -431,6 +431,71 @@ Verpacken, Kassieren etc (kann nicht auf einzelne Leistungsträger umgeweltzt
 
 \begin_layout Itemize
 Buchhaltung, Administration, Lohnabrechnung
+\end_layout
+
+\begin_layout Standard
+Zurechnung der Kosten auf die Kostenstellen
+\end_layout
+
+\begin_layout Itemize
+Personalkosten auf Kostenstelle gemäss Stundenrapport
+\end_layout
+
+\begin_layout Itemize
+Abschreibungskosten auf Kostenstelle aufgrund von Anlagekartei mit Anschaffungsw
+ert, Alter, Abschreibungsmethode, Nutzungsdauer
+\end_layout
+
+\begin_layout Itemize
+Zinskosten auf Kostenstelle aufgrund Anlagekartei mit Kapitalbetrag
+\end_layout
+
+\begin_layout Standard
+Zurechnnung der Kostenstellenkosten auf die Leistungsträger
+\end_layout
+
+\begin_layout Itemize
+Kostenstelle 
+\begin_inset Quotes eld
+\end_inset
+
+Einkauf und Lager
+\begin_inset Quotes erd
+\end_inset
+
+: im Verhältnis zu den Einzelmaterialkosten den Leistungsträgern zuordnen
+\end_layout
+
+\begin_layout Itemize
+Kostenstelle 
+\begin_inset Quotes eld
+\end_inset
+
+Fertigung
+\begin_inset Quotes erd
+\end_inset
+
+: durch Leistungsträger verursachte Beanspruchung zurechnen (Maschinenstunden)
+\end_layout
+
+\begin_layout Itemize
+Kostenstelle 
+\begin_inset Quotes eld
+\end_inset
+
+Verkauf
+\begin_inset Quotes erd
+\end_inset
+
+ und 
+\begin_inset Quotes eld
+\end_inset
+
+Verwaltung
+\begin_inset Quotes erd
+\end_inset
+
+: den Leistungsträgern im Verhältnis ihrer Herstellkosten oder Erlöse zurechnen
 \end_layout
 
 \end_body
