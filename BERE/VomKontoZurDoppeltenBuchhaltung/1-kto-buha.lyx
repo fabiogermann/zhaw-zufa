@@ -420,6 +420,10 @@ an Haben
 
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Standard
 Journal = Alle Buchungssätze sind in chronologischer Reihenfolge und komplett.
 \end_layout
@@ -431,10 +435,7 @@ Bilanz
 \begin_layout Standard
 Die Bilanz ist eine Gegenüberstellung von Aktiven (Vermögen) und Passiven
  (Fremd- und Eigenkapital) zu einem bestimmten Zeitpunkt.
-\end_layout
-
-\begin_layout Standard
-Man ermittelt die Salden der Aktiv- und Passivkonten auf einen Bilanzstichtag
+ Man ermittelt die Salden der Aktiv- und Passivkonten auf einen Bilanzstichtag
  und überträgt diese Salden in ein neues Konto, die Bilanz.
 \end_layout
 
@@ -465,6 +466,10 @@ reicher
 \end_inset
 
 .
+\end_layout
+
+\begin_layout --Separator--
+
 \end_layout
 
 \begin_layout Standard
@@ -694,6 +699,10 @@ Erfolgsrechnung
 Sie zeigt in einer Rechnungsperiode, also einem Zeitraum, entstandene Aufwände
  und Erträge.
  Sie gibt einen Einblick in das betriebliche Geschehen der Unternehmung.
+\end_layout
+
+\begin_layout --Separator--
+
 \end_layout
 
 \begin_layout Standard

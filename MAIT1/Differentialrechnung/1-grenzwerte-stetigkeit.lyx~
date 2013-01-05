@@ -277,7 +277,31 @@ Konvergenz
 \end_layout
 
 \begin_layout Standard
+Als 
+\begin_inset Formula $lim_{x\rightarrow x_{0}}f(x)=g$
+\end_inset
 
+ - Aussage: 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ konvergiert für 
+\begin_inset Formula $x$
+\end_inset
+
+ gegen 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ gegen den Grenzwert 
+\begin_inset Formula $g$
+\end_inset
+
+ (
+\begin_inset Formula $\ni R$
+\end_inset
+
+).
 \end_layout
 
 \end_body
