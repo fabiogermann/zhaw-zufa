@@ -144,8 +144,289 @@ Verzinsungsverbot für Eigenkapital, gelegentliche Mitarbeit: mit Zusatzkosten
  umschrieben
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section*
+Kostenermittlung
+\end_layout
 
+\begin_layout Paragraph*
+Grundsatz
+\end_layout
+
+\begin_layout Standard
+Mit Jedem Beleg, der in der FInanzbuchhaltung einem Aufwandkonto belastet
+ wird, erfolgt gleichzeitig auch die Belastung des Objektes, das die Kosten
+ verursacht (Kostenstelle oder Kostenträger).
+\end_layout
+
+\begin_layout Paragraph*
+Kostenabgrenzung
+\end_layout
+
+\begin_layout Standard
+Es können Abgrenzungsprobleme insbesondere bei den Zusatzkosten entstehen,
+ da diese dort ja nicht in der Finanzbuchhaltung als Aufwand verbucht worden
+ waren.
+ Oder auch dann, wenn man für die Bewertung des Verbrauchs von Sachgütern
+ unterschiedliche Bewertungsverfahren verwendet.
+\end_layout
+
+\begin_layout Paragraph*
+Ermittlung des kalkulatorischen Zinses
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+Kategorie
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+Beispiele
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Summe der Aktiven (interne Werte)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- nichtbetriebsnotwendige Aktive
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= betriebsnotwendige Aktive, Kapital
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Abzugskapital
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fremdkapital ohne Zinskosten oder Zinskosten über anderes Konto abgerechnet
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= kalkulatorisch zu verzinsendes Kapital
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Kalkulatorische Zinskosten
+\end_layout
+
+\begin_layout Standard
+= 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ kalk.
+ zu verzinsendek Kapital * kalk.
+ Zinssatz
+\end_layout
+
+\begin_layout Paragraph*
+Methoden zur Bewertung
+\end_layout
+
+\begin_layout Itemize
+First-In-First-Out (FiFo)
+\end_layout
+
+\begin_layout Itemize
+Last-In-First-Out (LiFo)
+\end_layout
+
+\begin_layout Itemize
+Highest-In-First-Out (HiFo)
+\end_layout
+
+\begin_layout Itemize
+Gleitender Durchschnitt (GLEP)
+\end_layout
+
+\begin_layout Section*
+Zurechnung der Kosten
+\end_layout
+
+\begin_layout Standard
+Es kann lediglich ein Teil der Kosten direkt einem Leistungsträger zugerechnet
+ werden.
+ Diese Kosten nennt man 
+\begin_inset Quotes eld
+\end_inset
+
+direkte Kosten
+\begin_inset Quotes erd
+\end_inset
+
+ oder 
+\begin_inset Quotes eld
+\end_inset
+
+Einzelkosten
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Dazu gehören:
+\end_layout
+
+\begin_layout Itemize
+Material für die Herstellung (es steht fest wie viel Geldeinheiten Material
+ in einem Leistungsträger steckt)
+\end_layout
+
+\begin_layout Itemize
+Kosten für verbrauchte Handelswaren
+\end_layout
+
+\begin_layout Itemize
+ein Teil der Personalkosten (Lohnansatz und Zeitaufwand für die Leistung
+ ist ja bekannt)
+\end_layout
+
+\begin_layout Standard
+Kosten, die sich nicht direkt zurechnen lassen, werden 
+\begin_inset Quotes eld
+\end_inset
+
+indirekte Kosten
+\begin_inset Quotes erd
+\end_inset
+
+ oder 
+\begin_inset Quotes eld
+\end_inset
+
+Gemeinkosten
+\begin_inset Quotes erd
+\end_inset
+
+ genannt.
+ Dazu gehören:
+\end_layout
+
+\begin_layout Itemize
+Kosten, die durch den Einkaufsvorgang ausgelöst werden (Marktforschung,
+ Aufgabe der Bestellung)
+\end_layout
+
+\begin_layout Itemize
+Kosten der Lagerung (Raumkosten, Kühlgeräte)
+\end_layout
+
+\begin_layout Itemize
+Abschreibungen, Reparatur & Unterhalt, Energieverbrauch, Kapitalkosten
+\end_layout
+
+\begin_layout Itemize
+Verpacken, Kassieren etc (kann nicht auf einzelne Leistungsträger umgeweltzt
+ werden)
+\end_layout
+
+\begin_layout Itemize
+Buchhaltung, Administration, Lohnabrechnung
 \end_layout
 
 \end_body
