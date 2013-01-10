@@ -78,13 +78,13 @@ Trigonometrische Funktionen
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Sine_cosine_one_period.svg
-	scale 50
+	width 6cm
 
 \end_inset
 
@@ -93,13 +93,13 @@ Trigonometrische Funktionen
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename trigfun.png
-	width 10mm
+	width 5cm
 
 \end_inset
 
@@ -1064,6 +1064,10 @@ N:-2(x2)
 
 \end_layout
 
+\begin_layout --Separator--
+
+\end_layout
+
 \begin_layout Standard
 Betrachten wir die Funktion: 
 \begin_inset Formula $f(x)=\frac{2x^{2}+x^{2}+x}{1-x^{2}}$
@@ -1106,6 +1110,161 @@ Asymptoten:
 \end_inset
 
  (durch Poly.division)
+\end_layout
+
+\begin_layout Subsection*
+Umkehrfunktionen
+\end_layout
+
+\begin_layout Subsubsection*
+Begriffe
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+injektive Funktion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+surjektive Funktion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bijektive funktion
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Injection.svg.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Surjection.svg.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Bijection.svg.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Monotonie
+\end_layout
+
+\begin_layout Standard
+Die Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ist im Intervall 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ injektiv, falls sie:
+\end_layout
+
+\begin_layout Itemize
+streng monoton wachsend: auf 
+\begin_inset Formula $x_{1},x_{1}\in[a,b]:x_{1}<x_{2}:f(x_{1})<f(x_{2})$
+\end_inset
+
+ ist oder
+\end_layout
+
+\begin_layout Itemize
+streng monoton fallend: auf 
+\begin_inset Formula $x_{1},x_{1}\in[a,b]:x_{1}<x_{2}:f(x_{1})>f(x_{2})$
+\end_inset
+
+ ist.
+\end_layout
+
+\begin_layout Subsubsection*
+Bestimmung der Unkehrung
+\end_layout
+
+\begin_layout Itemize
+Definitionsbereich so festlegen, dass 
+\begin_inset Formula $f$
+\end_inset
+
+auf 
+\begin_inset Formula $D$
+\end_inset
+
+ injektiv ist
+\end_layout
+
+\begin_layout Itemize
+Funktionsgleichung nach 
+\begin_inset Formula $x$
+\end_inset
+
+ auflösen: 
+\begin_inset Formula $x=f$
+\end_inset
+
+
 \end_layout
 
 \end_body
