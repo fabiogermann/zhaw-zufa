@@ -1275,5 +1275,22 @@ Variabeln x und y vertauschen:
 
 \end_layout
 
+\begin_layout Standard
+Grundsätzlich kann man sagen, dass 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ die Spiegelung von 
+\begin_inset Formula $f$
+\end_inset
+
+ an der Geraden 
+\begin_inset Formula $x=y$
+\end_inset
+
+ ist.
+ Dabei werden auch der Definitionsbereich und Wertebereich getauscht.
+\end_layout
+
 \end_body
 \end_document
