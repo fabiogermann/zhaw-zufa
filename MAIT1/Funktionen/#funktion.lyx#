@@ -862,8 +862,250 @@ Eine Gebrochen-Rationale Funktion:
 , wobei der Grad der Polynome nicht gleich sein muss.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsubsection*
+Definitionslücken
+\end_layout
 
+\begin_layout Standard
+Sie sind Stellen, an denen die Funktion nicht definiert ist.
+ Z.B.: Nenner der gleich 0 ist.
+ Man unterscheidet 2 Arten von Definitionslücken:
+\end_layout
+
+\begin_layout Itemize
+Polstellen: Nach dem vollständigen Kürzen, besteht immernoch die Nullstelle
+ des Nenners.
+\end_layout
+
+\begin_layout Itemize
+hebbare Definitionslücken: Nach vollständigem Kürzen verschwindet die Nullstelle
+ des Nenners.
+\end_layout
+
+\begin_layout Standard
+Wichtig: Kommt eine Polstelle mehrmals vor: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $(x-a)^{n}$
+\end_inset
+
+, so ist dies eine n-fache Polstelle.
+ Ist die Vielfachheit gerade, so findet kein Vorzeichenwechsel statt.
+\end_layout
+
+\begin_layout Subsubsection*
+Nullstellen
+\end_layout
+
+\begin_layout Standard
+Man kann die Nullstellen bestimmen, indem man:
+\end_layout
+
+\begin_layout Itemize
+bei einer 
+\begin_inset Quotes eld
+\end_inset
+
+Ganz-Rationalen Funktion
+\begin_inset Quotes erd
+\end_inset
+
+ diese gleich NULL setzt.
+\end_layout
+
+\begin_layout Itemize
+bei einer 
+\begin_inset Quotes eld
+\end_inset
+
+Gebrochen-Rationalen Funktion
+\begin_inset Quotes erd
+\end_inset
+
+ den Zähler gleich NULL setzt.
+\end_layout
+
+\begin_layout Subsubsection*
+Asymptoten
+\end_layout
+
+\begin_layout Standard
+Sind Geraden, denen sich eine Kurve beliebig nahe annähert.
+ Wir unterscheiden 2 Arten:
+\end_layout
+
+\begin_layout Itemize
+bei Polstellen: Die Kurve einer gebrochen-rationalen Funktion schmiegt sich
+ der Gerade bei x=Polstelle an.
+ Es bildet sich eine senkrechte Asymptote.
+\end_layout
+
+\begin_layout Itemize
+für grosse x: 
+\begin_inset Formula $f(x)=\frac{g(x)}{h(x)}$
+\end_inset
+
+ im Falle:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $grad(g)<grad(h)$
+\end_inset
+
+: x-Achse als wagrechte Asymptote
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $grad(g)=grad(h)$
+\end_inset
+
+: Gerade mit der Gleichung: 
+\begin_inset Formula $f(x)=\frac{g(x)}{h(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $grad(g)=1+grad(h)$
+\end_inset
+
+: schiefe Asymptote, durch Polynomdivision
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Beispiele:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Funktion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definitionslücke
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nullstelle
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Subsubsection*
+\begin_inset Formula $f(x)=\frac{(x+2)^{2}}{(x+4)^{3}x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P:-4(x3), 0(x2), H: keine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N:-2(x2)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Betrachten wir die Funktion: 
+\begin_inset Formula $f(x)=\frac{2x^{2}+x^{2}+x}{1-x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nullstelle: 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definitionslücken: 
+\begin_inset Formula $x=$
+\end_inset
+
+1 (Polstelle, 1fach), 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ (Polstelle, 1fach)
+\end_layout
+
+\begin_layout Standard
+Asymptoten: 
+\begin_inset Formula $x=1$
+\end_inset
+
+, 
+\begin_inset Formula $x=-1$
+\end_inset
+
+, 
+\begin_inset Formula $x=-2x-1$
+\end_inset
+
+ (durch Poly.division)
 \end_layout
 
 \end_body

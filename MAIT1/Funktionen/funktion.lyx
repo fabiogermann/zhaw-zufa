@@ -78,13 +78,13 @@ Trigonometrische Funktionen
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Sine_cosine_one_period.svg
-	scale 50
+	width 6cm
 
 \end_inset
 
@@ -93,13 +93,13 @@ Trigonometrische Funktionen
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename trigfun.png
-	width 10mm
+	width 5cm
 
 \end_inset
 
@@ -900,6 +900,7 @@ Wichtig: Kommt eine Polstelle mehrmals vor:
 \end_inset
 
 , so ist dies eine n-fache Polstelle.
+ Ist die Vielfachheit gerade, so findet kein Vorzeichenwechsel statt.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -944,11 +945,171 @@ Sind Geraden, denen sich eine Kurve beliebig nahe annähert.
 \end_layout
 
 \begin_layout Itemize
-bei Polstellen: 
+bei Polstellen: Die Kurve einer gebrochen-rationalen Funktion schmiegt sich
+ der Gerade bei x=Polstelle an.
+ Es bildet sich eine senkrechte Asymptote.
 \end_layout
 
 \begin_layout Itemize
-für grosse x:
+für grosse x: 
+\begin_inset Formula $f(x)=\frac{g(x)}{h(x)}$
+\end_inset
+
+ im Falle:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $grad(g)<grad(h)$
+\end_inset
+
+: x-Achse als wagrechte Asymptote
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $grad(g)=grad(h)$
+\end_inset
+
+: Gerade mit der Gleichung: 
+\begin_inset Formula $f(x)=\frac{g(x)}{h(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $grad(g)=1+grad(h)$
+\end_inset
+
+: schiefe Asymptote, durch Polynomdivision
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Beispiele:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Funktion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Definitionslücke
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nullstelle
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Subsubsection*
+\begin_inset Formula $f(x)=\frac{(x+2)^{2}}{(x+4)^{3}x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P:-4(x3), 0(x2), H: keine
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N:-2(x2)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+Betrachten wir die Funktion: 
+\begin_inset Formula $f(x)=\frac{2x^{2}+x^{2}+x}{1-x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nullstelle: 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definitionslücken: 
+\begin_inset Formula $x=$
+\end_inset
+
+1 (Polstelle, 1fach), 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ (Polstelle, 1fach)
+\end_layout
+
+\begin_layout Standard
+Asymptoten: 
+\begin_inset Formula $x=1$
+\end_inset
+
+, 
+\begin_inset Formula $x=-1$
+\end_inset
+
+, 
+\begin_inset Formula $x=-2x-1$
+\end_inset
+
+ (durch Poly.division)
 \end_layout
 
 \end_body
