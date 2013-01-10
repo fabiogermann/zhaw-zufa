@@ -77,10 +77,6 @@ Symmetrien:
 \end_layout
 
 \begin_layout Standard
->
-\end_layout
-
-\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
@@ -115,10 +111,6 @@ Punktsymmetrie: f(x)=-f(-x)
 
 \begin_layout Subsection*
 Definitionslücken
-\end_layout
-
-\begin_layout Standard
->
 \end_layout
 
 \begin_layout Standard
@@ -270,10 +262,6 @@ Art: normale (nicht hebbare)
 
 \begin_layout Subsection*
 Konvergenz
-\end_layout
-
-\begin_layout Standard
->
 \end_layout
 
 \begin_layout Standard

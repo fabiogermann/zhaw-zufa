@@ -59,11 +59,10 @@
 
 \begin_body
 
-\begin_layout Title
+\begin_layout Part*
 
 \size huge
-\noun on
-IV - Differentialrechnung
+Differentialrechnung
 \end_layout
 
 \begin_layout Section*
@@ -76,7 +75,7 @@ IV.1 Grenzwert und Stetigkeit
 Symmetrien:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
@@ -113,7 +112,7 @@ Punktsymmetrie: f(x)=-f(-x)
 Definitionslücken
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
@@ -264,7 +263,7 @@ Art: normale (nicht hebbare)
 Konvergenz
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 Als 
 \begin_inset Formula $lim_{x\rightarrow x_{0}}f(x)=g$
 \end_inset
