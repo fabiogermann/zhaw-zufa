@@ -347,7 +347,97 @@ Als
 Divergenz
 \end_layout
 
+\begin_layout Itemize
+Pol (
+\begin_inset Formula $lim_{x\rightarrow x_{0}}=_{-}^{+}\infty$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Sprung (
+\begin_inset Formula $lim_{-\rightarrow x_{0}}\neq lim_{+\rightarrow x_{0}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+oszilliert
+\end_layout
+
+\begin_layout Subsection*
+Stetigkeit
+\end_layout
+
+\begin_layout Quote
+Definition: 
+\begin_inset Formula $lim_{x\rightarrow x_{0}}f(x)=f(x_{0})$
+\end_inset
+
+, dann ist die Funktion stetig in 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Alle Polynome in 
+\begin_inset Formula $R$
+\end_inset
+
+ sind stetig
+\end_layout
+
+\begin_layout Itemize
+Alle gebrochen-rationalen Funktionen in 
+\begin_inset Formula $R$
+\end_inset
+
+ sind stetig (ausser Nullstellen des Nenners)
+\end_layout
+
+\begin_layout Itemize
+Ist 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ in einem Intervall stetig, so ist auch 
+\begin_inset Formula $f(x)^{n}$
+\end_inset
+
+ und 
+\begin_inset Formula $e^{f(x)}$
+\end_inset
+
+ im selben Intervall stetig
+\end_layout
+
+\begin_layout Section*
+Grundlagen der Diff.rechnung
+\end_layout
+
+\begin_layout Subsection*
+Differenzenquotient
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula $Geradensteigung=m=tan(\alpha)=\frac{\Delta f(x)}{x}=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\frac{y-Änderung}{x-Änderung}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Differentialquotient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Differentialquotien=lim(Differenzenquotient)=lim_{\Delta x\rightarrow0}\frac{\Delta f(x)}{\Delta x}$
+\end_inset
+
 
 \end_layout
 
