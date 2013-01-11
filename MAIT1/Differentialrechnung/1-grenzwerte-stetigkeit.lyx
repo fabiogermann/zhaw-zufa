@@ -348,7 +348,7 @@ Divergenz
 \end_layout
 
 \begin_layout Itemize
-Pol (
+Polstelle (
 \begin_inset Formula $lim_{x\rightarrow x_{0}}=_{-}^{+}\infty$
 \end_inset
 
@@ -423,8 +423,27 @@ Grundlagen der Diff.rechnung
 Differenzenquotient
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $Geradensteigung=m=tan(\alpha)=\frac{\Delta f(x)}{x}=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\frac{y-Änderung}{x-Änderung}$
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Geradensteigung=m=tan(\alpha)=\frac{\Delta f}{\Delta x}=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\frac{y-Änderung}{x-Änderung}=\frac{y_{1}-y_{0}}{x_{1}-x_{0}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 
@@ -434,8 +453,27 @@ Differenzenquotient
 Differentialquotient
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $Differentialquotien=lim(Differenzenquotient)=lim_{\Delta x\rightarrow0}\frac{\Delta f(x)}{\Delta x}=lim_{\Delta x\rightarrow0}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 

@@ -610,6 +610,10 @@ Umformungen
 \end_layout
 
 \begin_layout Standard
+Logische Operationen:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
 <features tabularvalignment="middle">
@@ -1047,8 +1051,8 @@ A und B müssen falsch sein, damit das ganze richtig ist
 
 \end_layout
 
-\begin_layout Standard
-Logische Operationen
+\begin_layout --Separator--
+
 \end_layout
 
 \begin_layout Standard
@@ -1344,7 +1348,7 @@ XNOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(A\leftrightarrow B)$
+\begin_inset Formula $(A\Leftrightarrow B)$
 \end_inset
 
 
@@ -1368,7 +1372,7 @@ XNOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(A\implies B)\wedge(B\implies A)$
+\begin_inset Formula $(A\Rightarrow B)\wedge(B\Rightarrow A)$
 \end_inset
 
 

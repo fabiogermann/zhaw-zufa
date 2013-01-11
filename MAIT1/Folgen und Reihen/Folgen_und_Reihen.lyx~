@@ -739,7 +739,7 @@ Zinsfaktor
 \begin_inset Formula $p=6\%\rightarrow q=1.06$
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Subsubsection*
@@ -830,6 +830,49 @@ Ratenzahlungen
 \end_inset
 
 Schuld; 
+\begin_inset Formula $q=$
+\end_inset
+
+Zinsfaktor; 
+\begin_inset Formula $n=$
+\end_inset
+
+Anzahl Jahre; 
+\begin_inset Formula $r=$
+\end_inset
+
+Rate
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $K_{0}\cdot q^{n}=r\cdot\frac{q^{n}-1}{q-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ist nun die höhe der Raten gefragt, so kann der Zinsfaktor und die Schuld
+ eingesetzt werden, und nach r aufgelöst werden.
 \end_layout
 
 \end_body
