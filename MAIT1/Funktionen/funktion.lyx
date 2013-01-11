@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -1029,7 +1034,7 @@ Nullstelle
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Subsubsection*
+\begin_layout Plain Layout
 \begin_inset Formula $f(x)=\frac{(x+2)^{2}}{(x+4)^{3}x^{2}}$
 \end_inset
 
@@ -1163,6 +1168,7 @@ bijektive funktion
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Injection.svg.png
+	width 5cm
 
 \end_inset
 
@@ -1177,6 +1183,7 @@ bijektive funktion
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Surjection.svg.png
+	width 5cm
 
 \end_inset
 
@@ -1191,6 +1198,7 @@ bijektive funktion
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Bijection.svg.png
+	width 5cm
 
 \end_inset
 
@@ -1225,7 +1233,7 @@ Die Funktion
 
 \begin_layout Itemize
 streng monoton wachsend: auf 
-\begin_inset Formula $x_{1},x_{1}\in[a,b]:x_{1}<x_{2}:f(x_{1})<f(x_{2})$
+\begin_inset Formula $x_{1},x_{2}\in[a,b]:x_{1}<x_{2}:f(x_{1})<f(x_{2})$
 \end_inset
 
  ist oder
@@ -1233,14 +1241,14 @@ streng monoton wachsend: auf
 
 \begin_layout Itemize
 streng monoton fallend: auf 
-\begin_inset Formula $x_{1},x_{1}\in[a,b]:x_{1}<x_{2}:f(x_{1})>f(x_{2})$
+\begin_inset Formula $x_{1},x_{2}\in[a,b]:x_{1}<x_{2}:f(x_{1})>f(x_{2})$
 \end_inset
 
  ist.
 \end_layout
 
 \begin_layout Subsubsection*
-Bestimmung der Unkehrung
+Bestimmung der Umkehrung
 \end_layout
 
 \begin_layout Itemize
@@ -1248,7 +1256,7 @@ Definitionsbereich so festlegen, dass
 \begin_inset Formula $f$
 \end_inset
 
-auf 
+ auf 
 \begin_inset Formula $D$
 \end_inset
 

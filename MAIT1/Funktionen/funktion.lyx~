@@ -1029,7 +1029,7 @@ Nullstelle
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Subsubsection*
+\begin_layout Plain Layout
 \begin_inset Formula $f(x)=\frac{(x+2)^{2}}{(x+4)^{3}x^{2}}$
 \end_inset
 
@@ -1225,7 +1225,7 @@ Die Funktion
 
 \begin_layout Itemize
 streng monoton wachsend: auf 
-\begin_inset Formula $x_{1},x_{1}\in[a,b]:x_{1}<x_{2}:f(x_{1})<f(x_{2})$
+\begin_inset Formula $x_{1},x_{2}\in[a,b]:x_{1}<x_{2}:f(x_{1})<f(x_{2})$
 \end_inset
 
  ist oder
@@ -1233,14 +1233,14 @@ streng monoton wachsend: auf
 
 \begin_layout Itemize
 streng monoton fallend: auf 
-\begin_inset Formula $x_{1},x_{1}\in[a,b]:x_{1}<x_{2}:f(x_{1})>f(x_{2})$
+\begin_inset Formula $x_{1},x_{2}\in[a,b]:x_{1}<x_{2}:f(x_{1})>f(x_{2})$
 \end_inset
 
  ist.
 \end_layout
 
 \begin_layout Subsubsection*
-Bestimmung der Unkehrung
+Bestimmung der Umkehrung
 \end_layout
 
 \begin_layout Itemize
@@ -1248,7 +1248,7 @@ Definitionsbereich so festlegen, dass
 \begin_inset Formula $f$
 \end_inset
 
-auf 
+ auf 
 \begin_inset Formula $D$
 \end_inset
 
@@ -1289,6 +1289,7 @@ Grundsätzlich kann man sagen, dass
 \end_inset
 
  ist.
+ Dabei werden auch der Definitionsbereich und Wertebereich getauscht.
 \end_layout
 
 \end_body
