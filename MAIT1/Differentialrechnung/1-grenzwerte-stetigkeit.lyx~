@@ -435,9 +435,156 @@ Differentialquotient
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Differentialquotien=lim(Differenzenquotient)=lim_{\Delta x\rightarrow0}\frac{\Delta f(x)}{\Delta x}$
+\begin_inset Formula $Differentialquotien=lim(Differenzenquotient)=lim_{\Delta x\rightarrow0}\frac{\Delta f(x)}{\Delta x}=lim_{\Delta x\rightarrow0}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Existiert de Differentialquotient so heisst die Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ an der Stelle 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ differenzierbar.
+ Geometrisch bedeutet die Ableitund der Funktion an einer Stelle deren Tangenten
+steigung.
+\end_layout
+
+\begin_layout Subsection*
+Ableitungsfunktion
+\end_layout
+
+\begin_layout Standard
+Beispiel: Finden der abgeleiteten Funktion mit Diff.quot.:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x)=x^{2},Diff.quot=m=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Diff.quot=\frac{(x_{0}+\Delta x)^{2}-(x_{0})^{2}}{\Delta x}=\frac{2x_{0}\Delta x+\Delta x^{2}}{\Delta x}=2x_{0}+\Delta x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f'(x)=lim_{\Delta x\rightarrow0}(2x_{0}+\Delta x)=2x_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Orte, an denen dieser Grenzwert nicht existieren kann:
+\end_layout
+
+\begin_layout Itemize
+Graph hat eine Ecke oder Knick: 
+\begin_inset Formula $lim(links)\neq lim(rechts)$
+\end_inset
+
+ deshalb hat 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+ einen Sprung bei 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Der Graph kann eine senkrechte Tangente aufweisen: 
+\begin_inset Formula $lim(f(x))=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Tangente
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $Tangente(f(x))=f'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Normale
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $Normale(f(x))=\frac{-1}{f'(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Linearisierung
+\end_layout
+
+\begin_layout Standard
+Eine NICHT lineare Funktion 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ lässt sich in der Umgebung eines Kurvenpunktes 
+\begin_inset Formula $P(x_{0},y_{0})$
+\end_inset
+
+ durch die dortige Tangente ersetzen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{y-y_{0}}{x-x_{0}}=f'(x)\Rightarrow y-y_{0}=f'(x_{0})(x-x_{0})\Rightarrow y=y_{0}+f'(x_{0})(x-x_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x_{0}+\Delta x)\simeq y_{0}+f'(x_{0})\times\Delta x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

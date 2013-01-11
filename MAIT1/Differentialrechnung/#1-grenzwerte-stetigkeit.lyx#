@@ -477,9 +477,261 @@ f(x)=x^{2},Diff.quot=m=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f'(x)=\frac{(x_{0}+\Delta x)^{2}-(x_{0})^{2}}{\Delta x}=\frac{2x_{0}\Delta x+\Delta x^{2}}{\Delta x}=2x_{0}+\Delta x
+Diff.quot=\frac{(x_{0}+\Delta x)^{2}-(x_{0})^{2}}{\Delta x}=\frac{2x_{0}\Delta x+\Delta x^{2}}{\Delta x}=2x_{0}+\Delta x
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f'(x)=lim_{\Delta x\rightarrow0}(2x_{0}+\Delta x)=2x_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Orte, an denen dieser Grenzwert nicht existieren kann:
+\end_layout
+
+\begin_layout Itemize
+Graph hat eine Ecke oder Knick: 
+\begin_inset Formula $lim(links)\neq lim(rechts)$
+\end_inset
+
+ deshalb hat 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+ einen Sprung bei 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Der Graph kann eine senkrechte Tangente aufweisen: 
+\begin_inset Formula $lim(f(x))=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Tangente
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $Tangente(f(x))=f'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Normale
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $Normale(f(x))=\frac{-1}{f'(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Linearisierung
+\end_layout
+
+\begin_layout Standard
+Eine NICHT lineare Funktion 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+ lässt sich in der Umgebung eines Kurvenpunktes 
+\begin_inset Formula $P(x_{0},y_{0})$
+\end_inset
+
+ durch die dortige Tangente ersetzen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{y-y_{0}}{x-x_{0}}=f'(x)\Rightarrow y-y_{0}=f'(x_{0})(x-x_{0})\Rightarrow y=y_{0}+f'(x_{0})(x-x_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x_{0}+\Delta x)\simeq y_{0}+f'(x_{0})\times\Delta x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bsp:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'(x)=3x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{0}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'(1)=3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(1)=y_{0}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Formula $f$
 \end_inset
 
 
