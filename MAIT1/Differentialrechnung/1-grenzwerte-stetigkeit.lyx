@@ -73,7 +73,7 @@ Differentialrechnung
 \begin_layout Section*
 
 \size large
-IV.1 Grenzwert und Stetigkeit
+Grenzwert und Stetigkeit
 \end_layout
 
 \begin_layout Subsection*
@@ -82,12 +82,12 @@ Symmetrien:
 
 \begin_layout Quote
 \begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
+<lyxtabular version="3" rows="2" columns="2">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -96,11 +96,43 @@ y-Achsensymmetrie: f(x)=f(-x)
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Punktsymmetrie: f(x)=-f(-x)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename achsensymm1.png
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Punktsym.jpg
+	width 4cm
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -114,7 +146,7 @@ Punktsymmetrie: f(x)=-f(-x)
 \end_layout
 
 \begin_layout Subsection*
-Definitionslücken
+Grenzwert bei Definitionslücken
 \end_layout
 
 \begin_layout Quote
@@ -294,6 +326,29 @@ Als
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $\forall\varepsilon\exists\delta:\forall x\mid x-x_{0}\mid<\delta,\mid f(x)-g\mid<\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ Grenzwert, dann konvergiert die Funktion gegen 
+\begin_inset Formula $g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Divergenz
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
