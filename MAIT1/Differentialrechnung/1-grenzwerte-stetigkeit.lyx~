@@ -415,5 +415,31 @@ Ist
  im selben Intervall stetig
 \end_layout
 
+\begin_layout Section*
+Grundlagen der Diff.rechnung
+\end_layout
+
+\begin_layout Subsection*
+Differenzenquotient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Geradensteigung=m=tan(\alpha)=\frac{\Delta f(x)}{x}=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\frac{y-Änderung}{x-Änderung}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Differentialquotient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Differentialquotien=lim(Differenzenquotient)=lim_{\Delta x\rightarrow0}\frac{\Delta f(x)}{\Delta x}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

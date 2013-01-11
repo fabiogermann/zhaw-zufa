@@ -424,7 +424,62 @@ Differenzenquotient
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Geradensteigung=m=tan(\alpha)=\frac{\Delta f(x)}{x}=\frac{f(x_{0}+\Delta}{}$
+\begin_inset Formula $Geradensteigung=m=tan(\alpha)=\frac{\Delta f(x)}{x}=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}=\frac{y-Änderung}{x-Änderung}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Differentialquotient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Differentialquotien=lim(Differenzenquotient)=lim_{\Delta x\rightarrow0}\frac{\Delta f(x)}{\Delta x}=lim_{\Delta x\rightarrow0}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existiert de Differentialquotient so heisst die Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ an der Stelle 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ differenzierbar.
+ Geometrisch bedeutet die Ableitund der Funktion an einer Stelle deren Tangenten
+steigung.
+\end_layout
+
+\begin_layout Subsection*
+Ableitungsfunktion
+\end_layout
+
+\begin_layout Standard
+Beispiel: Finden der abgeleiteten Funktion mit Diff.quot.:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(x)=x^{2},Diff.quot=m=\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f'(x)=\frac{(x_{0}+\Delta x)^{2}-(x_{0})^{2}}{\Delta x}=\frac{2x_{0}\Delta x+\Delta x^{2}}{\Delta x}=2x_{0}+\Delta x
+\]
+
 \end_inset
 
 
