@@ -1348,7 +1348,7 @@ XNOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(A\leftrightarrow B)$
+\begin_inset Formula $(A\Leftrightarrow B)$
 \end_inset
 
 
@@ -1372,7 +1372,7 @@ XNOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(A\implies B)\wedge(B\implies A)$
+\begin_inset Formula $(A\Rightarrow B)\wedge(B\Rightarrow A)$
 \end_inset
 
 
@@ -2280,7 +2280,15 @@ X kann nun wie folgt bestummen werden:
 \end_layout
 
 \begin_layout Quote
-\begin_inset Formula $127=30+50+60-5-5-5+X$
+\begin_inset Formula $A\cup B\cup C=A+B+C-A\cap B-A\cap C-B\cap C+X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Einsetzen:
+\begin_inset Formula $\rightarrow127=30+50+60-5-5-5+X$
 \end_inset
 
 
