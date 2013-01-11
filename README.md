@@ -1,8 +1,7 @@
 ZHAW - Zusammenfassungen
 =========
 
-Wir verwenden folgendes Format:
-[repo root]/Vorlesung/Thema.tex
+Alle Files wurden mit LyX erstellt.
 
 oder bei grösseren Sachen:
-[repo root]/Vorlesung/Thema/Abschnitt.tex
+[repo root]/Vorlesung/Thema/Abschnitt.lyx
