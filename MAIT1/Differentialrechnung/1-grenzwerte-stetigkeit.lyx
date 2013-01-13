@@ -1575,7 +1575,200 @@ Wendepunkte
 Newtonverfahren
 \end_layout
 
+\begin_layout Quote
+Newtonsches Tangentenverfahren:
+\begin_inset Formula 
+\[
+x_{n}=x_{n-1}-\frac{f(x_{n-1})}{f'(x_{n-1})},n=1,2,3,...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Kriterium, das für Startwert und während des ganzen Verfahrens gelten soll:
+\begin_inset Formula 
+\[
+\mid\frac{f\times\text{f'}}{(f'')^{2}}\mid<1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Startwert: nicht Stellen, an denen die Kurventangente (fast) parallel zur
+ x-Achse verläuft.
+\end_layout
+
+\begin_layout Section*
+Bernoulli de l'Hopital
+\end_layout
+
+\begin_layout Subsection*
+Mittelwertsatz der Diff.rechnung
+\end_layout
+
 \begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename MittelwertsatzD.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 550px-Satz_von_Rolle.svg.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Quote
+\begin_inset Formula $f(x)$
+\end_inset
+
+ in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ stetig und differenzierbar in 
+\begin_inset Formula $]a,b[$
+\end_inset
+
+ , dann 
+\begin_inset Formula $\exists\xi\in]a,b[$
+\end_inset
+
+ :
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spezialfall: Satz von Rolle 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Quote
+\begin_inset Formula 
+\[
+\frac{f(b)-f(a)}{b-a}=f'(\xi)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(a)=f(b)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Allgemeiner Mittelwertsatz der Diff.rechnung
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $f(x),g(x)$
+\end_inset
+
+ in 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ stetig und in
+\begin_inset Formula $]a,b[$
+\end_inset
+
+ differenzierbar sowie 
+\begin_inset Formula $g'(x)\neq0$
+\end_inset
+
+ in 
+\begin_inset Formula $]a,b[$
+\end_inset
+
+, dann 
+\begin_inset Formula $\exists\xi\in]a,b[$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula 
+\[
+\frac{f(b)-f(a)}{g(b)-g(a)}=\frac{f'(\xi)}{g'(\xi)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Regel von Bernoulli de l'Hopital
+\end_layout
+
+\begin_layout Quote
 
 \end_layout
 
