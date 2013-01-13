@@ -460,8 +460,9 @@ Bilanz
 Die Bilanz ist eine Gegenüberstellung von Aktiven (Vermögen) und Passiven
  (Fremd- und Eigenkapital) zu einem bestimmten Zeitpunkt.
  Man ermittelt die Salden der Aktiv- und Passivkonten auf einen Bilanzstichtag
- und überträgt diese Salden in ein neues Konto, die Bilanz.
- Buchungen innerhalb der Konten der Bilanz werden 
+ und überträgt diese Salden in ein neues Konto, die Bilanz (Diese Buchungen
+ müssen auch erfasst werden! Buchungen innerhalb der Konten der Bilanz werden
+ 
 \begin_inset Quotes eld
 \end_inset
 
