@@ -1654,7 +1654,7 @@ Mittelwertsatz der Diff.rechnung
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Quote
+\begin_layout Plain Layout
 \begin_inset Formula $f(x)$
 \end_inset
 
@@ -1689,12 +1689,8 @@ Spezialfall: Satz von Rolle
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Quote
-\begin_inset Formula 
-\[
-\frac{f(b)-f(a)}{b-a}=f'(\xi)
-\]
-
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{f(b)-f(a)}{b-a}=f'(\xi)$
 \end_inset
 
 
