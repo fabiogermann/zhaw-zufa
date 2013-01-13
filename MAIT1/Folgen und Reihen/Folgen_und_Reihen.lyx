@@ -130,7 +130,7 @@ Zu jeder Folge
 \begin_inset Formula $s_{n}$
 \end_inset
 
-der Teilsummen, die sogenante 
+der Teilsummen, die sogenannte 
 \series bold
 Reihe
 \series default
@@ -448,7 +448,7 @@ ist durch eine Rechnung von n gegeben:
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Quote
+\begin_layout Plain Layout
 \begin_inset Formula $d=\frac{a_{i}-a_{k}}{i-k}$
 \end_inset
 
