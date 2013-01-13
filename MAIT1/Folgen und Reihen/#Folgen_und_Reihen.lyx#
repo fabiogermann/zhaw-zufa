@@ -1795,9 +1795,8 @@ seien konvergente Folgen mit
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <row>
@@ -1813,23 +1812,11 @@ seien konvergente Folgen mit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $a_{n}=\frac{2+\frac{3}{n}}{5+\frac{6}{n}}+\frac{50}{n^{2}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}=\frac{2}{5}+0=\frac{2}{5}$
+\begin_inset Formula $a_{n}=\frac{2+\frac{3}{n}}{5+\frac{6}{n}}+\frac{50}{}$
 \end_inset
 
 
@@ -1846,15 +1833,6 @@ seien konvergente Folgen mit
 \begin_inset Formula $\underset{n\rightarrow\infty}{lim\,(a_{n}\cdot b_{n})}=a\cdot b$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1883,15 +1861,6 @@ seien konvergente Folgen mit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -1910,15 +1879,6 @@ seien konvergente Folgen mit
 \begin_inset Formula $\underset{n\rightarrow\infty}{lim\,(a_{n}^{k})}=a^{k},k\epsilon\mathbb{R}$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
