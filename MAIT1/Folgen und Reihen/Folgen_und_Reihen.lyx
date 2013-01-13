@@ -130,7 +130,11 @@ Zu jeder Folge
 \begin_inset Formula $s_{n}$
 \end_inset
 
-der Teilsummen, die sogenante Reihe der Folge bilden:
+der Teilsummen, die sogenante 
+\series bold
+Reihe
+\series default
+ der Folge bilden:
 \end_layout
 
 \begin_layout Itemize
@@ -424,15 +428,28 @@ ist durch eine Rechnung von n gegeben:
 
 \begin_layout Quote
 \begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="1">
+<lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $a_{n}=a_{1}+(n-1)\cdot d$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Quote
+\begin_inset Formula $d=\frac{a_{i}-a_{k}}{i-k}$
 \end_inset
 
 
@@ -466,7 +483,7 @@ Die Summe eine Arithmetischen Folge lässt sich wie folgt berechnen:
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $s_{n}=\frac{(a_{1}+a_{n})}{2}\cdot n$
+\begin_inset Formula $s_{n}=\frac{(a_{1}+a_{n})}{2}\cdot n=\frac{1}{2}\cdot n\cdot(a_{1}+a_{n})=n\cdot a_{1}+\frac{n\cdot(n-1)}{2}\cdot d$
 \end_inset
 
 
@@ -483,7 +500,7 @@ Die Summe eine Arithmetischen Folge lässt sich wie folgt berechnen:
 \end_layout
 
 \begin_layout Standard
-Ausnahme:
+Speziell:
 \end_layout
 
 \begin_layout Verse
@@ -496,7 +513,7 @@ Ausnahme:
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $s_{n}=\overset{n}{\underset{k=1}{\sum}}k^{2}=\frac{n(n+1)(2n+1)}{6}$
+\begin_inset Formula $s_{n}=\overset{n}{\underset{k=1}{\sum}}k^{2}=\sum_{k=1}^{n}\sum_{i=k}^{n}i=\frac{n(n+1)(2n+1)}{6}$
 \end_inset
 
 
@@ -1506,7 +1523,7 @@ Beispiel:
 <cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
 
-\begin_layout Verse
+\begin_layout Plain Layout
 \begin_inset Formula $a_{n}=\frac{n}{n+1}$
 \end_inset
 
