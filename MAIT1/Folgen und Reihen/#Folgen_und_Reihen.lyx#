@@ -1050,7 +1050,7 @@ Man sagt, die Folge konvergiert gegen
 
 \begin_layout Verse
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="4">
+<lyxtabular version="3" rows="8" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
@@ -1114,50 +1114,6 @@ Grad vom Zähler > Grad vom Nenner
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{2n+1}{n+1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\frac{2}{1}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Der Grenzwert kann anhand der Faktoren von n abgelesen werden
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{n+1}{1}$
 \end_inset
 
@@ -1197,18 +1153,6 @@ Der Grenzwert kann anhand der Faktoren von n abgelesen werden
 \begin_inset Text
 
 \begin_layout Plain Layout
-Grad vom Zähler < Grad vom Nenner
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{n+1}{2n+1}$
-\end_inset
-
 
 \end_layout
 
@@ -1218,7 +1162,19 @@ Grad vom Zähler < Grad vom Nenner
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{1}{2}$
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{2n^{2}+1}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\infty$
 \end_inset
 
 
@@ -1230,7 +1186,59 @@ Grad vom Zähler < Grad vom Nenner
 \begin_inset Text
 
 \begin_layout Plain Layout
-Der Grenzwert kann anhand der Faktoren von n abgelesen werden
+(Der Zähler geht schneller gegen 
+\begin_inset Formula $\infty$
+\end_inset
+
+, als der Nenner)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grad vom Zähler < Grad vom Nenner
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{2n^{2}+1}{3n^{3}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Der Nenner geht schneller gegen 
+\begin_inset Formula $\infty$
+\end_inset
+
+, als der Zähler)
 \end_layout
 
 \end_inset
@@ -1285,7 +1293,7 @@ Der Grenzwert kann anhand der Faktoren von n abgelesen werden
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1294,7 +1302,7 @@ Grad vom Zähler = Grad vom Nenner
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1306,7 +1314,7 @@ Grad vom Zähler = Grad vom Nenner
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1318,11 +1326,99 @@ Grad vom Zähler = Grad vom Nenner
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Der Grenzwert kann anhand der Faktoren von n abgelesen werden
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{n+1}{2n+1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}\frac{2n+1}{n+1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-(Zähler und Nenner gehen gegen unendlich)
+
 \end_layout
 
 \end_inset
@@ -1793,14 +1889,15 @@ seien konvergente Folgen mit
 , dann gilt:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1812,11 +1909,23 @@ seien konvergente Folgen mit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $a_{n}=\frac{2+\frac{3}{n}}{5+\frac{6}{n}}+\frac{50}{}$
+\begin_inset Formula $a_{n}=\frac{2+\frac{3}{n}}{5+\frac{6}{n}}+\frac{50}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}=\frac{2}{5}+0=\frac{2}{5}$
 \end_inset
 
 
@@ -1826,7 +1935,7 @@ seien konvergente Folgen mit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1838,10 +1947,25 @@ seien konvergente Folgen mit
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $a_{n}=\frac{6n}{2n}\cdot\frac{2n}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}=3\cdot2=6$
+\end_inset
+
 
 \end_layout
 
@@ -1849,22 +1973,45 @@ seien konvergente Folgen mit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\underset{n\rightarrow\infty}{lim\,\frac{a_{n}}{b_{n}}}=\frac{a}{b}$
 \end_inset
 
+ (für 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{n}=\frac{\frac{36n}{n}}{6+\frac{6}{n}}$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}=\frac{36}{6+0}=\frac{36}{6}=6$
+\end_inset
+
 
 \end_layout
 
@@ -1872,7 +2019,7 @@ seien konvergente Folgen mit
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1884,10 +2031,132 @@ seien konvergente Folgen mit
 
 \end_inset
 </cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a_{n}=\frac{6n}{2n}^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim\, a_{n}}=3^{3}=27$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Spezielle Grenzwerte
+\end_layout
+
+\begin_layout Subsubsection*
+Reihenwerte
+\end_layout
+
+\begin_layout Standard
+Gegeben sei eine unendliche Folge 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+ Wir betrachten die zu dieser Folge gehörige Reihe 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+.
+ Konvergiert die Folge 
+\begin_inset Formula $s_{n}$
+\end_inset
+
+, so definiert man die 
+\series bold
+Summe der unendliche Reihe
+\series default
+ als:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $s_{\infty}=a_{1}+a_{2}+...=\overset{\infty}{\underset{k=1}{\sum}}a_{k}=\underset{n\rightarrow\infty}{lim\, s_{n}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{\infty}$
+\end_inset
+
+heisst auch der Reihenwert der Folge 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Folgen mit 
+\begin_inset Formula $\mid q\mid>1$
+\end_inset
+
+ sind 
+\series bold
+divergent
+\end_layout
+
+\begin_layout Itemize
+Folgen mit 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s_{\infty}=a_{1}\cdot\frac{1}{1-q}$
+\end_inset
+
 
 \end_layout
 
