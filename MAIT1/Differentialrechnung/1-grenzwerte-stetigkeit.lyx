@@ -1769,6 +1769,34 @@ Regel von Bernoulli de l'Hopital
 \end_layout
 
 \begin_layout Quote
+Die Funktionen seien auf einen offenen Intervall stetig: 
+\begin_inset Formula $]a,b[$
+\end_inset
+
+ (wobei das Intervall auch unendlich sein kann).
+\end_layout
+
+\begin_layout Quote
+Falls:
+\begin_inset Formula 
+\[
+lim_{x\rightarrow b}f(x)=lim_{x\rightarrow b}g(x)=0\: oder\: lim_{x\rightarrow b}f(x)=lim_{x\rightarrow b}g(x)=_{-}^{+}\infty\: und\: lim_{x\rightarrow b}\frac{f'}{g'}=d
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+so ist: 
+\begin_inset Formula 
+\[
+lim_{x\rightarrow b}\frac{f(x)}{g(x)}=lim_{x\rightarrow b}\frac{f'(x)}{g'(x)}=d
+\]
+
+\end_inset
+
 
 \end_layout
 
