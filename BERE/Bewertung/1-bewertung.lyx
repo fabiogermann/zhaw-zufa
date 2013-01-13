@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,9 +64,7 @@
 
 \begin_body
 
-\begin_layout Title
-
-\noun on
+\begin_layout Part*
 Bewertung
 \end_layout
 
@@ -74,10 +77,7 @@ In den meissten Fällen ist es nicht möglich den künftigen Nutzenzugang zu
  quantifizieren.
  Zudem ist auch nicht bestimmt, mit welchem kalkulatorischen Zinssatz die
  Nutzenzugänge zu diskontieren sind.
-\end_layout
-
-\begin_layout Standard
-Der Gesetzgeber legt Höchstwerte fest, über die hinaus Aktiven nicht bewertet
+ Der Gesetzgeber legt Höchstwerte fest, über die hinaus Aktiven nicht bewertet
  werden dürfen (Gläubigerschutz).
  Siehe Gesetzesartikel.
 \end_layout
@@ -86,7 +86,7 @@ Der Gesetzgeber legt Höchstwerte fest, über die hinaus Aktiven nicht bewertet
 Gesetzliche Bewertungsgrundsätze:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
 <features tabularvalignment="middle">
@@ -197,7 +197,7 @@ Weiterexistenz des Unternehmens.
 Weiterführung des Vorsichtsprinzips:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle">
@@ -288,10 +288,7 @@ Ziel: höchst möglicher Gläubigerschutz zu erzielen
 
 \begin_layout Standard
 Dadurch wird aber die Transparenz für den Investor vermindert.
-\end_layout
-
-\begin_layout Standard
-Für den Investor taugen nur die Abschlussrechnungen, die nach dem 
+ Für den Investor taugen nur die Abschlussrechnungen, die nach dem 
 \begin_inset Quotes eld
 \end_inset
 
@@ -301,10 +298,7 @@ true and fair-view
 
  Prinzip erstellt worden sind und wahre und objektiv richtige Wertansätze
  enthalten.
-\end_layout
-
-\begin_layout Standard
-Verschiedene Rechnungslegungsnormen: SWISS_GAAP_FER / IFRS / US_GAAP
+ Verschiedene Rechnungslegungsnormen: SWISS_GAAP_FER / IFRS / US_GAAP
 \end_layout
 
 \end_body

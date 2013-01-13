@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,9 +64,7 @@
 
 \begin_body
 
-\begin_layout Title
-
-\noun on
+\begin_layout Part*
 Vom Konto zur doppelten Buchhaltung
 \end_layout
 
@@ -78,7 +81,7 @@ Herkunft der Namensgebung aus Italienisch: deve dare (soll) und deve avere
 Aus der Sicht des Kto-Inhabers:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features tabularvalignment="middle">
@@ -139,7 +142,7 @@ Aktiva & Passiva
 Alles, was einen Beitrag zur Zielerreichung leistet, wird Nutzen genannt.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
 <features tabularvalignment="middle">
@@ -325,7 +328,7 @@ Buchungstatsachen führen immer zu (mindestens) zwei Konteneinträgen.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="4">
 <features tabularvalignment="middle">
@@ -420,10 +423,6 @@ an Haben
 
 \end_layout
 
-\begin_layout --Separator--
-
-\end_layout
-
 \begin_layout Standard
 Journal = Alle Buchungssätze sind in chronologischer Reihenfolge und komplett.
 \end_layout
@@ -437,10 +436,7 @@ Die Bilanz ist eine Gegenüberstellung von Aktiven (Vermögen) und Passiven
  (Fremd- und Eigenkapital) zu einem bestimmten Zeitpunkt.
  Man ermittelt die Salden der Aktiv- und Passivkonten auf einen Bilanzstichtag
  und überträgt diese Salden in ein neues Konto, die Bilanz.
-\end_layout
-
-\begin_layout Standard
-Buchungen innerhalb der Konten der Bilanz werden 
+ Buchungen innerhalb der Konten der Bilanz werden 
 \begin_inset Quotes eld
 \end_inset
 
@@ -468,11 +464,7 @@ reicher
 .
 \end_layout
 
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
 <features tabularvalignment="middle">
@@ -646,10 +638,7 @@ Konten für Aufwand und Ertrag
 \begin_layout Standard
 Die Gegenüberstellung der Salden der Aufwand- und Ertragskonten findet in
  der Erfolgsrechnung statt.
-\end_layout
-
-\begin_layout Standard
-Der Saldo der Erfolgsrechnung wird in die Bilanz, in die Rubrik 
+ Der Saldo der Erfolgsrechnung wird in die Bilanz, in die Rubrik 
 \begin_inset Quotes eld
 \end_inset
 
@@ -658,10 +647,7 @@ Eigenkapital
 \end_inset
 
  übertragen.
-\end_layout
-
-\begin_layout Standard
-Aufwand- und Ertragskonten enthalten die Gegenbuchungen zu den in den Aktiven
+ Aufwand- und Ertragskonten enthalten die Gegenbuchungen zu den in den Aktiven
  (Passiven) festgestellten Vermögens-(Schuld-) Zu- und Abnahmen.
 \end_layout
 
@@ -701,11 +687,7 @@ Sie zeigt in einer Rechnungsperiode, also einem Zeitraum, entstandene Aufwände
  Sie gibt einen Einblick in das betriebliche Geschehen der Unternehmung.
 \end_layout
 
-\begin_layout --Separator--
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features tabularvalignment="middle">

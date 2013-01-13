@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,9 +64,7 @@
 
 \begin_body
 
-\begin_layout Title
-
-\noun on
+\begin_layout Part*
 Kosten- und Leistungsrechnung
 \end_layout
 
@@ -99,10 +102,6 @@ Geld- Sachgüter- oder Dienstleistungsverbrauch für die betriebliche Leistungse
 tellung.
 \end_layout
 
-\begin_layout --Separator--
-
-\end_layout
-
 \begin_layout Paragraph*
 Aufwand
 \end_layout
@@ -119,10 +118,6 @@ Kosten - Aufwand: Abgrenzung
 
 \begin_layout Standard
 Die Kosten können von den Aufwänden der Finanzbuchhaltung abgeleitet werden.
-\end_layout
-
-\begin_layout --Separator--
-
 \end_layout
 
 \begin_layout Standard
@@ -174,11 +169,7 @@ Es können Abgrenzungsprobleme insbesondere bei den Zusatzkosten entstehen,
 Ermittlung des kalkulatorischen Zinses
 \end_layout
 
-\begin_layout Standard
-(siehe Tabelle)
-\end_layout
-
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
