@@ -1357,5 +1357,227 @@ Ableitungsregeln
 
 \end_layout
 
+\begin_layout Section*
+Untersuchung von Funktionen
+\end_layout
+
+\begin_layout Subsection*
+Aussagen der 1ten Ableitung
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $f(x)$
+\end_inset
+
+ in Intervall 
+\begin_inset Formula $I$
+\end_inset
+
+ differenzierbar, dann:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f'(x)=0$
+\end_inset
+
+ : Extremum (min/max) auf dem Intervall 
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f'(x)>0$
+\end_inset
+
+ : 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ in 
+\begin_inset Formula $I$
+\end_inset
+
+ monoton wachsend
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f'(x)<0$
+\end_inset
+
+ : 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ in 
+\begin_inset Formula $I$
+\end_inset
+
+ monoton fallend
+\end_layout
+
+\begin_layout Quote
+Das heisst, dass das Vorzeichen der ersten Ableitung uns sagt, ob die Funktion
+ steigt oder fällt.
+\end_layout
+
+\begin_layout Subsection*
+Aussagen der 2ten Ableitung
+\end_layout
+
+\begin_layout Quote
+\begin_inset Formula $f(x)$
+\end_inset
+
+ in Intervall 
+\begin_inset Formula $I$
+\end_inset
+
+ 2 mal differenzierbar, dann:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $f''(x)>0$
+\end_inset
+
+
+\series default
+ : 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+ ist (streng) monoton wachsend : 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ist 
+\series bold
+konvex
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $f''(x)<0$
+\end_inset
+
+ 
+\series default
+: 
+\begin_inset Formula $f'(x)$
+\end_inset
+
+ ist (streng) monoton fallend : 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ist 
+\series bold
+konkav
+\end_layout
+
+\begin_layout Subsection*
+Extremwerte
+\end_layout
+
+\begin_layout Quote
+Durch die erste Ableitung 
+\begin_inset Formula $f'(x)=0$
+\end_inset
+
+ erhalten wir Kandidatstellen 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ für Minimum und Maximum.
+\end_layout
+
+\begin_layout Itemize
+Ist in der Umgebung der Stelle 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ die Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 
+\series bold
+konkav
+\series default
+, so liegt ein 
+\series bold
+Maximum
+\series default
+ vor.
+\end_layout
+
+\begin_layout Itemize
+Ist in der Umgebung der Stelle 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ die Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 
+\series bold
+konvex
+\series default
+, so liegt ein 
+\series bold
+Minimum
+\series default
+ vor.
+\end_layout
+
+\begin_layout Subsection*
+Wendepunkte
+\end_layout
+
+\begin_layout Quote
+\begin_inset Graphics
+	filename 220px-Inverse_Function_Graph.png
+	width 4cm
+
+\end_inset
+
+
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ist im Intervall 
+\begin_inset Formula $I$
+\end_inset
+
+ 3 mal differenzierbar, dann:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f''=0,f'''<0$
+\end_inset
+
+ : blau : Links- zu Rechtskurve
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f''=0,f'''>0$
+\end_inset
+
+ : rot : Rechts- zu Linkskurve
+\end_layout
+
+\begin_layout Section*
+Newtonverfahren
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
