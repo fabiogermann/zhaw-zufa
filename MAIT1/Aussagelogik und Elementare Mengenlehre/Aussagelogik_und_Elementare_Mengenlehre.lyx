@@ -73,7 +73,7 @@ Aussagelogik
 \end_layout
 
 \begin_layout Subsection*
-Aussageverbeindungen
+Aussageverbindungen
 \end_layout
 
 \begin_layout Labeling
@@ -353,7 +353,7 @@ Wahrheitstabellen
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A\implies B$
+\begin_inset Formula $A\Rightarrow B$
 \end_inset
 
 
@@ -365,7 +365,7 @@ Wahrheitstabellen
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A\leftrightarrow B$
+\begin_inset Formula $A\Leftrightarrow B$
 \end_inset
 
 
