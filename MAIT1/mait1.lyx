@@ -9,11 +9,11 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman times
+\font_roman default
 \font_sans default
-\font_typewriter default
-\font_default_family rmdefault
-\use_non_tex_fonts false
+\font_typewriter Times New Roman
+\font_default_family default
+\use_non_tex_fonts true
 \font_sc false
 \font_osf false
 \font_sf_scale 100
