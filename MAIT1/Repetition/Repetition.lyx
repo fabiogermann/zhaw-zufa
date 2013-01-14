@@ -1102,20 +1102,6 @@ Umkehrfunktion:
 
 \begin_layout Standard
 Basiswechsel:
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\backslash
-frac{log_{10}(x)}{log_{10}(a)}
 \end_layout
 
 \begin_layout Verse
