@@ -159,7 +159,7 @@ Die Division von Polynomen ergiebt wieder ein Polynom und ev.
 Beispiel für Polynomdivision:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="6">
 <features tabularvalignment="middle">
@@ -559,7 +559,7 @@ Diese an
  ausgewertet:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="5">
 <features tabularvalignment="middle">
@@ -994,7 +994,7 @@ für grosse x:
 Beispiele:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
 <features tabularvalignment="middle">
@@ -1125,7 +1125,7 @@ Umkehrfunktionen
 Begriffe
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
 <features tabularvalignment="middle">

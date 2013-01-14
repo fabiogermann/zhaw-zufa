@@ -920,7 +920,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f(x)=c\times g(x)$
+\begin_inset Formula $f(x)=c\times\cdot g(x)$
 \end_inset
 
 
@@ -944,7 +944,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f'(x)=c\times g'(x)$
+\begin_inset Formula $f'(x)=c\cdot g'(x)$
 \end_inset
 
 
@@ -958,7 +958,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(x^{n})'=n\times x^{n-1}$
+\begin_inset Formula $(x^{n})'=n\cdot x^{n-1}$
 \end_inset
 
 
@@ -1050,7 +1050,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(a^{x})'=a^{x}\times ln(a)$
+\begin_inset Formula $(a^{x})'=a^{x}\cdot ln(a)$
 \end_inset
 
 
@@ -1083,7 +1083,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f(x)=u(x)\times v(x)$
+\begin_inset Formula $f(x)=u(x)\cdot v(x)$
 \end_inset
 
 
@@ -1107,7 +1107,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f'(x)=u'\times v+u\times v'$
+\begin_inset Formula $f'(x)=u'\cdot v+u\cdot v'$
 \end_inset
 
 
@@ -1130,7 +1130,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(log_{a}x)'=\frac{1}{x\times ln(a)}$
+\begin_inset Formula $(log_{a}x)'=\frac{1}{x\cdot ln(a)}$
 \end_inset
 
 
@@ -1187,7 +1187,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f'(x)=\frac{u'\times v-u\times v'}{v^{2}}$
+\begin_inset Formula $f'(x)=\frac{u'\cdot v-u\cdot v'}{v^{2}}$
 \end_inset
 
 
@@ -1264,7 +1264,7 @@ Ableitungsregeln
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $f'(x)=g'(h)\times h'(x)$
+\begin_inset Formula $f'(x)=g'(h)\cdot h'(x)$
 \end_inset
 
 
@@ -1591,7 +1591,7 @@ x_{n}=x_{n-1}-\frac{f(x_{n-1})}{f'(x_{n-1})},n=1,2,3,...
 Kriterium, das für Startwert und während des ganzen Verfahrens gelten soll:
 \begin_inset Formula 
 \[
-\mid\frac{f\times\text{f'}}{(f'')^{2}}\mid<1
+\mid\frac{f\cdot\text{f'}}{(f'')^{2}}\mid<1
 \]
 
 \end_inset
