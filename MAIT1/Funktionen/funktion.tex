@@ -1,0 +1,175 @@
+
+\part*{Funktionen}
+
+
+\section*{Funktionen (Grundlagen)}
+
+
+\subsection*{Trigonometrische Funktionen}
+\begin{quote}
+\begin{tabular}{cc}
+\includegraphics[width=6cm]{Funktionen/Sine_cosine_one_period} & \includegraphics[width=5cm]{Funktionen/trigfun}\tabularnewline
+\end{tabular}
+\end{quote}
+
+\subsection*{Polynome}
+\begin{quote}
+Ein Polynom n-ter Ordnung: $p(x)=a_{n}x^{n}+...+a_{2}x^{2}+a_{1}x+a_{0,}x\in R,a_{n}\neq0$
+\end{quote}
+Eigenschaften:
+\begin{itemize}
+\item Differenzen und Summen von Polynomen sind wieder Polynome.
+\item Produkte von Polynomen sind wieder Polynome. Bsp: $p(2)\times p(3)=p(5)$
+\item Die Division von Polynomen ergiebt wieder ein Polynom und ev. einen
+Rest.
+\end{itemize}
+Beispiel für Polynomdivision:
+\begin{verse}
+\begin{tabular}{cccccc}
+$2x$$^{3}$ & $+5x$$^{2}$ & $+1x$ & $\div(x-5)$ & $=$ & $2x^{2}-5x$ Rest $-24x$\tabularnewline
+\hline 
+$-2x^{3}$ & $-10x^{2}$ &  & $2x^{2}\times(x-5)$ & $=$ & $2x^{3}-10x^{2}$\tabularnewline
+\cline{1-2} 
+$0$ & $-5x^{2}$ & $+1x$ & $-5x\times(x-5)$ & $=$ & $-5x^{2}+25x$\tabularnewline
+\cline{2-3} 
+ & $-(-5x^{2})$ & $-25x$ &  &  & \tabularnewline
+\cline{2-3} 
+ & $0$ & $-24x$ &  &  & Rest: $-24x$\tabularnewline
+\end{tabular}
+\end{verse}
+
+\subsubsection*{Hornerschema}
+
+Auswertung einer Funktion an einer bestimmten Stelle.
+\begin{verse}
+Sei die Funktion $F(x)=x^{3}-3x^{2}-10x+24=(x-2)(x^{2}-x-12)$
+\end{verse}
+Diese an $x=2$ ausgewertet:
+\begin{verse}
+\begin{tabular}{ccccc}
+\hline 
+\multicolumn{1}{|c}{x=2} & $x^{3}$ & $-3x^{2}$ & $-10x$ & \multicolumn{1}{c|}{$24$}\tabularnewline
+\hline 
+ & 1 & -3 & -10 & 24\tabularnewline
+ &  & 2 & -2 & -24\tabularnewline
+\hline 
+ & 1 & -1 & -12 & 0\tabularnewline
+\hline 
+Rest: & $x^{2}$ & $-x$ & $-12$ & \tabularnewline
+\end{tabular}
+\end{verse}
+Hier wurde die Nullstelle $x=2$ abgespalten.
+
+
+\subsection*{Begriffe der Funktionen}
+
+
+\subsubsection*{Ganz-Rationale Funktion}
+
+Eine Ganz-Rationale Funktion lässt sich so schreiben: $f(x)=a_{n}x^{n}+...+a_{2}x^{2}+a_{1}x+a_{0}$
+
+
+\subsubsection*{Gebrochen-Rationale Funktion}
+
+Eine Gebrochen-Rationale Funktion: $f(x)=\frac{a_{n}x^{n}+...+a_{2}x^{2}+a_{1}x+a_{0}}{b_{n}x^{n}+...+b_{2}x^{2}+b_{1}x+b_{0}}=\frac{p(m)}{p(n)}$,
+wobei der Grad der Polynome nicht gleich sein muss.
+
+
+\subsubsection*{Definitionslücken}
+
+Sie sind Stellen, an denen die Funktion nicht definiert ist. Z.B.:
+Nenner der gleich 0 ist. Man unterscheidet 2 Arten von Definitionslücken:
+\begin{itemize}
+\item Polstellen: Nach dem vollständigen Kürzen, besteht immernoch die Nullstelle
+des Nenners.
+\item hebbare Definitionslücken: Nach vollständigem Kürzen verschwindet
+die Nullstelle des Nenners.
+\end{itemize}
+Wichtig: Kommt eine Polstelle mehrmals vor: $(x-a)^{n}$, so ist dies
+eine n-fache Polstelle. Ist die Vielfachheit gerade, so findet kein
+Vorzeichenwechsel statt.
+
+
+\subsubsection*{Nullstellen}
+
+Man kann die Nullstellen bestimmen, indem man:
+\begin{itemize}
+\item bei einer ``Ganz-Rationalen Funktion'' diese gleich NULL setzt.
+\item bei einer ``Gebrochen-Rationalen Funktion'' den Zähler gleich NULL
+setzt.
+\end{itemize}
+
+\subsubsection*{Asymptoten}
+
+Sind Geraden, denen sich eine Kurve beliebig nahe annähert. Wir unterscheiden
+2 Arten:
+\begin{itemize}
+\item bei Polstellen: Die Kurve einer gebrochen-rationalen Funktion schmiegt
+sich der Gerade bei x=Polstelle an. Es bildet sich eine senkrechte
+Asymptote.
+\item für grosse x: $f(x)=\frac{g(x)}{h(x)}$ im Falle:
+
+\begin{itemize}
+\item $grad(g)<grad(h)$: x-Achse als wagrechte Asymptote
+\item $grad(g)=grad(h)$: Gerade mit der Gleichung: $f(x)=\frac{g(x)}{h(x)}$
+\item $grad(g)=1+grad(h)$: schiefe Asymptote, durch Polynomdivision
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{Beispiele:}
+\begin{verse}
+\begin{tabular}{|c|c|c|}
+\hline 
+Funktion & Definitionslücke & Nullstelle\tabularnewline
+\hline 
+\hline 
+$f(x)=\frac{(x+2)^{2}}{(x+4)^{3}x^{2}}$ & P:-4(x3), 0(x2), H: keine & N:-2(x2)\tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+
+
+Betrachten wir die Funktion: $f(x)=\frac{2x^{2}+x^{2}+x}{1-x^{2}}$
+
+Nullstelle: $x=0$
+
+Definitionslücken: $x=$1 (Polstelle, 1fach), $x=-1$ (Polstelle,
+1fach)
+
+Asymptoten: $x=1$, $x=-1$, $x=-2x-1$ (durch Poly.division)
+
+
+\subsection*{Umkehrfunktionen}
+
+
+\subsubsection*{Begriffe}
+\begin{verse}
+\begin{tabular}{|c|c|c|}
+\hline 
+injektive Funktion & surjektive Funktion & bijektive funktion\tabularnewline
+\hline 
+\hline 
+\includegraphics[width=5cm]{Funktionen/Injection\lyxdot svg} & \includegraphics[width=5cm]{Funktionen/Surjection\lyxdot svg} & \includegraphics[width=5cm]{Funktionen/Bijection\lyxdot svg}\tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+
+\subsubsection*{Monotonie}
+
+Die Funktion $f(x)$ ist im Intervall $[a,b]$ injektiv, falls sie:
+\begin{itemize}
+\item streng monoton wachsend: auf $x_{1},x_{2}\in[a,b]:x_{1}<x_{2}:f(x_{1})<f(x_{2})$
+ist oder
+\item streng monoton fallend: auf $x_{1},x_{2}\in[a,b]:x_{1}<x_{2}:f(x_{1})>f(x_{2})$
+ist.
+\end{itemize}
+
+\subsubsection*{Bestimmung der Umkehrung}
+\begin{itemize}
+\item Definitionsbereich so festlegen, dass $f$ auf $D$ injektiv ist
+\item Funktionsgleichung nach $x$ auflösen: $x=f^{-1}(y)$
+\item Variabeln x und y vertauschen: $y=f^{-1}(x)$
+\end{itemize}
+Grundsätzlich kann man sagen, dass $f^{-1}$ die Spiegelung von $f$
+an der Geraden $x=y$ ist. Dabei werden auch der Definitionsbereich
+und Wertebereich getauscht.
