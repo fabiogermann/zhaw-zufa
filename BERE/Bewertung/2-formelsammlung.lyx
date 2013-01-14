@@ -862,7 +862,7 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Börsenkapitalisierung
 \end_layout
 
 \end_inset
@@ -871,6 +871,9 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $Anzahl\, ausstehender\, Aktien\times Kurs$
+\end_inset
+
 
 \end_layout
 
@@ -891,7 +894,7 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Gewinn je Aktie
 \end_layout
 
 \end_inset
@@ -900,6 +903,9 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{Jahresgewinn\,(Konzerngewinn-Minderheiten)}{\oslash Anzahl\, ausstehender\, Aktien}$
+\end_inset
+
 
 \end_layout
 
@@ -920,7 +926,7 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Kurs-Gewinn-Verhältniss (P/E Ratio)
 \end_layout
 
 \end_inset
@@ -929,6 +935,73 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\frac{Kurs}{Gewinn\, je\, Aktien\,(EPS)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gewinnrendite
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{Gewinn\, je\, Aktie\,(EPS)\times100\%}{Kurs}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Re-Investment-Faktor (Investitionsgrad)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{Nettoinvestitionen\times100\%}{Cash\, Flow}$
+\end_inset
+
 
 \end_layout
 
@@ -949,7 +1022,7 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cash Flow Marge
 \end_layout
 
 \end_inset
@@ -958,64 +1031,9 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $\frac{Cash\, Flow\times100\%}{Umsatz}$
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 
 \end_layout
 
