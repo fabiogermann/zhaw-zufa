@@ -118,7 +118,7 @@ Betrag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Barbezug vom Postkonto
 \end_layout
 
 \end_inset
@@ -127,7 +127,7 @@ Betrag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Kasse
 \end_layout
 
 \end_inset
@@ -136,7 +136,7 @@ Betrag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+an Postkonto
 \end_layout
 
 \end_inset
@@ -145,7 +145,7 @@ Betrag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+100
 \end_layout
 
 \end_inset
@@ -200,7 +200,7 @@ Betrag
 AHV / IV - Lohnabrechnungen
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features tabularvalignment="middle">
@@ -618,6 +618,51 @@ Debitoren
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Umsatzsteuer (keine Gewinnsteuer): 
+\end_layout
+
+\begin_layout Standard
+Konto Kreditor (dem Staat)
+\end_layout
+
+\begin_layout Paragraph*
+Vorsteuer: 
+\end_layout
+
+\begin_layout Standard
+Konto Debitor (vom Staat)
+\end_layout
+
+\begin_layout Section*
+Begriffe
+\end_layout
+
+\begin_layout Paragraph*
+Anlagen:
+\end_layout
+
+\begin_layout Itemize
+langfristig materiell: Immobilien, Mobilien etc.
+\end_layout
+
+\begin_layout Itemize
+langfristig immateriell: Softwarelizenzen, Patente
+\end_layout
+
+\begin_layout Itemize
+übrige kurzfristige Verbindlichkeiten: auf Kredit
+\end_layout
+
+\begin_layout Itemize
+Kundenrechnungen, Kundenforderungen: Debitoren
+\end_layout
+
+\begin_layout Itemize
+auf Rechnung: Kreditoren, Verpflichtungen aus Lieferungen und Leistungen,
+ übriges kurzfristiges Fremdkapital
 \end_layout
 
 \end_body

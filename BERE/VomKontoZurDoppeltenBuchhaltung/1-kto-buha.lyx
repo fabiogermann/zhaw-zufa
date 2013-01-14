@@ -257,7 +257,7 @@ Ebenfalls ist zu beachten, dass der Saldo bei Aktiv-Konten im Haben (rechts)
 Bankkonto
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle">
@@ -351,6 +351,22 @@ Buchungstatsachen führen immer zu (mindestens) zwei Konteneinträgen.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Soll: 
+\end_layout
+
+\begin_layout Standard
+Zunahme des Vermögens oder Abnahme der Schuld
+\end_layout
+
+\begin_layout Paragraph*
+Haben:
+\end_layout
+
+\begin_layout Standard
+Abnahme des Vermögens oder Zunahme der Schuld
 \end_layout
 
 \begin_layout Quote
@@ -655,6 +671,23 @@ Bilanzverkürzung
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Bilanzverlängerung:
+\end_layout
+
+\begin_layout Quote
+Steigerung der Einnahmen, etc: z.B.
+ Mobiliar auf Kredit gekauft
+\end_layout
+
+\begin_layout Paragraph*
+Bilanzverkürzung:
+\end_layout
+
+\begin_layout Quote
+Steigerung des Aufwandes: Bankschulden mit Kundenzahlungen tilgen
 \end_layout
 
 \begin_layout Section*
