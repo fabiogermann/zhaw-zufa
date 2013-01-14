@@ -543,7 +543,7 @@ Hornerschema
 Auswertung einer Funktion an einer bestimmten Stelle.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 Sei die Funktion 
 \begin_inset Formula $F(x)=x^{3}-3x^{2}-10x+24=(x-2)(x^{2}-x-12)$
 \end_inset
