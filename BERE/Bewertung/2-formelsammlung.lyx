@@ -70,7 +70,7 @@ Formelsammlung Bewertung:
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="30" columns="3">
+<lyxtabular version="3" rows="32" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -118,12 +118,10 @@ Fremdfinanzierungsgrad(Verschuldung)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\size large
 \begin_inset Formula $\frac{Fremdkapital\times100\%}{Gesamtkapital}$
 \end_inset
 
- b
+
 \end_layout
 
 \end_inset
@@ -155,7 +153,7 @@ Eigenfinanzierungsgrad
 \begin_inset Formula $\frac{Eigenkapital\times100\%}{Gesamtkapital}$
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -187,7 +185,7 @@ Finanzierungsverhältnis
 \begin_inset Formula $\frac{Fremdkapital\times100\%}{Eigenkapital}$
 \end_inset
 
- 
+
 \end_layout
 
 \end_inset
@@ -1020,7 +1018,7 @@ Re-Investment-Faktor (Investitionsgrad)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1029,13 +1027,71 @@ Cash Flow Marge
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Formula $\frac{Cash\, Flow\times100\%}{Umsatz}$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
