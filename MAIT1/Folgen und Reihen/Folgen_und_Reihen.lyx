@@ -204,11 +204,11 @@ Rechenregeln
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -217,7 +217,7 @@ c sei konstant:
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -229,7 +229,7 @@ c sei konstant:
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -255,7 +255,7 @@ c sei konstant:
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -276,7 +276,7 @@ c = Konstanter Faktor:
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -302,7 +302,7 @@ c = Konstanter Faktor:
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -311,7 +311,7 @@ Zerlegung:
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -323,7 +323,7 @@ Zerlegung:
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1072,7 +1072,7 @@ Man sagt, die Folge konvergiert gegen
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -1080,8 +1080,11 @@ Man sagt, die Folge konvergiert gegen
 \begin_layout Plain Layout
 
 \series bold
-Exp.
- Grad
+Grenzwerte bei 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1090,7 +1093,7 @@ Exp.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Beispiel
+Beispiel:
 \end_layout
 
 \end_inset
@@ -1104,7 +1107,7 @@ Grenzwert
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1119,7 +1122,7 @@ Beschreibung
 \begin_inset Text
 
 \begin_layout Plain Layout
-Zähler > Nenner
+Grad vom Zähler > Grad vom Nenner
 \end_layout
 
 \end_inset
@@ -1148,7 +1151,7 @@ Zähler > Nenner
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1196,7 +1199,7 @@ Zähler > Nenner
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1215,7 +1218,7 @@ Zähler > Nenner
 \begin_inset Text
 
 \begin_layout Plain Layout
-Zähler < Nenner
+Grad vom Zähler < Grad vom Nenner
 \end_layout
 
 \end_inset
@@ -1244,7 +1247,7 @@ Zähler < Nenner
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1292,7 +1295,7 @@ Zähler < Nenner
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1311,7 +1314,7 @@ Zähler < Nenner
 \begin_inset Text
 
 \begin_layout Plain Layout
-Zähler = Nenner
+Grad vom Zähler = Grad vom Nenner
 \end_layout
 
 \end_inset
@@ -1340,7 +1343,7 @@ Zähler = Nenner
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1384,7 +1387,7 @@ Der Grenzwert kann anhand der Faktoren von n abgelesen werden
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1428,7 +1431,7 @@ Der Grenzwert kann anhand der Faktoren von n abgelesen werden
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout

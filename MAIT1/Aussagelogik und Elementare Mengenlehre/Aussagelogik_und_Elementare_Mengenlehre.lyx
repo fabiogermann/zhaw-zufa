@@ -73,7 +73,7 @@ Aussagelogik
 \end_layout
 
 \begin_layout Subsection*
-Aussageverbindungen
+Aussageverbeindungen
 \end_layout
 
 \begin_layout Labeling
@@ -353,7 +353,7 @@ Wahrheitstabellen
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A\Rightarrow B$
+\begin_inset Formula $A\implies B$
 \end_inset
 
 
@@ -365,7 +365,7 @@ Wahrheitstabellen
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A\Leftrightarrow B$
+\begin_inset Formula $A\leftrightarrow B$
 \end_inset
 
 
@@ -613,7 +613,7 @@ Umformungen
 Logische Operationen:
 \end_layout
 
-\begin_layout Verse
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
 <features tabularvalignment="middle">
@@ -944,7 +944,7 @@ Wenn A richtig ist, darf B nicht richtig sein
 \begin_inset Text
 
 \begin_layout Plain Layout
-A oder B muss falsch sein, damit das ganze richtig ist
+A oder B muss falsch sein (oder beide), damit das ganze richtig ist
 \end_layout
 
 \end_inset
@@ -1051,11 +1051,11 @@ A und B müssen falsch sein, damit das ganze richtig ist
 
 \end_layout
 
-\begin_layout Standard
-Zusätzlich:
+\begin_layout --Separator--
+
 \end_layout
 
-\begin_layout Verse
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="8">
 <features tabularvalignment="middle">
