@@ -1035,42 +1035,36 @@ Haben:
 Abnahme des Vermögens oder Zunahme der Schuld
 \end_layout
 
+\begin_layout Subsubsection*
+Buchungstatsache:
+\end_layout
+
 \begin_layout Verse
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="4">
+<lyxtabular version="3" rows="2" columns="3">
 <features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0pt">
 <row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Buchungstatsachen
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \noun on
-Soll
+Datum
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \noun on
-Haben
+Text
 \end_layout
 
 \end_inset
@@ -1079,6 +1073,8 @@ Haben
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\noun on
 Betrag
 \end_layout
 
@@ -1086,7 +1082,16 @@ Betrag
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+01.01.2013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1095,6 +1100,70 @@ Barbezug vom Postkonto
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50.-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Buchungssatz:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+Soll-Konto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+Haben-Konto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\noun on
+Betrag
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1651,6 +1720,23 @@ Bilanzverkürzung:
 Steigerung des Aufwandes: Bankschulden mit Kundenzahlungen tilgen
 \end_layout
 
+\begin_layout Subsubsection*
+Abschlussbuchungen
+\end_layout
+
+\begin_layout Standard
+Um Aktiv-/Passiv-Konten am Ende des Jahres in die Bilanz zu buchen, werden
+ folgende Buchungssätze verwendet:
+\end_layout
+
+\begin_layout Itemize
+Bilanz / Aktivkonto
+\end_layout
+
+\begin_layout Itemize
+Passivkonto / Bilanz
+\end_layout
+
 \begin_layout Section*
 Konten für Aufwand und Ertrag
 \end_layout
@@ -1688,11 +1774,11 @@ Erfolg = Gewinn oder Verlust
 \end_layout
 
 \begin_layout Paragraph*
-Bilanz
+BilanzErfolg --
 \end_layout
 
 \begin_layout Standard
-Sie zeigt aktiv und Passiv Bestände am Schluss bzw.
+Sie zeigt Aktiv- und Passiv-Bestände am Schluss bzw.
  Anfang der Rechnungsperiode.
  Sie ist eine Momentaufnahme, denn sie bezieht sich auf einen Zeitpunkt.
 \end_layout
@@ -1840,13 +1926,22 @@ a=Aktiven, p=Passiven
 \begin_inset Text
 
 \begin_layout Plain Layout
-Erfolg ++
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erfolg--
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1871,6 +1966,15 @@ a-
 \begin_inset Text
 
 \begin_layout Plain Layout
+Erfolg--
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 A+
 \end_layout
 
@@ -1887,6 +1991,15 @@ p+
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erfolg++
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
@@ -1911,6 +2024,15 @@ E+
 \begin_inset Text
 
 \begin_layout Plain Layout
+Erfolg++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 p-
 \end_layout
 
@@ -1930,7 +2052,7 @@ E+
 
 \end_inset
 
-Erfolg --
+Korrekturbuchungen:
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
@@ -2027,6 +2149,41 @@ A=Aufwand, E=Ertrag
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Abschlussbuchungen
+\end_layout
+
+\begin_layout Standard
+Um Erfolgs-Konten am Ende des Jahres in die Erfolgsrechnung zu buchen, werden
+ folgende Buchungssätze verwendet:
+\end_layout
+
+\begin_layout Itemize
+Erfolgsrechnung / Aufwandkonto
+\end_layout
+
+\begin_layout Itemize
+Ertragskonto / Erfolgsrechnung
+\end_layout
+
+\begin_layout Section*
+Probebilanz
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 2013-01-15 11.33.52-2.png
+	scale 15
 
 \end_inset
 
