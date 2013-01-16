@@ -84,6 +84,8 @@ Nenner der gleich 0 ist. Man unterscheidet 2 Arten von Definitionslücken:
 des Nenners.
 \item hebbare Definitionslücken: Nach vollständigem Kürzen verschwindet
 die Nullstelle des Nenners.
+\item Stopfen der Def. Lücke: Wert der hebbaren Lücke in den gekürzten Bruch
+einsetzen. 
 \end{itemize}
 Wichtig: Kommt eine Polstelle mehrmals vor: $(x-a)^{n}$, so ist dies
 eine n-fache Polstelle. Ist die Vielfachheit gerade, so findet kein
@@ -115,6 +117,21 @@ Asymptote.
 \item $grad(g)=1+grad(h)$: schiefe Asymptote, durch Polynomdivision
 \end{itemize}
 \end{itemize}
+Man beachte beim Zeichnen die Vielfachheit der Polstelle:
+\begin{itemize}
+\item Gerade Anzahl: Vorzeichenwechsel
+\item Ungerade Anzahl: Kein Vorzeichenwechsel
+\end{itemize}
+\begin{tabular}{|c|c|}
+\hline 
+Gerade & Ungerade\tabularnewline
+\hline 
+$\frac{x^{2}-1}{(x+1)^{2}}$ & $\frac{x^{2}-1}{(x+1)^{3}}$\tabularnewline
+\hline 
+\includegraphics{Funktionen/vrzw} & \includegraphics{Funktionen/kvrzw}\tabularnewline
+\hline 
+\end{tabular}
+
 
 \subsubsection*{Beispiele:}
 \begin{verse}
@@ -149,7 +166,7 @@ Asymptoten: $x=1$, $x=-1$, $x=-2x-1$ (durch Poly.division)
 injektive Funktion & surjektive Funktion & bijektive funktion\tabularnewline
 \hline 
 \hline 
-\includegraphics[width=5cm]{Funktionen/Injection\lyxdot svg} & \includegraphics[width=5cm]{Funktionen/Surjection\lyxdot svg} & \includegraphics[width=5cm]{Funktionen/Bijection\lyxdot svg}\tabularnewline
+\includegraphics[width=2.5cm]{Funktionen/Injection\lyxdot svg} & \includegraphics[width=2.5cm]{Funktionen/Surjection\lyxdot svg} & \includegraphics[width=2.5cm]{Funktionen/Bijection\lyxdot svg}\tabularnewline
 \hline 
 \end{tabular}
 \end{verse}
