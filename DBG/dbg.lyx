@@ -77,7 +77,7 @@ filename "relal.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "SQL.lyx"
+filename "design.lyx"
 
 \end_inset
 
@@ -87,7 +87,7 @@ filename "SQL.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "design.lyx"
+filename "SQL.lyx"
 
 \end_inset
 

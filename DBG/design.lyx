@@ -59,7 +59,7 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Subsubsection*
 DB Design
 \end_layout
 
@@ -847,7 +847,7 @@ vgl.
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename f8.png
-	width 5cm
+	width 8cm
 
 \end_inset
 

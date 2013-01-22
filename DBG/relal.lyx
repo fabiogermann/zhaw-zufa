@@ -59,11 +59,11 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Subsubsection*
 Relationale Algebra / Bag Algebra
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Operationen
 \end_layout
 
@@ -222,7 +222,7 @@ U
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Mengenoperationen
 \end_layout
 
