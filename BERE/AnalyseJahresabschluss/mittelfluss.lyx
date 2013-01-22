@@ -225,6 +225,9 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $=Gewinn+Liq.\, unw.\, Ertrag-Liq.\, unw.\, Aufwand$
+\end_inset
+
 
 \end_layout
 
@@ -236,7 +239,8 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Free Cash Flow (nicht reinvest.
+ CF)
 \end_layout
 
 \end_inset
@@ -245,6 +249,9 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $=CashFlow-Nettoinvestitionen$
+\end_inset
+
 
 \end_layout
 
@@ -256,7 +263,7 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Reinvestment-Faktor
 \end_layout
 
 \end_inset
@@ -265,6 +272,9 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $=(Nettoinvest.\times100\%)/CashFlow$
+\end_inset
+
 
 \end_layout
 
@@ -276,7 +286,7 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Cash Flow Menge
 \end_layout
 
 \end_inset
@@ -285,6 +295,9 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $=(CashFlow*100\%)/Umsatz$
+\end_inset
+
 
 \end_layout
 
@@ -296,7 +309,8 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Nicht liq.
+ wirksam
 \end_layout
 
 \end_inset
@@ -305,7 +319,7 @@ Cash Flow Indirekt
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Abschreibungen & Rückstellungen
 \end_layout
 
 \end_inset
