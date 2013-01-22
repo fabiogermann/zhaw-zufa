@@ -174,7 +174,7 @@ Ermittlung des kalkulatorischen Zinses
 <lyxtabular version="3" rows="6" columns="2">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="7cm">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -209,7 +209,7 @@ Summe der Aktiven (interne Werte)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -229,7 +229,7 @@ Summe der Aktiven (interne Werte)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -249,7 +249,7 @@ Summe der Aktiven (interne Werte)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -269,7 +269,7 @@ Summe der Aktiven (interne Werte)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -515,6 +515,57 @@ Vorkalkulation
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section*
+Beispiel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Kostenleistung.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Zurechnung der Kostenstellen
+\end_layout
+
+\begin_layout Itemize
+Einkauf und Lager 
+\begin_inset Formula $\frac{Einkauf\, und\, Lager}{Materialkoste}=\frac{6'000}{6'000}=100\%$
+\end_inset
+
+ (1)
+\end_layout
+
+\begin_layout Itemize
+Fertigung 
+\begin_inset Formula $\frac{Fertigung}{Backstunden}=\frac{12'000}{2'000h}=7.00/h$
+\end_inset
+
+ (1)
+\end_layout
+
+\begin_layout Itemize
+Verkauf 
+\begin_inset Formula $\frac{Verkauf}{Umsatz}=\frac{68'000}{204'000}=33.33\%$
+\end_inset
+
+ (2)
+\end_layout
+
+\begin_layout Itemize
+Verwaltung 
+\begin_inset Formula $\frac{Verwaltung}{Umsatz}=\frac{11'000}{204'000}=5.39\%$
+\end_inset
+
+ (2)
 \end_layout
 
 \end_body
