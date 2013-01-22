@@ -70,7 +70,7 @@ Formelsammlung Bewertung:
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="32" columns="3">
+<lyxtabular version="3" rows="34" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -227,7 +227,8 @@ Selbstfinanzierungsgrad 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+prop.
+ zu Alter der Firma
 \end_layout
 
 \end_inset
@@ -259,7 +260,8 @@ Selbstfinanzierungsgrad 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+prop.
+ zu Alter der Firma
 \end_layout
 
 \end_inset
@@ -291,7 +293,7 @@ Umlaufintensität
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+branchenabhängig
 \end_layout
 
 \end_inset
@@ -323,7 +325,7 @@ Anlageintensität (Alter der Anlagen bek.)
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+branchenabhängig
 \end_layout
 
 \end_inset
@@ -355,7 +357,39 @@ Investitionsverhältnis
 \begin_inset Text
 
 \begin_layout Plain Layout
+branchenabhängig
+\end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anlageabnutzungsgrad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{Kummulierte\, Abschreibungen}{Anschaffungswert}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+je höher, je ältere Firma
 \end_layout
 
 \end_inset
@@ -408,7 +442,7 @@ Liquiditätsgrad 2, Quick Ratio
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{(Liquide-Mittel+Geldforderungen)\times100\%}{Kurzfristiges-Fremdkapital}$
+\begin_inset Formula $\frac{(Fl.\, Mittel+Wertschriften+(Geld)Forderungen+akt.\, Rech.abgr.)\times100\%}{Kurzfristiges-Fremdkapital}$
 \end_inset
 
 
@@ -420,7 +454,7 @@ Liquiditätsgrad 2, Quick Ratio
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\geqq$
+\begin_inset Formula $>$
 \end_inset
 
 100%
@@ -586,6 +620,9 @@ Gesamtkapitalrentabilität (brutto)
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $>6\%$
+\end_inset
+
 
 \end_layout
 
@@ -618,6 +655,9 @@ Eigenkapitalrentabilität (netto)
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $>8\%$
+\end_inset
+
 
 \end_layout
 
@@ -670,7 +710,7 @@ Debitorenumschlag
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{Kreditverkaufsumsatz}{\oslash Debitorenbestand}$
+\begin_inset Formula $\frac{Kreditverkaufsumsatz}{\oslash Debitorenbestand}=\frac{Nettoumsatz}{\oslash Forderungen\, L+L}$
 \end_inset
 
 
@@ -682,7 +722,7 @@ Debitorenumschlag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+max
 \end_layout
 
 \end_inset
@@ -717,7 +757,7 @@ Debitorenfrist
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+min
 \end_layout
 
 \end_inset
@@ -737,7 +777,7 @@ Kreditorenumschlag
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{Krediteinkauf}{\oslash Kreditorenbestand}$
+\begin_inset Formula $\frac{Krediteinkauf}{\oslash Kreditorenbestand}=\frac{Krediteinkauf}{\oslash Verbindlichkeiten\, L+L}$
 \end_inset
 
 
@@ -749,7 +789,7 @@ Kreditorenumschlag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+min
 \end_layout
 
 \end_inset
@@ -784,7 +824,7 @@ Kreditorenfrist
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+max
 \end_layout
 
 \end_inset
@@ -804,7 +844,7 @@ Lagerumschlag
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{Warenaufwand}{\oslash Warenbestand}$
+\begin_inset Formula $\frac{Warenaufwand}{\oslash Warenbestand\,(Vorräte)}$
 \end_inset
 
 
@@ -816,7 +856,7 @@ Lagerumschlag
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+max
 \end_layout
 
 \end_inset
@@ -851,7 +891,7 @@ Lagerdauer
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+min
 \end_layout
 
 \end_inset
@@ -1079,7 +1119,107 @@ Cash Flow Marge
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Verkaufsumsatz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Krediteinkauf=Warenaufwand\:\pm Lagerveränderung$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-Warenaufwand$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Gewinn=Erlös-Kosten$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=Bruttogewinn$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Rohgewinn=Erlös-Liquiditätswirksame\, Kosten\,(Kapitalkosten+Abschreibungen)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-Versch.\, Gemerinaufwand$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1088,7 +1228,21 @@ Cash Flow Marge
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=EBITDA$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1097,7 +1251,193 @@ Cash Flow Marge
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-Abschreibungen$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=EBIT$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-Fremdkapitalzins$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=EBT$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-Steuern$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $=EAT$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
