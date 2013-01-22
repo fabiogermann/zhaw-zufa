@@ -637,7 +637,7 @@ Alle Restaurants die mehr als 5 Gäste haben
 \begin_inset Text
 
 \begin_layout Plain Layout
-SELECT x.Restaurant FROM Gast AS x WHERE 5 > ( SELECT COUNT(*) FROM Gast
+SELECT x.Restaurant FROM Gast AS x WHERE 5 < ( SELECT COUNT(*) FROM Gast
  AS y WHERE y.Restaurant = x.Restaurant)
 \end_layout
 
