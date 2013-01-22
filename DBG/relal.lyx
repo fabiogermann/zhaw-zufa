@@ -228,7 +228,7 @@ Mengenoperationen
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -302,7 +302,7 @@ Differenz (difference)
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -314,7 +314,7 @@ Differenz (difference)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -322,6 +322,39 @@ Differenz (difference)
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+min.
+ Anzahl der mehrf.
+ Tupeln (BA)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+max.
+ Anzahl der mehrf.
+ Tupeln (BA)
 \end_layout
 
 \end_inset
@@ -507,6 +540,17 @@ Differenz (difference)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Der Unterschied zwischen Bag Algebra (BA) und Relationaler Algebra (RA)
+ ist, in RelAlg existieren keine doppelten Einträge.
+ Die Bag Algebra jedoch erlaubt dies.
+ Auch existiert der Operator 
+\begin_inset Formula $\sqcup$
+\end_inset
+
+ (union all) nur in der Bag Welt.
 \end_layout
 
 \end_body
