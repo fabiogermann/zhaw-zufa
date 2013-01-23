@@ -345,8 +345,11 @@ Zurechnung der Kosten
 \end_layout
 
 \begin_layout Standard
-Es kann lediglich ein Teil der Kosten direkt einem Leistungsträger zugerechnet
- werden.
+Es kann lediglich ein Teil der Kosten 
+\series bold
+direkt
+\series default
+ einem Leistungsträger zugerechnet werden.
  Diese Kosten nennt man 
 \begin_inset Quotes eld
 \end_inset
@@ -386,7 +389,11 @@ Kosten, die sich nicht direkt zurechnen lassen, werden
 \begin_inset Quotes eld
 \end_inset
 
-indirekte Kosten
+
+\series bold
+indirekte
+\series default
+ Kosten
 \begin_inset Quotes erd
 \end_inset
 

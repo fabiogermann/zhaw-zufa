@@ -1,0 +1,258 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsection*
+Break-Even-Analyse
+\end_layout
+
+\begin_layout Standard
+Basiert auf der Spaltung von fixen und variabeln Kosten.
+ Man geht bei der BE-Analyse davon aus, dass Produktions- und Verkaufsmenge
+ identisch sind.
+\end_layout
+
+\begin_layout Subsubsection*
+Mengenmässige BEA
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C=Totalkoosten$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F=fixe\, Kosten$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $v=var.\; Kosten\, je\, Mengeneinheit\,(ME)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q=Produktionsvolumen\, in\, ME$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C=F+(v\times Q)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Erlös=E=(p\times Q)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Gewinn=E-K=((p-v)\times Q)-F$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Deckungsbeitrag=(p-v)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um den Breakeven Punkt 
+\begin_inset Formula $Q^{0}$
+\end_inset
+
+ zu bestimmen, setzten wir den Gewinn gleich NULL.
+ 
+\begin_inset Formula $0=((p-v)\times Q^{0})-F\Longrightarrow Q^{0}=\frac{F}{p-v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Zielgewinnbestimmung
+\end_layout
+
+\begin_layout Standard
+BEA kann einfach erweitert werden um festzustellen bei welcher Produktionsmenge
+ der gewüneschte Gewinn erreicht wird.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Zielgewinn\,(T)=[(p-v)\times Q^{T}]-F\Longrightarrow(p-v)\times Q^{T}=F+T\Longrightarrow Q^{T}=\frac{F+T}{p-v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Wertmässige Breakeven Analyse
+\end_layout
+
+\begin_layout Standard
+Jemand plant Galces zu verkaufen.
+ Plan: Preis ist 25% über var.
+ Kosten.
+ Standausrüstung plus Miete: 800.- => wie gross muss der Umsatz sein?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Erlös=1.25\times ver.\, Kosten\Longrightarrow Var.\, Kosten=0.8\times Erlös
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Formula 
+\[
+Q^{0}=\frac{Fixe\, Kosten}{Deckungsbetrag\, je\, ME}=\frac{800}{(1.00-0.80)\, je\, ME}=800/0.20=4000\, ME
+\]
+
+\end_inset
+
+ Kurzfristige Preisuntergrenze
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
