@@ -73,6 +73,30 @@ Basiert auf der Spaltung von fixen und variabeln Kosten.
 Mengenmässige BEA
 \end_layout
 
+\begin_layout Itemize
+Deckungsbeitrag = Preis - variable Kosten (pro Mengeneinheit)
+\end_layout
+
+\begin_layout Itemize
+Gewinn = Erlös - Kosten
+\end_layout
+
+\begin_layout Itemize
+Breakeven = 
+\begin_inset Formula $\frac{Fixe\, Kosten}{Deckungsbeitrag}$
+\end_inset
+
+ = Anzahl Produkte
+\end_layout
+
+\begin_layout Itemize
+Breakeven mit Gewinn X = 
+\begin_inset Formula $\frac{Fixe\, Kosten+erwünschter\, Gewinn}{Deckungsbeitrag}$
+\end_inset
+
+= Anzahl Produkte
+\end_layout
+
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="4">
@@ -86,7 +110,7 @@ Mengenmässige BEA
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $C=Totalkoosten$
+\begin_inset Formula $C=Totalkosten$
 \end_inset
 
 
@@ -172,7 +196,7 @@ Mengenmässige BEA
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $Deckungsbeitrag=(p-v)$
+\begin_inset Formula $Deckungsbeitrag=(p-v)=Preis-var.\, Kosten$
 \end_inset
 
 
@@ -222,16 +246,17 @@ Wertmässige Breakeven Analyse
 \end_layout
 
 \begin_layout Standard
-Jemand plant Galces zu verkaufen.
+Jemand plant Glaces zu verkaufen.
  Plan: Preis ist 25% über var.
  Kosten.
- Standausrüstung plus Miete: 800.- => wie gross muss der Umsatz sein?
+ Standausrüstung plus Miete: 800.- => wie gross muss der Umsatz sein? (Preis
+ wurde angenommen)
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Erlös=1.25\times ver.\, Kosten\Longrightarrow Var.\, Kosten=0.8\times Erlös
+Erlös=1.25\times var.\, Kosten\Longrightarrow Var.\, Kosten=0.8\times Erlös
 \]
 
 \end_inset

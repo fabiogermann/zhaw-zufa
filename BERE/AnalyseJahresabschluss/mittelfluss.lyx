@@ -63,7 +63,7 @@
 Mittelflussrechnung
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle">
@@ -136,9 +136,9 @@ Erfolgswirksame Vorgänge Cash Flow (meist Zufluss)(Gewinn)(Abschr.)
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
+<lyxtabular version="3" rows="9" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -156,7 +156,7 @@ Umlaufvermögen
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $=Fl.\, Mittel+Forderungen+Vorräte$
+\begin_inset Formula $=Fl.\, Mittel+Forderungen\,(Debitoren)+Vorräte$
 \end_inset
 
 
@@ -170,7 +170,7 @@ Umlaufvermögen
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nettoumlaufvermögen
+Nettoumlaufvermögen (NUV)
 \end_layout
 
 \end_inset
@@ -229,6 +229,27 @@ Cash Flow Indirekt
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nettoinvestitionen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S.
+ 159
 \end_layout
 
 \end_inset
