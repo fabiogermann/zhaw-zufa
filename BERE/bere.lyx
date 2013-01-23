@@ -43,10 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
+\leftmargin 1cm
+\topmargin 1.5cm
+\rightmargin 1cm
+\bottommargin 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -87,16 +87,6 @@ filename "VomKontoZurDoppeltenBuchhaltung/1-beispiele.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "KostenLeistungsrechnung/1-kolei.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
 filename "Bewertung/1-bewertung.lyx"
 
 \end_inset
@@ -107,7 +97,47 @@ filename "Bewertung/1-bewertung.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
-filename "Bewertung/2-formelsammlung.lyx"
+filename "AnalyseJahresabschluss/mittelfluss.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "AnalyseJahresabschluss/2-formelsammlung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "KostenLeistungsrechnung/1-kolei.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "KostenLeistungsrechnung/bea.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "Invest/invest.lyx"
 
 \end_inset
 
