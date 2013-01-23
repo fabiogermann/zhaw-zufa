@@ -202,7 +202,7 @@ Weiterführung des Vorsichtsprinzips:
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="10cm">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -215,7 +215,7 @@ Niederstwertprinzip
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -266,6 +266,146 @@ Imparitätsprinzip
 \begin_layout Plain Layout
 Nicht realisierte Gewinne dürfen nicht verbucht werden, mutmassliche Verluste
  müssen hingegen erfasst werden.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Bewertung Anlagevermögen
+\end_layout
+
+\begin_layout Itemize
+Im Allgemeinen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Das Anlagevermögen darf höchstens zu den Anschaffungs- oder den Herstellungskost
+en bewertet werden, unter Abzug der notwendigen Abschreibungen.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Beteiligungen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Stimmberechtigte Anteile von mindestens 20 Prozent gelten als Beteiligung.
+ (Bewertung gemäss allgemeinem Anlagevermögen)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Vorräte (Rohmaterial, Teil- und Fertigfabrikate)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dürfen höchstens zu Anschaffungs- oder Herstellungskosten bewertet werden.
+\end_layout
+
+\begin_layout Itemize
+Sind die Kosten am Bilanzstichtag höher als der aktuelle Marktpreis, so
+ ist dieser massgebend.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Wertschriften
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Wertschriften mit Kurswert dürfen höchstens zum Durchschnittskurs des letzten
+ Monats vor dem Bilanzstichtag bewertet werden.
+\end_layout
+
+\begin_layout Itemize
+Wertschriften ohne Kurswert dürfen höchstens zu den Anschaffungskosten bewertet
+ werden, unter Abzug der notwendigen Wertberichtigung.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Anschaffungswert
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anschaffung
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++ Bezugs- bzw.
+ Transportkosten
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++ Installationskosten
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++ Eventuelle Kosten des Betriebsunterbruchs
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Allfällige Preisnachlässe (Rabatt/Skonto)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+= Anschaffungswert
 \end_layout
 
 \end_inset
