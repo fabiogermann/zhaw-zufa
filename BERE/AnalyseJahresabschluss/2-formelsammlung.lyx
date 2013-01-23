@@ -1720,5 +1720,48 @@ EBITA etc
 
 \end_layout
 
+\begin_layout Section*
+Leverage-Effekt
+\end_layout
+
+\begin_layout Standard
+Ein niedriger Anteil an Eigenkapital bzw.
+ ein hoher Anteil an Fremdkapital kann sich hingegen positiv auf die Rentabilitä
+t auswirken, solange die Gesamtkapitalrentabilität (
+\begin_inset Formula $\frac{EBIT}{Gesamtkapital}$
+\end_inset
+
+) höher ist, als der durchschnittliche für das Fremdkapital zu bezahlende
+ Zinssatz.
+ Dieser Effekt wird 
+\begin_inset Quotes eld
+\end_inset
+
+Leverage-Effekt
+\begin_inset Quotes erd
+\end_inset
+
+ oder 
+\begin_inset Quotes eld
+\end_inset
+
+Hebelwirkung des Fremdkapitals
+\begin_inset Quotes erd
+\end_inset
+
+ genannt.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Leverage.png
+	lyxscale 10
+	width 17cm
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
