@@ -1,7 +1,7 @@
 ZHAW - Zusammenfassungen
 =========
 
-Alle Files wurden mit LyX erstellt.
+Alle Files wurden mit LyX erstellt: http://www.lyx.org/Download
 
-oder bei grösseren Sachen:
+bei grösseren Sachen:
 [repo root]/Vorlesung/Thema/Abschnitt.lyx
