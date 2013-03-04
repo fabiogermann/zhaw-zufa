@@ -69,7 +69,7 @@ Kommunikationstechnik
 \end_layout
 
 \begin_layout Section*
-Dezibelberechnung
+Signaldämpfung
 \end_layout
 
 \begin_layout Verse
@@ -108,6 +108,601 @@ Beispiel
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+7 Schichten OSI-Modell
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Layer Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Schichtnamen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beispiel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Application Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verarbeitungsschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HTTP
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anwendungsschichten
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Presentation Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Darstellungsschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Session Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kommunikationschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transport Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transportschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IP
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transportschichten
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Network Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vermittlungsschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TCP
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data Link Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sicherungsschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Physical Layer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bitübertragungsschicht
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Physical Layer
+\end_layout
+
+\begin_layout Standard
+Sorgt für ungesicherte Übertragung und definiert:
+\end_layout
+
+\begin_layout Itemize
+Elektrische Eigenschaften (Signalform, Amplituden, Frequenzen etc.)
+\end_layout
+
+\begin_layout Itemize
+Codierung (Abbildung auf Signale)
+\end_layout
+
+\begin_layout Itemize
+Mechanische Eigenschaften (Stecker, Pinbelegung etc.)
+\end_layout
+
+\begin_layout Standard
+Realisierungsmöglichkeiten:
+\end_layout
+
+\begin_layout Itemize
+Verkehrsbeziehung
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Simplex (einseitige Kommunikation)
+\end_layout
+
+\begin_layout Itemize
+Halb-Duplex (beidseitige Kommunikation, jedoch nur einer aufs Mal)
+\end_layout
+
+\begin_layout Itemize
+Voll-Duplex (Beidseitige Kommunikation)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Koppelung
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Punkt-zu-Punkt
+\end_layout
+
+\begin_layout Itemize
+Shared Medium
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Übertragungsmedium
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Koaxialkabel
+\end_layout
+
+\begin_layout Itemize
+Twisted Pair
+\end_layout
+
+\begin_layout Itemize
+Glasfaser
+\end_layout
+
+\begin_layout Itemize
+Luft (Wireless)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Übertragungsverfahren
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Synchron (Sender Taktet)
+\end_layout
+
+\begin_layout Itemize
+Asynchron (jeder Taktet für sich)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Data Link Layer
+\end_layout
+
+\begin_layout Standard
+Setzt auf dem Physical Layer auf, bietet eine gesicherte (fehlerfreie Datenübert
+ragung) und hat folgende Aufgaben:
+\end_layout
+
+\begin_layout Itemize
+Framing (Rahmenbildung/-erkennung)
+\end_layout
+
+\begin_layout Itemize
+Flow Controll (Flusssteuerung: anpassen der Sendegeschwindigkeit)
+\end_layout
+
+\begin_layout Itemize
+Adressierung
+\end_layout
+
+\begin_layout Itemize
+Media Access (Medium Zugriff: Koordination des Zugriffs auf gemeinsames
+ Medium)
+\end_layout
+
+\begin_layout Section*
+Klassifizierung von Diensten
+\end_layout
+
+\begin_layout Subsection*
+Verbindungsorientierter Dienst
+\end_layout
+
+\begin_layout Itemize
+Absprache über den bevorstehenden Datenaustausch
+\end_layout
+
+\begin_layout Itemize
+Verbindungsauf- und abbau
+\end_layout
+
+\begin_layout Itemize
+End- und Zwischenknoten speichern Zustandsinformationen der Verbindung
+\end_layout
+
+\begin_layout Itemize
+Reihenfolge der gesendeten Daten wird eingehalten
+\end_layout
+
+\begin_layout Standard
+Beispiele: Telefonverbindung, TCP
+\end_layout
+
+\begin_layout Subsection*
+Verbindungsloser Dienst
+\end_layout
+
+\begin_layout Itemize
+Kein Verbindungsauf- und abbau
+\end_layout
+
+\begin_layout Itemize
+Daten tragen die Adresse des Empfängers und werden unabhängig voneinander
+ Transportiert
+\end_layout
+
+\begin_layout Itemize
+Keine Zustandsinformationen
+\end_layout
+
+\begin_layout Itemize
+Reihenfolge der gesendeten Daten wird nicht eingehalten
+\end_layout
+
+\begin_layout Standard
+Beispiele: Internet Protocol (IP), Briefpost
+\end_layout
+
+\begin_layout Subsection*
+Zuverlässiger Dienst
+\end_layout
+
+\begin_layout Itemize
+Es gehen grundsätzlich keine Daten verloren
+\end_layout
+
+\begin_layout Itemize
+Gesichert: Fehlererkennung, Fehlerkorrektur, Quittierung
+\end_layout
+
+\begin_layout Standard
+Beispiel: Filetransfer
+\end_layout
+
+\begin_layout Subsection*
+Unzuverlässiger Dienst
+\end_layout
+
+\begin_layout Itemize
+Daten können verloren gehen
+\end_layout
+
+\begin_layout Standard
+Beispiel: Sprach- und Videoübertragung
 \end_layout
 
 \end_body
