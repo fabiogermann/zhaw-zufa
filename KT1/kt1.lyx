@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,7 +64,49 @@
 
 \begin_body
 
+\begin_layout Part*
+Kommunikationstechnik
+\end_layout
+
+\begin_layout Section*
+Dezibelberechnung
+\end_layout
+
+\begin_layout Verse
+Dämpfung von P in dB (
+\begin_inset Formula $A_{dB})=10\cdot\log_{10}\cdot\frac{P}{P_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P_{0}=$
+\end_inset
+
+Bezugsleistung (z.B.
+ Leistung beim Sender oder Kabelanfang)
+\end_layout
+
 \begin_layout Standard
+Beispiel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P_{0}=100mW$
+\end_inset
+
+, 
+\begin_inset Formula $P=50mW$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A_{dB}=10\cdot\log_{10}(\frac{50mW}{100mW})=10\cdot\log_{10}(\frac{1}{2})\backsimeq-3dB$
+\end_inset
+
 
 \end_layout
 
