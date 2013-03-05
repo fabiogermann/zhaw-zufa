@@ -65,49 +65,7 @@
 \begin_body
 
 \begin_layout Part*
-Kommunikationstechnik
-\end_layout
-
-\begin_layout Section*
-Signaldämpfung
-\end_layout
-
-\begin_layout Verse
-Dämpfung von P in dB (
-\begin_inset Formula $A_{dB})=10\cdot\log_{10}\cdot\frac{P}{P_{0}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $P_{0}=$
-\end_inset
-
-Bezugsleistung (z.B.
- Leistung beim Sender oder Kabelanfang)
-\end_layout
-
-\begin_layout Standard
-Beispiel
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $P_{0}=100mW$
-\end_inset
-
-, 
-\begin_inset Formula $P=50mW$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $A_{dB}=10\cdot\log_{10}(\frac{50mW}{100mW})=10\cdot\log_{10}(\frac{1}{2})\backsimeq-3dB$
-\end_inset
-
-
+Grundlagen
 \end_layout
 
 \begin_layout Section*
@@ -527,7 +485,7 @@ Mechanische Eigenschaften (Stecker, Pinbelegung etc.)
 \end_layout
 
 \begin_layout Standard
-Realisierungsmöglichkeiten:
+Realisierung:
 \end_layout
 
 \begin_layout Itemize
@@ -622,6 +580,142 @@ Adressierung
 \begin_layout Itemize
 Media Access (Medium Zugriff: Koordination des Zugriffs auf gemeinsames
  Medium)
+\end_layout
+
+\begin_layout Subsection*
+Network Layer
+\end_layout
+
+\begin_layout Subsection*
+Transport Layer
+\end_layout
+
+\begin_layout Subsection*
+Session Layer
+\end_layout
+
+\begin_layout Itemize
+Auf- und Abbau einer Session
+\end_layout
+
+\begin_layout Itemize
+Verbindungsunterbruch: er kann eine neue Verbindung aufbauen ohne das höhere
+ Schichten etwas merken
+\end_layout
+
+\begin_layout Subsection*
+Presentation Layer
+\end_layout
+
+\begin_layout Itemize
+Umwandlung der Darstellung von Daten
+\end_layout
+
+\begin_layout Itemize
+Konvertierung von ASCII, ISO und Unicode
+\end_layout
+
+\begin_layout Itemize
+Konvertierung zwischen verschiedenen Arten der Zahlendarstellung
+\end_layout
+
+\begin_layout Subsection*
+Application Layer
+\end_layout
+
+\begin_layout Itemize
+Bindeglied zu eigentlichen Anwendung, bestimmt die Protokolle der verschiedenen
+ Anwendungen
+\end_layout
+
+\begin_layout Standard
+z.B: Terminal Emulation, File Transfer, E-Mail etc.
+\end_layout
+
+\begin_layout Section*
+Übertragungsmedien
+\end_layout
+
+\begin_layout Subsection*
+Glasfaser
+\end_layout
+
+\begin_layout Standard
+Vorteile
+\end_layout
+
+\begin_layout Itemize
+Unempfindlich gegen elektromagnetische Störungen
+\end_layout
+
+\begin_layout Itemize
+Kleine Signaldämpfung (grosse Übertragungsdistanzen)
+\end_layout
+
+\begin_layout Itemize
+Grosse Bandbreiten (grosse Übertragungsraten)
+\end_layout
+
+\begin_layout Section*
+Übertragungsverfahren
+\end_layout
+
+\begin_layout Section*
+Signaldämpfung
+\end_layout
+
+\begin_layout Itemize
+Wichtiges Kriterium für Übertragungsstrecke
+\end_layout
+
+\begin_layout Itemize
+Teilweise in Abhängigkeit der Frequenz (Multimode und Monomode Lichtleiter)
+\end_layout
+
+\begin_layout Itemize
+Angabe in dB/km (3dB = halbierung der Leistung)
+\end_layout
+
+\begin_layout Subsection*
+Berechnung
+\end_layout
+
+\begin_layout Verse
+Dämpfung von P in dB (
+\begin_inset Formula $A_{dB})=10\cdot\log_{10}\cdot\frac{P}{P_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P_{0}=$
+\end_inset
+
+Bezugsleistung (z.B.
+ Leistung beim Sender oder Kabelanfang)
+\end_layout
+
+\begin_layout Standard
+Beispiel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P_{0}=100mW$
+\end_inset
+
+, 
+\begin_inset Formula $P=50mW$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A_{dB}=10\cdot\log_{10}(\frac{50mW}{100mW})=10\cdot\log_{10}(\frac{1}{2})\backsimeq-3dB$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
