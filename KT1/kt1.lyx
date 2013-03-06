@@ -69,6 +69,87 @@ Grundlagen
 \end_layout
 
 \begin_layout Section*
+Klassifizierung von Diensten
+\end_layout
+
+\begin_layout Subsection*
+Verbindungsorientierter Dienst
+\end_layout
+
+\begin_layout Itemize
+Absprache über den bevorstehenden Datenaustausch
+\end_layout
+
+\begin_layout Itemize
+Verbindungsauf- und abbau
+\end_layout
+
+\begin_layout Itemize
+End- und Zwischenknoten speichern Zustandsinformationen der Verbindung
+\end_layout
+
+\begin_layout Itemize
+Reihenfolge der gesendeten Daten wird eingehalten
+\end_layout
+
+\begin_layout Standard
+Beispiele: Telefonverbindung, TCP
+\end_layout
+
+\begin_layout Subsection*
+Verbindungsloser Dienst
+\end_layout
+
+\begin_layout Itemize
+Kein Verbindungsauf- und abbau
+\end_layout
+
+\begin_layout Itemize
+Daten tragen die Adresse des Empfängers und werden unabhängig voneinander
+ Transportiert
+\end_layout
+
+\begin_layout Itemize
+Keine Zustandsinformationen
+\end_layout
+
+\begin_layout Itemize
+Reihenfolge der gesendeten Daten ist nicht gesichert.
+\end_layout
+
+\begin_layout Standard
+Beispiele: Internet Protocol (IP), Briefpost
+\end_layout
+
+\begin_layout Subsection*
+Zuverlässiger Dienst
+\end_layout
+
+\begin_layout Itemize
+Es gehen grundsätzlich keine Daten verloren
+\end_layout
+
+\begin_layout Itemize
+Gesichert: Fehlererkennung, Fehlerkorrektur, Quittierung
+\end_layout
+
+\begin_layout Standard
+Beispiel: Filetransfer
+\end_layout
+
+\begin_layout Subsection*
+Unzuverlässiger Dienst
+\end_layout
+
+\begin_layout Itemize
+Daten können verloren gehen
+\end_layout
+
+\begin_layout Standard
+Beispiel: Sprach- und Videoübertragung
+\end_layout
+
+\begin_layout Section*
 7 Schichten OSI-Modell
 \end_layout
 
@@ -301,7 +382,7 @@ Transportschicht
 \begin_inset Text
 
 \begin_layout Plain Layout
-IP
+TCP
 \end_layout
 
 \end_inset
@@ -348,7 +429,7 @@ Vermittlungsschicht
 \begin_inset Text
 
 \begin_layout Plain Layout
-TCP
+IP
 \end_layout
 
 \end_inset
@@ -492,7 +573,22 @@ Realisierung:
 Verkehrsbeziehung
 \end_layout
 
-\begin_deeper
+\begin_layout Itemize
+Koppelung
+\end_layout
+
+\begin_layout Itemize
+Übertragungsmedium
+\end_layout
+
+\begin_layout Itemize
+Übertragungsverfahren
+\end_layout
+
+\begin_layout Subsubsection*
+Verkehrsbeziehung
+\end_layout
+
 \begin_layout Itemize
 Simplex (einseitige Kommunikation)
 \end_layout
@@ -505,12 +601,10 @@ Halb-Duplex (beidseitige Kommunikation, jedoch nur einer aufs Mal)
 Voll-Duplex (Beidseitige Kommunikation)
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Koppelung
+\begin_layout Subsubsection*
+Kopplung
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Punkt-zu-Punkt
 \end_layout
@@ -519,12 +613,10 @@ Punkt-zu-Punkt
 Shared Medium
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Übertragungsmedium
+\begin_layout Subsubsection*
+Übertragungsmedien
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Koaxialkabel
 \end_layout
@@ -541,12 +633,57 @@ Glasfaser
 Luft (Wireless)
 \end_layout
 
-\end_deeper
+\begin_layout Paragraph*
+Glasfaser
+\end_layout
+
+\begin_layout Standard
+Vorteile
+\end_layout
+
 \begin_layout Itemize
+Unempfindlich gegen elektromagnetische Störungen
+\end_layout
+
+\begin_layout Itemize
+Kleine Signaldämpfung (grosse Übertragungsdistanzen)
+\end_layout
+
+\begin_layout Itemize
+Grosse Bandbreiten (grosse Übertragungsraten)
+\end_layout
+
+\begin_layout Standard
+Mögliche Probleme
+\end_layout
+
+\begin_layout Itemize
+Modendispersion = Überlappung des Signals.
+ Passiert wenn eine Lichtwelle die andere aufgrund eines kürzeren Weges
+ (Spiegelung) die andere 
+\begin_inset Quotes eld
+\end_inset
+
+einholt
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Chromatische Dispersion = Teilung einer Lichtwelle in mehrere Lichtwellen
+ (Farben).
+\end_layout
+
+\begin_layout Subsubsection*
 Übertragungsverfahren
 \end_layout
 
-\begin_deeper
+\begin_layout Standard
+Legt fest wie die Daten vom Sender zum Empfänger übertragen werden.
+\end_layout
+
 \begin_layout Itemize
 Synchron (Sender Taktet)
 \end_layout
@@ -555,7 +692,64 @@ Synchron (Sender Taktet)
 Asynchron (jeder Taktet für sich)
 \end_layout
 
-\end_deeper
+\begin_layout Subsubsection*
+Signaldämpfung
+\end_layout
+
+\begin_layout Itemize
+Wichtiges Kriterium für Übertragungsstrecke
+\end_layout
+
+\begin_layout Itemize
+Teilweise in Abhängigkeit der Frequenz (Multimode und Monomode Lichtleiter)
+\end_layout
+
+\begin_layout Itemize
+Angabe in dB/km (3dB = halbierung der Leistung)
+\end_layout
+
+\begin_layout Paragraph*
+Berechnung
+\end_layout
+
+\begin_layout Verse
+Dämpfung von P in dB (
+\begin_inset Formula $A_{dB})=10\cdot\log_{10}\cdot\frac{P}{P_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P_{0}=$
+\end_inset
+
+Bezugsleistung (z.B.
+ Leistung beim Sender oder Kabelanfang)
+\end_layout
+
+\begin_layout Standard
+Beispiel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P_{0}=100mW$
+\end_inset
+
+, 
+\begin_inset Formula $P=50mW$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A_{dB}=10\cdot\log_{10}(\frac{50mW}{100mW})=10\cdot\log_{10}(\frac{1}{2})\backsimeq-3dB$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Data Link Layer
 \end_layout
@@ -586,8 +780,35 @@ Media Access (Medium Zugriff: Koordination des Zugriffs auf gemeinsames
 Network Layer
 \end_layout
 
+\begin_layout Standard
+Muss Wege durch ein Netz mit mehreren Knoten finden und die Daten entlang
+ dieses Weges übertragen.
+\end_layout
+
+\begin_layout Itemize
+Routing
+\end_layout
+
+\begin_layout Itemize
+Verbindet einzelne Systeme oder Teilnetze zu einem grossen Netz
+\end_layout
+
 \begin_layout Subsection*
 Transport Layer
+\end_layout
+
+\begin_layout Standard
+Hat die Aufgabe, unabhängig vom Netz, eine bestimmte Qualität für die Ende-zu-En
+de Übertragung zu definieren und diese einzuhalten.
+\end_layout
+
+\begin_layout Itemize
+Ist nur in Endsystemen vorhanden (nicht in Switches/Router)
+\end_layout
+
+\begin_layout Itemize
+Bietet den oberliegenden Schichten einen zuverlässigen Dienst über einen
+ unzuverlässigen Network Layer (TCP über IP).
 \end_layout
 
 \begin_layout Subsection*
@@ -630,173 +851,6 @@ Bindeglied zu eigentlichen Anwendung, bestimmt die Protokolle der verschiedenen
 
 \begin_layout Standard
 z.B: Terminal Emulation, File Transfer, E-Mail etc.
-\end_layout
-
-\begin_layout Section*
-Übertragungsmedien
-\end_layout
-
-\begin_layout Subsection*
-Glasfaser
-\end_layout
-
-\begin_layout Standard
-Vorteile
-\end_layout
-
-\begin_layout Itemize
-Unempfindlich gegen elektromagnetische Störungen
-\end_layout
-
-\begin_layout Itemize
-Kleine Signaldämpfung (grosse Übertragungsdistanzen)
-\end_layout
-
-\begin_layout Itemize
-Grosse Bandbreiten (grosse Übertragungsraten)
-\end_layout
-
-\begin_layout Section*
-Übertragungsverfahren
-\end_layout
-
-\begin_layout Section*
-Signaldämpfung
-\end_layout
-
-\begin_layout Itemize
-Wichtiges Kriterium für Übertragungsstrecke
-\end_layout
-
-\begin_layout Itemize
-Teilweise in Abhängigkeit der Frequenz (Multimode und Monomode Lichtleiter)
-\end_layout
-
-\begin_layout Itemize
-Angabe in dB/km (3dB = halbierung der Leistung)
-\end_layout
-
-\begin_layout Subsection*
-Berechnung
-\end_layout
-
-\begin_layout Verse
-Dämpfung von P in dB (
-\begin_inset Formula $A_{dB})=10\cdot\log_{10}\cdot\frac{P}{P_{0}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $P_{0}=$
-\end_inset
-
-Bezugsleistung (z.B.
- Leistung beim Sender oder Kabelanfang)
-\end_layout
-
-\begin_layout Standard
-Beispiel
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $P_{0}=100mW$
-\end_inset
-
-, 
-\begin_inset Formula $P=50mW$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $A_{dB}=10\cdot\log_{10}(\frac{50mW}{100mW})=10\cdot\log_{10}(\frac{1}{2})\backsimeq-3dB$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Klassifizierung von Diensten
-\end_layout
-
-\begin_layout Subsection*
-Verbindungsorientierter Dienst
-\end_layout
-
-\begin_layout Itemize
-Absprache über den bevorstehenden Datenaustausch
-\end_layout
-
-\begin_layout Itemize
-Verbindungsauf- und abbau
-\end_layout
-
-\begin_layout Itemize
-End- und Zwischenknoten speichern Zustandsinformationen der Verbindung
-\end_layout
-
-\begin_layout Itemize
-Reihenfolge der gesendeten Daten wird eingehalten
-\end_layout
-
-\begin_layout Standard
-Beispiele: Telefonverbindung, TCP
-\end_layout
-
-\begin_layout Subsection*
-Verbindungsloser Dienst
-\end_layout
-
-\begin_layout Itemize
-Kein Verbindungsauf- und abbau
-\end_layout
-
-\begin_layout Itemize
-Daten tragen die Adresse des Empfängers und werden unabhängig voneinander
- Transportiert
-\end_layout
-
-\begin_layout Itemize
-Keine Zustandsinformationen
-\end_layout
-
-\begin_layout Itemize
-Reihenfolge der gesendeten Daten wird nicht eingehalten
-\end_layout
-
-\begin_layout Standard
-Beispiele: Internet Protocol (IP), Briefpost
-\end_layout
-
-\begin_layout Subsection*
-Zuverlässiger Dienst
-\end_layout
-
-\begin_layout Itemize
-Es gehen grundsätzlich keine Daten verloren
-\end_layout
-
-\begin_layout Itemize
-Gesichert: Fehlererkennung, Fehlerkorrektur, Quittierung
-\end_layout
-
-\begin_layout Standard
-Beispiel: Filetransfer
-\end_layout
-
-\begin_layout Subsection*
-Unzuverlässiger Dienst
-\end_layout
-
-\begin_layout Itemize
-Daten können verloren gehen
-\end_layout
-
-\begin_layout Standard
-Beispiel: Sprach- und Videoübertragung
 \end_layout
 
 \end_body
