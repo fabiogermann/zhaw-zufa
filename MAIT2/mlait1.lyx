@@ -64,6 +64,10 @@
 
 \begin_body
 
+\begin_layout Section*
+Stammfunktion und unbestimmtes Integral
+\end_layout
+
 \begin_layout Subsection*
 Grundintegrale
 \end_layout
@@ -391,6 +395,692 @@ Ansatz:
 \noun off
 \color none
 \begin_inset Formula $\int\frac{3x-5}{x^{2}+2x-8}\cdot dx=\int\frac{A}{(x-2)}\cdot dx+\int\frac{B}{(x+4)}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{3x-5}{x^{2}+2x-8}=\frac{A}{(x-2)}+\frac{B}{(x+4)}$
+\end_inset
+
+ 
+\begin_inset Formula $\mid\cdot(x-2)\cdot(x+4)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $3x-5=A(x+4)+B(x-2)$
+\end_inset
+
+ 
+\begin_inset Formula $\mid$
+\end_inset
+
+x einsetzen und A, B ausrechnen (z.B.
+ x=-4, x=2)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=\frac{1}{6};B=\frac{17}{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\frac{3x-5}{x^{2}+2x-8}\cdot dx=\frac{1}{6}\cdot\int\frac{1}{(x-2)}\cdot dx+\frac{17}{6}\cdot\int\frac{1}{(x+4)}\cdot dx=\frac{1}{6}\cdot ln\mid x-2\mid+\frac{17}{6}\cdot ln\mid x+4\mid+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+2.
+ Fall
+\end_layout
+
+\begin_layout Standard
+q(x) zerfällt in lineare Faktoren, es gibt mindestens einen Faktor, der
+ mehrfach vorkommt:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q(x)=x^{3}-3x^{2}-9x-5=(x+1)^{2}\cdot(x-5)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ansatz:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{p(x)}{q(x)}=\int\frac{A_{1}}{(x-x_{i})}\cdot dx+\int\frac{A_{2}}{(x-x_{i})^{2}}\cdot dx+...+\int\frac{A_{k}}{(x-x_{i})^{k}}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\frac{x^{2}+15x+8}{x^{3}-3x^{2}-9x-5}\cdot dx=\int\frac{A}{(x+1)}\cdot dx+\int\frac{B}{(x+1)^{2}}\cdot dx+\int\frac{C}{(x-5)}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{x^{2}+15x+8}{x^{3}-3x^{2}-9x-5}=\frac{A}{(x+1)}+\frac{B}{(x+1)^{2}}+\frac{C}{(x-5)}$
+\end_inset
+
+ 
+\begin_inset Formula $\mid\cdot(x+1)^{2}\cdot(x-5)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x^{2}+15x+8=A(x+1)(x-5)+B(x-5)+C(x-5)(x+1)^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\mid$
+\end_inset
+
+x einsetzen und A, B, C ausrechnen (z.B.
+ x=-1, x=5)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=-2;B=1;C=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\frac{x^{2}+15x+8}{x^{3}-3x^{2}-9x-5}\cdot dx=-2\int\frac{1}{(x+1)}\cdot dx+1\int\frac{1}{(x+1)^{2}}\cdot dx+3\int\frac{1}{(x-5)}\cdot dx=-2\cdot ln\mid x+1\mid+\frac{(x+1)^{-1}}{-1}+3\cdot ln\mid x-5\mid+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+3.
+ Fall
+\end_layout
+
+\begin_layout Standard
+Der Nenner enthalte quadr.
+ Faktoren die sich nicht zerlegen lassen:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q(x)=x^{3}-6x^{2}+10x=x\cdot(x^{2}-6x+10)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ansatz:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{p(x)}{q(x)}=\int\frac{B_{1}x+C_{1}}{Q(x)^{1}}\cdot dx+\int\frac{B_{2}x+C_{2}}{Q(x)^{2}}\cdot dx+...+\int\frac{B_{k}x+C_{k}}{Q(x)^{k}}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\frac{7x^{2}-19x+30}{x^{3}-6x^{2}+10x}\cdot dx=\int\frac{A}{x}\cdot dx+\int\frac{Bx+C}{x^{2}-6x+10}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{7x^{2}-19x+30}{x^{3}-6x^{2}+10x}=\frac{A}{x}+\frac{Bx+C}{x^{2}-6x+10}$
+\end_inset
+
+ 
+\begin_inset Formula $\mid\cdot x\cdot(x^{2}-6x+10)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $7x^{2}-19x+30=A(x^{2}-6x+10)+x\cdot(Bx+C)$
+\end_inset
+
+ 
+\begin_inset Formula $\mid$
+\end_inset
+
+x einsetzen und A, B, C ausrechnen (z.B.
+ x=0,x=1, x=-1)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A=3;B=4;C=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\int\frac{7x^{2}-19x+30}{x^{3}-6x^{2}+10x}\cdot dx=3\cdot\int\frac{1}{x}\cdot dx+\int\frac{4x-1}{x^{2}-6x+10}\cdot dx=3\cdot ln\mid x\mid+(*)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $(x^{2}-6x+10)^{\prime}=2x-6\Rightarrow4x-1=2\cdot(2x-6)+11$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $(*)=\int\frac{2(2x-6)+11}{x^{2}-6x+10}\cdot dx=2\cdot\int\frac{2x-6}{x^{2}-6x+10}\cdot dx+\int\frac{11}{x^{2}-6x+10}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $(1)=2\cdot\int\frac{2x-6}{x^{2}-6x+10}\cdot dx=2\cdot\int\frac{du}{u}\cdot dx=2\cdot ln\mid u\mid=2\cdot ln\mid x^{2}-6x+10\mid$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(2)=11\cdot\int\frac{1}{x^{2}-6x+10}\cdot dx=11\cdot\int\frac{1}{(x-3)^{2}+1}\cdot dx$
+\end_inset
+
+ ist von der Form 
+\begin_inset Formula $k\cdot\int\frac{1}{(x-C)^{2}+a^{2}}\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $=k\cdot\frac{1}{a}\cdot arctan(\frac{x-C}{a})+C=11\cdot\frac{1}{1}\cdot arctan(\frac{x-3}{1})+C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\int f(x)\cdot dx=3\cdot ln\mid x\mid+2\cdot ln\mid x^{2}-6x+10\mid+11\cdot arctan(x-3)+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Das bestimmte Integral
+\end_layout
+
+\begin_layout Subsection*
+Das Flächenproblem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underset{a}{\overset{b}{\int}}f(x)\cdot dx=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Zwischenwerte 
+\begin_inset Formula $x_{0},x_{1},...,x_{n}$
+\end_inset
+
+setzen und somit Intervall [a,b] in Teilintervalle zerlegen.
+\end_layout
+
+\begin_layout Enumerate
+Wähle in jedem Teilintervall eine Zwischenstelle 
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A_{1}=\Delta x\cdot f(\xi_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A_{k}=\Delta x\cdot f(\xi_{k})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $S_{n}=A_{1}+...+A_{n}=\overset{n}{\underset{k=1}{\sum}}A_{k}=\overset{n}{\underset{k=1}{\sum}}\Delta x\cdot f(\xi_{k})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Grenzübergang: 
+\begin_inset Formula $\underset{n\rightarrow\infty}{lim}S_{n}=A\Rightarrow(\Delta x\rightarrow0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Exakt mit Grenzübergang
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Teile Intervall [0,2] in n gleiche Teile:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intervall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breite
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Höhe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fläche
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{1}=[0\cdot\frac{2}{n},1\cdot\frac{2}{n}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta x_{1}=\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\xi_{1}=1\cdot\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(\xi_{1})=(1\cdot\frac{2}{n})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{1}=\frac{2}{n}\cdot1^{2}\cdot\frac{4}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{2}=[1\cdot\frac{2}{n},2\cdot\frac{2}{n}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta x_{2}=\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\xi_{2}=2\cdot\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(\xi_{2})=(2\cdot\frac{2}{n})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{2}=\frac{2}{n}\cdot2^{2}\cdot\frac{4}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{k}=[(k-1)\cdot\frac{2}{n},k\cdot\frac{2}{n}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta x_{k}=\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\xi_{k}=k\cdot\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(\xi_{k})=(k\cdot\frac{2}{n})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{n}=\frac{2}{n}\cdot n^{2}\cdot\frac{4}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{n}=[(n-1)\cdot\frac{2}{n},n\cdot\frac{2}{n}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta x_{n}=\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\xi_{n}=n\cdot\frac{2}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(\xi_{n})=(n\cdot\frac{2}{n})^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A_{k}=\frac{2}{n}\cdot k^{2}\cdot\frac{4}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{n}=\frac{2}{n}\cdot\frac{4}{n^{2}}\cdot\overset{n}{\underset{k=1}{\sum}}k^{2}=\frac{8}{n^{3}}\cdot\frac{n(n+1)(2n+1)}{6}=\frac{16}{6}=\frac{8}{3}$
 \end_inset
 
 
