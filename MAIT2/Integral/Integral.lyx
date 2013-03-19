@@ -59,6 +59,149 @@
 
 \begin_body
 
+\begin_layout Section*
+Das unbestimmt Integral
+\end_layout
+
+\begin_layout Subsection*
+Stammfunktion
+\end_layout
+
+\begin_layout Verse
+Def: 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ eine gegebene stetife Funktion im Intervall 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ Dann ist 
+\begin_inset Formula $F(x)$
+\end_inset
+
+ Stammfunktion von 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ wenn 
+\begin_inset Formula $F'(x)=f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Grundintegrale und Rechenregeln
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int x^{n}dx=\frac{x^{n+1}}{n+1}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{x}dx=ln|x|+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int e^{x}dx=e^{x}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int a^{x}dx=\frac{a^{x}}{ln(a)}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int cos(x)dx=sin(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int sin(x)dx=-cos(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{x^{2}+a^{2}}dx=\frac{1}{a}\times arctan(\frac{x}{a})+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Regel vom konstanten Faktor
+\end_layout
+
+\begin_layout Standard
+Vergiss das doofe 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+c$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ am ende eines Integrales nicht!
+\end_layout
+
+\begin_layout Subsubsection*
+Skalierungsregel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int f(k\times x)dx=\frac{1}{k}F(k\times x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Translationsregel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int f(x+k)dx=F(x+k)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Summenregel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int f(x)+g(x)dx=F(x)+G(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Produktregel
+\end_layout
+
 \begin_layout Standard
 
 \end_layout
