@@ -64,14 +64,6 @@
 
 \begin_body
 
-\begin_layout Part*
-Grundlagen
-\end_layout
-
-\begin_layout Section*
-Klassifizierung von Diensten
-\end_layout
-
 \begin_layout Subsection*
 Verbindungsorientierter Dienst
 \end_layout
@@ -565,74 +557,6 @@ Codierung (Abbildung auf Signale)
 Mechanische Eigenschaften (Stecker, Pinbelegung etc.)
 \end_layout
 
-\begin_layout Standard
-Realisierung:
-\end_layout
-
-\begin_layout Itemize
-Verkehrsbeziehung
-\end_layout
-
-\begin_layout Itemize
-Koppelung
-\end_layout
-
-\begin_layout Itemize
-Übertragungsmedium
-\end_layout
-
-\begin_layout Itemize
-Übertragungsverfahren
-\end_layout
-
-\begin_layout Subsubsection*
-Verkehrsbeziehung
-\end_layout
-
-\begin_layout Itemize
-Simplex (einseitige Kommunikation)
-\end_layout
-
-\begin_layout Itemize
-Halb-Duplex (beidseitige Kommunikation, jedoch nur einer aufs Mal)
-\end_layout
-
-\begin_layout Itemize
-Voll-Duplex (Beidseitige Kommunikation)
-\end_layout
-
-\begin_layout Subsubsection*
-Kopplung
-\end_layout
-
-\begin_layout Itemize
-Punkt-zu-Punkt
-\end_layout
-
-\begin_layout Itemize
-Shared Medium
-\end_layout
-
-\begin_layout Subsubsection*
-Übertragungsmedien
-\end_layout
-
-\begin_layout Itemize
-Koaxialkabel
-\end_layout
-
-\begin_layout Itemize
-Twisted Pair
-\end_layout
-
-\begin_layout Itemize
-Glasfaser
-\end_layout
-
-\begin_layout Itemize
-Luft (Wireless)
-\end_layout
-
 \begin_layout Paragraph*
 Glasfaser
 \end_layout
@@ -851,6 +775,129 @@ Bindeglied zu eigentlichen Anwendung, bestimmt die Protokolle der verschiedenen
 
 \begin_layout Standard
 z.B: Terminal Emulation, File Transfer, E-Mail etc.
+\end_layout
+
+\begin_layout Section*
+HDB3
+\end_layout
+
+\begin_layout Standard
+Taktrückgewinnung:
+\end_layout
+
+\begin_layout Itemize
+Tritt vier mal nacheinander eine 0 auf, so wird anstelle der vierten 0 eine
+ 1 gesendet.
+\end_layout
+
+\begin_layout Itemize
+Damit es erkennt wird hat es die gleiche Polarität wie die letzt gesendete
+ 1
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename HDB3_1.png
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gleichspannungsfreiheit:
+\end_layout
+
+\begin_layout Itemize
+4 Nullen werden nicht immer mit 000V ersetzt.
+\end_layout
+
+\begin_layout Itemize
+Ist die Anzahl Einsen (nur richtige Datenbits werden gezählt) seit dem letzen
+ eingefügten 000V/000B ungerade dann wird 000V verwendet, ansonsten 000B
+ (Polarität wechselt).
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename HDB3_2.png
+	height 2.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+LAN's
+\end_layout
+
+\begin_layout Subsection*
+Bus Topologie
+\end_layout
+
+\begin_layout Itemize
+Alle Stationen sind passiv an das Übertragungsmedium angeschlossen und horchen
+ ob Daten übertragen werden.
+\end_layout
+
+\begin_layout Itemize
+Eine Station wird Aktiv wenn sie selbst etwas senden will.
+ Die Daten breiten sich nach beiden Seiten aus, das Ziel wird aufgrund einer
+ Adresse erkannt.
+\end_layout
+
+\begin_layout Subsection*
+Linien Topologie
+\end_layout
+
+\begin_layout Itemize
+Punkt zu Punkt Verbindung, unterbruch segmentiert das LAN
+\end_layout
+
+\begin_layout Itemize
+Ausbreitung der Daten von Station zu Station (Empfangen, regenieren und
+ evtl.
+ weiterleiten)
+\end_layout
+
+\begin_layout Subsection*
+(Doppel-) Ring Topologie
+\end_layout
+
+\begin_layout Itemize
+Bei Ausfall ist jede Station durch jede erreichbar (es muss jedoch verhindert
+ werden, dass Daten endlos im Kreis herumgeschickt werden.)
+\end_layout
+
+\begin_layout Itemize
+Doppelring: Beim Ausfall eines Ringes, besteht immer noch ein zweiter.
+\end_layout
+
+\begin_layout Subsection*
+Stern Topologie
+\end_layout
+
+\begin_layout Itemize
+Zentraler Verteilerknoten (Hub) sendet die Daten an alle anderen Stationen
+ weiter.
+\end_layout
+
+\begin_layout Itemize
+Entkoppelt alle Stationen elektrisch (weniger störungsanfällig)
+\end_layout
+
+\begin_layout Subsection*
+Baum
+\end_layout
+
+\begin_layout Itemize
+Hierarchische Weiterführung der Stern Topologie.
+\end_layout
+
+\begin_layout Itemize
+Durch Switches findet der Grossteil der Kommunikation jeweils lokal statt.
 \end_layout
 
 \end_body
