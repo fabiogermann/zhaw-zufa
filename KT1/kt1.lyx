@@ -830,74 +830,69 @@ Ist die Anzahl Einsen (nur richtige Datenbits werden gezählt) seit dem letzen
 \end_layout
 
 \begin_layout Section*
-LAN's
+Frame Format
 \end_layout
 
-\begin_layout Subsection*
-Bus Topologie
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Frame.png
+	width 5cm
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Alle Stationen sind passiv an das Übertragungsmedium angeschlossen und horchen
- ob Daten übertragen werden.
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Frameuebertragung.png
+	height 5cm
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Eine Station wird Aktiv wenn sie selbst etwas senden will.
- Die Daten breiten sich nach beiden Seiten aus, das Ziel wird aufgrund einer
- Adresse erkannt.
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsection*
-Linien Topologie
+\begin_layout Section*
+Payload
 \end_layout
 
-\begin_layout Itemize
-Punkt zu Punkt Verbindung, unterbruch segmentiert das LAN
+\begin_layout Verse
+\begin_inset Formula $Payload=\frac{???\, Bit/s}{8*(38+Nutzdaten)}=???Frames/s\;\Rightarrow Frames*Payload=???Bit/s$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Ausbreitung der Daten von Station zu Station (Empfangen, regenieren und
- evtl.
- weiterleiten)
-\end_layout
-
-\begin_layout Subsection*
-(Doppel-) Ring Topologie
-\end_layout
-
-\begin_layout Itemize
-Bei Ausfall ist jede Station durch jede erreichbar (es muss jedoch verhindert
- werden, dass Daten endlos im Kreis herumgeschickt werden.)
-\end_layout
-
-\begin_layout Itemize
-Doppelring: Beim Ausfall eines Ringes, besteht immer noch ein zweiter.
-\end_layout
-
-\begin_layout Subsection*
-Stern Topologie
-\end_layout
-
-\begin_layout Itemize
-Zentraler Verteilerknoten (Hub) sendet die Daten an alle anderen Stationen
- weiter.
-\end_layout
-
-\begin_layout Itemize
-Entkoppelt alle Stationen elektrisch (weniger störungsanfällig)
-\end_layout
-
-\begin_layout Subsection*
-Baum
-\end_layout
-
-\begin_layout Itemize
-Hierarchische Weiterführung der Stern Topologie.
-\end_layout
-
-\begin_layout Itemize
-Durch Switches findet der Grossteil der Kommunikation jeweils lokal statt.
+\begin_layout Standard
+38 Bit = Präambel (8) + SFD (1) + Destination Address (6) + Source Address
+ (6) + Length/Type (2) + Frame Check Seq.
+ (4) + Interframe Gap (12) = 38
 \end_layout
 
 \end_body
