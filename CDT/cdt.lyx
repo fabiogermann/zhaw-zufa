@@ -1710,7 +1710,8 @@ Speicher
 \end_layout
 
 \begin_layout Subsection*
-D-Latch
+D-Latch (transp.
+ FF)
 \end_layout
 
 \begin_layout Itemize
@@ -1730,7 +1731,8 @@ Rückkopplung ist gefährlich, gespeicherter Zustang zufällig
 \end_layout
 
 \begin_layout Subsection*
-D-Flip-Flop
+D-Flip-Flop (nichttransp.
+ FF)
 \end_layout
 
 \begin_layout Itemize
@@ -1755,6 +1757,11 @@ Bausteine
 
 \begin_layout Itemize
 Register: aus FF mit write-enable: zur Datenspeicherung
+\end_layout
+
+\begin_layout Itemize
+asynchrone Schaltungen: D-FF ohne Clock, Staffelung, arbeiten so schnell
+ wie möglich
 \end_layout
 
 \end_body
