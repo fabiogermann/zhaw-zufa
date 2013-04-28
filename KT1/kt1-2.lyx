@@ -1075,7 +1075,56 @@ IP Protokoll
 
 \end_layout
 
+\begin_layout Itemize
+Die Internet Header Length (IHL) gibt die Länge des IP-Headers(min5/max15)
+ inklusive dem optionalen Teil(max40byte) in Double Words (32 Bit) an.
+ Die Länge bezeichnet also die Stelle wo im Datagramm die Nutzdaten beginnen.
+\end_layout
+
+\begin_layout Itemize
+Quality of Service, gibt die Eigenschaft an.
+ Dringend, hi reliablility, throughput etc.
+\end_layout
+
+\begin_layout Itemize
+Total Length bezeichnet die gesamte L¨ange des Datagramms in Byte (inklusive
+ Header und Nutzdaten)
+\end_layout
+
+\begin_layout Itemize
+alle Fragmente des Datagramms den gleichen Identifikationswert
+\end_layout
+
+\begin_layout Itemize
+Flags: reserved null, fragment allowed, last more fragments
+\end_layout
+
+\begin_layout Itemize
+innerhalb des Datagramms ein Fragment: Der Fragment-Offset wird in 8-Byte-Einhei
+ten (64 bits) angegeben, wobei das erste Fragment einen Offset von Null
+ hat (in maximal 213 = 8192 Fragmente zerlegt)
+\end_layout
+
+\begin_layout Itemize
+TTL: verbleibende Zeit in Sekunden an, die das Datagramm noch im Internet-System
+ verbleiben darf
+\end_layout
+
+\begin_layout Itemize
+Protocol: 1 ICMP / 6 TCP / 17 UDP
+\end_layout
+
+\begin_layout Subsubsection*
+Fragmenting
+\end_layout
+
 \begin_layout Standard
+\begin_inset Graphics
+	filename fragmenting.png
+	width 6cm
+
+\end_inset
+
 
 \end_layout
 
