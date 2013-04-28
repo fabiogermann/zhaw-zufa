@@ -490,7 +490,7 @@ Das gleiche mit TTL=2 und so weiter.
 Um die Entfernung zu bestimmen, wird zugleich die Round-Trip Zeit gemessen.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 IPv6
 \end_layout
 
@@ -513,6 +513,94 @@ Mehrere Header: ein Header kann auf den nächsten zeigen (sog.
 
 \begin_layout Itemize
 Video-/Audiounterstützung: Flow-Label im Header
+\end_layout
+
+\begin_layout Section*
+Transport Layer
+\end_layout
+
+\begin_layout Itemize
+Stellt den Applikationen eine geeignete Ende-zu-Ende Qualität für Datenübertragu
+ng zu Verfügung.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+UDP: gibt die Eigenschaften von IP fast unverändert weiter: Verbindungslos,
+ Unzuverlässig
+\end_layout
+
+\begin_layout Itemize
+TCP: zusätzliche Funktionen: Verbindungsorientiert, zuverlässig.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Bildet Schnittstelle zwischen Betriebssystem (Kernel Space) und Anwendungen
+ (User Space).
+ 
+\end_layout
+
+\begin_layout Itemize
+Der Zugriff auf die Funktionen des Transport Layers erfolgt via einer klar
+ definierten Schnittstelle:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TCP/UDP Sockets (Unix/Linux/BSD)
+\end_layout
+
+\begin_layout Itemize
+WinSock (Windows)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Kapselung: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Applikationsdaten erhalten einen TCP/UDP Header
+\end_layout
+
+\begin_layout Itemize
+Das Paket wird als User Datagram (UDP) oder Segment/TCP-Nachricht (TCP)
+ bezeichnet
+\end_layout
+
+\begin_layout Itemize
+Ein Transport Layer Paket wird in ein IP Paket eingefügt
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Multiplexing und Demultiplexing
+\end_layout
+
+\begin_layout Standard
+Identifikation eines Hosts über IP Adresse, Identifikation einer Applikation
+ auf einem Host über Port Nummer.
+\end_layout
+
+\begin_layout Itemize
+Multiplexen: Mehrere Kommunikationsbeziehungen zwischen Applikation werden
+ mittels Port Nummern eindeutig bezeichnet.
+\end_layout
+
+\begin_layout Itemize
+Demultiplexen: Verteilen der eingehenden Daten mittels der Port Nummern
+ auf die Applikationen
+\end_layout
+
+\begin_layout Subsection*
+User Datagram Protocol (UDP)
+\end_layout
+
+\begin_layout Standard
+Dient dem Multiplexen und Demultiplexen der Datagramme auf die Applikation.
+ Verbindungslos und unzuverlässig
 \end_layout
 
 \end_body
