@@ -567,5 +567,34 @@ Das IP Protokoll ist aus dem ARPANET (US DOD) entstanden.
  Er beinhaltet die Kommunikation zwischen der Quelle und dem Ziel.
 \end_layout
 
+\begin_layout Itemize
+TCP Transmission Control Protocol
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Verbindungsorientiert, zuverlässig, Flowcontrol, fehlerfreie Übertragung
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+UDP User Datagram Protocol
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TCP ohne Flowcontrol, unzuverlässig, time-reliable
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Der höhere Layer (Application Layer) beinhaltet Protokolle wie SSH, HTTP
+ etc.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
