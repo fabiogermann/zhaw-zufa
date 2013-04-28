@@ -1013,6 +1013,7 @@ SubNetDec
 
 \begin_layout Standard
 Eine IP Adresse besteht somit aus 4Byte.
+ Ebenfalls ist die IP 127.0.0.1 (/8) eine LoopBack Adresse (Bereich)
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1021,7 +1022,61 @@ Classful-Routing
 
 \begin_layout Standard
 Es wird keine SUbnetzmaske benötigt.
- A(2^24), B(2^16),C(2^8), D(Multicast)
+ A(2^24, 1byte Netz (128), 3byte host (16’777’214)), B(2^16, 16’384, 65’534),C(2
+^8, 2’097’152, 254), D(Multicast,224.0.0.0 – 239.255.255.255), E(Zukunft, 240.0.0.0
+ – 247.255.255.255)
+\end_layout
+
+\begin_layout Subsubsection*
+Routing
+\end_layout
+
+\begin_layout Standard
+Routen können mit 
+\begin_inset Quotes eld
+\end_inset
+
+route -n
+\begin_inset Quotes erd
+\end_inset
+
+ oder 
+\begin_inset Quotes eld
+\end_inset
+
+netstat -rn
+\begin_inset Quotes erd
+\end_inset
+
+ angezeigt werden.
+ (route add -net 160.85.19.0 netmask 255.255.255.0 dev eth2) Falls kein Eintrag
+ der Routingtabelle matcht, dann wird das Paket einfach an den 
+\begin_inset Quotes eld
+\end_inset
+
+default
+\begin_inset Quotes erd
+\end_inset
+
+ Host weitergeleitet.
+\end_layout
+
+\begin_layout Subsection*
+IP Protokoll
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ipheader.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
