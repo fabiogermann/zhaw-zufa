@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 0.5cm
+\topmargin 0.5cm
+\rightmargin 0.5cm
+\bottommargin 0.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -1123,6 +1128,63 @@ Fragmenting
 	filename fragmenting.png
 	width 6cm
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Adressauflösung
+\end_layout
+
+\begin_layout Standard
+Address Resolution Protokoll (ARP): von 4-Byte-langen IP-Adressen auf 6-Byte-lan
+ge Ethernet-Adressen
+\end_layout
+
+\begin_layout Itemize
+ARP-Request: 
+\begin_inset Quotes eld
+\end_inset
+
+who-has x.x.x.x
+\begin_inset Quotes erd
+\end_inset
+
+ als Broadcast ins Netz, wird durch Bridges nicht gefiltert, dadurch kann
+ hoher Traffic entstehen
+\end_layout
+
+\begin_layout Itemize
+ARP-Response
+\begin_inset Quotes erd
+\end_inset
+
+is-at y:y:y:y:y:y direkt an den anfragenden Knoten, man beachte, dass die
+ gesuchte Antwort im Feld Sender-MAC-Address zu finden ist
+\end_layout
+
+\begin_layout Standard
+Im ARP-Cache werden die Adressen zwischengespeichert, sodass man nicht immer
+ für jedes Paket eine neue ARP Anfrage machen muss.
+ 
+\end_layout
+
+\begin_layout Itemize
+Gratuitous ARP: ARP Requests/Replies die nich (nach Standart) notwendig
+ sind.
+ Sie werden verwendet um IP-Adresskonflikte zu erkennen.
+ Auch beim ändern der IP-Adresse verschickt, aber mit dem Zweck, die ARP-Cache
+ der anderen Knoten zu berichtigen.
+\end_layout
+
+\begin_layout Standard
+Mit dem Befehl 
+\begin_inset Quotes eld
+\end_inset
+
+arping -C 1 -U x.x.x.x
+\begin_inset Quotes erd
 \end_inset
 
 
