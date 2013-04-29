@@ -1137,9 +1137,12 @@ Fragmenting
 Adressauflösung
 \end_layout
 
+\begin_layout Paragraph*
+Address Resolution Protokoll (ARP)
+\end_layout
+
 \begin_layout Standard
-Address Resolution Protokoll (ARP): von 4-Byte-langen IP-Adressen auf 6-Byte-lan
-ge Ethernet-Adressen
+von 4-Byte-langen IP-Adressen auf 6-Byte-lange Ethernet-Adressen
 \end_layout
 
 \begin_layout Itemize
@@ -1187,7 +1190,31 @@ arping -C 1 -U x.x.x.x
 \begin_inset Quotes erd
 \end_inset
 
+ kann ein Request gesendet werden.
+ 
+\end_layout
 
+\begin_layout Paragraph*
+Reverse Address Resolution Protocol (RARP)
+\end_layout
+
+\begin_layout Standard
+von Ethernet-Adresse auf IP-Adresse
+\end_layout
+
+\begin_layout Itemize
+Verwendung von RARP ist besser als das Ablegen einer IP-Adresse in einem
+ Disk-Image, weil dadurch die gleiche Konfiguration auf allen Maschinen
+ benutzt werden kann
+\end_layout
+
+\begin_layout Itemize
+Nachteil, dass es MAC-Layer-Broadcast benutzt, um den RARP-Server -> von
+ Routern nicht weitergegeben 
+\end_layout
+
+\begin_layout Itemize
+Alternative: BOOTP und DHCP
 \end_layout
 
 \end_body
