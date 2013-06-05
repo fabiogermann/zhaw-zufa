@@ -753,6 +753,17 @@ Grenzübergang:
 
 \end_layout
 
+\begin_layout Paragraph*
+Riemannsche Summen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\intop_{a}^{b}f(x)dx:=lim_{n\rightarrow\infty(\triangle x\rightarrow0)}\sum_{i=1}^{n}f(\xi_{i})\times\Delta x_{i}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Exakt mit Grenzübergang
 \end_layout
