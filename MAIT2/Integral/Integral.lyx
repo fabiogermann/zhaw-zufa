@@ -74,15 +74,16 @@ Grundintegrale
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
+<lyxtabular version="3" rows="6" columns="3">
 <features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int x^{n}\cdot dx=\frac{x^{n+1}}{n+1}+c,n\neq1$
 \end_inset
 
@@ -91,10 +92,10 @@ Grundintegrale
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int\frac{1}{x}\cdot dx=\ln\mid x\mid+c$
 \end_inset
 
@@ -103,12 +104,27 @@ Grundintegrale
 
 \end_inset
 </cell>
+<cell multirow="3" alignment="left" valignment="middle" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename sin.png
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int e^{x}\cdot dx=e^{x}+c$
 \end_inset
 
@@ -117,10 +133,10 @@ Grundintegrale
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int a^{x}\cdot dx=\int e^{\ln(a)\cdot x}\cdot dx=\frac{a^{x}}{\ln(a)}+c,a>0,a\neq1$
 \end_inset
 
@@ -129,12 +145,21 @@ Grundintegrale
 
 \end_inset
 </cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int cos(x)\cdot dx=sin(x)+c$
 \end_inset
 
@@ -143,10 +168,10 @@ Grundintegrale
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int sin(x)\cdot dx=-cos(x)+c$
 \end_inset
 
@@ -155,12 +180,21 @@ Grundintegrale
 
 \end_inset
 </cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 </row>
 <row>
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int\frac{1}{x^{2}+a^{2}}\cdot dx=\frac{1}{a}\cdot arctan(\frac{x}{a})+c$
 \end_inset
 
@@ -169,13 +203,22 @@ Grundintegrale
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int ln(x)dx=xln(x)-x+c$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -186,7 +229,7 @@ Grundintegrale
 <cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int\frac{1}{x^{2}}=-\frac{1}{x}$
 \end_inset
 
@@ -195,13 +238,22 @@ Grundintegrale
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int\frac{1}{\sqrt{x}}=2\sqrt{x}$
 \end_inset
 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -212,7 +264,7 @@ Grundintegrale
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
+\begin_layout Plain Layout
 \begin_inset Formula $\int\frac{1}{\sqrt{a^{2}-x^{2}}}=arcsin\frac{x}{|a|}$
 \end_inset
 
@@ -221,7 +273,16 @@ Grundintegrale
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
