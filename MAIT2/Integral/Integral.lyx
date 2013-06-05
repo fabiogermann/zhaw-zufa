@@ -72,12 +72,27 @@ Stammfunktion und unbestimmtes Integral
 Grundintegrale
 \end_layout
 
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
 \begin_layout Itemize
 \begin_inset Formula $\int x^{n}\cdot dx=\frac{x^{n+1}}{n+1}+c,n\neq1$
 \end_inset
 
 
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Itemize
 \begin_inset Formula $\int\frac{1}{x}\cdot dx=\ln\mid x\mid+c$
@@ -86,12 +101,24 @@ Grundintegrale
 
 \end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
 \begin_layout Itemize
 \begin_inset Formula $\int e^{x}\cdot dx=e^{x}+c$
 \end_inset
 
 
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Itemize
 \begin_inset Formula $\int a^{x}\cdot dx=\int e^{\ln(a)\cdot x}\cdot dx=\frac{a^{x}}{\ln(a)}+c,a>0,a\neq1$
@@ -100,12 +127,24 @@ Grundintegrale
 
 \end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
 \begin_layout Itemize
 \begin_inset Formula $\int cos(x)\cdot dx=sin(x)+c$
 \end_inset
 
 
 \end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
 
 \begin_layout Itemize
 \begin_inset Formula $\int sin(x)\cdot dx=-cos(x)+c$
@@ -114,8 +153,86 @@ Grundintegrale
  
 \end_layout
 
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
 \begin_layout Itemize
 \begin_inset Formula $\int\frac{1}{x^{2}+a^{2}}\cdot dx=\frac{1}{a}\cdot arctan(\frac{x}{a})+c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $\int ln(x)dx=xln(x)-x+c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{x^{2}}=-\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{\sqrt{x}}=2\sqrt{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{\sqrt{a^{2}-x^{2}}}=arcsin\frac{x}{|a|}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 
@@ -205,7 +322,7 @@ Summenregel
 \end_layout
 
 \begin_layout Subsubsection*
-Produkteregel
+Produkteregel / Partielle Integration
 \end_layout
 
 \begin_layout Standard
@@ -257,6 +374,13 @@ Integration und Substitution
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Formula $\int\frac{u'(x)}{u(x)}dx=\int\frac{du}{u}=ln|u|+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $\frac{dx}{du}=u^{\prime}(x)$
 \end_inset
 
@@ -270,11 +394,19 @@ Trick: Zähler eines Bruches so korrigieren, das es der Ableitung der Funktion
 \begin_inset Formula $u^{\prime}\cdot dx$
 \end_inset
 
- durch du ersetzt werden.
+ durch 
+\begin_inset Formula $du$
+\end_inset
+
+ ersetzt werden.
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $\int\frac{1}{(4x+5)^{3}}\cdot dx=\frac{1}{4}\cdot\int\frac{4}{(4x+5)^{3}}\cdot dx=\frac{1}{4}\cdot\int\frac{u^{\prime}}{u^{3}}\cdot dx=\frac{1}{4}\cdot\int\frac{du}{u^{3}}=\frac{1}{4}\cdot\frac{u^{-2}}{-2}+c=-\frac{1}{8u^{2}}+c=-\frac{1}{8}\cdot\frac{1}{(4x+e)^{2}}+c$
+\end_inset
+
+ wobei 
+\begin_inset Formula $dx=\frac{du}{u}$
 \end_inset
 
 
@@ -781,13 +913,15 @@ Teile Intervall [0,2] in n gleiche Teile:
 
 \begin_layout Verse
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
+<lyxtabular version="3" rows="5" columns="7">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -825,11 +959,29 @@ Höhe
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Fläche
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vorgehen
 \end_layout
 
 \end_inset
@@ -884,7 +1036,7 @@ Fläche
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -892,6 +1044,24 @@ Fläche
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- allgemeines Intervall
 \end_layout
 
 \end_inset
@@ -946,7 +1116,7 @@ Fläche
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -954,6 +1124,24 @@ Fläche
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Auswertungsstelle ] Wert an AS
 \end_layout
 
 \end_inset
@@ -1008,7 +1196,7 @@ Fläche
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1016,6 +1204,24 @@ Fläche
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Flächenformel
 \end_layout
 
 \end_inset
@@ -1070,7 +1276,7 @@ Fläche
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1078,6 +1284,28 @@ Fläche
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- 
+\begin_inset Formula $\sum$
+\end_inset
+
+ bilden
 \end_layout
 
 \end_inset
