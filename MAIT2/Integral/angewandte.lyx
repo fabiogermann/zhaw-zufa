@@ -346,6 +346,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $S_{x}=\frac{\int_{a}^{b}x\times(f(x)-g(x))dx}{F}$
+\end_inset
+
 
 \end_layout
 
@@ -355,6 +358,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $S_{x}=\frac{\pi\int_{a}^{b}x\times f^{2}(x)dx}{V}$
+\end_inset
+
 
 \end_layout
 
@@ -366,6 +372,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $S_{y}=\frac{\frac{1}{2}\int_{a}^{b}f(x)^{2dx}}{A}$
+\end_inset
+
 
 \end_layout
 
@@ -375,6 +384,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $S_{y}=\frac{\frac{1}{2}\int_{a}^{b}(f^{2}(x)-g^{2}(x))dx}{F}$
+\end_inset
+
 
 \end_layout
 
@@ -384,6 +396,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $S_{y}=0$
+\end_inset
+
 
 \end_layout
 
@@ -395,6 +410,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $A=\int_{a}^{b}f(x)dx$
+\end_inset
+
 
 \end_layout
 
@@ -404,6 +422,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $F=\int_{a}^{b}(f(x)-g(x))dx$
+\end_inset
+
 
 \end_layout
 
@@ -413,6 +434,9 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $S_{z}=0$
+\end_inset
+
 
 \end_layout
 
