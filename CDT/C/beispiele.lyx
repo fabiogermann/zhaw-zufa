@@ -126,6 +126,8 @@ hne
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 int max(int a, int b);
 \end_layout
 
@@ -146,6 +148,8 @@ int max(int a, int b);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 void otherFunction(void);
 \end_layout
 
@@ -155,6 +159,8 @@ void otherFunction(void);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 /*void soll geschrieben werden, damit Parameter checking durchgeführt wird*/
 \end_layout
 
@@ -166,6 +172,8 @@ void otherFunction(void);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 int checkStatic(int a);
 \end_layout
 
@@ -206,6 +214,8 @@ int checkStatic(int a);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color blue
 typedef enum {Mo, Di...} Wochentage
 \end_layout
 
@@ -215,6 +225,8 @@ typedef enum {Mo, Di...} Wochentage
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color blue
 /*Montag = 0, Dienstag = 1 etc*/
 \end_layout
 
@@ -226,6 +238,8 @@ typedef enum {Mo, Di...} Wochentage
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color blue
 typdef enum [false, true]} Bool;
 \end_layout
 
@@ -246,6 +260,8 @@ typdef enum [false, true]} Bool;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 typedef struct {
 \end_layout
 
@@ -266,6 +282,8 @@ typedef struct {
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 int x;
 \end_layout
 
@@ -286,6 +304,8 @@ int x;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 int y;
 \end_layout
 
@@ -306,6 +326,8 @@ int y;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 int z;
 \end_layout
 
@@ -326,6 +348,8 @@ int z;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 } Point3D
 \end_layout
 
@@ -346,6 +370,8 @@ int z;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color magenta
 int min = 0; 
 \end_layout
 
@@ -355,6 +381,8 @@ int min = 0;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color magenta
 /*Definition globale Variable */
 \end_layout
 
@@ -426,6 +454,8 @@ double d;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color magenta
 extern int min; 
 \end_layout
 
@@ -435,6 +465,8 @@ extern int min;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color magenta
 /*Deklaration globale Variable */
 \end_layout
 
@@ -446,6 +478,8 @@ extern int min;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color blue
 Bool flag = true;
 \end_layout
 
@@ -1152,6 +1186,8 @@ pmonth[1][3];
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 Point3D pt = {2, 4, 6};
 \end_layout
 
@@ -1172,6 +1208,8 @@ Point3D pt = {2, 4, 6};
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 (void)printf(„A=(%d, %d, %d)
 \backslash
 n“
@@ -1194,6 +1232,8 @@ n“
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color green
 ,pt.x,pt.y,pt.z);
 \end_layout
 
@@ -1267,6 +1307,8 @@ d = (double) i/3;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 i = max(a,b);
 \end_layout
 
@@ -1276,6 +1318,8 @@ i = max(a,b);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 /*i = b = 6*/
 \end_layout
 
@@ -1307,6 +1351,8 @@ ohterFunction();
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color blue
 Wochtage w1 = Mittwoch;
 \end_layout
 
@@ -1650,6 +1696,8 @@ exit(0);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 int max(int a, int b) {
 \end_layout
 
@@ -1750,6 +1798,8 @@ return a;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 }
 \end_layout
 
@@ -1770,6 +1820,8 @@ return a;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 void otherFunction(void) {
 \end_layout
 
@@ -1790,6 +1842,8 @@ void otherFunction(void) {
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color magenta
 extern int max; 
 \end_layout
 
@@ -1799,6 +1853,8 @@ extern int max;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color magenta
 /*Deklaration glob.
  Variable */
 \end_layout
@@ -1851,6 +1907,8 @@ otherFunction(void);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 }
 \end_layout
 
@@ -1871,6 +1929,8 @@ otherFunction(void);
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 int checkStatic(int a) {
 \end_layout
 
@@ -1991,6 +2051,8 @@ return max;
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\color red
 }
 \end_layout
 
