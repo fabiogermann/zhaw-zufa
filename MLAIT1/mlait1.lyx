@@ -725,7 +725,7 @@ Aufpunkt bestimmen
 \end_layout
 
 \begin_layout Verse
-Es wird von beiden Aufpunkten jeweils der Teilgenommen, der nicht null ist:
+Aufpunkt so wählen, dass er beide Gleichungen erfüllt
 \end_layout
 
 \begin_layout Verse
@@ -736,21 +736,7 @@ Es wird von beiden Aufpunkten jeweils der Teilgenommen, der nicht null ist:
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $3\;\;1\;2=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
 \begin_inset Formula $2x+0y+0z=8$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $4\;\;2\;\;0=8$
 \end_inset
 
 
@@ -791,7 +777,290 @@ Normalstehende Ebene
 \end_layout
 
 \begin_layout Standard
-Serie 5 Aufgabe 5
+Gegeben
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E:\; x+2y+2z-4=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A(-1/-2/0),\; B(1/1/2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gesucht: Ebene die Normla zur gegeben Ebene liegt, und durch die Punkt A
+ und B geht.
+\end_layout
+
+\begin_layout Itemize
+u, v berechnen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $u=n=\left(\begin{array}{c}
+1\\
+2\\
+2
+\end{array}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $v=B-A=\left(\begin{array}{c}
+1\\
+1\\
+2
+\end{array}\right)-\left(\begin{array}{c}
+-1\\
+-2\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+2\\
+3\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=A+s*u+t*v=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+-1\\
+-2\\
+0
+\end{array}\right)+s\left(\begin{array}{c}
+1\\
+2\\
+2
+\end{array}\right)+t\left(\begin{array}{c}
+2\\
+3\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Berechnen der Koordinatengleichung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n_{2}=u\times v=\left(\begin{array}{c}
+1\\
+2\\
+2
+\end{array}\right)\times\left(\begin{array}{c}
+2\\
+3\\
+2
+\end{array}\right)=\left(\begin{array}{c}
+-2\\
+2\\
+-1
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $-2x+2y-z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aufpunkt einsetzen (A ist der Aufpunkt)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $-2*(-1)+2*(-2)-0=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow-2x+2y-z+2=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Drehung (Drehmatrix)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{D(45\text{°) }}=\left(\begin{array}{cc}
+cos(45\text{°)} & -sin(45\text{°)}\\
+sin(45\text{°)} & cos(45\text{°)}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Spiegelung
+\end_layout
+
+\begin_layout Itemize
+An x-Achse 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+An y-Achse 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\left(\begin{array}{cc}
+-1 & 0\\
+0 & 1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+An Geraden 2x -5y = 0 (Wenn die Gerade nicht durch den Nullpunkt geht, gehts
+ nicht, nicht linear)
+\end_layout
+
+\begin_layout Standard
+1.
+ Normale der Gerade bestimmen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n=\left(\begin{array}{c}
+2\\
+-5
+\end{array}\right)$
+\end_inset
+
+, da 
+\begin_inset Formula $n\bullet r=0$
+\end_inset
+
+, ist der Vektor 
+\begin_inset Formula $r=\left(\begin{array}{c}
+5\\
+2
+\end{array}\right)$
+\end_inset
+
+(Vektor umdrehen und eine Zahl negieren)
+\end_layout
+
+\begin_layout Standard
+2.
+ Nun kann eine Gleichung aufgestellt werden:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A(n*r)=(-n*r)$
+\end_inset
+
+, dies kann man schreiben als A*B =C
+\end_layout
+
+\begin_layout Standard
+3.
+ Nun kann auf beiden Seiten von rechts mit 
+\begin_inset Formula $B^{-1}$
+\end_inset
+
+multipliziert werden und man erhält:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=C*B^{-1}$
+\end_inset
+
+resp 
+\begin_inset Formula $A=(-n*r)*(n*r)^{-1}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+4.
+ Da wir n und r kennen, können wir nun die klammern durch Matrizen ersetzen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=\left(\begin{array}{cc}
+-2 & 5\\
+5 & 2
+\end{array}\right)*\left(\begin{array}{cc}
+2 & 5\\
+-5 & 5
+\end{array}\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ Nun kann es ausgerechnet werden (--> Gausches Eliminationsverfahren für
+ Invertierung)
 \end_layout
 
 \end_body
