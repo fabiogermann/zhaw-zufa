@@ -43,10 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1cm
-\topmargin 1cm
-\rightmargin 1cm
-\bottommargin 1cm
+\leftmargin 0.5cm
+\topmargin 0.5cm
+\rightmargin 0.5cm
+\bottommargin 0.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
