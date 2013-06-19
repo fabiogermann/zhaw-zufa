@@ -505,7 +505,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int2x\cdot sin(x)\cdot dx=2sin(x)-2x\cdot cos(x)$
+\begin_inset Formula $\int sin(ax)\cdot dx=-\frac{cos(ax)}{a}$
 \end_inset
 
  
@@ -633,6 +633,9 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $u=\frac{y}{x}$
+\end_inset
+
 
 \end_layout
 
@@ -642,7 +645,7 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int sin(ax)\cdot dx=\frac{1}{a}(\frac{ax}{2}-\frac{1}{2}\cdot sin(ax)\cdot cos(ax))$
+\begin_inset Formula $\int sin^{2}(ax)\cdot dx=\frac{x}{2}-\frac{sin(2ax)}{4a}$
 \end_inset
 
 
