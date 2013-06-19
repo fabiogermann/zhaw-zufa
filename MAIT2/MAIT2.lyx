@@ -87,16 +87,6 @@ filename "Integral/angewandte.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "differentialgleichungen/diffgl.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
 filename "potenzreihen/preihe-taylor.lyx"
 
 \end_inset
