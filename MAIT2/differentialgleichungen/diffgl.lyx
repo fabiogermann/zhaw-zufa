@@ -313,8 +313,40 @@ Lösung einder
 Inhomogenen DG
 \end_layout
 
-\begin_layout Standard
-x
+\begin_layout Enumerate
+LDG als homogene lösen -> 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y_{p}=K(x)\times e^{-\int f(x)dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $K'(x)=\frac{g(x)}{y_{h}(x)_{K=1}}$
+\end_inset
+
+ bestimmen, danach Integrieren
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Allgemeine Lösung: 
+\begin_inset Formula $y_{a}(x)=y_{h}(x)+y_{p}(x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Falls Anfangsbedingungen vorhanden, einsetzen und partikuläre Lösung bestimmen
 \end_layout
 
 \end_body
