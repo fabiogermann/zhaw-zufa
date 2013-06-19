@@ -314,7 +314,11 @@ Schw.
 \begin_inset Formula $f(x)$
 \end_inset
 
+, 
+\begin_inset Formula $g(x)\leq f(x)$
+\end_inset
 
+ in I
 \end_layout
 
 \end_inset
@@ -334,7 +338,7 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $S_{x}=\frac{\int_{a}^{b}x\times(f(x)-g(x))dx}{A}$
+\begin_inset Formula $S_{x}=\frac{\int_{a}^{b}x\times f(x)dx}{A}$
 \end_inset
 
 
@@ -399,6 +403,10 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Formula $S_{y}=0$
 \end_inset
 
+, 
+\begin_inset Formula $S_{z}=0$
+\end_inset
+
 
 \end_layout
 
@@ -434,7 +442,7 @@ Schwerpunkt eines Rotationskörpers
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $S_{z}=0$
+\begin_inset Formula $V=\pi\int_{a}^{b}f^{2}(x)dx$
 \end_inset
 
 
