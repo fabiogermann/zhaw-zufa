@@ -376,6 +376,30 @@ Integral Lösen und nach y auflösen
 \end_layout
 
 \begin_layout Subsubsection*
+Normalformen
+\end_layout
+
+\begin_layout Standard
+f(x) = Rechnung in x, g(y) = Rechnung in y
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'=f(x)+g(y)$
+\end_inset
+
+ 1.
+ Fall
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'=f(x)\cdot g(y)$
+\end_inset
+
+ 2.
+ Fall
+\end_layout
+
+\begin_layout Subsubsection*
 Integration durch Substitution
 \end_layout
 
