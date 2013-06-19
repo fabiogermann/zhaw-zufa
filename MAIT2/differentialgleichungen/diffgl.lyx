@@ -275,7 +275,46 @@ Linerare DG (1.O)
 \end_layout
 
 \begin_layout Standard
+Normalformen
+\end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $y'+f(x)\times y=g(x)$
+\end_inset
+
+ -> inhomohene DG 1.O
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'+f(x)\times y=0$
+\end_inset
+
+ -> homogene DG 1.O
+\end_layout
+
+\begin_layout Standard
+Allgemeine lösung mit freiem Parameter einer 
+\series bold
+Homogenen DG
+\series default
+ (durch trennen der Variabeln)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y_{h}(x)=K\times e^{-\int f(x)dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lösung einder 
+\series bold
+Inhomogenen DG
+\end_layout
+
+\begin_layout Standard
+x
 \end_layout
 
 \end_body
