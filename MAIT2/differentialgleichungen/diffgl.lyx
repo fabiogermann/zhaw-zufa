@@ -59,7 +59,80 @@
 
 \begin_body
 
+\begin_layout Section*
+Differentialgleichungen
+\end_layout
+
+\begin_layout Subsection*
+1.Ordnung
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula $y'=f(x,y)=\frac{dy}{dx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n'(t)=-\lambda\times n(t)$
+\end_inset
+
+, allgemein löst 
+\begin_inset Formula $n(t)=C\times e^{-\lambda t}$
+\end_inset
+
+ die DG
+\end_layout
+
+\begin_layout Subsubsection*
+Trennen der Variablen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=f(x)\times g(y)=\frac{dy}{dx}$
+\end_inset
+
+ jede Variable auf eine Seite, dann getrennt Integrieren: 
+\begin_inset Formula $\int\frac{1}{g(y)}dy=\int f(x)dx+c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+2.Ordnung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x''(t)=-g$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x'(t)=-gt+v_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x(t)=-gt^{2}\frac{1}{2}+v_{0}t+s_{0}$
+\end_inset
+
+ => allgemeine Lösung
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v(0)=0,s(0)=0$
+\end_inset
+
+ => 
+\begin_inset Formula $x(t)=-gt^{2}\frac{1}{2}$
+\end_inset
+
 
 \end_layout
 
