@@ -330,6 +330,52 @@ Kurvenschaar bestimmen
 \end_layout
 
 \begin_layout Subsubsection*
+Beispiel
+\end_layout
+
+\begin_layout Standard
+Bestimmen Sie alle Kurven, die die Geraden durch den Nullpunkt rechtwinklig
+ schneiden.
+\end_layout
+
+\begin_layout Enumerate
+Kurvenschar: 
+\begin_inset Formula $y=k\cdot x\Rightarrow k=\frac{y}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+DG: 
+\begin_inset Formula $y'=k\Rightarrow y'=\frac{y}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Orth.
+ Kurvenschar: 
+\begin_inset Formula $y'=-\frac{x}{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Umformen: 
+\begin_inset Formula $\frac{dy}{dx}=-\frac{x}{y}\Rightarrow\int y\cdot dy=\int-x\cdot dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integral Lösen und nach y auflösen
+\end_layout
+
+\begin_layout Subsubsection*
 Integration durch Substitution
 \end_layout
 
@@ -420,6 +466,14 @@ in
 \end_inset
 
  (anschliessend trennen der Variablen)
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\end_layout
+
+\begin_layout Itemize
+
 \end_layout
 
 \begin_layout Subsection*
