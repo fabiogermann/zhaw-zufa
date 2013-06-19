@@ -146,7 +146,92 @@ Integration durch Substitution
 \end_layout
 
 \begin_layout Standard
+1.
+ Fall
+\end_layout
 
+\begin_layout Itemize
+\begin_inset Formula $y'=f(ax+by+c)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u=ax+by(x)+c$
+\end_inset
+
+ => 
+\begin_inset Formula $y'=f(u)$
+\end_inset
+
+, 
+\begin_inset Formula $u'=a+by'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+in 
+\begin_inset Formula $u'$
+\end_inset
+
+ für 
+\begin_inset Formula $y'$
+\end_inset
+
+ die ursprüngliche Gleichung 
+\begin_inset Formula $y'=f(u)$
+\end_inset
+
+ einsetzen
+\end_layout
+
+\begin_layout Standard
+2.
+ Fall
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'=f(\frac{y}{x})$
+\end_inset
+
+ => 
+\begin_inset Formula $y'=f(u)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u=\frac{y}{x}$
+\end_inset
+
+, 
+\begin_inset Formula $u(x)\times x=y$
+\end_inset
+
+ => 
+\begin_inset Formula $u'(x)\times x+u(x)=y'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'=u'x+u$
+\end_inset
+
+ in 
+\begin_inset Formula $y'=f(u)$
+\end_inset
+
+ eingesetzt und aufgelöst ergibt: 
+\begin_inset Formula $u'=\frac{1}{x}(f(u)-u)$
+\end_inset
+
+ (anschliessend trennen der Variablen)
 \end_layout
 
 \begin_layout Subsection*
