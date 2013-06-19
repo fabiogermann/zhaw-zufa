@@ -423,6 +423,52 @@ in
 \end_layout
 
 \begin_layout Standard
+Beispiel
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u=x+y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u'=1+y'=1+u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{du}{dx}=1+u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{1+u}\cdot du=\int dx\Rightarrow ln(1+u)=x+c\Rightarrow1+u=k\cdot e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1+x+y=k\cdot e^{x}\Rightarrow y=k\cdot e^{x}-x-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 2.
  Fall
 \end_layout
@@ -473,7 +519,43 @@ Beispiel:
 \end_layout
 
 \begin_layout Itemize
+DG: 
+\begin_inset Formula $y'=\frac{3y^{2}+xy}{x^{2}}=3(\frac{y}{x})^{2}+\frac{y}{x}$
+\end_inset
 
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u=\frac{y}{x}\Rightarrow f(u)=3u^{2}+u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $u'=\frac{1}{x}\cdot(f(u)-u)=\frac{1}{x}\cdot(3u^{2}+u-u)=\frac{1}{x}\cdot u^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{du}{dx}=\frac{1}{x}\cdot u^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{1}{u2}=\int\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Integral lösen, nach u auflösen und u einsetzen, danach nach y auflösen
 \end_layout
 
 \begin_layout Subsection*
