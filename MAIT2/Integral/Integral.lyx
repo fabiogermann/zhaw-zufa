@@ -43,10 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1.5cm
-\topmargin 1.5cm
-\rightmargin 1.5cm
-\bottommargin 1.5cm
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -69,7 +69,7 @@ Stammfunktion und unbestimmtes Integral
 \end_layout
 
 \begin_layout Subsection*
-Grundintegrale
+Grundintegrale (+ c jeweils weggelassen)
 \end_layout
 
 \begin_layout Standard
@@ -113,7 +113,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int e^{x}\cdot dx=e^{x}+c$
+\begin_inset Formula $\int e^{x}\cdot dx=e^{x}$
 \end_inset
 
 
@@ -201,7 +201,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int tan^{2}(x)=tan(x)-x+c$
+\begin_inset Formula $\int tan^{2}(x)=tan(x)-x$
 \end_inset
 
 
@@ -213,7 +213,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int a^{x}\cdot dx=\int e^{\ln(a)\cdot x}\cdot dx=\frac{a^{x}}{\ln(a)}+c,a>0,a\neq1$
+\begin_inset Formula $\int a^{x}\cdot dx=\frac{a^{x}}{\ln(a)}+c,a>0,a\neq1$
 \end_inset
 
 
@@ -227,7 +227,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int be^{ax}\cdot dx=\frac{b}{a}e^{x}+c$
+\begin_inset Formula $\int be^{ax}\cdot dx=\frac{b}{a}e^{ax}$
 \end_inset
 
 
@@ -239,7 +239,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{sin(x)}=ln(sin(\frac{x}{2}))-ln(cos(\frac{x}{2}))+c$
+\begin_inset Formula $\int\frac{1}{sin(x)}=ln(sin(\frac{x}{2}))-ln(cos(\frac{x}{2}))$
 \end_inset
 
 
@@ -251,7 +251,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{\sqrt{x}}=2\sqrt{x}+c$
+\begin_inset Formula $\int e^{\ln(a)\cdot x}\cdot dx=\frac{a^{x}}{\ln(a)}+c,a>0,a\neq1$
 \end_inset
 
 
@@ -277,7 +277,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{cos(x)}=ln(sin(\frac{x}{2})+cos(\frac{x}{2}))-ln(cos(\frac{x}{2})-sin(\frac{x}{2}))+c$
+\begin_inset Formula $\int\frac{1}{cos(x)}=ln(sin(\frac{x}{2})+cos(\frac{x}{2}))-ln(cos(\frac{x}{2})-sin(\frac{x}{2}))$
 \end_inset
 
 
@@ -289,7 +289,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{x^{2}}=-\frac{1}{x}+c$
+\begin_inset Formula $\int\frac{1}{x^{2}}=-\frac{1}{x}$
 \end_inset
 
 
@@ -303,7 +303,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{x}\cdot dx=\ln\mid x\mid+c$
+\begin_inset Formula $\int\frac{1}{x}\cdot dx=\ln\mid x\mid$
 \end_inset
 
 
@@ -315,7 +315,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{tan(x)}=ln(sin(x))+c$
+\begin_inset Formula $\int\frac{1}{tan(x)}=ln(sin(x))$
 \end_inset
 
 
@@ -327,7 +327,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{x}\cdot dx=\ln\mid x\mid+c$
+\begin_inset Formula $\int\frac{1}{x}\cdot dx=\ln\mid x\mid$
 \end_inset
 
 
@@ -341,7 +341,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{x-5}\cdot dx=\ln\mid x-5\mid+c$
+\begin_inset Formula $\int\frac{1}{x-5}\cdot dx=\ln\mid x-5\mid$
 \end_inset
 
 
@@ -353,7 +353,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{sin^{2}(x)}=-cotan(x)+c$
+\begin_inset Formula $\int\frac{1}{sin^{2}(x)}=-cotan(x)$
 \end_inset
 
 
@@ -365,7 +365,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{x^{2}+a^{2}}\cdot dx=\frac{1}{a}\cdot arctan(\frac{x}{a})+c$
+\begin_inset Formula $\int\frac{1}{x^{2}+a^{2}}\cdot dx=\frac{1}{a}\cdot arctan(\frac{x}{a})$
 \end_inset
 
 
@@ -379,7 +379,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{2x-5}\cdot dx=\ln\mid x-5\mid+c$
+\begin_inset Formula $\int\frac{1}{2x-5}\cdot dx=\ln\mid x-5\mid$
 \end_inset
 
 
@@ -391,7 +391,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{cos^{2}(x)}=tan(x)+c$
+\begin_inset Formula $\int\frac{1}{cos^{2}(x)}=tan(x)$
 \end_inset
 
 
@@ -403,7 +403,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{1+x^{2}}\cdot dx=tan^{-1}(x)+c$
+\begin_inset Formula $\int\frac{1}{1+x^{2}}\cdot dx=tan^{-1}(x)$
 \end_inset
 
 
@@ -429,7 +429,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{1}{tan^{2}(x)}=-x-cotan(x)+c$
+\begin_inset Formula $\int\frac{1}{tan^{2}(x)}=-x-cotan(x)$
 \end_inset
 
 
@@ -441,6 +441,9 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\int\frac{1}{1+x^{2}}\cdot dx=\frac{1}{2}(ln(x+1)-ln(1-x)$
+\end_inset
+
 
 \end_layout
 
@@ -452,7 +455,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int ln(x)dx=xln(x)-x+c=x(ln(x)-1)+c$
+\begin_inset Formula $\int ln(x)dx=xln(x)-x$
 \end_inset
 
 
@@ -464,7 +467,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int x\cdot sin(x)\cdot dx=sin(x)-x\cdot cos(x)+c$
+\begin_inset Formula $\int x\cdot sin(x)\cdot dx=sin(x)-x\cdot cos(x)$
 \end_inset
 
  
@@ -476,6 +479,9 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\int\frac{1}{\sqrt{x}}=2\sqrt{x}$
+\end_inset
+
 
 \end_layout
 
@@ -499,7 +505,7 @@ allgemein
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int2x\cdot sin(x)\cdot dx=2sin(x)-2x\cdot cos(x)+c$
+\begin_inset Formula $\int2x\cdot sin(x)\cdot dx=2sin(x)-2x\cdot cos(x)$
 \end_inset
 
  
@@ -531,7 +537,7 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int x\cdot cos(x)\cdot dx=x\cdot sin(x)+cos(x)+c$
+\begin_inset Formula $\int x\cdot cos(x)\cdot dx=x\cdot sin(x)+cos(x)$
 \end_inset
 
  
@@ -566,7 +572,7 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int2x\cdot cos(x)\cdot dx=2x\cdot sin(x)+2cos(x)+c$
+\begin_inset Formula $\int2x\cdot cos(x)\cdot dx=2x\cdot sin(x)+2cos(x)$
 \end_inset
 
  
@@ -601,7 +607,7 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int\frac{sin(x)}{cos(x)}=\int tan(x)=-ln(cos(x))+c$
+\begin_inset Formula $\int\frac{sin(x)}{cos(x)}=\int tan(x)=-ln(cos(x))$
 \end_inset
 
 
@@ -648,7 +654,7 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $u^{\frac{3}{2}}=(u^{\frac{1}{2}})=\sqrt{u}^{3}$
+\begin_inset Formula $u^{\frac{3}{2}}=(u^{\frac{1}{2}})^{3}=\sqrt{u}^{3}=u\cdot\sqrt{u}$
 \end_inset
 
 
@@ -671,7 +677,7 @@ Tipps
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\int sin(x)\cdot cos(x)\cdot dx=-\frac{1}{2}cos^{2}(x)+c$
+\begin_inset Formula $\int sin(x)\cdot cos(x)\cdot dx=-\frac{1}{2}cos^{2}(x)$
 \end_inset
 
 
