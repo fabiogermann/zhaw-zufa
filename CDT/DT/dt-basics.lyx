@@ -1,4 +1,4 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+﻿#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
@@ -2999,7 +2999,7 @@ Overflow
 \begin_inset Text
 
 \begin_layout Plain Layout
-0xor1= 0
+0xor1= 1
 \end_layout
 
 \end_inset
