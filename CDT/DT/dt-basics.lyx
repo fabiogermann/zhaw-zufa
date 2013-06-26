@@ -1,4 +1,4 @@
-﻿#LyX 2.0 created this file. For more info see http://www.lyx.org/
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
@@ -1644,8 +1644,12 @@ Herstellen durch DNF von K=0, dann DeMorgan Theorem anwenden
 \end_layout
 
 \begin_layout Itemize
-Jeder OR-Block ist ein MAXTERM, der einer Zeile in der Wahrheitstabelle
- entspricht, negiert, wenn in der Wahrheitstabelle =1, direkt falls WT=0.
+Jeder OR-Block ist ein schlechter MAXTERM, der einer Zeile in der Wahrheitstabel
+le entspricht, negiert wenn in der Wahrheitstabelle =1, direkt falls WT=0.
+\end_layout
+
+\begin_layout Itemize
+guter Maxterm ist negierter Block von schlechten Maxtermen
 \end_layout
 
 \begin_layout Verse
