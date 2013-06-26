@@ -1388,7 +1388,7 @@ Schaltalgebra
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -1486,7 +1486,7 @@ OR
 \begin_inset Text
 
 \begin_layout Plain Layout
-!(!X & !Y)
+!( !(X&X) & !(Y&Y) )
 \end_layout
 
 \end_inset
@@ -1521,7 +1521,7 @@ AND
 \begin_inset Text
 
 \begin_layout Plain Layout
-!!(X & Y)
+!( !(X & Y) & !(X & Y) )
 \end_layout
 
 \end_inset
@@ -1541,7 +1541,7 @@ NOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+trivial
 \end_layout
 
 \end_inset
@@ -1550,7 +1550,36 @@ NOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-!!(!X & !Y)
+!( !( !(X&X) & !(Y&Y) ) & !( !(X&X) & !(Y&Y) ) )
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XOR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[(AnorA)nor(BnorB)]nor(AnorB)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+!( !( X & !(X&Y) ) & !( Y & !(X&Y) ) )
 \end_layout
 
 \end_inset
@@ -1561,7 +1590,7 @@ NOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-EXOR
+NAND
 \end_layout
 
 \end_inset
@@ -1570,7 +1599,7 @@ EXOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+AND with NOT
 \end_layout
 
 \end_inset
@@ -1579,7 +1608,7 @@ EXOR
 \begin_inset Text
 
 \begin_layout Plain Layout
-(!X & Y) # (X & !Y)
+trivial
 \end_layout
 
 \end_inset
