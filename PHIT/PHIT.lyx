@@ -69,22 +69,189 @@ Ort, Geschwindigkeit und Beschleunigung
 \end_layout
 
 \begin_layout Section*
-Ortsvektor
+Ortsfunktion
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{r}(t)=\left(\begin{array}{c}
+x(t)\\
+y(t)\\
+z(t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Geschwindigkeit
 \end_layout
 
 \begin_layout Standard
-\begin_inset Graphics
-	filename Einheitskreis.png
-	lyxscale 40
-	width 8cm
+Die Geschwindigkeit ist die zeitliche Ableitung der Ortsfunktion:
+\end_layout
 
+\begin_layout Verse
+\begin_inset Formula $\vec{v}(t)=\frac{d\vec{r}(t)}{dt}=\vec{r'}(t)=\left(\begin{array}{c}
+\frac{dx(t)}{dt}\\
+\frac{dy(t)}{dt}\\
+\frac{dz(t)}{dt}
+\end{array}\right)=\left(\begin{array}{c}
+x'(t)\\
+y'(t)\\
+z'(t)
+\end{array}\right)=\left(\begin{array}{c}
+v_{x}(t)\\
+v_{y}(t)\\
+v_{z}(t)
+\end{array}\right)$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\vec{r}(t)=(x(t),y(t)=r(cos\,\gamma(t),sin\,\gamma(t))=r(cos\, wt,sin\, wt)$
+Geschwindigkeit ist ein Vektor, die Schnelligkeit ihr Betrag.
+\end_layout
+
+\begin_layout Section*
+Beschleunigung
+\end_layout
+
+\begin_layout Standard
+Die Beschleunigung ist die zeitliche Ableitung der Geschwindigkeits resp.
+ die zweite zeitliche Ableitung der Ortsfunktion.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}(t)=\frac{d\vec{v}(t)}{dt}=\left(\begin{array}{c}
+\frac{dv_{x}(t)}{dt}\\
+\frac{dv_{y}(t)}{dt}\\
+\frac{dv_{z}(t)}{dt}
+\end{array}\right)\left(\begin{array}{c}
+a_{x}(t)\\
+a_{y}(t)\\
+a_{z}(t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}(t)=\frac{d}{dt}\left(\frac{d\vec{r}(t)}{dt}\right)=\frac{d^{2}\vec{r}(t)}{dt^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Kreisbewegung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Kreisbewegung.png
+	lyxscale 50
+	height 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\omega$
+\end_inset
+
+ = Winkel pro Sekunde
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $T=\frac{2\Pi}{\omega}=$
+\end_inset
+
+Periode, Zeit für einen Umlauf (
+\begin_inset Formula $360^{\circ}=2\Pi$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection*
+Ortsvektor
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{r}(t)=\left(\begin{array}{c}
+r\, cos(\omega t)\\
+r\, sin(\omega t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|\vec{r}(t)|=r$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{r}(t)=\left(\begin{array}{c}
+r\, cos(\omega(t+T))\\
+r\, sin(\omega(t+T))
+\end{array}\right)=\left(\begin{array}{c}
+r\, cos(\omega t+2\Pi)\\
+r\, sin(\omega t+2\Pi)
+\end{array}\right)=\left(\begin{array}{c}
+r\, cos(\omega t)\\
+r\, sin(\omega t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Geschwindigkeit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}(t)=\frac{d\vec{r}(t)}{dt}=\left(\begin{array}{c}
+-r\omega sin(\omega t)\\
+r\omega cos(\omega t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|\vec{v}(t)|=r\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Beschleunigung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}(t)=\frac{d\vec{v}(t)}{dt}=\left(\begin{array}{c}
+-r\omega^{2}cos(\omega t)\\
+-r\omega^{2}sind(\omega t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|\vec{a}(t)|=r\omega^{2}$
 \end_inset
 
 
