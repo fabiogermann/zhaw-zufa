@@ -1,0 +1,228 @@
+
+\section*{Beispiel Code}
+
+:-)
+
+\begin{tabular}{|l|l|}
+\hline 
+\#include <stdio.h> & \tabularnewline
+\hline 
+\#include <string.h> & /{*}Enthält: int strlen(const char s{[}{]}); welche die länge des
+Strings zurückgibt(ohne \textbackslash{}0){*}/\tabularnewline
+\hline 
+\hline 
+\textcolor{red}{int max(int a, int b);} & \tabularnewline
+\hline 
+\textcolor{red}{void otherFunction(void);} & \textcolor{red}{/{*}void soll geschrieben werden, damit Parameter
+checking durchgeführt wird{*}/}\tabularnewline
+\hline 
+\textcolor{red}{int checkStatic(int a);} & \tabularnewline
+\hline 
+\hline 
+\#define MAX\_LENGTH 1000  & /{*}Definieren einer Konstante{*}/\tabularnewline
+\hline 
+\hline 
+\textcolor{blue}{typedef enum \{Mo, Di...\} Wochentage} & \textcolor{blue}{/{*}Montag = 0, Dienstag = 1 etc{*}/}\tabularnewline
+\hline 
+\textcolor{blue}{typdef enum {[}false, true{]}\} Bool;} & \tabularnewline
+\hline 
+\hline 
+\textcolor{green}{typedef struct \{} & \tabularnewline
+\hline 
+\textcolor{green}{int x;} & \tabularnewline
+\hline 
+\textcolor{green}{int y;} & \tabularnewline
+\hline 
+\textcolor{green}{int z;} & \tabularnewline
+\hline 
+\textcolor{green}{\} Point3D} & \tabularnewline
+\hline 
+\hline 
+\textcolor{magenta}{int min = 0; } & \textcolor{magenta}{/{*}Definition globale Variable {*}/}\tabularnewline
+\hline 
+\hline 
+int main(void) \{ & \tabularnewline
+\hline 
+int i = 5, a=4, b=6, len; & \tabularnewline
+\hline 
+double d; & \tabularnewline
+\hline 
+\hline 
+\textcolor{magenta}{extern int min; } & \textcolor{magenta}{/{*}Deklaration globale Variable {*}/}\tabularnewline
+\hline 
+\hline 
+\textcolor{blue}{Bool flag = true;} & \tabularnewline
+\hline 
+\hline 
+int data{[}100{]}; & /{*}Array Deklaration{*}/\tabularnewline
+\hline 
+int a{[}5{]} = \{4,7,12,77,2\}; & /{*}Array Deklaration + Initialisierung{*}/\tabularnewline
+\hline 
+int a{[}{]} = \{4,7,12,77,2);  & /{*}Alternative Array Deklaration + Initialisierung {*}/\tabularnewline
+\hline 
+const int c{[}{]} = \{10,11,12,13,14\}; & /{*}Konstante Array Deklaration, Werte können NICHT mehr verändert
+werden{*}/\tabularnewline
+\hline 
+int a{[}2{]}{[}3{]} = \{\{1,2,3\},\{4,5,6\}\}; & /{*}Array Deklaration mit 2 Dimensionen (2 Zeilen, 3 Spalten){*}/\tabularnewline
+\hline 
+char hello{[}{]} = „hello“;  & /{*}Deklaration eines Strings (Array von Chars)(Grösse +1, da letzes
+Element: \textbackslash{}0){*}/\tabularnewline
+\hline 
+char test{[}{]} = „test“; & \tabularnewline
+\hline 
+a{[}3{]} = 4; & /{*}Zugriff auf Array Element{*}/\tabularnewline
+\hline 
+a{[}9{]} = 222;  & /{*}Achtung! Es wird kein Fehler zur Laufzeit angezeigt!!{*}/\tabularnewline
+\hline 
+len = strlen(hello);  & /{*}len = 5 {*}/\tabularnewline
+\hline 
+strcat(hello, test); & /{*}test wird an hello angefügt: char hello{[}{]} = „hellotest“{*}/\tabularnewline
+\hline 
+strcpy(char dest{[}{]}, const char source{[}{]}); & /{*}Kopieren eines Strings (char{*}) {*}/\tabularnewline
+\hline 
+strcmp(const char s1{[}{]}, const char s2{[}{]}); & /{*}Vergleicht zwei Strings, gibt zurück: <0, wenn s1 kl., >0 wenn
+s2 kl., 0 wenn gl.{*}/\tabularnewline
+\hline 
+\hline 
+int j; & \tabularnewline
+\hline 
+int {*}jp; & \tabularnewline
+\hline 
+jp = \&j; & /{*} Zuweisung der Adresse von j; jp zeigt jetzt auf j{*}/\tabularnewline
+\hline 
+{*}jp = 3; & /{*} jp wird dereferenziert und dem Objekt wird 3 zugewiesen; j ist
+jetzt also 3{*}/\tabularnewline
+\hline 
+void {*}vp; & /{*} Pointer von Typ void, dieser kann auf irgendetwas zeigen{*}/\tabularnewline
+\hline 
+jp = NULL;  & /{*} Pointer zeigt explizit „auf nichts“ {*}/\tabularnewline
+\hline 
+int h{[}3{]} = \{2,4,6\}; & \tabularnewline
+\hline 
+int {*}pa; & \tabularnewline
+\hline 
+pa = h; & /{*} Pointer zeigt nun auf den Array a, genauer auf das erste Element
+a{[}0{]}{*}/\tabularnewline
+\hline 
+{*}pa = 7; & /{*} a{[}0{]} ist nun 7{*}/\tabularnewline
+\hline 
+{*}(pa + 3) = 8; & /{*}a{[}3{]} ist nun 8 \{pa+i → pa zeigt auf i-te Element) {*}(pa+3)
+ist äquiv. zu pa{[}3{]}{*}/\tabularnewline
+\hline 
+{*}pa = 8; & /{*} a{[}0{]} ist nun 8{*}/\tabularnewline
+\hline 
+pa++; & /{*} Pointer zeigt nun auf das nächste Element im Array{*}/\tabularnewline
+\hline 
+char a{[}{]} = „hello, Winterthur“; & \tabularnewline
+\hline 
+char {*}pa = „hello, Switzerland“; & \tabularnewline
+\hline 
+{[}a = pa;{]} & /{*} Nicht möglich → Kompilierfehler{*}/\tabularnewline
+\hline 
+pa = a; & /{*}OK, Pointer zeigt nun auf „hello, Winterthur“ {*}/\tabularnewline
+\hline 
+char{*} pmonth{[}12{]} = \{„Jan“, „Feb“, …\} & /{*}Pointer auf Array, Anstatt 2-Dimensionaler Array{*}/\tabularnewline
+\hline 
+pmonth{[}1{]}; & /{*}Greift auf February zu{*}/\tabularnewline
+\hline 
+{*}(pmonth{[}1{]}+3); & /{*}Greift auf das ‚r‘ in February zu{*}/\tabularnewline
+\hline 
+pmonth{[}1{]}{[}3{]}; & /{*}Greift ebenfalls auf das ‚r‘ in February zu{*}/\tabularnewline
+\hline 
+\hline 
+\textcolor{green}{Point3D pt = \{2, 4, 6\};} & \tabularnewline
+\hline 
+\textcolor{green}{(void)printf(„A=(\%d, \%d, \%d)\textbackslash{}n“} & \tabularnewline
+\textcolor{green}{,pt.x,pt.y,pt.z);} & \tabularnewline
+\hline 
+\end{tabular}
+
+\begin{tabular}{|l|l|}
+\hline 
+d = i/3;  & /{*} d= 1.0 {*}/\tabularnewline
+\hline 
+d = (double) i/3;  & /{*}d = 1.66667{*}/\tabularnewline
+\hline 
+\hline 
+\textcolor{red}{i = max(a,b);} & \textcolor{red}{/{*}i = b = 6{*}/}\tabularnewline
+\hline 
+ohterFunction(); & \tabularnewline
+\hline 
+\textcolor{blue}{Wochtage w1 = Mittwoch;} & \tabularnewline
+\hline 
+(void)printf(„Hello World in C\textbackslash{}n“); & \tabularnewline
+\hline 
+i=scanf(„\%d\%d\%d“,\&day,\&month,\&year); & \tabularnewline
+\hline 
+(void)printf(“\%d”, day); & \tabularnewline
+\hline 
+\hline 
+for (i = 1; i<=max; i++) \{  & /{*}Deklaration int i = 1 geht in c nicht, i muss vorher schon deklariert
+werden {*}/\tabularnewline
+\hline 
+/{*}do something{*}/ & \tabularnewline
+\hline 
+\} & \tabularnewline
+\hline 
+\hline 
+switch(n) \{ & \tabularnewline
+\hline 
+case 1: result = 1; & \tabularnewline
+\hline 
+break & \tabularnewline
+\hline 
+case 2: result = 2; & \tabularnewline
+\hline 
+break & \tabularnewline
+\hline 
+default: result =3; & \tabularnewline
+\hline 
+break & \tabularnewline
+\hline 
+\} & \tabularnewline
+\hline 
+\hline 
+exit(0); & \tabularnewline
+\hline 
+\} & \tabularnewline
+\hline 
+\hline 
+\textcolor{red}{int max(int a, int b) \{} & \tabularnewline
+\hline 
+if(a<b) \{ & \tabularnewline
+\hline 
+return b; & \tabularnewline
+\hline 
+\} & \tabularnewline
+\hline 
+return a; & \tabularnewline
+\hline 
+\textcolor{red}{\}} & \tabularnewline
+\hline 
+\hline 
+\textcolor{red}{void otherFunction(void) \{} & \tabularnewline
+\hline 
+\textcolor{magenta}{extern int max; } & \textcolor{magenta}{/{*}Deklaration glob. Variable {*}/}\tabularnewline
+\hline 
+int i = 8;  & /{*}Entsteht kein Konflikt mit i aus main {*}/\tabularnewline
+\hline 
+otherFunction(void); & /{*} Rekursion, wie in Java{*}/\tabularnewline
+\hline 
+\textcolor{red}{\}} & \tabularnewline
+\hline 
+\hline 
+\textcolor{red}{int checkStatic(int a) \{} & \tabularnewline
+\hline 
+static int max = 0;  & /{*}Deklaration statischer Variable{*}/\tabularnewline
+\hline 
+if (a > max) \{ & /{*} Statische Variable {*}/\tabularnewline
+\hline 
+max = a; & /{*} lokale Variable {*}/\tabularnewline
+\hline 
+\} & \tabularnewline
+\hline 
+return max; & \tabularnewline
+\hline 
+\textcolor{red}{\}} & \tabularnewline
+\hline 
+\end{tabular}

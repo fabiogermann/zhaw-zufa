@@ -1,0 +1,78 @@
+
+\subsubsection*{SQL-Befehle}
+\begin{verse}
+\begin{tabular}{>{\raggedright}p{3cm}|>{\raggedright}p{6cm}|>{\raggedright}p{7cm}|}
+\multicolumn{1}{>{\raggedright}p{3cm}}{} & \multicolumn{1}{>{\raggedright}p{6cm}}{\textbf{SQL}} & \multicolumn{1}{>{\raggedright}p{7cm}}{\textbf{Algebraische Schreibweise / Beschreibung}}\tabularnewline
+\cline{2-3} 
+\textbf{SELECT, FROM WHERE} & SELECT Name, Vorname FROM Besucher & $\Pi_{Nam,Vorname}(Besucher)$\tabularnewline
+\cline{2-3} 
+ & SELECT Name, Vorname FROM Besucher WHERE Name='Müller' & $\Pi_{Nam,Vorname}(\sigma_{Name='M\ddot{u}ller'}(Besucher))$\tabularnewline
+\cline{2-3} 
+\textbf{LIKE} & WHERE Name LIKE 'Pe\%' & Alle Name die mit 'Pe' beginnen\tabularnewline
+\cline{2-3} 
+ & WHERE name LIKE '\_da\%' & Alle Namen die 'da' nach dem ersten Zeichen enthalten\tabularnewline
+\cline{2-3} 
+\textbf{BETWEEN} & WHERE Name BETWEEN 'Bucher' AND 'Schmid' & Alle Name zwischen Bucher und Schmid\tabularnewline
+\cline{2-3} 
+ & WHERE Hausnummer BETWEEN 1 AND 10 & Alle Hausnummern zwischen 1 und 10 (inkl. 1 und 10!)\tabularnewline
+\cline{2-3} 
+\textbf{AS (Scope variables)} & SELECT x.Name, x.Vorname, y.Ort FROM Besucher AS x, Gast AS y WHERE
+x.PLZ = y.PLZ & AS nicht unbedingt nötig, alternativ geht auch FROM Besucher x, Gast
+y\tabularnewline
+\cline{2-3} 
+\textbf{(NOT) EXISTS} & SELECT x.Name, x.Vorname, x.Ort FROM Besucher AS x WHERE NOT EXISTS
+(SELECT y.Vorname, y.Name FROM Besucher AS y WHERE y.Name = y.Name
+AND x.Vorname < y.Vorname) & ALLE Besucher, ausser die, deren Nachnamen nochmals vorkommt, von
+denen wird der, mit dem grössten (``höchste'') Vornamen genommen. \tabularnewline
+\cline{2-3} 
+\textbf{SUM} & SELECT SUM(Lagerbestand) FROM Sortiment & Summe aller Werte von ``Lagerbestand''\tabularnewline
+\cline{2-3} 
+ & SELECT SUM (DISTINCT Lagerbestand) FROM Sortiment & Summe aller Werte ohne Duplikate\tabularnewline
+\cline{2-3} 
+\textbf{COUNT} & SELECT COUNT({*}) FROM Besucher & Zählt alle Tupel in der Tabelle Besucher\tabularnewline
+\cline{2-3} 
+ & SELECT COUNT(DISTINCT {*}) FROM Artikel & Alle Tupel, Ohne Duplikate\tabularnewline
+\cline{2-3} 
+ & SELECT COUNT(Name,Vorname) & Geht nicht, stattdessen:\tabularnewline
+\cline{2-3} 
+ & SELECT COUNT({*}) FROM (SELECT Name, Vorname From Besucher) & \tabularnewline
+\cline{2-3} 
+\textbf{GROUP BY} & SELECT Restaurant, MAX(Frequenz) FROM Gast GROUP BY Restaurant & Höchste Frequenz eines Restaurants\tabularnewline
+\cline{2-3} 
+ & SELECT Restaurant
+
+FROM Gast GROUP BY Restaurant
+
+HAVING COUNT({*}) > 5 & Alle Restaurants die mehr als 5 Gäste haben\tabularnewline
+\cline{2-3} 
+ & SELECT x.Restaurant FROM Gast AS x WHERE 5 < ( SELECT COUNT({*}) FROM
+Gast AS y WHERE y.Restaurant = x.Restaurant) & Gleiches Statement, ohne GROUP BY\tabularnewline
+\cline{2-3} 
+\end{tabular}
+\end{verse}
+
+\subsubsection*{CREATE}
+
+CREATE TABLE Name 
+
+(
+
+A1 INTEGER NOT NULL,
+
+A2 INTEGER NOT NULL,
+
+Attr1Name VARCHAR(30) NOT NULL,
+
+Attr2Name DATE NOT NULL, 
+
+Attr3Name TIME NOT NULL, 
+
+Attr4Name TIMESTAMP NOT NULL,
+
+PRIMARY KEY (A1),
+
+FOREIGN KEY (A2) REFERENCES TABLE TableName,
+
+UNIQUE (A1,...)
+
+)

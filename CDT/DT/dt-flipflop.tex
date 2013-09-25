@@ -1,0 +1,32 @@
+
+\section*{Kombinatorische Schaltungen vs Sequenzielle Schaltungen}
+\begin{itemize}
+\item Komb: Reine Schaltnetze, werden nur durch Input beeinflusst, Zeiteinfluss
+nur von int. Delays
+\item Seq: Haben ``Speicher'', Zustände werden auch von den vorhergehenden
+Inputs beeinflusst (Zustand des Speichers), Zeitlicher Ablauf spielt
+eine grosse Rolle
+\end{itemize}
+
+\subsection*{D-Latch (transp. FF)}
+\begin{itemize}
+\item D = Input
+\item C = Control (solange C=1, wird der Input durchgeschaltet)
+\item Q !Q = Outputs
+\item Rückkopplung ist gefährlich, gespeicherter Zustang zufällig
+\end{itemize}
+
+\subsection*{D-Flip-Flop (nichttransp. FF)}
+\begin{itemize}
+\item Pos/Neg Flanken gesteuert
+\item gleiche Funktionsweise wie D-Latch
+\item Rückkopplung halbiert den Takt
+\item Set 1 und Reset 0 Funktion -> Synchron mit Takt oder Asynchron sofort
+\end{itemize}
+
+\subsection*{Bausteine}
+\begin{itemize}
+\item Register: aus FF mit write-enable: zur Datenspeicherung
+\item asynchrone Schaltungen: D-FF ohne Clock, Staffelung, arbeiten so schnell
+wie möglich\end{itemize}
+

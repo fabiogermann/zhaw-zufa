@@ -1,0 +1,25 @@
+
+\section*{Finite State Machine}
+
+\begin{tabular}{|c|c|}
+\hline 
+\includegraphics[height=6cm]{DT/img/fsm} & %
+\begin{tabular}{|c|c|c|c|c|cc}
+\cline{1-5} \cline{7-7} 
+Current State & CS Enc. & In TA & In TB & Next State & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{OutPut Table}\tabularnewline
+\cline{1-5} \cline{7-7} 
+s0 & 00 & 0 & x & s1 & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{-> Cur.S. to Output}\tabularnewline
+\cline{1-5} \cline{7-7} 
+s0 & 00 & 1 & x & s0 &  & \tabularnewline
+\cline{1-5} \cline{7-7} 
+s1 & 01 & x & x & s2 & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{-> State Encoding}\tabularnewline
+\cline{1-5} \cline{7-7} 
+s2 & 10 & x & 0 & s3 &  & \tabularnewline
+\cline{1-5} 
+s2 & 10 & x & 1 & s2 &  & \tabularnewline
+\cline{1-5} 
+s3 & 11 & x & x & s0 &  & \tabularnewline
+\cline{1-5} 
+\end{tabular}\tabularnewline
+\hline 
+\end{tabular}

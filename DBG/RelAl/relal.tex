@@ -1,0 +1,52 @@
+
+\subsubsection*{Relationale Algebra / Bag Algebra}
+
+
+\subsubsection*{Operationen}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Selection & Projection & Natural Join & Duplicate Elimination\tabularnewline
+\hline 
+\hline 
+$\sigma_{Row="value"}$ & $\pi_{Row}(table)$ & (table) $\bowtie$ (table) & $\delta$(expression)\tabularnewline
+\hline 
+$\sigma_{Name='Miller'}$ & $\pi_{Name,E-Mail}(user)$ & U $\bowtie$ L & $\delta(\sigma_{Name='Miller'})$\tabularnewline
+\hline 
+\end{tabular}
+
+
+\subsubsection*{Mengenoperationen}
+
+\begin{tabular}{|c|c|c|}
+\hline 
+Durchschnitt (intersection) & Vereinigung (union) & Differenz (difference)\tabularnewline
+\hline 
+\hline 
+$r\cap s$  &  $r\cup s$  & $r\setminus s$\tabularnewline
+\hline 
+$=r\setminus(r\setminus s)=(r\sqcup s)\setminus(r\cup s)$ & $=(r\setminus s)\sqcup s=(r\sqcup s)\setminus(r\cap s)$ & \tabularnewline
+\hline 
+min. Anzahl der mehrf. Tupeln (BA) & max. Anzahl der mehrf. Tupeln (BA) & \tabularnewline
+\hline 
+\end{tabular}%
+\begin{tabular}{|c||c|}
+\hline 
+$r$ & $||\text{°°°°°}$\tabularnewline
+\hline 
+$s$ & $||||\text{°°°}$\tabularnewline
+\hline 
+$r\cap s$ & $||\text{°°°}$\tabularnewline
+\hline 
+$r\cup s$ & $||||\text{°°°°°}$\tabularnewline
+\hline 
+$r\sqcup s$ & $||||||\text{°°°°°°°°}$\tabularnewline
+\hline 
+$r\setminus s$ & $\text{°°}$\tabularnewline
+\hline 
+\end{tabular}
+
+Der Unterschied zwischen Bag Algebra (BA) und Relationaler Algebra
+(RA) ist, in RelAlg existieren keine doppelten Einträge. Die Bag Algebra
+jedoch erlaubt dies. Auch existiert der Operator $\sqcup$ (union
+all) nur in der Bag Welt.

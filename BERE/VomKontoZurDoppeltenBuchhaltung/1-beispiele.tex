@@ -1,0 +1,189 @@
+
+\part*{Beispiele - Konto \& Buchhaltung}
+
+
+\section*{Buchungssätze (Sammlung)}
+\begin{verse}
+\begin{tabular}{|l|r|c|l|r|}
+\hline 
+Text & Soll &  & Haben & Betrag\tabularnewline
+\hline 
+\hline 
+Barbezug vom Postkonto & Kasse & / & Postkonto & 100\tabularnewline
+\hline 
+\hline 
+Buchert der Fahrzeuge & Fahrzeuge & / & Bilanz & 37'400\tabularnewline
+\hline 
+Kauf neuer Lieferwagen & Fahrzeuge & / & Kreditoren & 72'000\tabularnewline
+\hline 
+Eintausch alter Lieferwagen & Kreditor & / & Fahrzeuge & 4'500\tabularnewline
+\hline 
+(Rechnungsbetrag) & - & / & - & 67'500\tabularnewline
+\hline 
+(Buchwert alter Lieferwagen) & - & / & - & 10'500\tabularnewline
+\hline 
+Buchverlust & Abschreibungen & / & Fahrzeuge & 6'000\tabularnewline
+\hline 
+Skontoabzug 1\% & Kreditor & / & Fahrzeuge & 675\tabularnewline
+\hline 
+Zahlung der Rechnung & Kreditor & / & Bank & 66'825\tabularnewline
+\hline 
+Abschreibungen der Fhrz & Abschreibungen & / & Fahrzeuge & 24'500\tabularnewline
+\hline 
+\hline 
+Eröffnungsbuchung & Fahrzeuge & / & Bilanz & 37'400\tabularnewline
+\hline 
+Abschlussbuchung & Bilanz & / & Fahrzeuge & 73'725\tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+Konto Fahrzeuge:
+\begin{verse}
+\begin{tabular}{lr|lr}
+Soll & \multicolumn{2}{c}{Fahrzeuge} & Haben\tabularnewline
+\hline 
+Buchwert AB & 37'400 & Eintausch LW & 4'500\tabularnewline
+neuer LW & 72'000 & Buchverlust & 6'000\tabularnewline
+ &  & Skontoabzug & 675\tabularnewline
+ &  & Abschreibungen & 24'500\tabularnewline
+ &  & SALDO & 73'725\tabularnewline
+\end{tabular}
+\end{verse}
+
+\section*{AHV / IV - Lohnabrechnungen}
+\begin{verse}
+\begin{tabular}{|c|c|c|r|}
+\hline 
+Text & Soll & Haben & Betrag\tabularnewline
+\hline 
+\hline 
+Banküberweisung der Nettolöhne & Lohnaufwand & Bank  & 220'000\tabularnewline
+\hline 
+Arbeitnehmerbeiträge & Lohnaufwand & Kred. Sozialversichers. & 44'500\tabularnewline
+\hline 
+Arbeitgeberbeiträge & Sozialaufwand & Kred. Sozialversichers. & 45'100\tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+
+\section*{Lohnabrechnung Details}
+\begin{verse}
+\begin{tabular}{|l|r|r|r|}
+\hline 
+\textbf{Lohnabrechnungen} & \textbf{Teilhaber A} & \textbf{Teilhaber B} & \textbf{Teilhaber C}\tabularnewline
+\hline 
+\hline 
+Bruttolohn (BL) & 60'000.00 & 60'000.00 & 60'000.00\tabularnewline
+- Koordinationsabzug & -24'360.00 & -24'360.00 & -24'360.00\tabularnewline
+= Versicherter Lohn (VL) & 35'640.00 & 35'640.00 & 35'640.00\tabularnewline
+- AHV/IV/EO/ALV 6.25\% vom BL & -3'750.00 & -3'750.00 & -3'750.00\tabularnewline
+- Pensionskasse 7.00\% vom VL & -2'494.80 & -2'494.80 & -2'494.80\tabularnewline
+\hline 
+= Nettolohn & 53'755.20 & 53'755.20 & 53'755.20\tabularnewline
+\hline 
+\end{tabular}
+
+\begin{tabular}{|l|r|r|r|r|}
+\hline 
+\textbf{Arbeitnehmerbeiträge} & \textbf{Total} & \textbf{Teilhaber A} & \textbf{Teilhaber B} & \textbf{Teilhaber C}\tabularnewline
+\hline 
+\hline 
+AHV/IV/EO/ALV & 11'250.00 & 3'750.00 & 3'750.00 & 3'750.00\tabularnewline
+\hline 
+Pensionskasse (1) & 7'484.40 & 2'494.80 & 2'494.80 & 2'494.80\tabularnewline
+\hline 
+\end{tabular}
+
+\begin{tabular}{|l|r|r|r|r|}
+\hline 
+\textbf{Arbeitgeberbeiträge} & \textbf{Total} & \textbf{Teilhaber A} & \textbf{Teilhaber B} & \textbf{Teilhaber C}\tabularnewline
+\hline 
+\hline 
+AHV/IV/EO/ALV & 11'250.00 & 3'750.00 & 3'750.00 & 3'750.00\tabularnewline
+\hline 
+Pensionskasse (2) & 8'553.60 & 2'851.20 & 2'851.20 & 2'851.20\tabularnewline
+\hline 
+\end{tabular}\end{verse}
+\begin{itemize}
+\item (1) 7.00\% vom versichterten Lohn
+\item (2) 8.00\% vom versicherten Lohn
+\item Beitragssätze (7.00\% bzw. 8.00\% differieren je nach Versicherung
+und Arbeitgeber)
+\end{itemize}
+
+\section*{MWST inkl. Skonto - Rechnung}
+\begin{verse}
+\begin{tabular}{r|>{\raggedright}p{4cm}|r|l|c|r|r|}
+\cline{2-7} 
+ & Text & Soll & Haben & Betrag & \multicolumn{2}{c|}{Prozent}\tabularnewline
+\hline 
+\multirow{2}{*}{100 \% = 432'000} & An Kunden verrechnet Beratunsertrag & Debitoren & Beratungsertrag & 400'000 & 100 \% & \multirow{2}{*}{108 \%}\tabularnewline
+\cline{2-6} 
+ & MWST fakturieren & Debitoren & Kred. Umsatzsteuer & 32'000 & 8 \% & \tabularnewline
+\hline 
+98 \% = 423'360  & Kundenzahlung Postkonto inkl MWST & Postkonto & Debitoren & 423'360 & \multicolumn{2}{r|}{}\tabularnewline
+\hline 
+\multirow{2}{*}{2 \% = 8'640 } & Skontoabzug des Kunden  & Debitorenverluste & Debitoren & 8000 & 100 \%  & \multirow{2}{*}{108 \%}\tabularnewline
+\cline{2-6} 
+ & inkl. MWST & Kred. Umsatzsteuer & Debitoren & 640 & 8 \% & \tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+
+\paragraph*{Umsatzsteuer (keine Gewinnsteuer): }
+
+Konto Kreditor (dem Staat)
+
+
+\section*{MWST inkl. Skonto - Einkauf}
+\begin{verse}
+\begin{tabular}{r|>{\raggedright}p{4cm}|r|l|c|r|r|}
+\cline{2-7} 
+ & Text & Soll & Haben & Betrag & \multicolumn{2}{c|}{Prozent}\tabularnewline
+\hline 
+\multirow{2}{*}{100 \% = 432'000} & Rechnung vom Kunden & Warenaufwand & Kreditor & 400'000 & 100 \% & \multirow{2}{*}{108 \%}\tabularnewline
+\cline{2-6} 
+ & MWST fakturieren & Debitor Vorsteuer & Kreditor & 32'000 & 8 \% & \tabularnewline
+\hline 
+98 \% = 423'360  & Zahlung per Postkonto & Kreditor & Post & 423'360 & \multicolumn{2}{r|}{}\tabularnewline
+\hline 
+\multirow{2}{*}{2 \% = 8'640 } & Skontoabzug von uns & Kreditor & Warenaufwand & 8000 & 100 \%  & \multirow{2}{*}{108 \%}\tabularnewline
+\cline{2-6} 
+ & inkl. MWST & Kreditor & Debitor Vorsteuer & 640 & 8 \% & \tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+
+\paragraph*{Vorsteuer: }
+
+Konto Debitor (vom Staat)
+
+
+\section*{Reserven aus Gewinn bilden}
+\begin{verse}
+\begin{tabular}{|l|r|c|l|c|}
+\hline 
+Text & Soll &  & Haben & Betrag\tabularnewline
+\hline 
+\hline 
+Vom Jahresgewinn werden CHF 10'000.- den Reserven zugewiesen & Bilanzgewinn & / & Reserven & 10'000\tabularnewline
+\hline 
+\end{tabular}
+\end{verse}
+
+\section*{Begriffe}
+
+
+\paragraph*{Anlagen:}
+\begin{itemize}
+\item langfristig materiell: Immobilien, Mobilien etc.
+\item langfristig immateriell: Softwarelizenzen, Patente
+\end{itemize}
+
+\paragraph*{Diverse}
+\begin{itemize}
+\item übrige kurzfristige Verbindlichkeiten: auf Kredit
+\item Kundenrechnungen, Kundenforderungen: Debitoren
+\item auf Rechnung: Kreditoren, Verpflichtungen aus Lieferungen und Leistungen,
+übriges kurzfristiges Fremdkapital\end{itemize}
+
