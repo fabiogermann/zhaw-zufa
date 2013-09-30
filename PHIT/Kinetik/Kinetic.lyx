@@ -257,5 +257,105 @@ Beschleunigung
 
 \end_layout
 
+\begin_layout Section*
+Beispiele
+\end_layout
+
+\begin_layout Subsection*
+Zentrifuge
+\end_layout
+
+\begin_layout Standard
+Eine Zentrifuge drehe sich mit einer Winkelgeschwindigkeit von 20 s-1.
+ Die Zentrifugengläser (Proben) befinden sich in einem Abstand von 10 cm
+ von der Drehachse.
+\end_layout
+
+\begin_layout Enumerate
+Wie gross ist die Bahngeschwindigkeit in m/s und welcher Weg wird in einer
+ Sekunde zurückgelegt?
+\end_layout
+
+\begin_layout Enumerate
+Welche Zentrifugalbeschleunigung wirkt auf die Proben?
+\end_layout
+
+\begin_layout Standard
+Gegeben 
+\begin_inset Formula $w=20s^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $r=10cm=0,1m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v=r*w=0.1*20s^{-1}=2m/s$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s=2m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{z}=r*w^{2}=0.1*20^{2}s^{-2}=40m/s^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Schaufelrad
+\end_layout
+
+\begin_layout Standard
+Das Schaufelrad einer Turbine (Flugzeugtriebwerk) drehe sich mit 30000 U/min.
+ Die einzelnen Schaufeln haben eine Masse von 50 g und befinden sich im
+ Abstand von 15 cm von der Drehachse entfernt.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Welche Kraft muss mindestens aufgebracht werden, damit die Schaufeln nicht
+ aus der Turbine fliegen?
+\end_layout
+
+\begin_layout Standard
+Gegeben 
+\begin_inset Formula $m=0.05kg$
+\end_inset
+
+,
+\begin_inset Formula $r=0.15m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $w=2\Pi*\frac{u/min}{60s}=2\Pi\nu=2\Pi*\frac{3*10^{3}}{60}=3.41*10^{3}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $F_{z}=m*w^{2}*r=7.4*10^{4}N$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
