@@ -64,8 +64,84 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Part*
+Kombinatorik
+\end_layout
 
+\begin_layout Section*
+Einführung
+\end_layout
+
+\begin_layout Standard
+Zu beachten:
+\end_layout
+
+\begin_layout Itemize
+Unterscheidbare oder nicht unterscheidbare Objekte
+\end_layout
+
+\begin_layout Itemize
+Mit oder ohne Beachtung der Reihenfolge
+\end_layout
+
+\begin_layout Standard
+Quotienten für die Wahrscheinlichkeit:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{günstige\: Fälle}{mögliche\: Fälle}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Probleme beim Bestimmen dieser günstigen und möglichen Fälle:
+\end_layout
+
+\begin_layout Itemize
+Permutationen mit und ohne Wiederholungen
+\end_layout
+
+\begin_layout Itemize
+Auswahlprobleme mit und ohne Wiederholungen
+\end_layout
+
+\begin_layout Section*
+Schubfachprinzip: Einfache Form
+\end_layout
+
+\begin_layout Standard
+Falls man n Objekte auf m Mengen verteilt, und n grösser als m ist, dann
+ gibt es mindestens eine Menge, in der mehr als ein Objekt landet.
+\end_layout
+
+\begin_layout Section*
+Schubfachprinzip: Starke Form
+\end_layout
+
+\begin_layout Standard
+Seien 
+\begin_inset Formula $q_{1},q_{2},...,q_{n}$
+\end_inset
+
+ natürliche Zahlen.
+ Verteilt man
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $q_{1}+q_{2}+...+q_{n}-n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Objekte auf n Mengen, dann enthält entweder die erste Menge mindestens q1
+ Objekte oder die zweite Menge enthält mindestens q2 Objekte, .
+ .
+ .
+ , oder die n-te Menge enthält mindestens qn Objekte.
 \end_layout
 
 \end_body
