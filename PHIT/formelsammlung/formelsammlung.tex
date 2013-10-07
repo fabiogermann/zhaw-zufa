@@ -1,17 +1,19 @@
 \documentclass[11pt]{article}
 
 \usepackage[utf8x]{inputenc}
+\usepackage{fullpage}
 
 \title{Formelsammlung}
 \date{\today}
 \author{Christian Brüesch}
 
 \begin{document}
+\tableofcontents
 \maketitle
-\section{Kapitel 1, Geschwindigkeit, Strecke, Beschleunigung}
+\section{Geschwindigkeit, Strecke, Beschleunigung}
 $$v(t) = at + v_0$$
 $$s(t) = \frac{1}{2}at^2 + v_0t + s_0$$
-\section{Kapitel 1, Der vertikale und der schiefe Wurf}
+\section{Der vertikale und der schiefe Wurf}
 \subsection{Erdanziehung}
 $$m\overrightarrow{a} = \overrightarrow{F}$$\\
 $$\overrightarrow{F}=\left(\begin{array}{c}
@@ -19,20 +21,19 @@ $$\overrightarrow{F}=\left(\begin{array}{c}
 0\\
 -mg
 \end{array}\right)$$
-\subsection{Der Wurf}
-\subsubsection{Beschleunigung}
+\subsection{Beschleunigung}
 $$\overrightarrow{a} = \left( \begin{array}{c}
 0\\
 0\\
 -g
 \end{array} \right)$$
-\subsubsection{Geschwindigkeit}
+\subsection{Geschwindigkeit}
 $$\overrightarrow{v}(t) = \left( \begin{array}{c}
 v_{x,0}\\
 v_{y,0}\\
 v_{z,0} - gt
 \end{array} \right) $$
-\subsubsection{Ortsvektor}
+\subsection{Ortsvektor}
 $$\overrightarrow{r}(t) = \left( \begin{array}{c}
 r_{x,0} + v_{x,0}t\\
 r_{y,0} + v_{y,0}t\\
@@ -42,4 +43,55 @@ r_{z,0} + v_{z,0}t - g\frac{t^2}{2}
 \subsection{Kreisbewegnung}
 $$v = r\omega$$
 $$a = r\omega^2$$
+\section{Kräfte}
+\subsection{Anziehung zwischen zwei Objekten}
+$$\overrightarrow{F}_{mM} = -\gamma * \frac{mM}{|\overrightarrow{r}_m-\overrightarrow{r}_M|^2} * \frac{\overrightarrow{r}_m-\overrightarrow{r}_M}{|\overrightarrow{r}_m-\overrightarrow{r}_M|^2} $$
+
+\begin{eqnarray*}
+\overrightarrow{F}_{mM} &:& Anziehungskraft\\
+\gamma &:& Konstante:6.67*10^{-11} m^3kg^{-1}s^{-2}\\
+-\gamma &:& \textit{Minus, da es sich um eine Anziehung handelt.}\\
+\frac{\overrightarrow{r}_m-\overrightarrow{r}_M}{|\overrightarrow{r}_m-\overrightarrow{r}_M|^2}&:&Richtung\\
+|\overrightarrow{r}_m-\overrightarrow{r}_M| &:& \sqrt{(r_x)^2 + (r_y)^2 + (r_z)^2}
+\end{eqnarray*}
+\subsection{Umlaufbahnberechnungen}
+\begin{eqnarray*}
+r &=& r_E + h\\
+m\omega^2r &=& \gamma\frac{mM}{r^2} \textit{(m kürzt sich raus)}\\
+\omega &=& 2\pi\nu = \frac{2\pi}{T}\\
+T &=& 24h * 3600 = 86400s \textit{(Frequenz einer Umdrehung der Erde)}
+\end{eqnarray*}
+\subsection{Anziehung zwischen Atomen}
+\begin{eqnarray*}
+\overrightarrow{F}_C&=&\frac{1}{4\pi\epsilon_0}*\frac{qQ}{r^2} \\
+\\
+E_0 &:& Konstante: 8.859*10^{-12} \frac{C^2}{Jm}\\
+q &:& \textit{Gewicht. Wie m bei Objekten}\\
+Q &:& \textit{Gewicht. Wie M bei Objekten}\\
+r &:& \textit{Abstand zwischen den Atomen}\\
+\end{eqnarray*}
+\subsection{Herleitung Zentripetalkraft}
+\begin{eqnarray*}
+v&=&r\omega\\
+a&=&r\omega^2\\
+\overrightarrow{F} &=& mg = ma\\
+ma &=& mr\omega^2\\
+ma &=& mr\frac{v^2}{r^2} = \frac{mv^2}{r}\\
+\end{eqnarray*}
+\subsection{Reibungskräfte}
+\subsubsection{Objekt auf schiefer Ebene}
+\begin{eqnarray*}
+F_g &=& F_N + F_R\\
+F_R &=& F_g * \sin(\alpha) = mg*\sin(\alpha)\\
+F_N &=& F_g * \cos(\alpha) = mg*\cos(\alpha)\\
+\textit{Haftung}&:& 0 \le F_H \le \mu_H * F_N\\\\
+F_{R_{max}} &=& \mu_H * FN\\
+mg * sin(\alpha_{max}) &=& \mu_H * mg * cos(\alpha_{max})
+\end{eqnarray*}
+\subsubsection{Motorrad fährt in Kurve}
+\begin{eqnarray*}
+\textit{Ansatz}&:& \textit{Haftreibung} > \textit{Zentripetalkraft}\\
+\mu_H * mg &>& \frac{mv^2}{r}\\
+\end{eqnarray*}
+
 \end{document}
