@@ -500,5 +500,89 @@ Formel:
 
 \end_layout
 
+\begin_layout Part*
+Arbeit, Energie, Potential
+\end_layout
+
+\begin_layout Section*
+Beispiele
+\end_layout
+
+\begin_layout Subsection*
+Freier Fall
+\end_layout
+
+\begin_layout Subsubsection*
+Auf der Erde
+\end_layout
+
+\begin_layout Standard
+Gegeben: 
+\begin_inset Formula $m=10kg$
+\end_inset
+
+, 
+\begin_inset Formula $h=20m$
+\end_inset
+
+, EE: 
+\begin_inset Formula $E_{tot}=E_{kin}+E_{pot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{kin1}+E_{pot1}=E_{kin2}+E_{pot2}\Longrightarrow0+mgh=\frac{mv^{2}}{2}+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v=\sqrt{2gh}=\sqrt{2\cdot9.81m/s^{2}\cdot20m}=19.8m/s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Auf dem Mond
+\end_layout
+
+\begin_layout Standard
+Gegeben: 
+\begin_inset Formula $\gamma=6.672\cdot10^{-11}m^{3}kg^{-1}s^{-2}$
+\end_inset
+
+, 
+\begin_inset Formula $M=7.349\cdot10^{22}kg$
+\end_inset
+
+, 
+\begin_inset Formula $r_{m}=1.738\cdot10^{16}m$
+\end_inset
+
+, 
+\begin_inset Formula $F_{G,M}=m\cdot g_{M}=\gamma\cdot\frac{m\cdot M}{r_{M}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F_{G,M}=\gamma\cdot\frac{m\cdot M}{r_{M}^{2}}=6.672\cdot10^{-11}m^{3}kg^{-1}s^{-2}\cdot\frac{1.738\cdot10^{16}\cdot10kg}{1.738^{2}\cdot10^{12}\cdot m^{2}}=1.62m/s^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{M}=\sqrt{2g_{M}h}=\sqrt{2\cdot1.62m/s^{2}\cdot20m}=8.05m/s\simeq8.1m/s$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
