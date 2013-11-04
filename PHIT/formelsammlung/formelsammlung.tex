@@ -2,6 +2,7 @@
 
 \usepackage[utf8x]{inputenc}
 \usepackage{fullpage}
+\usepackage{amsmath}
 
 \title{Formelsammlung}
 \date{\today}
@@ -85,7 +86,7 @@ F_g &=& F_N + F_R\\
 F_R &=& F_g * \sin(\alpha) = mg*\sin(\alpha)\\
 F_N &=& F_g * \cos(\alpha) = mg*\cos(\alpha)\\
 \textit{Haftung}&:& 0 \le F_H \le \mu_H * F_N\\\\
-F_{R_{max}} &=& \mu_H * FN\\
+F_{R_{max}} &=& \mu_H * F_N\\
 mg * sin(\alpha_{max}) &=& \mu_H * mg * cos(\alpha_{max})
 \end{eqnarray*}
 \subsubsection{Motorrad fährt in Kurve}
@@ -93,5 +94,134 @@ mg * sin(\alpha_{max}) &=& \mu_H * mg * cos(\alpha_{max})
 \textit{Ansatz}&:& \textit{Haftreibung} > \textit{Zentripetalkraft}\\
 \mu_H * mg &>& \frac{mv^2}{r}\\
 \end{eqnarray*}
+\section{Impuls und Kraft}
+\subsubsection{Zentripetalbeschleunigung}
+\begin{eqnarray*}
+F_z &=& m\cdot\frac{v^2}{r} = m \cdot a_z\\
+a_z &=& \frac{v^2}{r}\\
+F_z &=& mr\omega^2\\
+\omega &=& \textit{Winkelgeschwindigkeit}
+\end{eqnarray*}
 
+
+\subsubsection{Impuls}
+\begin{eqnarray*}
+\overrightarrow{p}&=&m\overrightarrow{v}\\
+\textit{Einheit }&:& [kg\cdot m/s]\\
+F &=& \frac{d\overrightarrow{p}}{dt} \\
+\overrightarrow{F} &=& m\frac{d\overrightarrow{v}}{dt}+\overrightarrow{v}\frac{dm}{dt}\\
+\overrightarrow{F} &=& \frac{d\overrightarrow{p}}{dt}= m\frac{d\overrightarrow{v}}{dt}=m\overrightarrow{a}\\
+\overrightarrow{p} &=& \overrightarrow{p}_A+\overrightarrow{p}_B = const.\\
+\overrightarrow{v}&=&\frac{m_A\overrightarrow{v}_A+m_B\overrightarrow{v}_B}{m_A+m_B}\\
+m_1\frac{u_1^2}{2}+m_2\frac{u_2^2}{2} &=& m_1\frac{v_1^2}{2}+ m_2\frac{v_2^2}{2} = E\\
+E_{Kin} &=& \frac{m\overrightarrow{v}^2}{2} = \frac{\overrightarrow{p}\overrightarrow{v}}{2} = \frac{\overrightarrow{p}^2}{2m}
+\end{eqnarray*}
+
+
+\subsubsection{Sprung von Wagen}
+Sie stehen auf einem Wagen. Sie und der Wagen wiegen zusammen M = 300kg und ste-
+hen still. Sie springen vom Wagen in Richtung gegeben durch einen normierten Rich-
+tungsvektor n. Bei Ihrem Sprung erreichen Sie eine Schnelligkeit von 20m/s. Mit welcher
+Geschwindigkeit (als Vektor!) bewegt sich der Wagen?
+\begin{eqnarray*}
+\textit{Vor dem Sprung ist der Impuls 0: } \overrightarrow{p}_{in}&=& 0\\
+\textit{Ihr Impuls wird sein: } \overrightarrow{p}_{Sie}&=&m_{Sie}vm\\
+\textit{Nun ist der Impuls erhalten: } \overrightarrow{p}_{Sie} + \overrightarrow{p}_{Wagen} = \overrightarrow{p}_{in} &=& 0\\
+\textit{Mit } \overrightarrow{p}_{Wagen} &=& m_{Wagen} v_{Wagen} \textit{ergibt sich:}\\
+\overrightarrow{v}&=& -\frac{m_{Sie}}{M-m_{Sie}}v\overrightarrow{n}
+\end{eqnarray*}
+\subsubsection{Aufgabe mit Wind auf schräge Platte}
+
+\begin{eqnarray*}
+\overrightarrow{F} = \begin{pmatrix}
+						(1-\sin(\alpha))\sin(\alpha)\rho_{air}Av^2\\
+						0\\
+						-\cos(\alpha)\sin(\alpha)\rho_{air}Av^2
+					\end{pmatrix}	
+\end{eqnarray*}
+
+\section{Gravitationskraft}
+\begin{eqnarray*}
+F_G &=& \gamma \frac{mM}{r^2}\\
+\gamma &=& 6.6731\cdot 10^{-11} Nm^2/kg^2\\
+\overrightarrow{F}_{Mm} &=& -\overrightarrow{F}_{mM}
+\end{eqnarray*}
+
+\section{Elektrische Kräfte}
+\begin{eqnarray*}
+F_E &=& \frac{1}{4\pi\epsilon_0}\cdot\frac{qQ}{r^2}\\
+\epsilon_0 &=& 8.8542\cdot 10^{-12}C^2/(Nm^2) \textit{(Elektrische Feldkonstante)}
+\end{eqnarray*}
+
+\section{Fall- und Wurfbewegungen mit Luftwiderstand}
+\begin{eqnarray*}
+F_w&=& c_w \cdot \frac{\rho A}{2}*v^2\\
+\rho &=& 1.293 kg/m^3 \textit{(Standardatmosphäre)}\\
+A &=& \textit{Querschnittsfläche senkrecht zur Anströmung stehend}\\
+v &=& v(t) = [(c_w \cdot \frac{\rho A}{2m})\cdot t - c]^{-1}\\
+v_{n+1} &=& v_n+\delta v_n = v_n + (g-c_w\cdot\frac{\rho A}{2m} \cdot v_n^2)*\delta t
+\end{eqnarray*}
+
+\section{Energie}
+Einheit von Energie: Newtonmeter [Nm] oder Joule [J] (1J = 1Nm)
+\subsection{Potentielle Energie}
+\begin{eqnarray*}
+E_{pot} &=& W = F\cdot s = mgh \textit{  Gilt nur auf der Erde}\\
+E_{pot} &=& -\frac{\gamma Mm}{r}\\
+\gamma &:& 6.67 \cdot 10^{-11} Nm^2/kg^2\\
+M &:& \textit{Masse der Erde (oder Sonne)}\\
+m &:& \textit{Masse des Objektes}\\
+r &:& \textit{Abstand zwischen Erdmittelpunkt zu Objekt}
+\end{eqnarray*}
+
+\subsection{Kinetische Energie}
+\begin{eqnarray*}
+E_{Kin} &=& \frac{1}{2}mv^2\\
+m &:& \textit{Masse}\\
+v &:& \textit{Geschwindigkeit}
+\end{eqnarray*}
+
+\subsection{Federenergie}
+\begin{eqnarray*}
+E_{Feder} &=& \frac{k(x-x_0)^2}{2}\\
+k &:& \textit{Federkonstante}\\
+x_0 &:& \textit{Anfangsposition}\\
+x &:& \textit{Endposition}
+\end{eqnarray*}
+
+\section{Leistung}
+Einheit von Leistung P: Watt [W] oder Joule pro Sekunde [J/s] (1W = 1J/s)
+\begin{eqnarray*}
+P &=& F \cdot v\\
+P &=& \frac{W}{t}
+\end{eqnarray*}
+
+
+\section{Elektrisches Feld}
+\begin{eqnarray*}
+\overrightarrow{E}&=&\frac{\overrightarrow{F}_E}{Q}\\
+Q &:& \textit{Gespeicherte Ladung im Kondensator}\\
+\overrightarrow{F}_E &:& \textit{Elektrische Kraft}\\
+\overrightarrow{E} &=& \textit{Elektrisches Feld}
+\end{eqnarray*}
+
+\section{Kapazität}
+\begin{eqnarray*}
+CU &=& Q\\
+E_{elek} &=& \frac{CU^2}{2}\\
+U &:& \textit{Spannung}\\
+C &:& \textit{Kapazität}\\
+Q &:& \textit{Ladung}
+\end{eqnarray*}
+
+
+\section{Ströme}
+\begin{eqnarray*}
+P &=& U\cdot I\\
+E_{pot} &=& \frac{Q^2}{2C} = C \frac{U^2}{2}\\
+U &:& \textit{Spannung}\\
+I &:& \textit{Strom}\\
+C &:& \textit{Kapazität}\\
+Q &:& \textit{Ladung}
+\end{eqnarray*}
 \end{document}
