@@ -584,5 +584,212 @@ Gegeben:
 
 \end_layout
 
+\begin_layout Part*
+Energieerhaltung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{tot}=E_{kin}+E_{pot}=const.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{kin\: Anfang}+E_{pot\: a}=E_{kin\: Ende}+E_{pot\: E}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta W=E_{pot\: A}-E_{pot\: E}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{kin\: A}+\Delta W=E_{kin\: E}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{m}{2}\cdot v_{0}^{2}+\Delta W=\frac{m}{2}\cdot v_{2}^{2}$
+\end_inset
+
+ |
+\begin_inset Formula $\cdot\frac{2}{m}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $v_{0}^{2}+\frac{2\Delta W}{m}=v_{2}^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $v_{2}=\sqrt{v_{0}^{2}+\frac{2\Delta W}{m}}=\sqrt{\frac{mv_{0}^{2}2\Delta W}{m}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Elementarladung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1e=1.6\cdot10^{-19}C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1C=1As\Longrightarrow I=\frac{dQ}{dt}=\frac{C}{s}=A$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{0}=8.88542\cdot10^{-12}As/Vm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Elektrisches Feld
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(r)=\frac{\varrho}{2\Pi E_{0}}\cdot\frac{1}{r}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\gamma(r)=-\int Edr=-\frac{\varrho}{2\Pi E_{0}}\cdot\int\frac{1}{r}dr=-\frac{\varrho}{2\Pi E_{0}}\cdot ln(r)+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Kraft auf eine Punktladung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{F_{c}}=q_{0}\cdot\vec{E}\Longrightarrow\vec{E}=\frac{\vec{F_{c}}}{q_{0}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dE_{pot}=-\vec{F}d\vec{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dE_{pot}=-q_{0}\cdot\vec{E}\cdot d\vec{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int d\gamma=\frac{dE_{pot}}{q_{0}}=-\int\vec{E}d\vec{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta\gamma=-\overset{b}{\underset{a}{\int}\vec{E}d\vec{l}=\gamma(a)-\gamma(b)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\gamma(r)=\frac{1}{4\Pi E_{0}}\cdot(-\frac{q}{r}+\frac{q}{|\vec{r}-\vec{l}|})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Potential eines Punktuellen-Ladungssystem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma(r)=\frac{1}{4\Pi E_{0}}\cdot\underset{i}{\sum}\cdot\frac{q_{i}}{r_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\vec{E}(\vec{r})=\frac{1}{4\Pi E_{0}}\cdot(-\frac{q}{r^{3}}\cdot\vec{r}+\frac{q}{|\vec{r}-\vec{l}|^{3}}\cdot(\vec{r}\cdot\vec{l}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Arbeit
+\end_layout
+
+\begin_layout Standard
+Gegeben sind 2 positiv geladene Teilchen q,Q und Abstand 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta W=\overset{r_{2}}{\underset{r_{1}}{\int}}\vec{F_{c}}d\vec{r}=\frac{q\cdot Q}{4\Pi E_{0}}\cdot\overset{r_{2}}{\underset{r_{1}}{\int}}\frac{1}{r^{2}}dr=\frac{q\cdot Q}{4\Pi E_{0}}\cdot(\frac{1}{r_{1}}-\frac{1}{r_{2}})$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
