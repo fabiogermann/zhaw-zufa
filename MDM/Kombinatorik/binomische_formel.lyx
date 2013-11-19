@@ -87,7 +87,7 @@ Binomische Formel
 
 \begin_inset Formula 
 \[
-\binom{n}{k}+\binom{n}{k+1}=\binom{n+1}{k+1}
+\binom{n}{k}+\binom{n}{k+1}=\binom{n+1}{k+1}\Longleftrightarrow\binom{n+1}{k}=\binom{n}{k}+\binom{n}{k-1}
 \]
 
 \end_inset

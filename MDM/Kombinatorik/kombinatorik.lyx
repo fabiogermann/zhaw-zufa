@@ -180,7 +180,7 @@ mit Widh
 \begin_inset Formula $N=\frac{n!}{p_{1}!\cdot p_{2}!\cdot...}$
 \end_inset
 
-
+ *
 \end_layout
 
 \end_inset
@@ -283,6 +283,17 @@ k
 </row>
 </lyxtabular>
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+*: Multinomialskoeffizient: 
+\begin_inset Formula $\left(\begin{array}{c}
+n\\
+n_{1},\, n_{2},\, n_{3}
+\end{array}\right)=\frac{n!}{n_{1}!\cdot n_{2}!\cdot n_{3}!}$
 \end_inset
 
 

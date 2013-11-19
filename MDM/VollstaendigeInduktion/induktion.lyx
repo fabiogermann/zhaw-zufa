@@ -68,5 +68,63 @@
 Induktion
 \end_layout
 
+\begin_layout Standard
+Aufbau:
+\end_layout
+
+\begin_layout Itemize
+Induktionsverankerung - 
+\begin_inset Formula $A(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Induktionsschluss - 
+\begin_inset Formula $A(n)\rightarrow A(n+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Genauer:
+\end_layout
+
+\begin_layout Itemize
+Induktionsanfang: 
+\begin_inset Formula $A(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Induktionsschritt:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Induktionsbehauptung 
+\begin_inset Formula $A(n+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Induktionsvoraussetzung 
+\begin_inset Formula $A(n)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
