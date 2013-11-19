@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Engineering Calculation Paper
+% LaTeX Template
+% Version 1.0 (20/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dmitry Volynkin (dim_voly@yahoo.com.au)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{article} % Use A4 paper with a 12pt font size - different paper sizes will require manual recalculation of page margins and border positions
+\usepackage{marginnote} % Required for margin notes
+\usepackage{wallpaper} % Required to set each page to have a background
+\usepackage{lastpage} % Required to print the total number of pages
+\usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4.0cm,marginparwidth=3.4cm]{geometry} % Adjust page margins
+\usepackage{amsmath} % Required for equation customization
+\usepackage{amssymb} % Required to include mathematical symbols
+\usepackage{xcolor} % Required to specify colors by name
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{fancyhdr} % Required to customize headers
+\setlength{\headheight}{80pt} % Increase the size of the header to accommodate meta-information
+\pagestyle{fancy}\fancyhf{} % Use the custom header specified below
+\renewcommand{\headrulewidth}{0pt} % Remove the default horizontal rule under the header
+
+\setlength{\parindent}{0cm} % Remove paragraph indentation
+\newcommand{\tab}{\hspace*{2em}} % Defines a new command for some horizontal space
+
+\newcommand\BackgroundStructure{ % Command to specify the background of each page
+\setlength{\unitlength}{1mm} % Set the unit length to millimeters
+
+\setlength\fboxsep{0mm} % Adjusts the distance between the frameboxes and the borderlines
+\setlength\fboxrule{0.5mm} % Increase the thickness of the border line
+\put(10, 10){\fcolorbox{black}{white!10}{\framebox(192,247){}}} % Main content box
+\put(10, 262){\fcolorbox{black}{white!10}{\framebox(192, 25){}}} % Header box
+%\put(137, 263){\includegraphics[height=23mm,keepaspectratio]{logo}} % Logo box - maximum height/width: 
+}
+
+%----------------------------------------------------------------------------------------
+%	HEADER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\fancyhead[L]{\begin{tabular}{l r | l r} % The header is a table with 4 columns
+\textbf{Project} & Stochastik Zusammenfassung Prüfung 1 & \textbf{Page} & \thepage/\pageref{LastPage} \\ % Project name and page count
+\textbf{Job} & 0001 & \textbf{Date} & \today \\ % Job number and last updated date
+\textbf{Version} & V1 & \textbf{} &  \\ % Version and reviewed date
+\textbf{Author} & Christian Brüesch & \textbf{} &  \\ % Designer and reviewer
+\end{tabular}}
+
+%----------------------------------------------------------------------------------------
+	
+\begin{document}
+\color{red}
+\AddToShipoutPicture{\BackgroundStructure} % Set the background of each page to that specified above in the header information section
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONTENT
+%----------------------------------------------------------------------------------------
+\tableofcontents
+\pagebreak
+
+\section{Schubfachprinzip}
+\subsection{Einfache Form}
+\subsubsection{Definition}
+Falls man $n$ Objekte auf $m$ Mengen verteilt, und $n$ grösser als $m$ ist, dann gibt es mindestens eine Menge, in der mehr als ein Objekt landet.
+
+\subsection{Starke Form}
+\subsubsection{Definition}
+
+Seien $q_1,q_2,\cdots ,q_n$ natürliche Zahlen. Verteilt man
+$$N=q_1+q_2+\cdots + q_n -n +1$$
+Objekte auf $n$ Mengen, dann erhält entweder die erste Menge mindestens $q_1$ Objekte oder die zweite Menge enthält mindestens $q_2$ Objekte, $\cdots$, oder die $n$-te Menge enthält mindestens $q_n$ Objekte.
+
+
+\section{Binomische Formel}
+\subsection{Definition}
+$$\frac{n!}{k!(n-k)!} = \binom{n}{k}, k=0\cdots n, 0!=1$$
+$$\binom{n}{k} = \binom{n}{n-k}$$
+$$\binom{n}{k}+\binom{n}{k+1} = \binom {n+1}{k+1}$$
+\subsection{Binominalkoeffizient}
+Die Binominalkoeffizienten $\lambda_k$ in der Entwicklung $(a+b)^n = \sum\limits_{k=0}^n \lambda_k a^{n-k}b^k$ sind:
+$$\lambda_k = \binom {n}{k} = \frac{n!}{(n-k)!\cdot k!}$$
+\subsection{TR Eingaben}
+Berechne: $(a+\frac{1}{a})^4$ : expand($(a+\frac{1}{a})^4$)\\\\
+Berechne: $\binom {10}{2} - \binom {9}{2}$ : nCr(10,2) - nCr(9,2)\\\\
+Berechne: $\binom {x}{2} = 595$ : solve(nCr(x,2)=595,x)\\\\
+
+\section{Permutation}
+
+\subsection{Ohne Wiederholungen}
+\subsubsection{Definition}
+Die Anzahl aller Permutationen von $n$ Elementen ist gleich $n!$.
+
+\subsection{Mit Wiederholungen}
+\subsubsection{Definition}
+Treten unter $n$ Elementen $k$ Gruppen von unter sich \textbf{nicht unterscheidbaren} Elementen auf, welche $p_1, p_2, \cdots , p_k$ Elemente enthalten, so ist die Anzahl aller Permutationen mit Wiederholungen.
+$$N=\frac{n!}{p_1! \cdot p_2! \cdots p_k!}$$
+Beispiel: Das Wort \textbf{MISSISSIPPI} enthält den Buchstaben \textbf{M} einmal, \textbf{I} viermal, \textbf{S} viermal und den Buchstaben \textbf{P} zweimal. Die Anzahl verschiedener Wörter der gleichen Länge ist somit:
+$$N=\frac{11!}{1!\cdot 4! \cdot 4! \cdot 2!} = 34650$$
+\subsubsection{TR Eingaben}
+Permutation: nPr(16, 8): Lösung für: Auf wieviel Arten können 16 Personen die ersten 8 Positionen belegen.
+
+\section{Geordnete Stichproben}
+\subsection{Mit Zurücklegen}
+\subsubsection{Definition}
+Aus einer Menge mit $n$ verschiedenen Elementen werden $k$ Elemente mit Berücksichtigung der Reihenfolge ausgewählt und wieder in die Menge zurückgelegt. Man bildet also \textbf{geordnete Stichproben mit Zurücklegen}. Die Anzahl solcher Stichproben ist: $$ N = n^k$$
+\subsection{Ohne Zurücklegen}
+\subsubsection{Definition}
+Aus einer Menge mit $n$ vershciedenen Elementen werden $k$ Elemente mit Brücksichtigung der Reihenfolge ausgewählt ohne sie in die Menge zurückzulegen. Man bildet also \textbf{geordnete Stichproben ohne Zurücklegen}. Die Anzahl solcher Stichproben beträgt: $$N = n\cdot (n-1) \cdot (n-2) \cdots (n-k+1) = \frac{n!}{(n-k)!}$$
+
+\section{Ungeordnete Stichproben}
+\subsection{Mit Zurücklegen}
+\subsubsection{Definition}
+Aus einer Menge mit $n$ verschiednen Elementen können $s$ Elemente \textbf{ohne Berücksichtigung der Reihenfolge} und \textbf{mit Wiederholungen} auf:
+$$N=\frac{(s+n-1)!}{s!\cdot (n-1)!} = \binom {s+n-1}{s}$$
+verschiedene Arten ausgewählt werden.
+
+\subsection{Ohne Zurücklegen}
+\subsubsection{Definition}
+Die Anzahl Teilmengen $T$ mit $k$ Elementen aus einer Menge $A$ mit $n$ Elementen ist:
+$$N=\frac{n(n-1)(n-2)(n-3)\cdots (n-k+1)}{k!}=\binom {n}{k}$$
+
+\end{document}
+
