@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,7 +64,33 @@
 
 \begin_body
 
+\begin_layout Part*
+Ladungen
+\end_layout
+
+\begin_layout Itemize
+Positive Ladungen: Quellen
+\end_layout
+
+\begin_layout Itemize
+Negative Ladungen: Senken
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename i-cb04f7194faa68f58cc59a53686f1ed0-feldlinien.gif
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+Kraft auf eine Punktladung: 
+\begin_inset Formula $dE_{pol}=-\vec{F}d\vec{l}\Longrightarrow\vec{F_{c}=q_{0}\cdot\vec{E}}$
+\end_inset
+
 
 \end_layout
 
