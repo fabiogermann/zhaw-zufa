@@ -65,33 +65,7 @@
 \begin_body
 
 \begin_layout Part*
-\begin_inset CommandInset include
-LatexCommand include
-filename "Kombinatorik/kombinatorik.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part*
-\begin_inset CommandInset include
-LatexCommand include
-filename "Schubfachprinzip/schubfach.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part*
-\begin_inset CommandInset include
-LatexCommand include
-filename "VollstaendigeInduktion/induktion.lyx"
-
-\end_inset
-
-
+Induktion
 \end_layout
 
 \end_body
