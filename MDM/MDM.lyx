@@ -144,5 +144,73 @@ Objekte auf n Mengen, dann enthält entweder die erste Menge mindestens q1
  , oder die n-te Menge enthält mindestens qn Objekte.
 \end_layout
 
+\begin_layout Section*
+Unterscheidbare Objekte
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $N=n!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Nicht unterscheidbare Objekte
+\end_layout
+
+\begin_layout Standard
+Möglichkeiten aabbac anzuordnen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $N=\frac{6!}{3!\cdot2!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei 3! die möglichen Permutionen der drei 
+\begin_inset Quotes eld
+\end_inset
+
+a
+\begin_inset Quotes erd
+\end_inset
+
+ und 2! der zwei 
+\begin_inset Quotes eld
+\end_inset
+
+b
+\begin_inset Quotes erd
+\end_inset
+
+ sind.
+\end_layout
+
+\begin_layout Section*
+Geordnete Stichproben mit Zurücklegen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $N=n^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Geordnete Stichproben ohne Zurücklegen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $N=n\cdot(n-1)\cdot(n-2)\cdot...\cdot(n-k+1)=\frac{n!}{(n-k)!}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
