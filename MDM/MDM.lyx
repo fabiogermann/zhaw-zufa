@@ -43,10 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1.5cm
-\topmargin 1.5cm
-\rightmargin 1.5cm
-\bottommargin 1.5cm
+\leftmargin 0.5cm
+\topmargin 0.5cm
+\rightmargin 0.5cm
+\bottommargin 0.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -68,6 +68,16 @@
 \begin_inset CommandInset include
 LatexCommand include
 filename "Kombinatorik/kombinatorik.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+\begin_inset CommandInset include
+LatexCommand include
+filename "Kombinatorik/binomische_formel.lyx"
 
 \end_inset
 
