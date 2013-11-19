@@ -101,5 +101,16 @@ Objekte auf n Mengen, dann enthält entweder die erste Menge mindestens q1
  , oder die n-te Menge enthält mindestens qn Objekte.
 \end_layout
 
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow(q_{1}-1)+(q_{2}-1)+...+(q_{n}-1)=q_{1}+q_{2}+...+q_{n}-n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verse
+Hier setzt dann das einfache Schubfachprinzip an.
+\end_layout
+
 \end_body
 \end_document
