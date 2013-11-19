@@ -3,6 +3,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{fullpage}
 \usepackage{amsmath}
+\usepackage{graphicx}
 
 \title{Formelsammlung}
 \date{\today}
@@ -169,11 +170,11 @@ Einheit von Energie: Newtonmeter [Nm] oder Joule [J] (1J = 1Nm)
 E_{pot} &=& W = F\cdot s = mgh \textit{  Gilt nur auf der Erde}\\
 E_{pot} &=& -\frac{\gamma Mm}{r}\\
 \gamma &:& 6.67 \cdot 10^{-11} Nm^2/kg^2\\
-M &:& \textit{Masse der Erde (oder Sonne)}\\
+M &:& \textit{Masse der Erde (oder Sonne) }\textit{Masse Erde: }5,794\cdot 10^{24} kg\\
 m &:& \textit{Masse des Objektes}\\
-r &:& \textit{Abstand zwischen Erdmittelpunkt zu Objekt}
+r &:& \textit{Abstand zwischen Erdmittelpunkt zu Objekt  Radius Erde: } 6,371\cdot 10^6 m\\
 \end{eqnarray*}
-
+\textit{Falls der Radius undendlich ist, wird der Radius der Erde verwendet.}
 \subsection{Kinetische Energie}
 \begin{eqnarray*}
 E_{Kin} &=& \frac{1}{2}mv^2\\
@@ -189,6 +190,8 @@ x_0 &:& \textit{Anfangsposition}\\
 x &:& \textit{Endposition}
 \end{eqnarray*}
 
+\subsection{Energie Kugel}
+$$\frac{1}{4\pi \epsilon_0}\frac{Q}{r_{Q_q}^2}$$
 \section{Leistung}
 Einheit von Leistung P: Watt [W] oder Joule pro Sekunde [J/s] (1W = 1J/s)
 \begin{eqnarray*}
@@ -196,14 +199,34 @@ P &=& F \cdot v\\
 P &=& \frac{W}{t}
 \end{eqnarray*}
 
+\subsection{Elektrische Energie}
+$$U_{AB}=-\frac{Q}{4\pi \epsilon_0} \int_A^B \frac{1}{r^2} = \frac{Q}{4\pi \epsilon_0}\cdot [\frac{1}{r_B}-\frac{1}{r_A}]$$
+$$E_{elek} = E_{Kin}$$
 
 \section{Elektrisches Feld}
 \begin{eqnarray*}
 \overrightarrow{E}&=&\frac{\overrightarrow{F}_E}{Q}\\
 Q &:& \textit{Gespeicherte Ladung im Kondensator}\\
-\overrightarrow{F}_E &:& \textit{Elektrische Kraft}\\
+\overrightarrow{F}_E &:& \textit{Elektrische Kraft (siehe 6)}\\
 \overrightarrow{E} &=& \textit{Elektrisches Feld}
 \end{eqnarray*}
+
+\section{Gradient}
+\begin{eqnarray*}
+\textit{Geg }&:&xy^2z^3\\
+\textit{Gradient }&:& (\frac{y^2z^3}{\frac{2xyz^3}{3xy^2z^2}})\textit{(Ableiten auf allen drei Ebenen)}
+\end{eqnarray*}
+
+\section{Dipol}
+\begin{eqnarray*}
+\overrightarrow{p} &=& q\overrightarrow{l}\\
+\textit{Potential} &:& q(\overrightarrow{r}) = \frac{1}{4\pi \epsilon_0}\cdots\\
+\end{eqnarray*}
+Kugel: Punktladung\\
+Zylinder: Draht\\
+Platte: Kondensator
+
+
 
 \section{Kapazität}
 \begin{eqnarray*}
@@ -223,5 +246,57 @@ U &:& \textit{Spannung}\\
 I &:& \textit{Strom}\\
 C &:& \textit{Kapazität}\\
 Q &:& \textit{Ladung}
+\end{eqnarray*}
+
+\section{Kondensatoren}
+\subsection{Serieschaltung}
+$$\frac{1}{C_g}=\frac{1}{C_1}+\frac{1}{C_2}$$
+
+
+\subsection{Parallelschaltung}
+$$ C_g = C_1 +C_2$$
+
+\section{Widerstände}
+\subsection{Serieschaltung}
+$$R_g=R_1+R_2$$
+\begin{eqnarray*}
+IR_1&=&U_1 \textit{(Ohm'sches Gesetz)}\\
+IR_2&=&U_2 \textit{(Ohm'sches Gesetz)}\\
+U_0 - U_1 - U_2 &=& 0 \textit{(Maschenregel)}\\
+IR &=& U \textit{(Ohm'sches Gesetz)}\\
+U_0 - U &=& 0 \textit{(Maschenregel)}\\\\
+I(R_1+R_2)&=&U_1+U_2 = U = IR -> (R_1+R_2) = R
+\end{eqnarray*}
+\includegraphics[scale=0.7]{widerstandSerie.jpg}
+\pagebreak
+\subsection{Parallelschaltung}
+$$R_g= \frac{1}{\frac{1}{R_1}+\frac{1}{R_2}}$$
+\begin{eqnarray*}
+I_1R_1 &=& U_1 \textit{(Ohm'sches Gesetz)}\\
+I_3R_2 &=& U_2 \textit{(Ohm'sches Gesetz)}\\
+U_1 &=& U_2 \textit{(Maschensatz)}\\
+I_0 &=& I_1 + I_2 \textit{(Knotensatz)}\\
+IR &=& U \textit{(Ohm'sches Gesetz)}\\
+U_0 - U &=& 0 \textit{(Maschenregel)}\\\\
+I_1+I_2 &=& \frac{U_1}{R_1}+\frac{U_2}{R_2} -> \frac{U}{R}=I = I_0 = U_1(\frac{1}{R_1}+\frac{1}{R_2} -> \frac{1}{R} = (\frac{1}{R_1}+\frac{1}{R_2})
+\end{eqnarray*}
+\includegraphics[scale=0.7]{widerstandParallel.jpg}
+
+\section{Lorenzkraft}
+\begin{eqnarray*}
+\overrightarrow{F}_B&=&q(\overrightarrow{v}X\overrightarrow{B})\\\\
+\overrightarrow{F}_B &:& \textit{Lorenzkraft}\\
+\overrightarrow{v}&:& \textit{Geschwindigkeit einer positiven Ladung}\\
+\overrightarrow{B}&:& \textit{Magnetfeld}\\
+\textit{Einheit}&:& \textit{Tesla } (N\cdot s /(C\cdot m) = T)
+\end{eqnarray*} 
+
+\begin{eqnarray*}
+\overrightarrow{F}_B&=&q(\overrightarrow{E}+\overrightarrow{v}X\overrightarrow{B})\\\\
+\overrightarrow{E}&:& \textit{Elektrische Feld}\\
+\overrightarrow{F}_B &:& \textit{Lorenzkraft}\\
+\overrightarrow{v}&:& \textit{Geschwindigkeit einer positiven Ladung}\\
+\overrightarrow{B}&:& \textit{Magnetfeld}\\
+\textit{Einheit}&:& \textit{Tesla } (N\cdot s /(C\cdot m) = T)
 \end{eqnarray*}
 \end{document}
