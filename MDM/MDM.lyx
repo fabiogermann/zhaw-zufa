@@ -65,8 +65,11 @@
 \begin_body
 
 \begin_layout Part*
+
+\series medium
+\size large
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Kombinatorik/kombinatorik.lyx"
 
 \end_inset
@@ -75,8 +78,11 @@ filename "Kombinatorik/kombinatorik.lyx"
 \end_layout
 
 \begin_layout Part*
+
+\series medium
+\size large
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Kombinatorik/binomische_formel.lyx"
 
 \end_inset
@@ -85,8 +91,11 @@ filename "Kombinatorik/binomische_formel.lyx"
 \end_layout
 
 \begin_layout Part*
+
+\series medium
+\size large
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "Schubfachprinzip/schubfach.lyx"
 
 \end_inset
@@ -95,8 +104,11 @@ filename "Schubfachprinzip/schubfach.lyx"
 \end_layout
 
 \begin_layout Part*
+
+\series medium
+\size large
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "VollstaendigeInduktion/induktion.lyx"
 
 \end_inset
