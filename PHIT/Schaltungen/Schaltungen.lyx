@@ -371,5 +371,186 @@ Knotenregel
 
 \end_layout
 
+\begin_layout Section*
+BM-Beispiel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename RC_Schaltung.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gegeben:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $R=1000\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $U_{0}=5V$
+\end_inset
+
+, 
+\begin_inset Formula $C=0.001F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formeln:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{0}=U_{R}+U_{C}=I\cdot R+\frac{Q}{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I=\frac{U_{R}}{R}=\frac{1}{R}\cdot(U_{0}-\frac{Q}{C})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{R}=U_{0}-U_{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename RC_Schaltung_BM.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Spulen
+\end_layout
+
+\begin_layout Section*
+Allgemein
+\end_layout
+
+\begin_layout Itemize
+B = Elektromagnetisches Feld
+\end_layout
+
+\begin_layout Itemize
+N = Anzahl Windungen einer Spule
+\end_layout
+
+\begin_layout Itemize
+L = Länge einer Spule
+\end_layout
+
+\begin_layout Itemize
+A = Fläche der Spule
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1\frac{Vs}{A}=1H=1Henry$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Elektromagnetisches Feld
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $B=\mu_{0}\cdot\frac{N}{L}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N}{L}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N\cdot U}{L\cdot R}=\frac{\phi}{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\mu_{0}=4\pi\cdot10^{-7}Vs/Am$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Induzierte Spannung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{ind}=-N\cdot B\cdot\frac{dA}{dt}=N\cdot B\cdot A\cdot\omega\cdot sin(\omega t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{ind}=-L\cdot\frac{dI}{dt}=-\frac{d\phi}{dt}=-L\cdot\frac{\Delta I}{\Delta t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\phi=N\cdot B\cdot A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Gespeicherte Energie in einer Spule
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(I)=L\cdot\frac{I^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Transformatorengleichung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{U_{1}}{U_{2}}=\frac{N_{1}}{N_{2}}\Longrightarrow N_{2}=N_{1}\cdot\frac{U_{2}}{U_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Selbstinduktion
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $L\simeq N^{2}\Longleftrightarrow N\simeq\sqrt{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{U_{1}}{U_{2}}=\frac{N_{1}}{N_{2}}=\frac{\sqrt{L_{1}}}{\sqrt{L_{2}}}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
