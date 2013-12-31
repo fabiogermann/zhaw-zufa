@@ -60,46 +60,83 @@
 \begin_body
 
 \begin_layout Section*
-Zahlentheorie
+Funktionen
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $a|b\wedge b|c\rightarrow a|c$
+\begin_layout Subsection*
+Diophant
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ax+by=n,\, ggt(a,b)=d\rightarrow Lösbar\: falls:\, d|n$
+\end_inset
+
+ (diophant(a,b,n))
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a|b\wedge b|a\rightarrow a=b=-a$
+\begin_inset Formula $x_{0},y_{0}\rightarrow Erweiterter\, Euklidischer\, Algorithmus$
 \end_inset
 
-
+ (extgcd(a,b))
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $a|b\wedge a|c\rightarrow a|(ub+vc)$
+\begin_layout Standard
+\begin_inset Formula $x=x_{0}-t\cdot\frac{b}{ggT(a,b)},\; y=y_{0}+t\cdot\frac{a}{ggT(a,b)}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a|b\vee a|c\rightarrow a|bc$
+, in 
+\begin_inset Formula $Z_{n}$
 \end_inset
 
-
+ alle Zahlem mod n.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $a|bc\wedge ggt(a,b)=1\rightarrow a|c$
+\begin_layout Subsection*
+Euler PHI
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(prime)=prime-1$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $\varphi(x)=|M_{x}|=\{n\epsilon N|1\leq n<x,\, ggT(n,x)=1\}$
+\end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(x)=(1-\frac{1}{p_{1}})(1-\frac{1}{p_{2}})(1-\frac{1}{p_{3}})(1-\frac{1}{p_{4}})....(1-\frac{1}{p_{x}})\cdot x$
+\end_inset
+
+, 
+\begin_inset Formula $p_{1...k}=1<p<x,\, p|x$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(m\cdot n)=\varphi(m)\cdot\varphi(n),\, ggT(m,n)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi(c)=\varphi(p^{d})=p^{d}-p^{d-1},\, p=prime$
+\end_inset
+
+ 
 \end_layout
 
 \end_body

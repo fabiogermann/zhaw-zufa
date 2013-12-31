@@ -60,45 +60,27 @@
 \begin_body
 
 \begin_layout Section*
-Zahlentheorie
+Permutationen
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $a|b\wedge b|c\rightarrow a|c$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a|b\wedge b|a\rightarrow a=b=-a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a|b\wedge a|c\rightarrow a|(ub+vc)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a|b\vee a|c\rightarrow a|bc$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a|bc\wedge ggt(a,b)=1\rightarrow a|c$
+\begin_layout Standard
+\begin_inset Formula $S_{x}\rightarrow ordnung(\pi)=anz.\, Vertauschungen$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $S_{x}\rightarrow x!\: Elemente=x!\, Vertauschungen$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(\pi^{x!}=\pi=id,\, Kriterium\, für\, Zyklizität)$
+\end_inset
+
 
 \end_layout
 

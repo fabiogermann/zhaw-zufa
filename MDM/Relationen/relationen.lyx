@@ -25,10 +25,9 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -43,10 +42,6 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 0.5cm
-\topmargin 0.5cm
-\rightmargin 0.5cm
-\bottommargin 0.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -64,56 +59,107 @@
 
 \begin_body
 
-\begin_layout Part*
+\begin_layout Section*
+Relationen
+\end_layout
 
-\series medium
-\size large
-\begin_inset CommandInset include
-LatexCommand input
-filename "Kombinatorik/kombinatorik.lyx"
+\begin_layout Standard
+Relationen-Kriterien:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reflexiv
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\forall a\epsilon A:(a,a)\epsilon R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+symmetrisch
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\forall a,b\epsilon A:(a,b)\epsilon R\rightarrow(b,a)\epsilon R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+transitiv
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\forall a,b,c\epsilon A:(a,b)\epsilon R\wedge(b,c)\epsilon R\rightarrow(a,c)\epsilon R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Part*
-
-\series medium
-\size large
-\begin_inset CommandInset include
-LatexCommand input
-filename "Kombinatorik/binomische_formel.lyx"
-
-\end_inset
-
-
+\begin_layout Section*
+Äquivalenz-Relation
 \end_layout
 
-\begin_layout Part*
-
-\series medium
-\size large
-\begin_inset CommandInset include
-LatexCommand input
-filename "Schubfachprinzip/schubfach.lyx"
-
-\end_inset
-
-
+\begin_layout Standard
+Voraussetzung: Die Relation muss reflexiv, transitiv und symmetrisch sein.
 \end_layout
 
-\begin_layout Part*
-
-\series medium
-\size large
-\begin_inset CommandInset include
-LatexCommand input
-filename "VollstaendigeInduktion/induktion.lyx"
-
-\end_inset
-
-
+\begin_layout Standard
+Partition: disjunkte Unterteilung in Untermengen - eine ÄR partitioniert
+ eine Menge in Äquivalenzklassen!
 \end_layout
 
 \end_body

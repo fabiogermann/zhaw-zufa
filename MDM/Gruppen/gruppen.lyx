@@ -394,5 +394,17 @@ Erzeuger:
 
 \end_layout
 
+\begin_layout Verse
+Ordnung Gruppe: 
+\begin_inset Formula $maltafel(x)$
+\end_inset
+
+, Schnittpunkt mit 0 (Schnittpunkt mit 1 = inverses)
+\end_layout
+
+\begin_layout Verse
+
+\end_layout
+
 \end_body
 \end_document
