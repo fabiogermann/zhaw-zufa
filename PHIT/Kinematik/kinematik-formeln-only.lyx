@@ -162,5 +162,73 @@ r\omega cos(\omega t)
 
 \end_layout
 
+\begin_layout Section*
+Wurf
+\end_layout
+
+\begin_layout Subsection*
+Horizontaler Wurf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{a}=\left(\begin{array}{c}
+0\\
+-g
+\end{array}\right),\vec{v}=\left(\begin{array}{c}
+Vox\\
+-gt
+\end{array}\right),\vec{r}=\left(\begin{array}{c}
+Vox\cdot t\\
+-0.5gt^{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Schiefer Wurf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{a}=\left(\begin{array}{c}
+0\\
+-g
+\end{array}\right),\vec{v}=\left(\begin{array}{c}
+Vo\cdot cos(\varphi)\\
+Vo\cdot cos(\varphi)-gt
+\end{array}\right),\vec{r}=\left(\begin{array}{c}
+Vo\cdot cos(\varphi)\cdot t\\
+Vo\cdot cos(\varphi)\cdot t-0.5gt^{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Parabel: 
+\begin_inset Formula $y=tan(\varphi)\cdot x-\frac{g\cdot x^{2}}{2V_{0}cos^{2}(\varphi)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ymax: 
+\begin_inset Formula $y_{max}=\frac{V_{0}^{2}sin^{2}(\varphi)}{2g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Xmax: 
+\begin_inset Formula $x_{max}=\frac{V_{0}^{2}sin(2\varphi)}{g}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
