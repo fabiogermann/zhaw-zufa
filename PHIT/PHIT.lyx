@@ -67,7 +67,17 @@
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Kinetik/Kinetic.lyx"
+filename "Kinetik/Kinetic_examples.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Kräfte/Kräfte_examples.lyx"
 
 \end_inset
 

@@ -65,7 +65,7 @@
 \begin_body
 
 \begin_layout Part*
-Ort, Geschwindigkeit und Beschleunigung
+Kinetik
 \end_layout
 
 \begin_layout Section*
@@ -140,6 +140,62 @@ a_{z}(t)
 
 \begin_layout Verse
 \begin_inset Formula $\vec{a}(t)=\frac{d}{dt}\left(\frac{d\vec{r}(t)}{dt}\right)=\frac{d^{2}\vec{r}(t)}{dt^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename BM.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Kraft
+\end_layout
+
+\begin_layout Standard
+Die Kraft ist das Produkt von Masse und Beschleunigung:
+\end_layout
+
+\begin_layout Verse
+
+\begin_inset Formula $\vec{F}=m\cdot\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left[\vec{F}\right]=\left[\frac{kg\cdot m}{s^{2}}\right]=\left[N\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Schiefer Wurf
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}=\left(\begin{array}{c}
+0\\
+0\\
+-g
+\end{array}\right)\Rightarrow\vec{v}=\left(\begin{array}{c}
+v_{x0}\\
+v_{y0}\\
+v_{z0}-gt
+\end{array}\right)\Rightarrow\vec{r}=\left(\begin{array}{c}
+r_{x0}+v_{x0}\\
+r_{y0}+v_{y0}\\
+r_{z0}+v_{z0}-g\frac{t^{2}}{2}
+\end{array}\right)$
 \end_inset
 
 
@@ -252,249 +308,6 @@ Beschleunigung
 
 \begin_layout Verse
 \begin_inset Formula $|\vec{a}(t)|=r\omega^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Beispiele
-\end_layout
-
-\begin_layout Subsection*
-Zentrifuge
-\end_layout
-
-\begin_layout Standard
-Eine Zentrifuge drehe sich mit einer Winkelgeschwindigkeit von 20 s-1.
- Die Zentrifugengläser (Proben) befinden sich in einem Abstand von 10 cm
- von der Drehachse.
-\end_layout
-
-\begin_layout Enumerate
-Wie gross ist die Bahngeschwindigkeit in m/s und welcher Weg wird in einer
- Sekunde zurückgelegt?
-\end_layout
-
-\begin_layout Enumerate
-Welche Zentrifugalbeschleunigung wirkt auf die Proben?
-\end_layout
-
-\begin_layout Standard
-Gegeben: 
-\begin_inset Formula $w=20s^{-1}$
-\end_inset
-
-, 
-\begin_inset Formula $r=10cm=0,1m$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $v=r\cdot w=0.1\cdot20s^{-1}=2m/s$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $s=2m$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $a_{z}=r\cdot w^{2}=0.1*20^{2}s^{-2}=40m/s^{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Schaufelrad
-\end_layout
-
-\begin_layout Standard
-Das Schaufelrad einer Turbine (Flugzeugtriebwerk) drehe sich mit 30000 U/min.
- Die einzelnen Schaufeln haben eine Masse von 50 g und befinden sich im
- Abstand von 15 cm von der Drehachse entfernt.
- 
-\end_layout
-
-\begin_layout Itemize
-Welche Kraft muss mindestens aufgebracht werden, damit die Schaufeln nicht
- aus der Turbine fliegen?
-\end_layout
-
-\begin_layout Standard
-Gegeben: 
-\begin_inset Formula $m=0.05kg$
-\end_inset
-
-,
-\begin_inset Formula $r=0.15m$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $w=2\Pi\cdot\frac{u/min}{60s}=2\Pi\nu=2\Pi\cdot\frac{3*10^{3}}{60}=3.41\cdot10^{3}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $F_{z}=m\cdot w^{2}\cdot r=7.4\cdot10^{4}N$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Waage im Lift
-\end_layout
-
-\begin_layout Standard
-Eine Person mit einer Masse von 70 kg stehe auf einer Waage, welche sich
- in einem Lift befinde.
- Der Lift beschleunige mit 
-\begin_inset Formula $a_{L}=1.7m/s^{2}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Enumerate
-Was zeigt die Waage an beim aufwärts fahren?
-\end_layout
-
-\begin_layout Enumerate
-Was zeit die Waage an beim abwärts fahren?
-\end_layout
-
-\begin_layout Standard
-Gegeben: 
-\begin_inset Formula $m=70kg$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Formel: 
-\begin_inset Formula $\widetilde{m}=\frac{\widetilde{F}}{g}=\frac{m\widetilde{g}}{g}=\frac{m(g\pm a)}{g}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $m_{1}=\frac{m(g+a)}{g}=\frac{70kg\cdot(9.81+1.7)m/s^{2}}{9.81m/s^{2}}=82.1kg$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $m_{2}=\frac{m(g+a)}{g}=\frac{70kg\cdot(9.8-1.7)m/s^{2}}{9.81m/s^{2}}=57.9kg$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Fahrzeugkollision
-\end_layout
-
-\begin_layout Standard
-Ein Fahrzeuglenker mit einer Masse von 80 kg kollidiere mit seinem Fahrzeug
- mit einer Mauer.
- Die Geschwindigkeiten vor der Kollision betrage 56 km/h.
- Das Fahrzeug komme innerhalb von 0.2 s zum Stehen.
- 
-\end_layout
-
-\begin_layout Itemize
-Welcher maximalen Belastung müsste ein Sicherheitsgurt standhalten?
-\end_layout
-
-\begin_layout Standard
-Gegeben: 
-\begin_inset Formula $m=80kg$
-\end_inset
-
-, 
-\begin_inset Formula $v_{max}=56km/h=15.5m/s$
-\end_inset
-
- (km/h : 3.6 =m/s), 
-\begin_inset Formula $\Delta t=0.2s$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a_{max}=\frac{\Delta v}{\Delta t}=\frac{15.5m/s}{0.2s}=77.5m/s^{2}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $F=m\cdot a=77.5m/s^{2}\cdot80kg=6200N=6.2kN$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Computertomographie
-\end_layout
-
-\begin_layout Standard
-Bei CT (Computertomogeaphie)-Scannern rotieren Detetktor und Strahlerteil
- in einem typischen Abstand von 60 cm von der Drehachse um den Patienten.
- 
-\end_layout
-
-\begin_layout Itemize
-Welche Masse darf der Strahlerteil haben, wenn eine Fleihkraft von 4737
- N nicht überschritten werden kann und pro Sekunde eine Umdrehung ’’gescannt’’
- wird.
-\end_layout
-
-\begin_layout Standard
-Gegeben: 
-\begin_inset Formula $r=0.6m$
-\end_inset
-
-, 
-\begin_inset Formula $F_{z}=4737N=4737kg\cdot ms^{-2}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Formel: 
-\begin_inset Formula $F_{z}=m\cdot\omega^{2}\cdot r$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $m=\frac{F_{z}}{\omega^{2}\cdot r}=\frac{4737kg\cdot ms^{-2}}{4\Pi^{2}s^{-2}\cdot0.6m}\backsimeq200kg$
 \end_inset
 
 

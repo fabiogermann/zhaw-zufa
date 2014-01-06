@@ -1,0 +1,211 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Beispiele
+\end_layout
+
+\begin_layout Section*
+Berechnung Bremszeit und Bremsweg
+\end_layout
+
+\begin_layout Standard
+Es gilt:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v(t)=v_{0}-a\cdot t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $s(t)=s_{0}+v_{0}\cdot t-\frac{1}{2}\cdot a\cdot t^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei es sich bei 
+\begin_inset Formula $a\cdot t$
+\end_inset
+
+ (1.) um die Geschwindigkeit handelt die während des Bremsvorgangs verloren
+ gegangen ist.
+\begin_inset Newline newline
+\end_inset
+
+Bei 
+\begin_inset Formula $v_{0}\cdot t$
+\end_inset
+
+ (2.) handelt es sich um die Strecke die zurückgelegt worden wäre wenn nicht
+ gebremst worden wäre, bei 
+\begin_inset Formula $\frac{1}{2}\cdot a\cdot t^{2}$
+\end_inset
+
+um die Strecke die durch den Bremsvorgange weniger zurückgelegt worden ist.
+\end_layout
+
+\begin_layout Subsection*
+Bremszeit
+\end_layout
+
+\begin_layout Standard
+Der Gegenstand kommt zum stillstand, wenn 
+\begin_inset Formula $v(t)=0$
+\end_inset
+
+ ist.
+ Es lässt sich nun die Bremszeit ermitteln:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{0}-a\cdot t=0\Rightarrow v_{0}=a\cdot t\Rightarrow t_{B}=\frac{v_{0}}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Bremsweg
+\end_layout
+
+\begin_layout Standard
+Aufgrund der Bremszeit lässt sich nun der Bremsweg ermitteln.
+\begin_inset Newline newline
+\end_inset
+
+Hierfür wird setzt man die Bremszeit in die Gleichung 2.
+ ein:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s(t)=s_{0}+v_{0}\cdot t-\frac{1}{2}\cdot a\cdot t^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow s_{B}=s_{0}+v_{0}\cdot\frac{v_{0}}{a}-\frac{1}{2}\cdot a\cdot\frac{v_{0}^{2}}{a^{2}}=s_{0}+\frac{v_{0}^{2}}{2a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Zentrifuge
+\end_layout
+
+\begin_layout Standard
+Eine Zentrifuge drehe sich mit einer Winkelgeschwindigkeit von 20 s-1.
+ Die Zentrifugengläser (Proben) befinden sich in einem Abstand von 10 cm
+ von der Drehachse.
+\end_layout
+
+\begin_layout Enumerate
+Wie gross ist die Bahngeschwindigkeit in m/s und welcher Weg wird in einer
+ Sekunde zurückgelegt?
+\end_layout
+
+\begin_layout Enumerate
+Welche Zentrifugalbeschleunigung wirkt auf die Proben?
+\end_layout
+
+\begin_layout Standard
+Gegeben: 
+\begin_inset Formula $w=20s^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $r=10cm=0,1m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v=r\cdot w=0.1\cdot20s^{-1}=2m/s$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s=2m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{z}=r\cdot w^{2}=0.1*20^{2}s^{-2}=40m/s^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
