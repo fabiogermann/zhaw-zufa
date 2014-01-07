@@ -25,9 +25,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -42,6 +43,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -59,7 +64,62 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Part*
+Magnetismus
+\end_layout
+
+\begin_layout Section*
+Lorenzkraft
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{L}=Q\vec{v}\times\vec{B}$
+\end_inset
+
+ (Kreuzprodukt)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q=Ladung$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}=Geschwindigkeit$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{B}=Magnetfeld$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Kreuzprodukt
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{array}\right)\times\left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}
+\end{array}\right)=\left(\begin{array}{c}
+a_{2}b_{3}-a_{3}b_{2}\\
+a_{3}b_{1}-a_{1}b_{3}\\
+a_{1}b_{2}-a_{2}b_{1}
+\end{array}\right)$
+\end_inset
+
 
 \end_layout
 

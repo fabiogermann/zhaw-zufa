@@ -80,15 +80,14 @@ Formeln
 \begin_inset Formula $U=E\cdot d=\frac{\varrho\cdot d}{E_{0}}=\frac{Q\cdot d}{E_{0}\cdot F}$
 \end_inset
 
+ (d=Abstand)
+\end_layout
 
-\begin_inset Newline newline
-\end_inset
-
-
+\begin_layout Verse
 \begin_inset Formula $C=\frac{Q}{U}=E_{0}\cdot\frac{F}{d}$
 \end_inset
 
-
+ (Kapazität eines Kondensators)
 \end_layout
 
 \begin_layout Verse
@@ -110,7 +109,7 @@ Formeln
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $I=\frac{dQ}{dt}$
+\begin_inset Formula $I=\frac{dQ}{dt}=\dot{Q}=\frac{U}{R}$
 \end_inset
 
 
@@ -209,6 +208,13 @@ Ladungen die pro Zeiteinheit zufliessen, müssen auch wieder abfliessen,
 Kondensatoren
 \end_layout
 
+\begin_layout Verse
+\begin_inset Formula $E_{pot}=\frac{Q^{2}}{2C}=C\frac{U^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Serienschaltung
 \end_layout
@@ -302,137 +308,6 @@ Lorentz-Kraft = Zentripetal-Kraft:
 
 \begin_layout Standard
 \begin_inset Formula $evB=\frac{mv^{2}}{r}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Beispiele
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename Schaltung1.png
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Maschenregel
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $U_{R1}+U_{C1}-U_{0}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\Rightarrow R_{1}\cdot(I_{2}+I_{3})+\frac{Q_{1}}{C_{1}}-U_{0}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $U_{R1}+U_{R2}+U_{C2}-U_{0}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\Rightarrow R_{1}\cdot(I_{2}+I_{3})+R_{2}\cdot I_{2}+\frac{Q_{2}}{C_{2}}-U_{0}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Knotenregel
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $I_{1}-I_{2}-I_{3}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\Rightarrow I_{1}-\frac{dQ_{2}}{dt}-\frac{dQ_{1}}{dt}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-BM-Beispiel
-\end_layout
-
-\begin_layout Verse
-\begin_inset Graphics
-	filename RC_Schaltung.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Gegeben:
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $R=1000\Omega$
-\end_inset
-
-, 
-\begin_inset Formula $U_{0}=5V$
-\end_inset
-
-, 
-\begin_inset Formula $C=0.001F$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Formeln:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $U_{0}=U_{R}+U_{C}=I\cdot R+\frac{Q}{C}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $I=\frac{U_{R}}{R}=\frac{1}{R}\cdot(U_{0}-\frac{Q}{C})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $U_{R}=U_{0}-U_{C}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Graphics
-	filename RC_Schaltung_BM.png
-
 \end_inset
 
 
