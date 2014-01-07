@@ -1,0 +1,549 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Impuls
+\end_layout
+
+\begin_layout Section*
+Luftwiderstand
+\end_layout
+
+\begin_layout Subsection*
+Vertikaler Fall
+\end_layout
+
+\begin_layout Standard
+Der Luftwiderstand ist proportional zum Quadrat der Schnelligkeit und der
+ Geschwindigkeit entgegengesetzt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{w}=-c_{w}\cdot\frac{\rho A}{2}\cdot|\vec{v}|^{2}\cdot\vec{n}_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $c_{w}=$
+\end_inset
+
+Widerstandszahl
+\end_layout
+
+\begin_layout Verse
+
+\emph on
+\begin_inset Formula $\rho=$
+\end_inset
+
+
+\emph default
+Luftdichte
+\emph on
+ 
+\begin_inset Formula $(1.293kg/m^{3})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=$
+\end_inset
+
+Querschnittsfläche 
+\begin_inset Formula $\bot$
+\end_inset
+
+ zu 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{n}_{v}=\frac{\vec{v}}{|\vec{v}|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Widerstandszahl 
+\begin_inset Formula $c_{w}$
+\end_inset
+
+ hängt von der Geometrie des betrachteten Körpers ab.
+\end_layout
+
+\begin_layout Subsection*
+Maximale Fallgeschwindigkeit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m_{s}\vec{a}=\vec{F}_{g}+\vec{F}_{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m\dot{v}_{z}=-mg+c_{w}\cdot\frac{\rho_{Luft}A}{2}\cdot v_{z}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow\underset{t\rightarrow\infty}{lim\: v_{z}(t)}=\sqrt{\frac{g}{\gamma}}=\sqrt{\frac{2mg}{c_{w}\rho_{Luft}A}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Fallgeschwindigkeit.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Fallgeschwindgkeit Allgemein
+\end_layout
+
+\begin_layout Standard
+Geschwindigkeit als Funktion der Zeit:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m\frac{d^{2}x}{dt^{2}}=mg-kv^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v=\frac{dx}{dt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{dv}{dt}=g-\frac{k}{m}v^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Ballistische Kurven
+\end_layout
+
+\begin_layout Standard
+Generell geht es darum, die Bahn eines Geschosses vorherzusagen.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m\frac{d\vec{v}}{dt}=\vec{F}_{G}-k\cdot|\vec{v}|^{2}\cdot\vec{n}_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{n}_{v}=\frac{\vec{v}}{|\vec{v}|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $k=$
+\end_inset
+
+Konstante 
+\begin_inset Formula $\left[\frac{kg}{m}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dieses Problem kann nur numerisch, in Koordinatenform angegangen werden:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+\dot{v}_{x}\\
+\dot{v}_{y}\\
+\dot{v}_{z}
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0\\
+-g
+\end{array}\right)-k\cdot\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}\cdot\left(\begin{array}{c}
+v_{x}\\
+v_{y}\\
+v_{z}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\dot{v}_{x}=-kv_{x}\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\dot{v}_{y}=-kv_{y}\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\dot{v}_{z}=-g-kv_{z}\sqrt{v_{x}^{2}+v_{y}^{2}+v_{z}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Impuls
+\end_layout
+
+\begin_layout Subsection*
+Definition
+\end_layout
+
+\begin_layout Standard
+Gegeben ist eine punktförmige Masse m mit einer Geschwindigkeit 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Der Impuls dieser Masse ist definiert als:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{p}=m\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Der Impuls ist also ein Vektor.
+\end_layout
+
+\begin_layout Subsection*
+Impuls einer ausgedehnten Masse
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{p}=\underset{Volume}{\int}\rho(\vec{r})\vec{v}(\vec{r})dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\rho(\vec{r})=$
+\end_inset
+
+Dichte am Punkt 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v(\vec{r})=$
+\end_inset
+
+Geschwindigkeit am Punkt 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dm(r) ist ein Stücklein Masse.
+ Die Gesamtmasse ist aus vielen Massenstücklein zusammengesetzt, das Integral
+ ist eine Summe über ganz kleine Stücklein:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $dm(\vec{r})=\rho(\vec{r})dV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Zusammenhang Impuls und Kraft
+\end_layout
+
+\begin_layout Standard
+Es gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}=m\vec{a}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{p}=m\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Weiter können wir sagen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{d\vec{p}}{dt}=\frac{d}{dt}(m\vec{v})=\frac{dm}{dt}\vec{v}+m\frac{d\vec{v}}{dt}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Falls die Masse zeitlich konstant ist 
+\begin_inset Formula $(\frac{dm}{dt}=0)$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{d\vec{p}}{dt}=m\frac{d\vec{v}}{dt}=m\vec{a}=\vec{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow\frac{d\vec{p}}{dt}=\vec{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die zeitliche Ableitung des Impulses eines Massenpunktes ist gleich der
+ Kraft, die auf ihn wirkt!
+\end_layout
+
+\begin_layout Section*
+Impulserhaltung
+\end_layout
+
+\begin_layout Standard
+Für ein System miteinander wechselwirkender Massen aber ohne äussere Kräfte
+ ist der Gesamtimpuls eine Konstante.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{p}_{tot}=\underset{i}{\sum}m_{i}\vec{v}_{i}=const.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{d\vec{p}_{tot}}{dt}=\frac{d}{dt}\left(\underset{i}{\sum}m_{i}\vec{v}_{i}\right)=\underset{i}{\sum}m_{i}\vec{a}_{i}=\underset{i}{\sum}\underset{j\neq i}{\sum}\vec{F}_{ij}^{intern}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Masseschwerpunkt
+\end_layout
+
+\begin_layout Subsection*
+Definition
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{r}_{CM}=\frac{\underset{i}{\sum m_{i}\vec{r}_{i}}}{\underset{i}{\sum}m_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Schwerpunktgeschwindigkeit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}_{CM}=\frac{\vec{p}_{tot}}{\underset{i}{\sum}m_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Schwerpunktbeschleunigung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}_{CM}=\frac{\underset{i}{\sum}m_{i}\vec{a}_{i}}{\underset{i}{\sum}m_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Schwerpunktsatz
+\end_layout
+
+\begin_layout Standard
+Die Änderungsrate des Impulses der im Schwerpunkt konzentrierten Gesamtmasse
+ der Teilchen ist gleich der Summe aller externen Kräfte.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $M_{tot}=\underset{i}{\sum}m_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}_{CM}=\frac{\overset{N}{\underset{i}{\sum}}\overset{K}{\underset{k}{\sum}\vec{F}_{ik}^{extern}}}{\underset{i}{\sum}m_{i}}\Longleftrightarrow M_{tot}\vec{a}_{CM}=\frac{d\vec{p}_{CM}}{dt}=\overset{N}{\underset{i}{\sum}}\overset{N}{\underset{k}{\sum}}\vec{F}_{ik}^{extern}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eine Masse m übt gravitative Kräfte auf jeden Einzelteil einer Masse M aus.
+ Zwischen den Teilen von M wirken Kräfte, die M zusammenhalten:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Schwerpunktsatz1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aufgrund des Schewrpunktsatzes dürfen Sie so tun, als ob die von m ausgeübte
+ Kraft im Schwerpunkt von M auf ganz M wirken würde:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Schwerpunktsatz2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wegen Newtons drittem Gesetz dürfen Sie jetzt schliessen, dass M eine entspreche
+nde Gegenkraft auf m ausübt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Schwerpunktsatz3.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

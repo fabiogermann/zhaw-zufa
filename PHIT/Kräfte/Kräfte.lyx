@@ -277,5 +277,124 @@ Gleiche Ladungen stossen sich ab, ungleiche ziehen sich an.
 Influenzkonstante
 \end_layout
 
+\begin_layout Section*
+Reibungskräfte
+\end_layout
+
+\begin_layout Subsection*
+Bodenkraft
+\end_layout
+
+\begin_layout Standard
+Die Gravitationskraft wird durch eine Kraft des Bodens, die 
+\begin_inset Quotes eld
+\end_inset
+
+Bodenkraft
+\begin_inset Quotes erd
+\end_inset
+
+ ausgeglichen.
+\end_layout
+
+\begin_layout Subsection*
+Gleitreibung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{G}=-\vec{F}_{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{R}=-\mu\cdot m\cdot g\cdot\vec{n}_{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{n}_{v}=\frac{\vec{v}}{|\vec{v}|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\mu=$
+\end_inset
+
+Gleitreibungskoeff.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m=$
+\end_inset
+
+Masse
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Gleitreibung.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Haftreibung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{C}=\mu_{H}\cdot m\cdot g\cdot\vec{n}_{_{Fpull}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{R}=-\vec{F}_{pull}$
+\end_inset
+
+(solange 
+\begin_inset Formula $\vec{F}_{pull}\leq\vec{F}_{C}$
+\end_inset
+
+ und 
+\begin_inset Formula $\vec{v}=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{n}_{Fpull}=\frac{\vec{F}_{pull}}{|\vec{F}_{pull}|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\mu_{H}=$
+\end_inset
+
+Haftreibungskoeffizient
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Haftreibung.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

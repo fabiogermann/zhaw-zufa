@@ -1,0 +1,354 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Arbeit, Energie, Potential
+\end_layout
+
+\begin_layout Section*
+Beispiele
+\end_layout
+
+\begin_layout Subsection*
+Freier Fall
+\end_layout
+
+\begin_layout Subsubsection*
+Auf der Erde
+\end_layout
+
+\begin_layout Standard
+Gegeben: 
+\begin_inset Formula $m=10kg$
+\end_inset
+
+, 
+\begin_inset Formula $h=20m$
+\end_inset
+
+, EE: 
+\begin_inset Formula $E_{tot}=E_{kin}+E_{pot}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E_{kin1}+E_{pot1}=E_{kin2}+E_{pot2}\Longrightarrow0+mgh=\frac{mv^{2}}{2}+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v=\sqrt{2gh}=\sqrt{2\cdot9.81m/s^{2}\cdot20m}=19.8m/s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Auf dem Mond
+\end_layout
+
+\begin_layout Standard
+Gegeben: 
+\begin_inset Formula $\gamma=6.672\cdot10^{-11}m^{3}kg^{-1}s^{-2}$
+\end_inset
+
+, 
+\begin_inset Formula $M=7.349\cdot10^{22}kg$
+\end_inset
+
+, 
+\begin_inset Formula $r_{m}=1.738\cdot10^{16}m$
+\end_inset
+
+, 
+\begin_inset Formula $F_{G,M}=m\cdot g_{M}=\gamma\cdot\frac{m\cdot M}{r_{M}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F_{G,M}=\gamma\cdot\frac{m\cdot M}{r_{M}^{2}}=6.672\cdot10^{-11}m^{3}kg^{-1}s^{-2}\cdot\frac{1.738\cdot10^{16}\cdot10kg}{1.738^{2}\cdot10^{12}\cdot m^{2}}=1.62m/s^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $v_{M}=\sqrt{2g_{M}h}=\sqrt{2\cdot1.62m/s^{2}\cdot20m}=8.05m/s\simeq8.1m/s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Energieerhaltung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{tot}=E_{kin}+E_{pot}=const.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{kin\: Anfang}+E_{pot\: a}=E_{kin\: Ende}+E_{pot\: E}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta W=E_{pot\: A}-E_{pot\: E}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{kin\: A}+\Delta W=E_{kin\: E}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{m}{2}\cdot v_{0}^{2}+\Delta W=\frac{m}{2}\cdot v_{2}^{2}$
+\end_inset
+
+ |
+\begin_inset Formula $\cdot\frac{2}{m}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $v_{0}^{2}+\frac{2\Delta W}{m}=v_{2}^{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $v_{2}=\sqrt{v_{0}^{2}+\frac{2\Delta W}{m}}=\sqrt{\frac{mv_{0}^{2}2\Delta W}{m}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Elementarladung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1e=1.6\cdot10^{-19}C$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $1C=1As\Longrightarrow I=\frac{dQ}{dt}=\frac{C}{s}=A$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $E_{0}=8.88542\cdot10^{-12}As/Vm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Elektrisches Feld
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E(r)=\frac{\varrho}{2\Pi E_{0}}\cdot\frac{1}{r}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\gamma(r)=-\int Edr=-\frac{\varrho}{2\Pi E_{0}}\cdot\int\frac{1}{r}dr=-\frac{\varrho}{2\Pi E_{0}}\cdot ln(r)+C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Kraft auf eine Punktladung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{F_{c}}=q_{0}\cdot\vec{E}\Longrightarrow\vec{E}=\frac{\vec{F_{c}}}{q_{0}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dE_{pot}=-\vec{F}d\vec{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $dE_{pot}=-q_{0}\cdot\vec{E}\cdot d\vec{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\int d\gamma=\frac{dE_{pot}}{q_{0}}=-\int\vec{E}d\vec{l}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta\gamma=-\overset{b}{\underset{a}{\int}\vec{E}d\vec{l}=\gamma(a)-\gamma(b)}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\gamma(r)=\frac{1}{4\Pi E_{0}}\cdot(-\frac{q}{r}+\frac{q}{|\vec{r}-\vec{l}|})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Potential eines Punktuellen-Ladungssystem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\gamma(r)=\frac{1}{4\Pi E_{0}}\cdot\underset{i}{\sum}\cdot\frac{q_{i}}{r_{i}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\vec{E}(\vec{r})=\frac{1}{4\Pi E_{0}}\cdot(-\frac{q}{r^{3}}\cdot\vec{r}+\frac{q}{|\vec{r}-\vec{l}|^{3}}\cdot(\vec{r}\cdot\vec{l}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Arbeit
+\end_layout
+
+\begin_layout Standard
+Gegeben sind 2 positiv geladene Teilchen q,Q und Abstand 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Delta W=\overset{r_{2}}{\underset{r_{1}}{\int}}\vec{F_{c}}d\vec{r}=\frac{q\cdot Q}{4\Pi E_{0}}\cdot\overset{r_{2}}{\underset{r_{1}}{\int}}\frac{1}{r^{2}}dr=\frac{q\cdot Q}{4\Pi E_{0}}\cdot(\frac{1}{r_{1}}-\frac{1}{r_{2}})$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

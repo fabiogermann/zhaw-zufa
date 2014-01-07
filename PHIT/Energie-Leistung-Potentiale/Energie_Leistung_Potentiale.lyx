@@ -1,0 +1,519 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Energie, Leistung und Potentiale
+\end_layout
+
+\begin_layout Section*
+Energie
+\end_layout
+
+\begin_layout Subsection*
+Mechanische Energie
+\end_layout
+
+\begin_layout Standard
+Wir definieren jetzt eine physikalische Grösse, die mechanische Energie:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{mech}=\vec{F}\cdot\vec{s}=\left[Kraft\cdot Weg\right]=\left[J\right]=\left[\frac{kgm^{2}}{s^{2}}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Potentielle Energie
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{mech}=\vec{F}\cdot\vec{s}=\left[Kraft\cdot Weg\right]=\overset{h}{\underset{0}{\int}}F\cdot dh=\overset{h}{\underset{0}{\int}}mg\cdot dh=mgh$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um die Kugel zu heben, müssen Sie die mechanische Energie mgh investieren.
+ Die potentielle oder Lageenergie der Kugel wird dadurch um mgh erhöht.
+\begin_inset Newline newline
+\end_inset
+
+Potentielle Energie im Gravitationsfeld = mgh
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Potentielle_Energie.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Kinetische Energie
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{mech}=\vec{F}\cdot\vec{s}=Fs$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $F=ma$
+\end_inset
+
+ (a = Beschleunigung)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s=\frac{a}{2}t^{2}$
+\end_inset
+
+ (Zusammenhang Strecke-Beschleunigung)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v=at$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow Fs=ma\cdot s=ma\cdot\frac{a}{2}t^{2}=m\cdot\frac{v^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow E_{kin}=m\cdot\frac{v^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Gilt allgemein, die gegebene Herleitung funktioniert allerdings nur für
+ konstante Kräfte.
+\end_layout
+
+\begin_layout Subsection*
+Federenergie
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{s}=-k(x-L)\vec{e}_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{e}_{x}=$
+\end_inset
+
+Einheitsvektor in x-Richtung
+\end_layout
+
+\begin_layout Verse
+L = Ruhelänge
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{Feder}=\overset{x}{\underset{L}{\int}}Fdx=\overset{x}{\underset{L}{\int}}k(x-L)dx=\frac{k(x-L)^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow E_{kin}=m\cdot\frac{v^{2}}{2}$
+\end_inset
+
+
+\begin_inset Graphics
+	filename Federenergie.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Arbeit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Delta W=\vec{F}\cdot\Delta\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dabei ist 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ eine Kraft und 
+\begin_inset Formula $\Delta\vec{r}$
+\end_inset
+
+ ein Stück Weg.
+ Der Punkt bezeichnet das Skalarprodukt.
+\end_layout
+
+\begin_layout Subsection*
+Skalarprodukt
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\cdot\vec{b}=\left(\begin{array}{c}
+a_{x}\\
+a_{y}\\
+a_{z}
+\end{array}\right)\cdot\left(\begin{array}{c}
+b_{x}\\
+b_{y}\\
+b_{z}
+\end{array}\right)=a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Geometrische Interpretation:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\cdot\vec{b}=|\vec{a}|\cdot|\vec{b}|\cdot cos(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\alpha=arccos(\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|\cdot|\vec{b}|})=arccos(\frac{a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}}{\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}\cdot\sqrt{b_{x}^{2}+b_{y}^{2}+b_{z}^{2}}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Skalarprodukt.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|\vec{a}|=\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für das Produkt eines Verktors mit sich selber gilt:
+\begin_inset Newline newline
+\end_inset
+
+(Zwischenwinkel ist null)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\bullet\vec{a}=|\vec{a}|\cdot|\vec{a}|\cdot cos(0)=|\vec{a}|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow E_{kin}=m\cdot\frac{\vec{v}^{2}}{2}=m\cdot\frac{\vec{v}\cdot\vec{v}}{2}=m\cdot\frac{|\vec{v}|^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Energieerhaltung
+\end_layout
+
+\begin_layout Subsection*
+Energieerhaltungssatz
+\end_layout
+
+\begin_layout Standard
+Die Gesamtmenge der Energie in einem Prozess bleibt immer exakt erhalten.
+\end_layout
+
+\begin_layout Subsection*
+Anwendung der Energieerhaltung
+\end_layout
+
+\begin_layout Standard
+Ansatz: Wenn die Kugel fällt, sinkt ihre potentielle Energie.
+ Wegen der Energieerhaltung steigt die kinetische Energie um einen entsprechende
+n Betrag.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{pot}(t)=mgh(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{kin}(t)=m\frac{v^{2}(t)}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{pot}(t)+E_{kin}(t)=const.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{pot}(0)+E_{kin}(0)=mgH+0=mgH$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Energieerhaltung.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $mgH=mgh(t)+m\frac{v^{2}(t)}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow v(t)=\sqrt{2g(H-h(t))}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Energie- und Impulserhaltung
+\end_layout
+
+\begin_layout Subsubsection*
+Impulserhaltung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m_{1}u_{1}+m_{2}u_{2}=m_{1}v_{1}+m_{2}v_{2}=P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Energierhaltung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m_{1}\frac{u_{1}^{2}}{2}+m_{2}\frac{u_{2}^{2}}{2}=m_{1}\frac{v_{1}^{2}}{2}+m_{2}\frac{v_{2}^{2}}{2}=E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}=\frac{(m_{1}-m_{2})\cdot u_{1}+2m_{2}u_{2}}{m_{1}+m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{2}=\frac{(m_{2}-m_{1})\cdot u_{2}+2m_{1}u_{1}}{m_{1}+m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Impulserhaltung.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Potentiale
+\end_layout
+
+\begin_layout Subsection*
+Dissipative und Konservative Systeme
+\end_layout
+
+\begin_layout Itemize
+Ein System heisst konservativ, wenn die Summe der Energien seiner Komponenten
+ erhalten bleibt.
+\end_layout
+
+\begin_layout Itemize
+Ein System heisst dissipativ, wenn es Energie in die Umwelt abgibt (z.B.
+ durch Wärmestrahlung oder Reibung)
+\end_layout
+
+\begin_layout Subsection*
+Potentielle Energie
+\end_layout
+
+\begin_layout Standard
+Definition: Differenz der potentiellen Energien zwischen zwei Punkten =
+ Arbeit, die es braucht, eine Masse vom ersten zum zweiten Punkt zu bringen.
+\begin_inset Newline newline
+\end_inset
+
+Falls wir die potentielle Energie eines Objekts als Funktion der Lage angeben
+ können (und nicht weiter sagen müssen, wie wir vom Anfangs- zum Endpunkt
+ eines Pfads gelangen), haben wir es mit einem Potential zu tun.
+\end_layout
+
+\begin_layout Section*
+Leistung
+\end_layout
+
+\begin_layout Itemize
+Leistung ist Energie pro Zeit = 
+\begin_inset Formula $\left[W\right]=\left[\frac{J}{s}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1kwH=3.6\cdot10^{6}Ws=3.6\cdot10^{6}J$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Bilanzmodelle
+\end_layout
+
+\begin_layout Standard
+Ausgleich zwischen Energiespeichern findet über Ströme von „Energieträgern“
+ statt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Strom=\frac{Energieträger}{Zeit}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Damit Sie mit einem Energieträgerstrom eine Leistung berechnen können, müssen
+ Sie wissen, wieviel Energie in einem Energieträger steckt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{Energie}{Zeit}=\frac{Energie}{Energieträger}\cdot\frac{Energieträger}{Zeit}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
