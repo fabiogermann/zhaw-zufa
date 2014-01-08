@@ -350,5 +350,70 @@ Gegeben sind 2 positiv geladene Teilchen q,Q und Abstand
 
 \end_layout
 
+\begin_layout Section*
+Kollision - elastischer Stoss
+\end_layout
+
+\begin_layout Standard
+Zwei Kugeln kollidieren frontal in einem elastischen Stoss.
+ Die erste Kugel hat eine Masse von 
+\begin_inset Formula $m_{1}=2kg$
+\end_inset
+
+ , die zweite 
+\begin_inset Formula $m_{2}=3kg$
+\end_inset
+
+ .
+ Wir nehmen an, die Kollision geschehe auf der x - Achse und behandeln sie
+ als eindimensionale Bewegung.
+ Die erste Kugel hat eine Anfangsgeschwindigkeit von 
+\begin_inset Formula $u_{1}=3m/s$
+\end_inset
+
+, die zweite 
+\begin_inset Formula $u_{2}=-4ms$
+\end_inset
+
+.
+ Wie gross werden die Endgeschwindigkeiten 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+sein?
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}=\frac{(m_{1}-m_{2})\cdot u_{1}+2m_{2}u_{2}}{m_{1}+m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{2}=\frac{(m_{2}-m_{1})\cdot u_{2}+2m_{1}u_{1}}{m_{1}+m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Einsetzen ergibt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}=-5.4m/s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{2}=1.6m/s$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
