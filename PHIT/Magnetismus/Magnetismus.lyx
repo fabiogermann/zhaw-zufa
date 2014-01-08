@@ -1,0 +1,218 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Magnetismus
+\end_layout
+
+\begin_layout Standard
+Gesamtkraft auf eine Ladung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{elmag}=Q(\vec{E}+\vec{v}\times\vec{B})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lorentzkraft
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{L}=Q\vec{v}\times\vec{B}$
+\end_inset
+
+ (Kreuzprodukt)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}=Geschwindigkeit$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{B}=Magnetfeld$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Kreuzprodukt
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{array}\right)\times\left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}
+\end{array}\right)=\left(\begin{array}{c}
+a_{2}b_{3}-a_{3}b_{2}\\
+a_{3}b_{1}-a_{1}b_{3}\\
+a_{1}b_{2}-a_{2}b_{1}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Zyklotronradius
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|\vec{F}_{Zentrifugal}|=|\vec{F}_{Lorentz}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{mv^{2}}{r}=qvB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r=\frac{mv}{qB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zentrifugalkraft:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}(t)=\left(\begin{array}{c}
+-r\omega^{2}cos(\omega t)\\
+-r\omega^{2}sin(\omega t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow|\vec{a}(t)|=r\omega^{2}=\frac{|\vec{v}(t)|}{r}=\frac{v^{2}}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Motoren und Generatoren
+\end_layout
+
+\begin_layout Subsection*
+Kraft auf Ströme
+\end_layout
+
+\begin_layout Itemize
+Ströme "bestehen" aus fliessenden Elektronen
+\end_layout
+
+\begin_layout Itemize
+Die "technische Stromrichtung" ist der Flussrichtung der negativ geladenen
+ Elektronen entgegengesetzt.
+\end_layout
+
+\begin_layout Itemize
+Steht ein stromdurchflossener Draht senkrecht zu einem Magnetfeld wirkt
+ eine Kraft auf den Draht.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Lorentzkraft.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
