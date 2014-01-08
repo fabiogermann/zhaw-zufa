@@ -64,12 +64,32 @@
 
 \begin_body
 
-\begin_layout Part*
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
 Magnetismus
 \end_layout
 
+\begin_layout Standard
+Gesamtkraft auf eine Ladung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{elmag}=Q(\vec{E}+\vec{v}\times\vec{B})$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
-Lorenzkraft
+Lorentzkraft
 \end_layout
 
 \begin_layout Verse
@@ -77,13 +97,6 @@ Lorenzkraft
 \end_inset
 
  (Kreuzprodukt)
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $Q=Ladung$
-\end_inset
-
-
 \end_layout
 
 \begin_layout Verse
@@ -118,6 +131,84 @@ a_{2}b_{3}-a_{3}b_{2}\\
 a_{3}b_{1}-a_{1}b_{3}\\
 a_{1}b_{2}-a_{2}b_{1}
 \end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Zyklotronradius
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|\vec{F}_{Zentrifugal}|=|\vec{F}_{Lorentz}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{mv^{2}}{r}=qvB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r=\frac{mv}{qB}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zentrifugalkraft:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}(t)=\left(\begin{array}{c}
+-r\omega^{2}cos(\omega t)\\
+-r\omega^{2}sin(\omega t)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow|\vec{a}(t)|=r\omega^{2}=\frac{|\vec{v}(t)|}{r}=\frac{v^{2}}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Motoren und Generatoren
+\end_layout
+
+\begin_layout Subsection*
+Kraft auf Ströme
+\end_layout
+
+\begin_layout Itemize
+Ströme "bestehen" aus fliessenden Elektronen
+\end_layout
+
+\begin_layout Itemize
+Die "technische Stromrichtung" ist der Flussrichtung der negativ geladenen
+ Elektronen entgegengesetzt.
+\end_layout
+
+\begin_layout Itemize
+Steht ein stromdurchflossener Draht senkrecht zu einem Magnetfeld wirkt
+ eine Kraft auf den Draht.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Lorentzkraft.png
+	scale 40
+
 \end_inset
 
 
