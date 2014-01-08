@@ -79,7 +79,15 @@ wobei:
 \end_layout
 
 \begin_layout Standard
-daraus folgt: 
+das 
+\series bold
+ELEKTRISCHE POTENTIAL
+\series default
+ ist.
+\end_layout
+
+\begin_layout Standard
+Daraus folgt: 
 \begin_inset Formula $U=-\intop_{r1}^{r2}\vec{E}d\vec{s}$
 \end_inset
 
