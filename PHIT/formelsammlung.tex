@@ -1,0 +1,47 @@
+%% LyX 2.0.5 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1.5cm,bmargin=1.5cm,lmargin=1.5cm,rmargin=1.5cm}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{esint}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+\makeatother
+
+\begin{document}
+\tableofcontents{}
+
+\include{Kinetik/Kinetic}\include{Kräfte/Kräfte}
+
+\include{Impuls/Impuls}
+
+\include{Energie-Leistung-Potentiale/Energie_Leistung_Potentiale}
+
+\include{El-Felder-Stroeme/Elektrische-felder}
+
+\include{El-Felder-Stroeme/elektrische-spannung}
+
+\include{El-Felder-Stroeme/kondensator}
+
+\include{Magnetismus/Magnetismus}
+\end{document}
