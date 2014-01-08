@@ -68,11 +68,11 @@
 Schaltungen
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 Allgemein
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Formeln
 \end_layout
 
@@ -115,7 +115,7 @@ Formeln
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Einheiten
 \end_layout
 
@@ -154,11 +154,11 @@ Einheiten
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 Kirchhoffschen Gesetze
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Maschenregel
 \end_layout
 
@@ -182,7 +182,7 @@ Wäre dies nicht so, würde der Energieerhaltungssatz verletzt.
  und würde dabei ein immer höheres Potential erreichen.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Knotenregel
 \end_layout
 
@@ -204,7 +204,7 @@ Ladungen die pro Zeiteinheit zufliessen, müssen auch wieder abfliessen,
  wenn die Schaltung nur aus leitenden Drähten und Widerständen besteht.
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 Kondensatoren
 \end_layout
 
@@ -215,7 +215,7 @@ Kondensatoren
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Serienschaltung
 \end_layout
 
@@ -233,7 +233,7 @@ Serienschaltung
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Parallelschaltung
 \end_layout
 
@@ -251,11 +251,11 @@ Parallelschaltung
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 Widerstände
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Serienschaltung
 \end_layout
 
@@ -273,7 +273,7 @@ Serienschaltung
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 Parallelschaltung
 \end_layout
 
@@ -291,7 +291,7 @@ Parallelschaltung
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 Lorentz-Kraft
 \end_layout
 
