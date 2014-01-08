@@ -25,10 +25,9 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
-\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry true
+\use_geometry false
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -43,10 +42,6 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 1.5cm
-\topmargin 1.5cm
-\rightmargin 1.5cm
-\bottommargin 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -64,47 +59,68 @@
 
 \begin_body
 
-\begin_layout Title
-Physik
+\begin_layout Section*
+Elektrische Felder
 \end_layout
 
-\begin_layout Author
-Jonas Gschwend
-\end_layout
-
-\begin_layout Author
-Fabio Germann
-\end_layout
-
-\begin_layout Date
-07.01.2014
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Kinetik/Kinetic_examples.lyx"
-
+\begin_layout Verse
+\begin_inset Formula $\vec{F}_{1}=\sum_{i=2}^{4}\vec{F}_{1i}=\sum_{i=2}^{4}\frac{1}{4\pi\varepsilon_{0}}\frac{Q_{1}Q_{i}}{\mid\vec{r}_{1i}\mid^{2}}\vec{n}_{1i}=Q_{1}\sum_{i=2}^{4}\frac{1}{4\pi\varepsilon_{0}}\frac{Q_{i}}{\mid\vec{r}_{1i}\mid^{2}}\vec{n}_{1i}=Q_{1}\vec{E}(r)$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Kräfte/Kräfte_examples.lyx"
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Kugel
+\end_layout
 
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\vec{E}_{Kugle}=\frac{Q}{4\pi\varepsilon_{0}\mid r\mid^{2}}\vec{n}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "Impuls/Impuls_examples.lyx"
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Zylinder
+\end_layout
 
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\vec{E}_{Zylinder=\frac{\lambda}{2\pi\varepsilon_{0}\mid r\mid}\vec{n},\; wobei\,\vec{n}=\frac{\vec{r}}{\mid\vec{r}\mid}}$
+\end_inset
+
+ (senkrecht zur Zylinderachse)
+\end_layout
+
+\end_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Platte
+\end_layout
+
+\begin_deeper
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\vec{E}_{Platte}=\frac{\sigma}{2\varepsilon_{0}}\vec{n}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Allgemein
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{E}(\vec{r})=\frac{\vec{F}(\vec{r})}{Q}=\frac{Kraft}{Ladung}$
 \end_inset
 
 

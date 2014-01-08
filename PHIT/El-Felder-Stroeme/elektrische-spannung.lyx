@@ -59,7 +59,30 @@
 
 \begin_body
 
+\begin_layout Section*
+Elektrische Spannung
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula $U=\phi_{el}(\vec{r}_{1})-\phi_{el}(\vec{r}_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+wobei: 
+\begin_inset Formula $\phi_{el}(\vec{r})=-\intop_{\infty}^{r}\vec{E}d\vec{s}=\intop_{r}^{\infty}\vec{E}d\vec{s}=\frac{Energie}{Ladung},\; und\, Energie_{pot}=-\intop_{\infty}^{r}\vec{QE}d\vec{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+daraus folgt: 
+\begin_inset Formula $U=-\intop_{r1}^{r2}\vec{E}d\vec{s}$
+\end_inset
+
 
 \end_layout
 
