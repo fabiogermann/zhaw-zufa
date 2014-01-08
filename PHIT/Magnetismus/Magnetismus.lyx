@@ -64,16 +64,7 @@
 
 \begin_body
 
-\begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Part
+\begin_layout Part*
 Magnetismus
 \end_layout
 
@@ -212,6 +203,58 @@ Steht ein stromdurchflossener Draht senkrecht zu einem Magnetfeld wirkt
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection*
+Generatoren
+\end_layout
+
+\begin_layout Standard
+Die Drehung einer Schleife im Magnetfeld führt zu einem Strom wechselnder
+ Richtung, Wechselstrom.
+\begin_inset Newline newline
+\end_inset
+
+Bei einer gleichförmig drehenden Schlaufe im Magnetfeld entsteht eine Spannung
+ der Form:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U(t)=U_{0}sin(\omega t+\phi_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Spulen
+\end_layout
+
+\begin_layout Subsection*
+Permeabilität
+\end_layout
+
+\begin_layout Standard
+Magnetische Felder in Spulen können mithilfe eines Eisenkerns verstärkt
+ werden.
+\begin_inset Newline newline
+\end_inset
+
+Für eine Spule mit N Windungen, einem Strom I und Länge L gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $B=\mu_{r}\mu_{0}\frac{N}{L}I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\mu_{r}=$
+\end_inset
+
+Permeabilitätszahl der Spulenfüllung
 \end_layout
 
 \end_body
