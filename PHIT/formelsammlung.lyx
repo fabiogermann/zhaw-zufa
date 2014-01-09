@@ -143,6 +143,26 @@ filename "El-Felder-Stroeme/kondensator.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "El-Felder-Stroeme/elektrizitat.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "El-Felder-Stroeme/allgemein.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
 filename "Magnetismus/Magnetismus.lyx"
 
 \end_inset
