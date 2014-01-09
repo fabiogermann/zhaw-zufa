@@ -64,23 +64,37 @@ BM-Beispiel (Hydrodynamisch)
 \end_layout
 
 \begin_layout Standard
-Gegeben: 
+Gegeben sei eine vertikale Feder mit einer Masse m.
+ Wir betrachten die vertikale Koordinate h(t) und behandeln das Problemeindimens
+ional.
+ Die Koordinatenachse ist so gewählt, dass das untere Ende der unbelasteten
+ Feder bei h = 0 ist.
+ Die Feder habe die Federkonstante 
 \begin_inset Formula $k=1kg/s^{2}$
 \end_inset
 
-, 
-\begin_inset Formula $h_{0}=0$
-\end_inset
+.
+ Auf die Masse wirken drei Kräfte:
+\end_layout
 
-, Gravitationskraft 
+\begin_layout Itemize
+Die Gravitationskraft 
 \begin_inset Formula $F_{G}=-mg$
 \end_inset
 
-, Federkraft 
+
+\end_layout
+
+\begin_layout Itemize
+Die Federkraft 
 \begin_inset Formula $F_{k}=-kh$
 \end_inset
 
-, Dämpfungskraft 
+
+\end_layout
+
+\begin_layout Itemize
+Eine Dämpfungskraft 
 \begin_inset Formula $F_{r}=-\gamma h$
 \end_inset
 
