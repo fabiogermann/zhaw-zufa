@@ -60,24 +60,6 @@
 \begin_body
 
 \begin_layout Section*
-Lorentz-Kraft
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\vec{F_{B}}=q(\vec{v}\times\vec{B})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Lorentz-Kraft = Zentripetal-Kraft:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $evB=\frac{mv^{2}}{r}$
-\end_inset
-
 
 \end_layout
 

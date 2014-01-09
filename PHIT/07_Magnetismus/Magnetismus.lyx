@@ -84,7 +84,7 @@ Lorentzkraft
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\vec{F}_{L}=Q\vec{v}\times\vec{B}$
+\begin_inset Formula $\vec{F}_{L}=Qv\times\vec{B}$
 \end_inset
 
  (Kreuzprodukt)
