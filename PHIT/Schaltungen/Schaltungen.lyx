@@ -377,7 +377,7 @@ Induzierte Spannung
 \begin_inset Formula $U_{ind}=-L\cdot\frac{dI}{dt}=-\frac{d\phi}{dt}=-L\cdot\frac{\Delta I}{\Delta t}$
 \end_inset
 
-
+ (Achtung: hier muss die Stromrichtung beachtet werden - Vorzeichen!)
 \end_layout
 
 \begin_layout Verse
@@ -393,17 +393,6 @@ Gespeicherte Energie in einer Spule
 
 \begin_layout Verse
 \begin_inset Formula $E(I)=L\cdot\frac{I^{2}}{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Transformatorengleichung
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\frac{U_{1}}{U_{2}}=\frac{N_{1}}{N_{2}}\Longrightarrow N_{2}=N_{1}\cdot\frac{U_{2}}{U_{1}}$
 \end_inset
 
 
