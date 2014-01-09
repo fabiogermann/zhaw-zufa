@@ -86,7 +86,7 @@ filename "01_Kinetik/Kinetic.lyx"
 
 \begin_inset CommandInset include
 LatexCommand include
-filename "02_Kräfte/Kräfte.lyx"
+filename "02_Kraefte/Kraefte.lyx"
 
 \end_inset
 
