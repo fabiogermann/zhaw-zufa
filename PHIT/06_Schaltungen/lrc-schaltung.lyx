@@ -63,5 +63,77 @@
 LRC-Schaltung
 \end_layout
 
+\begin_layout Subsection*
+Wechselspannung
+\end_layout
+
+\begin_layout Quote
+\begin_inset Graphics
+	filename lrc.jpg
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{S}(t)=U_{S}cos(\omega t)$
+\end_inset
+
+ (Wechselspannungsquelle)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{S}(t)-U_{R}(t)-U_{C}(t)-U_{L}(t)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{S}cos(\omega t)-RI(t)-\frac{Q(t)}{C}-L\frac{dI(t)}{dt}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{S}cos(\omega t)-R\frac{dQ(t)}{dt}-\frac{Q(t)}{C}-L\frac{d^{2}Q(t)}{dt^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+für eine Komplexe Lösung können wir: 
+\begin_inset Formula $Q(t)=Qe^{i\omega t}=Q_{0}e^{i(\omega t+\delta)}$
+\end_inset
+
+ setzten.
+\end_layout
+
+\begin_layout Verse
+Für die Amplitude der Ladung im Kondensator gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{0}=\frac{U_{0}}{\sqrt{L^{2}(\frac{1}{CL}-\omega^{2})^{2}+R\omega^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+Kritische Komposition:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $R=0,\;\omega=\frac{1}{\sqrt{CL}}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
