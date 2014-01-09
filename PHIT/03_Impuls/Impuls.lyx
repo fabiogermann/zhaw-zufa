@@ -92,7 +92,7 @@ Der Luftwiderstand ist proportional zum Quadrat der Schnelligkeit und der
 \begin_inset Formula $c_{w}=$
 \end_inset
 
-Widerstandszahl
+ Widerstandszahl
 \end_layout
 
 \begin_layout Verse
@@ -103,7 +103,7 @@ Widerstandszahl
 
 
 \emph default
-Luftdichte
+ Luftdichte
 \emph on
  
 \begin_inset Formula $(1.293kg/m^{3})$
@@ -116,7 +116,7 @@ Luftdichte
 \begin_inset Formula $A=$
 \end_inset
 
-Querschnittsfläche 
+ Querschnittsfläche 
 \begin_inset Formula $\bot$
 \end_inset
 
@@ -232,7 +232,7 @@ Generell geht es darum, die Bahn eines Geschosses vorherzusagen.
 \begin_inset Formula $k=$
 \end_inset
 
-Konstante 
+ Konstante 
 \begin_inset Formula $\left[\frac{kg}{m}\right]$
 \end_inset
 
@@ -329,7 +329,7 @@ Impuls einer ausgedehnten Masse
 \begin_inset Formula $\rho(\vec{r})=$
 \end_inset
 
-Dichte am Punkt 
+ Dichte am Punkt 
 \begin_inset Formula $\vec{r}$
 \end_inset
 
@@ -340,7 +340,7 @@ Dichte am Punkt
 \begin_inset Formula $v(\vec{r})=$
 \end_inset
 
-Geschwindigkeit am Punkt 
+ Geschwindigkeit am Punkt 
 \begin_inset Formula $\vec{r}$
 \end_inset
 

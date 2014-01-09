@@ -63,7 +63,7 @@
 Elektrische Spannung
 \end_layout
 
-\begin_layout Standard
+\begin_layout Verse
 \begin_inset Formula $U=\phi_{el}(\vec{r}_{1})-\phi_{el}(\vec{r}_{2})$
 \end_inset
 
@@ -72,6 +72,9 @@ Elektrische Spannung
 
 \begin_layout Standard
 wobei: 
+\end_layout
+
+\begin_layout Verse
 \begin_inset Formula $\phi_{el}(\vec{r})=-\intop_{\infty}^{r}\vec{E}d\vec{s}=\intop_{r}^{\infty}\vec{E}d\vec{s}=\frac{Energie}{Ladung},\; und\, Energie_{pot}=-\intop_{\infty}^{r}\vec{QE}d\vec{s}$
 \end_inset
 
@@ -84,10 +87,13 @@ das
 ELEKTRISCHE POTENTIAL
 \series default
  ist.
+\begin_inset Newline newline
+\end_inset
+
+Daraus folgt:
 \end_layout
 
-\begin_layout Standard
-Daraus folgt: 
+\begin_layout Verse
 \begin_inset Formula $U=-\intop_{r1}^{r2}\vec{E}d\vec{s}$
 \end_inset
 
