@@ -115,7 +115,7 @@ filename "04_Energie-Leistung-Potentiale/Energie_Leistung_Potentiale.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "05_El-Felder-Stroeme/allgemein.lyx"
 
 \end_inset
@@ -125,7 +125,7 @@ filename "05_El-Felder-Stroeme/allgemein.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "05_El-Felder-Stroeme/Elektrische-felder.lyx"
 
 \end_inset
@@ -135,7 +135,7 @@ filename "05_El-Felder-Stroeme/Elektrische-felder.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "05_El-Felder-Stroeme/elektrische-spannung.lyx"
 
 \end_inset
@@ -145,7 +145,7 @@ filename "05_El-Felder-Stroeme/elektrische-spannung.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "05_El-Felder-Stroeme/elektrizitat.lyx"
 
 \end_inset
@@ -162,22 +162,8 @@ filename "06_Schaltungen/Schaltungen.lyx"
 
 
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "06_Schaltungen/widerstand.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "06_Schaltungen/kondensator.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
-filename "06_Schaltungen/spule.lyx"
 
 \end_inset
 
@@ -186,8 +172,15 @@ filename "06_Schaltungen/spule.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
+LatexCommand input
+filename "06_Schaltungen/kondensator.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
 LatexCommand include
-filename "05_El-Felder-Stroeme/allgemein.lyx"
+filename "06_Schaltungen/spule.lyx"
 
 \end_inset
 

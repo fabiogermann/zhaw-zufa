@@ -87,7 +87,7 @@ z(t)
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection*
 Geschwindigkeit
 \end_layout
 
@@ -168,14 +168,7 @@ Die Kraft ist das Produkt von Masse und Beschleunigung:
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\vec{F}=m\cdot\vec{a}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\left[\vec{F}\right]=\left[\frac{kg\cdot m}{s^{2}}\right]=\left[N\right]$
+\begin_inset Formula $\vec{F}=m\cdot\vec{a}=\left[\frac{kg\cdot m}{s^{2}}\right]=\left[N\right]$
 \end_inset
 
 
