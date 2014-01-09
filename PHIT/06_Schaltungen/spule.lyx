@@ -76,7 +76,7 @@ N = Anzahl Windungen einer Spule
 \end_layout
 
 \begin_layout Itemize
-(L = Länge einer Spule)
+l = Länge einer Spule (nicht Drahtlänge)
 \end_layout
 
 \begin_layout Itemize
@@ -109,11 +109,16 @@ Elektromagnetisches Feld
 \begin_inset Formula $\mu_{0}=4\pi\cdot10^{-7}Vs/Am$
 \end_inset
 
-
+ (Permeabilität)
 \end_layout
 
 \begin_layout Section*
 Induzierte Spannung
+\end_layout
+
+\begin_layout Standard
+Faraday's Gesetz (vgl.
+ ACDC) für Spulen (für Schlaufe N=1)
 \end_layout
 
 \begin_layout Verse
@@ -132,6 +137,13 @@ Induzierte Spannung
 
 \begin_layout Verse
 \begin_inset Formula $\phi=N\cdot B\cdot A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $L=\frac{\mu N^{2}A}{l},\,\mu=\mu_{0}\mu_{r}$
 \end_inset
 
 
