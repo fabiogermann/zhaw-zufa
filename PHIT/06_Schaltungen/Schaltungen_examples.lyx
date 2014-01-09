@@ -128,6 +128,26 @@ Knotenregel
 
 \end_layout
 
+\begin_layout Subsection*
+Weitere Berechnungen:
+\end_layout
+
+\begin_layout Verse
+Am Widerstand abgegebene Energie: 
+\begin_inset Formula $P=\frac{dE}{dt}=U_{R}I=\frac{U_{R}^{2}}{R}=\frac{U_{0}^{2}e^{\frac{2t}{RC}}}{R}\Rightarrow E=\intop_{0}^{\infty}\frac{-U_{0}^{2}e^{\frac{2t}{RC}}}{R}dt=-\frac{CU_{0}^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+Kapazität bei gegebenen U/t: 
+\begin_inset Formula $C\frac{dU}{dt}=\frac{dQ}{dt}\Longrightarrow C=\frac{I}{\frac{dU}{dt}}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 BM-Beispiel
 \end_layout
