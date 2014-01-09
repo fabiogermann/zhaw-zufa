@@ -89,7 +89,7 @@ filename "01_Kinetik/Kinetic_examples.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "02_Kraefte/Kraefte_examples.lyx"
+filename "02_Kraefte/Kraaefte_examples.lyx"
 
 \end_inset
 
