@@ -64,17 +64,29 @@
 
 \begin_body
 
+\begin_layout Title
+Physik
+\end_layout
+
+\begin_layout Author
+Fabio Germann & Jonas Gschwend
+\end_layout
+
+\begin_layout Date
+07.01.2014
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Kinetik/Kinetic.lyx"
+filename "01_Kinetik/Kinetic.lyx"
 
 \end_inset
 
 
 \begin_inset CommandInset include
 LatexCommand include
-filename "Kräfte/Kräfte.lyx"
+filename "02_Kräfte/Kräfte.lyx"
 
 \end_inset
 
@@ -84,7 +96,7 @@ filename "Kräfte/Kräfte.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Impuls/Impuls.lyx"
+filename "03_Impuls/Impuls.lyx"
 
 \end_inset
 
@@ -94,7 +106,7 @@ filename "Impuls/Impuls.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Energie-Leistung-Potentiale/Energie_Leistung_Potentiale.lyx"
+filename "04_Energie-Leistung-Potentiale/Energie_Leistung_Potentiale.lyx"
 
 \end_inset
 
@@ -104,7 +116,7 @@ filename "Energie-Leistung-Potentiale/Energie_Leistung_Potentiale.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "El-Felder-Stroeme/Elektrische-felder.lyx"
+filename "05_El-Felder-Stroeme/allgemein.lyx"
 
 \end_inset
 
@@ -114,7 +126,7 @@ filename "El-Felder-Stroeme/Elektrische-felder.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "El-Felder-Stroeme/elektrische-spannung.lyx"
+filename "05_El-Felder-Stroeme/Elektrische-felder.lyx"
 
 \end_inset
 
@@ -124,7 +136,7 @@ filename "El-Felder-Stroeme/elektrische-spannung.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "El-Felder-Stroeme/kondensator.lyx"
+filename "05_El-Felder-Stroeme/elektrische-spannung.lyx"
 
 \end_inset
 
@@ -134,7 +146,7 @@ filename "El-Felder-Stroeme/kondensator.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Schaltungen/Schaltungen.lyx"
+filename "05_El-Felder-Stroeme/elektrizitat.lyx"
 
 \end_inset
 
@@ -144,7 +156,28 @@ filename "Schaltungen/Schaltungen.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "El-Felder-Stroeme/allgemein.lyx"
+filename "06_Schaltungen/Schaltungen.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "06_Schaltungen/widerstand.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "06_Schaltungen/kondensator.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "06_Schaltungen/spule.lyx"
 
 \end_inset
 
@@ -154,7 +187,7 @@ filename "El-Felder-Stroeme/allgemein.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Magnetismus/Magnetismus.lyx"
+filename "05_El-Felder-Stroeme/allgemein.lyx"
 
 \end_inset
 
@@ -164,7 +197,31 @@ filename "Magnetismus/Magnetismus.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Induktionsgesetze/Induktionsgesetze.lyx"
+filename "07_Magnetismus/Magnetismus.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "08_Induktionsgesetze/Induktionsgesetze.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "09_ACDC/acdc.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "10_Schwingungen/schwingungen.lyx"
 
 \end_inset
 
