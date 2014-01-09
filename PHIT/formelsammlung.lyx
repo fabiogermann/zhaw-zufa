@@ -104,6 +104,16 @@ filename "Energie-Leistung-Potentiale/Energie_Leistung_Potentiale.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
+filename "05_El-Felder-Stroeme/allgemein.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
 filename "El-Felder-Stroeme/Elektrische-felder.lyx"
 
 \end_inset
@@ -114,7 +124,17 @@ filename "El-Felder-Stroeme/Elektrische-felder.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "El-Felder-Stroeme/elektrische-spannung.lyx"
+filename "05_El-Felder-Stroeme/elektrische-spannung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "05_El-Felder-Stroeme/elektrizitat.lyx"
 
 \end_inset
 
