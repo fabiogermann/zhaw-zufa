@@ -64,6 +64,59 @@ Beispiele
 \end_layout
 
 \begin_layout Section*
+Bahnkurve
+\end_layout
+
+\begin_layout Standard
+Sie haben einen Ball, der sich auf folgender Bahnkurve bewegt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{r}=\left(\begin{array}{c}
+at\\
+bt^{2}\\
+c
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wie gross sind die Geschwindigkeit 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ und die Beschleunigung 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ im Zeitpunkt t?
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}=\frac{d\vec{r}}{dt}=\left(\begin{array}{c}
+a\\
+2bt\\
+0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}=\frac{d\vec{v}}{dt}=\left(\begin{array}{c}
+0\\
+2b\\
+0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 Berechnung Bremszeit und Bremsweg
 \end_layout
 
@@ -121,10 +174,14 @@ Der Gegenstand kommt zum stillstand, wenn
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $v_{0}-a\cdot t=0\Rightarrow v_{0}=a\cdot t\Rightarrow t_{B}=\frac{v_{0}}{a}$
+\begin_inset Formula $v_{0}\cdot s_{0}-a\cdot t=0\Rightarrow v_{0}=a\cdot t\Rightarrow t_{B}=\frac{v_{0}}{a}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Verse
+Allenfalls Reaktionszeit noch dazurechnen!
 \end_layout
 
 \begin_layout Subsection*
@@ -152,6 +209,13 @@ Hierfür wird setzt man die Bremszeit in die Gleichung 2.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s_{0}=v_{0}\cdot$
+\end_inset
+
+Reaktionszeit
 \end_layout
 
 \begin_layout Section*

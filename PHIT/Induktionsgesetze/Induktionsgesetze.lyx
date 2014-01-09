@@ -159,5 +159,125 @@ Induktion
 
 \end_layout
 
+\begin_layout Verse
+\begin_inset Graphics
+	filename Lenzsche_Regel.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Durch ein Magnetfeld induzierte Ströme erzeugen immer ein Magnetfeld in
+ die entgegengesetzte Richtung.
+\end_layout
+
+\begin_layout Subsection*
+Gleichförmig drehende Schlaufe
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\phi(t)=\vec{A}(t)\cdot\vec{B}=|\vec{A}|\cdot|\vec{B}|\cdot cos(\omega t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow U_{ind}(t)=-\frac{d}{dt}\cdot|\vec{A}|\cdot|\vec{B}|\cdot cos(\omega t)=A\cdot B\cdot\omega\cdot sin(\omega t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+A = Fläche der Schlaufe 
+\end_layout
+
+\begin_layout Verse
+B = Stärke des Magnetfeldes 
+\begin_inset Formula $\vec{B}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Es entsteht eine Wechselspannung 
+\begin_inset Formula $U_{ind}$
+\end_inset
+
+ mit Amplitude 
+\begin_inset Formula $U_{0}$
+\end_inset
+
+ und Frequenz 
+\begin_inset Formula $\nu$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{0}=\omega\cdot|\vec{A}|\cdot|\vec{B}|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\nu=\frac{\omega}{2\pi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow U_{ind}(t)=U_{0}\cdot sin(2\pi\nu t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Frequenz
+\end_layout
+
+\begin_layout Standard
+Gibt an wie oft sich eine periodische Funktion pro Sekunde wiederholt.
+\begin_inset Newline newline
+\end_inset
+
+Sie hat zur Periode folgende Beziehung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $T=\frac{1}{\nu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Kreisfrequenz
+\end_layout
+
+\begin_layout Standard
+Gibt die Winkelgeschwindigkeit einer Sinus- oder Cosinusfunktion an.
+\begin_inset Newline newline
+\end_inset
+
+Sie hat zu Periode folgende Beziehung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $T=\frac{2\pi}{\omega}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
