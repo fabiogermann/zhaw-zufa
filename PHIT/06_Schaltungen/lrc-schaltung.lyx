@@ -60,54 +60,7 @@
 \begin_body
 
 \begin_layout Section*
-Widerstände
-\end_layout
-
-\begin_layout Subsection*
-Serienschaltung
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $R=\varrho\cdot\frac{l_{1}+l_{2}}{A}=R_{1}+R_{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $R=R_{1}+R_{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Parallelschaltung
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $R=\frac{1}{\varrho\cdot\frac{A_{1}}{l}+\varrho\cdot\frac{A_{2}}{l}}=\frac{1}{\frac{1}{R_{1}}}+\frac{1}{\frac{1}{R_{2}}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $\frac{1}{R}=\frac{1}{R_{1}}+\frac{1}{R_{2}}\Longrightarrow R=(\frac{1}{R_{1}}+\frac{1}{R_{2}})^{-1}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Wechselspannung
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $Z=R$
-\end_inset
-
-
+LRC-Schaltung
 \end_layout
 
 \end_body

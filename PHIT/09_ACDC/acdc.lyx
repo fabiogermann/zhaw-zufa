@@ -76,6 +76,22 @@ Spannung:
 
 \end_layout
 
+\begin_layout Standard
+Stromstärke: 
+\begin_inset Formula $I(t)=\frac{U_{0}}{L\omega}cos(\omega t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Impedanz (Z) für Spule: 
+\begin_inset Formula $\mid Z\mid=\omega L$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Nennspannung
 \end_layout
