@@ -99,7 +99,7 @@ Elektromagnetisches Feld
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $B=\mu_{0}\cdot\frac{N}{L}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N}{L}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N\cdot U}{L\cdot R}=\frac{\phi}{A}$
+\begin_inset Formula $B=\mu_{0}\cdot\frac{N}{l}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N}{l}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N\cdot U}{l\cdot R}=\frac{\phi}{A}$
 \end_inset
 
 
