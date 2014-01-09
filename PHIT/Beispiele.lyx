@@ -69,11 +69,7 @@ Physik
 \end_layout
 
 \begin_layout Author
-Jonas Gschwend
-\end_layout
-
-\begin_layout Author
-Fabio Germann
+Fabio Germann & Jonas Gschwend
 \end_layout
 
 \begin_layout Date
@@ -83,7 +79,7 @@ Fabio Germann
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Kinetik/Kinetic_examples.lyx"
+filename "01_Kinetik/Kinetic_examples.lyx"
 
 \end_inset
 
@@ -93,7 +89,7 @@ filename "Kinetik/Kinetic_examples.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Kräfte/Kräfte_examples.lyx"
+filename "02_Kräfte/Kräfte_examples.lyx"
 
 \end_inset
 
@@ -103,7 +99,31 @@ filename "Kräfte/Kräfte_examples.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "Impuls/Impuls_examples.lyx"
+filename "03_Impuls/Impuls_examples.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "04_Energie-Leistung-Potentiale/Energie_Leistung_Potentiale_examples.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "06_Schaltungen/Schaltungen_examples.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand include
+filename "10_Schwingungen/schwingungen_beispiele.lyx"
 
 \end_inset
 
