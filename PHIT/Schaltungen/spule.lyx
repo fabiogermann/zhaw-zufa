@@ -1,0 +1,170 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Spulen
+\end_layout
+
+\begin_layout Section*
+Allgemein
+\end_layout
+
+\begin_layout Itemize
+B = Elektromagnetisches Feld
+\end_layout
+
+\begin_layout Itemize
+N = Anzahl Windungen einer Spule
+\end_layout
+
+\begin_layout Itemize
+(L = Länge einer Spule)
+\end_layout
+
+\begin_layout Itemize
+L = Induktivität einer Spule [H]
+\end_layout
+
+\begin_layout Itemize
+A = Fläche der Spule
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1\frac{Vs}{A}=1H=1Henry$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Elektromagnetisches Feld
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $B=\mu_{0}\cdot\frac{N}{L}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N}{L}\cdot I=\mu_{r}\cdot\mu_{0}\cdot\frac{N\cdot U}{L\cdot R}=\frac{\phi}{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\mu_{0}=4\pi\cdot10^{-7}Vs/Am$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Induzierte Spannung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{ind}=-N\cdot B\cdot\frac{dA}{dt}=N\cdot B\cdot A\cdot\omega\cdot sin(\omega t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $U_{ind}=-L\cdot\frac{dI}{dt}=-\frac{d\phi}{dt}=-L\cdot\frac{\Delta I}{\Delta t}$
+\end_inset
+
+ (Achtung: hier muss die Stromrichtung beachtet werden - Vorzeichen!)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\phi=N\cdot B\cdot A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Gespeicherte Energie in einer Spule
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(I)=L\cdot\frac{I^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Selbstinduktion
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $L\simeq N^{2}\Longleftrightarrow N\simeq\sqrt{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{U_{1}}{U_{2}}=\frac{N_{1}}{N_{2}}=\frac{\sqrt{L_{1}}}{\sqrt{L_{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
