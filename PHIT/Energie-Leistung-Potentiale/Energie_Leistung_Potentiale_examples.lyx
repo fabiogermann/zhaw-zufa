@@ -336,14 +336,9 @@ Gegeben sind 2 positiv geladene Teilchen q,Q und Abstand
 \end_inset
 
 .
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
-\begin_inset Newline newline
-\end_inset
-
-
+\begin_layout Verse
 \begin_inset Formula $\Delta W=\overset{r_{2}}{\underset{r_{1}}{\int}}\vec{F_{c}}d\vec{r}=\frac{q\cdot Q}{4\Pi E_{0}}\cdot\overset{r_{2}}{\underset{r_{1}}{\int}}\frac{1}{r^{2}}dr=\frac{q\cdot Q}{4\Pi E_{0}}\cdot(\frac{1}{r_{1}}-\frac{1}{r_{2}})$
 \end_inset
 
