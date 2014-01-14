@@ -73,7 +73,7 @@ Fabio Germann & Jonas Gschwend
 \end_layout
 
 \begin_layout Date
-07.01.2014
+14.01.2014
 \end_layout
 
 \begin_layout Standard
@@ -155,12 +155,25 @@ filename "05_El-Felder-Stroeme/elektrizitat.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
+LatexCommand input
+filename "05_El-Felder-Stroeme/kondensator.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
 LatexCommand include
 filename "06_Schaltungen/Schaltungen.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
 filename "06_Schaltungen/widerstand.lyx"
@@ -189,6 +202,46 @@ filename "06_Schaltungen/spule.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
+LatexCommand input
+filename "06_Schaltungen/lc-schaltung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "06_Schaltungen/lr-schaltung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "06_Schaltungen/lrc-schaltung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "06_Schaltungen/rc-schaltung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
 LatexCommand include
 filename "07_Magnetismus/Magnetismus.lyx"
 
@@ -199,21 +252,27 @@ filename "07_Magnetismus/Magnetismus.lyx"
 
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "08_Induktionsgesetze/Induktionsgesetze.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "09_ACDC/acdc.lyx"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "10_Schwingungen/schwingungen.lyx"
 
 \end_inset
