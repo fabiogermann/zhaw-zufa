@@ -126,6 +126,75 @@ a\\
 \end_layout
 
 \begin_layout Section*
+Schiefer Wurf
+\end_layout
+
+\begin_layout Standard
+Sie werden einen Ball in einem Winkel von 
+\begin_inset Formula $60^{o}$
+\end_inset
+
+auf einem flachen Terrain.
+ Die Schnelligkeit des Balls beträgt 20 m/s.
+\begin_inset Newline newline
+\end_inset
+
+Nach welcher Zeit schlägt der Ball auf dem Boden auf.
+ (
+\begin_inset Formula $g=9.81m/s^{2}\approx10m/s^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $x_{0}=y_{0}=z_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{s}(t)=\left(\begin{array}{c}
+x_{0}+v_{0x}\cdot t\\
+y_{0}+v_{0y}\cdot t\\
+z_{0}+v_{0z}\cdot t-g\frac{t^{2}}{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}(0)=\left(\begin{array}{c}
+20\cdot cos(\frac{\pi}{3})m/s\\
+0\\
+20\cdot sin(\frac{\pi}{3})m/s
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Ball schlägt auf dem Boden auf, wenn die Z-Komponente gleich null ist.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{z0}t-g\frac{t^{2}}{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow t=\frac{2v_{0z}}{g}=3.5s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 Berechnung Bremszeit und Bremsweg
 \end_layout
 
