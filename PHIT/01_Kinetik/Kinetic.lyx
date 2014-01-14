@@ -309,5 +309,30 @@ Beschleunigung
 
 \end_layout
 
+\begin_layout Section*
+Nicht-konstante Beschleunigung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v=\intop a(t)dt=v_{0}+ct-\tau a(t)=v_{0}+ct-c\tau(1-e^{\frac{-t}{\tau}})\longrightarrow v_{0}=v(0)\rightarrow c_{1}-c_{2}=v_{0}-c\tau$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s(t)=s_{0}+v_{0}t+\frac{1}{2}ct^{2}+\tau^{2}a(t)-c\tau t\rightarrow s_{0}+c\tau^{2}=c_{1}+c\tau c_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a(t)=c(1-e^{\frac{-t}{\tau}})$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

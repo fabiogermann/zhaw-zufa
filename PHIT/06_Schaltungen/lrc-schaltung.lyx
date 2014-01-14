@@ -135,5 +135,50 @@ Kritische Komposition:
 
 \end_layout
 
+\begin_layout Section*
+Schwingkreis
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename lrc-schwingkreis.jpg
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $U_{c1}-U_{L}-U_{R}-U_{c2}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{Q_{1}}{C_{1}}-L\frac{dI}{dt}-RI-\frac{Q_{2}}{C_{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dQ_{1}}{dt}=-I,\;\frac{dQ_{2}}{dt}=I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 2014-01-14_13-14-32.png
+	height 4cm
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

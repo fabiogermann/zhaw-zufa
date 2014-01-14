@@ -101,7 +101,7 @@ Gravitationskraft
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\vec{F}_{12}=-\gamma\frac{M_{1}M_{2}}{|\vec{r}_{12}|^{2}}\vec{n}_{12}=$
+\begin_inset Formula $\vec{F}_{12}=-\gamma\frac{M_{1}M_{2}}{|\vec{r}_{12}|^{2}}\vec{n}_{12}=\gamma\frac{m_{1}\cdot m_{2}}{\mid r_{1}-r_{2}\mid^{2}}\cdot\frac{r_{1}-r_{2}}{\mid r_{1}-r_{2}\mid}=$
 \end_inset
 
 Kraft auf Masse M1
@@ -119,6 +119,13 @@ Kraft auf Masse M1
 \end_inset
 
  Einheitsvektor von Masse M2 zu Masse M1
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $F_{m1m2}=\mid\vec{F}_{m1m2}\mid=\sqrt{F_{x}^{2}+F_{y}^{2}+F_{z}^{2}}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Verse
@@ -152,6 +159,49 @@ Die Gesamtkraft einer Anzahl von Massen auf eine bestimmte Masse ist gleich
 	filename Superpositionsprinzip.png
 	scale 60
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Zentripitalkraft
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{Z}=mr\omega^{2}=mr\frac{v^{2}}{r^{2}}=\frac{mv^{2}}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Kraft auf Fläche
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $F_{A}=\frac{dp}{dt}=\frac{v\cdot\triangle m}{\triangle t}=r\rho\frac{\triangle v}{\triangle t}=\rho\frac{\triangle V\cdot v}{\triangle t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\triangle m=\rho\triangle v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\rho$
+\end_inset
+
+ = Dichte
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Delta V=A\cdot\triangle s$
 \end_inset
 
 
@@ -221,7 +271,26 @@ m = Planetenmasse
 \end_layout
 
 \begin_layout Verse
-r = Radius der Kreisbahn
+r = Radius der Kreisbahn = z.B.
+ Erdradius + Höhe über Erdboden
+\end_layout
+
+\begin_layout Subsection*
+Fluchtgeschwindigkeit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{mv^{2}}{2}+E_{kin}=E_{pot}+\int_{\infty}^{r}Fdr\Longrightarrow F=-\gamma\frac{mM}{r^{t}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v=\sqrt{\frac{2\gamma M}{r}}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -312,7 +381,7 @@ Gleitreibung
 \begin_inset Formula $\vec{F}_{R}=-\mu\cdot m\cdot g\cdot\vec{n}_{v}$
 \end_inset
 
-
+ (n kann weggelassen werden falls nicht mit Vektoren gerechnet wird)
 \end_layout
 
 \begin_layout Verse

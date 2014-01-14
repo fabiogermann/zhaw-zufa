@@ -417,6 +417,17 @@ Die zeitliche Ableitung des Impulses eines Massenpunktes ist gleich der
  Kraft, die auf ihn wirkt!
 \end_layout
 
+\begin_layout Subsection*
+Abprallen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $F=\frac{\triangle p}{\triangle t}\rightarrow\triangle p=2mv$
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout Section*
 Impulserhaltung
 \end_layout
