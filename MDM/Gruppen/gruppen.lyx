@@ -315,6 +315,219 @@ Wichtig:
 
 \end_layout
 
+\begin_layout Subsection*
+Produkt von Gruppen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<G_{1}\times G_{2},\star>$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow(a_{1}...a_{n})\star(b_{1}...b_{n})\rightarrow(a_{1}\star b_{1},a_{1}....b_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+z.B.: 
+\begin_inset Formula $<Z_{7},+>\times<Z_{5},+>=<Z_{35},+>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Untergruppen 
+\begin_inset Formula $H\leq G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+geschlossen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $a\star b\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $e\in H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a^{-1}\in H$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Cosets - Nebenklassen
+\end_layout
+
+\begin_layout Standard
+Sei G = Gruppe und H = Untergruppe, dann sind (rechte) CoSets:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H\star a=\{h\star a\mid h\in H\}=\left[a\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+z.B.: 
+\end_layout
+
+\begin_layout Standard
+Die Elemente der Gruppe sind 
+\begin_inset Formula ${1,5,7,11,13,17}$
+\end_inset
+
+ und die Untergruppen: 
+\end_layout
+
+\begin_layout Standard
+Untergruppe 
+\begin_inset Formula $a:<1>={\{1\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Untergruppe 
+\begin_inset Formula $b:<17>={\{1,17\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Untergruppe 
+\begin_inset Formula $c:<7>=<13>={\{1,7,13\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Untergruppe 
+\begin_inset Formula $d:<5>=<11>={\{1,5,7,11,13,17\}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Dann sind Nebenklassen:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\\\ensuremath{[1]=1\cdot b=\{1,17\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$ [5] = 5
+\backslash
+cdot b = 
+\backslash
+{5
+\backslash
+cdot 1, 5
+\backslash
+cdot 17
+\backslash
+} = 
+\backslash
+{5,13
+\backslash
+} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$ [7] = 7
+\backslash
+cdot b = 
+\backslash
+{7,11
+\backslash
+} $
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daraus folgt: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$ E/b = 
+\backslash
+{[1],[5],[7]
+\backslash
+} $
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $=E/b={\{(1),(5),(7)\}}={\{(1,17,5,13,7,11)\}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Andere CoSets sind:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E/a={\{1,5,7,11,13,17\}}E/b={\{1,5,7\}}E/c={\{1,5\}}E/d={\{1\}}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Zyklische Gruppen
 \end_layout
@@ -400,6 +613,60 @@ Ordnung Gruppe:
 \end_inset
 
 , Schnittpunkt mit 0 (Schnittpunkt mit 1 = inverses)
+\end_layout
+
+\begin_layout Verse
+Hat eine Gruppe die Ordnung 
+\begin_inset Formula $n$
+\end_inset
+
+ so ist sie Isomorph zu 
+\begin_inset Formula $Z_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section*
+\begin_inset Formula $Z_{m}^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a\in Zm,\, dann:\, gcd(a,m)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\varphi(m)=Kardinalität(Zm*)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a^{\varphi(m)}\equiv_{m}1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a^{p-1}\equiv_{p}1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a^{n-1}\equiv_{n}1,\, wenn:\, gcd(a,n)=1$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Verse
