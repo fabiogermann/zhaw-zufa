@@ -167,6 +167,141 @@ A7
 \end_layout
 
 \begin_layout Standard
+Löse die Gleichung: 
+\begin_inset Formula $\left(\begin{array}{c}
+2x-3\\
+2
+\end{array}\right)=6$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rightarrow\frac{(2x-3)(2x-4)}{2!}=6\rightarrow(2x-3)(2x-4)=6\cdot2!=12\rightarrow4n^{2}-14n+12=12\rightarrow2n^{2}-7n=0\rightarrow2n=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+A8
+\end_layout
+
+\begin_layout Standard
+Welcher Summand ist der Grösse von 
+\begin_inset Formula $(2a+b)^{11}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rightarrow TI:\, expand(...)\; oder:\, Binomische-Entwicklung$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+A9
+\end_layout
+
+\begin_layout Standard
+Beweise mit Vollständiger Induktion: 
+\begin_inset Formula $a_{1}=0,\, a_{n}=(n-1)\cdot4^{n-1},\: a_{n+1}=4a_{n}+4^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Induktionsanfang: 
+\begin_inset Formula $a_{1}=(1-1)*4^{1-1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Induktionsschluss: 
+\begin_inset Formula $a_{n+1}=((n+1)-1)\cdot4^{(n+1)-1}=n\cdot4^{n}$
+\end_inset
+
+ (Behauptung)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n+1}=4a_{n}+4^{n}=4(4a_{n-1}+4^{n-1})+4^{n}=4\cdot4a_{n-1}+4\cdot4^{n-1}+4^{n}\rightarrow4\cdot4\cdot....\cdot4\cdot a_{0}+4^{n}+4^{n}+...4^{n}=0+n\cdot4^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+A10
+\end_layout
+
+\begin_layout Standard
+Beweise mit Vollständiger Induktion, dass 
+\begin_inset Formula $x_{n}=n^{3}+6n^{2}+14n$
+\end_inset
+
+ für jede Zahl 
+\begin_inset Formula $n$
+\end_inset
+
+ durch 
+\begin_inset Formula $3$
+\end_inset
+
+ teilbar ist.
+\end_layout
+
+\begin_layout Standard
+Induktionsanfang: 
+\begin_inset Formula $x_{1}=1^{3}+6\cdot1^{3}+14\cdot1=21,\, mod(21,3)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Induktionsschluss: 
+\begin_inset Formula $x_{n+1}=(n+1)^{3}+6(n+1)^{2}+14(n+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $x_{n+1}=x_{n}+3(...)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
