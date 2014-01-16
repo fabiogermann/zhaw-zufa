@@ -116,5 +116,83 @@ filename "VollstaendigeInduktion/induktion.lyx"
 
 \end_layout
 
+\begin_layout Part*
+
+\series medium
+\size large
+\begin_inset CommandInset include
+LatexCommand input
+filename "Gruppen/gruppen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\series medium
+\size large
+\begin_inset CommandInset include
+LatexCommand input
+filename "Gruppen/permutationen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\series medium
+\size large
+\begin_inset CommandInset include
+LatexCommand input
+filename "Relationen/relationen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\series medium
+\size large
+\begin_inset CommandInset include
+LatexCommand input
+filename "Zahlentheorie/modulareArithmetik.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\series medium
+\size large
+\begin_inset CommandInset include
+LatexCommand input
+filename "Zahlentheorie/zahlentheorie.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+
+\series medium
+\size large
+\begin_inset CommandInset include
+LatexCommand input
+filename "Diverses/funktionenAlgorithmen.lyx"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
