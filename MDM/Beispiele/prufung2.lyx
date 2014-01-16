@@ -1439,7 +1439,7 @@ Weitere Erzeuger ?
 \begin_inset Text
 
 \begin_layout Plain Layout
-Alle Primzahlen
+Alle Zahlen bei denen ggT(Zahl,Ordnung)=1
 \end_layout
 
 \end_inset
@@ -1454,6 +1454,191 @@ Alle Primzahlen
 
 \begin_layout Subsection*
 B6
+\end_layout
+
+\begin_layout Standard
+Gegeben:
+\end_layout
+
+\begin_layout Itemize
+Zyklische Gruppe 
+\begin_inset Formula $(G,\triangle)$
+\end_inset
+
+, 
+\begin_inset Formula $Ord(G)=5$
+\end_inset
+
+, 
+\begin_inset Formula $G=<x>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Zyklische Gruppe 
+\begin_inset Formula $(H,\diamond)$
+\end_inset
+
+, 
+\begin_inset Formula $Ord(H)=7$
+\end_inset
+
+, 
+\begin_inset Formula $H=<y>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kartesisches Produkt 
+\begin_inset Formula $G\times H$
+\end_inset
+
+ mit folgender Operation:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(g_{1},h_{1})\bullet(g_{2},h_{2})=(g_{1}\triangle g_{2},h_{1}\diamond h_{2})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $(g_{1},h_{1}),(g_{2},h_{2})\:\epsilon\: G\times H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bestimmen neutrales Element:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $x^{5}=1_{G}$
+\end_inset
+
+, 
+\begin_inset Formula $y^{7}=1_{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Gruppen sehen also wie folgt aus:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $G=\{x^{0}=1,x^{1},x^{2},x^{3},x^{4}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $G=\{y^{0}=1,y^{1},y^{2},y^{3},y^{4},y^{5},y^{6}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ordnung 
+\begin_inset Formula $(x^{2},y)=n$
+\end_inset
+
+ bestimmen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(x^{2},y)^{n}=(1_{G},1_{H})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(x^{2n},y^{n})=(1_{G},1_{H})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $x^{2n}=1_{G}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $y^{n}=1_{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n=kgV(5,7)=35$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Gruppe 
+\begin_inset Formula $(G\times H,\bullet)$
+\end_inset
+
+ mit 
+\begin_inset Formula $Ord(G)\cdot Ord(H)=35$
+\end_inset
+
+ ist zyklisch, weil:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $G\times H=<(x^{2},y)>$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Weitere Erzeuger müssen folgende Kriterien erfüllen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(x^{2},y)^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $ggT(k,35)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiele hierfür sind: 1,2,4,8,...,34
+\begin_inset Newline newline
+\end_inset
+
+Anhand von diesem kann man weiterrechnen (für x gilt Mod 5, für y Mod 7):
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(x^{2},y)^{34}=(x^{68},y^{34})=(x^{3},y^{6})$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
