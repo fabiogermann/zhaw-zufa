@@ -68,7 +68,7 @@ Part 2
 \end_layout
 
 \begin_layout Subsection*
-B1
+Diophantische Gleichung
 \end_layout
 
 \begin_layout Standard
@@ -192,11 +192,15 @@ Nun setzen wir ein in die Gleichung:
 \end_layout
 
 \begin_layout Subsection*
-B2
+Eulerische 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ Funktion
 \end_layout
 
 \begin_layout Standard
-Um
+Um 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -233,7 +237,7 @@ Wir setzen jeden Primfaktor nur einmal ein:
 \end_layout
 
 \begin_layout Subsection*
-B3
+Gruppe
 \end_layout
 
 \begin_layout Standard
@@ -710,79 +714,45 @@ e
 \end_inset
 
 
-\begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\end_layout
 
-\begin_layout Plain Layout
-A: berechne 
+\begin_layout Enumerate
+Berechne 
 \begin_inset Formula $(c^{-1}\cdot a)\cdot(b\cdot e)^{-1}$
 \end_inset
 
- 
-\end_layout
 
+\begin_inset Newline newline
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+
 \begin_inset Formula $=(c\cdot a)\cdot(b)^{-1}=f\cdot a=d$
 \end_inset
 
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-B: u=Unbekannt, 
+\begin_layout Enumerate
+u sei Unbekannt, bestimme u: 
 \begin_inset Formula $(b\cdot u^{2})\cdot d=f$
 \end_inset
 
 
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+
 \begin_inset Formula $(b\cdot u^{2})\cdot d\cdot d^{-1}=f\cdot d^{-1}\rightarrow b^{-1}\cdot b\cdot u^{2}\longrightarrow u^{2}=b^{-1}\cdot f\cdot d^{-1}=a\cdot f\cdot d=b\longrightarrow u=a$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Enumerate
+Ist die Gruppe zyklisch?
+\begin_inset Newline newline
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-C: Ist die Gruppe zyklisch?
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Nein.
  Sie hat kein erzeugendes Element! 
 \begin_inset Formula $x^{n}\, für\,1,n,5\, erzeugt\, nicht:\{e,a,b,c,d,f\}$
@@ -791,23 +761,12 @@ Nein.
 
 \end_layout
 
+\begin_layout Enumerate
+Finde zyklische Untergruppen.
+\begin_inset Newline newline
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-D: Finde zyklische Untergruppen.
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features tabularvalignment="middle">
@@ -1268,18 +1227,8 @@ e
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-B4
+Ordnung bestimmen
 \end_layout
 
 \begin_layout Standard
@@ -1362,21 +1311,10 @@ Ordnung = kgV(2,4)=4
 \end_layout
 
 \begin_layout Subsection*
-B5
+Ordnung eines Elements
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 Sei 
 \begin_inset Formula $(G,\bullet)$
 \end_inset
@@ -1388,72 +1326,32 @@ Sei
  der Ordnung 43.
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\begin_layout Itemize
 Welche Ordnung hat 
 \begin_inset Formula $x^{31}$
 \end_inset
 
  ?
-\end_layout
-
+\begin_inset Newline newline
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+
 \begin_inset Formula $31n\%43=0\Rightarrow$
 \end_inset
 
 ausprobieren
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell multirow="4" alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\begin_layout Itemize
 Weitere Erzeuger ?
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Alle Zahlen bei denen ggT(Zahl,Ordnung)=1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+\begin_inset Newline newline
 \end_inset
 
-
+Alle Zahlen bei denen ggT(Zahl,Ordnung) = 1
 \end_layout
 
 \begin_layout Subsection*
-B6
+Kartesisches Produkt zweier Gruppen
 \end_layout
 
 \begin_layout Standard
@@ -1642,117 +1540,6 @@ Anhand von diesem kann man weiterrechnen (für x gilt Mod 5, für y Mod 7):
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Sei 
-\begin_inset Formula $(G,\triangle)$
-\end_inset
-
- eine zyklische Gruppe der Ordnung 5 <x>
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-und 
-\begin_inset Formula $(H,\circ)$
-\end_inset
-
- eine zyklische Gruppe der Ordnung 7 <y>.
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Das karth.
- Prod.
- 
-\begin_inset Formula $G\times H$
-\end_inset
-
- bildet wieder eine Gruppe:
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
 
 \end_layout
 

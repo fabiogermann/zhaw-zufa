@@ -64,15 +64,15 @@ Beispiele
 \end_layout
 
 \begin_layout Section*
-Part 1
+Teil 1
 \end_layout
 
 \begin_layout Subsection*
-A1
+Schubfach
 \end_layout
 
 \begin_layout Subsection*
-A2
+Stuhl-Gäste-Problem
 \end_layout
 
 \begin_layout Standard
@@ -87,7 +87,7 @@ Auf wieviele Arten können sich 5 Gäste auf 7 Stühlen verteilen?
 \end_layout
 
 \begin_layout Subsection*
-A3
+Mannschaftswahl
 \end_layout
 
 \begin_layout Standard
@@ -109,7 +109,7 @@ Auf wieviele Arten kann man aus 5 Frauen und 9 Männern eine Mannschaft aus
 \end_layout
 
 \begin_layout Subsection*
-A4
+Zahlenbildung
 \end_layout
 
 \begin_layout Standard
@@ -124,7 +124,7 @@ Wieviele 5-Stellige Zahlen mit geraden Ziffern gibt es?
 \end_layout
 
 \begin_layout Subsection*
-A5
+Glühbirnen
 \end_layout
 
 \begin_layout Standard
@@ -142,7 +142,7 @@ In einem Raum gibt es 9 Glühbirnen, die man unabhängig voneinander steuern
 \end_layout
 
 \begin_layout Subsection*
-A6
+Weg-Problem
 \end_layout
 
 \begin_layout Standard
@@ -163,7 +163,7 @@ Wieviele kürzeste Wege führen von (0,0) nach (10,9) über (4,5)?
 \end_layout
 
 \begin_layout Subsection*
-A7
+Gleichungen
 \end_layout
 
 \begin_layout Standard
@@ -185,7 +185,7 @@ Löse die Gleichung:
 \end_layout
 
 \begin_layout Subsection*
-A8
+Binomialkoeffizienten
 \end_layout
 
 \begin_layout Standard
@@ -204,7 +204,7 @@ Welcher Summand ist der Grösse von
 \end_layout
 
 \begin_layout Subsection*
-A9
+Induktion 1
 \end_layout
 
 \begin_layout Standard
@@ -239,7 +239,7 @@ Induktionsschluss:
 \end_layout
 
 \begin_layout Subsection*
-A10
+Induktion 2
 \end_layout
 
 \begin_layout Standard
