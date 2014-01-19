@@ -26,3 +26,6 @@ Folgende Repos haben die finale Version als PDF:
  `KT1`
  
 3. Semester
+
+ `PHIT`
+ `MDM`
