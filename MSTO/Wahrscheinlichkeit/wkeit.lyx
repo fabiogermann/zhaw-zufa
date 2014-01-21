@@ -336,5 +336,40 @@ Differenzmenge
 
 \end_layout
 
+\begin_layout Section
+Axiomatische Wahrscheinlichkeit
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ ein Ergebnisraum.
+ Eine Ereignisalgebra 
+\begin_inset Formula $\textrm{\Lambda}$
+\end_inset
+
+ ist eine Teilmenge der Potenzmenge 
+\begin_inset Formula $P(\Omega)$
+\end_inset
+
+ mit den Eigenschaften:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Omega\in\Lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\in\Lambda\Rightarrow\bar{A}\in\Lambda$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
