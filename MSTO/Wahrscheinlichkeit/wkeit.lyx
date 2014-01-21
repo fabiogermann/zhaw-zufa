@@ -69,12 +69,46 @@ Wahrscheinlichkeitsrechnung
 \end_layout
 
 \begin_layout Section
+TR-Formel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(a+\frac{1}{a})^{2}\Rightarrow expand((a+\frac{1}{a})^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+10\\
+2
+\end{array}\right)-\left(\begin{array}{c}
+9\\
+2
+\end{array}\right)\Rightarrow nCr(10,2)-nCr(9,2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+x\\
+2
+\end{array}\right)=595\Rightarrow solve(nCr(x,2)=595,x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Verknüpfung von Ereignissen
 \end_layout
 
 \begin_layout Verse
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
+<lyxtabular version="3" rows="9" columns="2">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0pt">
@@ -320,6 +354,32 @@ Differenzmenge
 \end_inset
 </cell>
 </row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(A\cap B)=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(A\cup B)=P(A)+P(B)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
 </lyxtabular>
 
 \end_inset
@@ -358,14 +418,94 @@ Sei
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\Omega\in\Lambda$
+\begin_inset Formula $\Omega\in\Lambda\Rightarrow0\in\Lambda$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $A\in\Lambda\Rightarrow\bar{A}\in\Lambda$
+Für 
+\begin_inset Formula $A,\bar{A}\in\Lambda$
+\end_inset
+
+ gilt 
+\begin_inset Formula $P(A)+P(\bar{A})=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Für 
+\begin_inset Formula $A,B\in\Lambda$
+\end_inset
+
+ gilt: 
+\begin_inset Formula $P(A\cup B)=P(A)+P(B)-P(A\cap B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P(A\setminus B)=P(A)-P(A\cap B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Totale Wahrscheinlichkeit
+\end_layout
+
+\begin_layout Standard
+Sei 
+\begin_inset Formula $B\subseteq\Omega$
+\end_inset
+
+ ein Ereignis, und die Ereignisse 
+\begin_inset Formula $A_{1},...,A_{n}\subseteq\Omega$
+\end_inset
+
+ seien eine Partition von 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ dann gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P(B)=\overset{n}{\underset{k=1}{\Sigma}}P(B|A_{k})\cdot P(A_{k})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $P(B|A_{k})=\frac{P(B\cap A_{k})}{P(A_{k})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Satz von Bayes
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Satz_von_Bayes1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Satz_von_Bayes2.png
+
 \end_inset
 
 

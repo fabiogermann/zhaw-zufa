@@ -804,6 +804,32 @@ Je grösser
 \end_inset
 
  und umso grösser ist die Streeung der x-Werte.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=\mu=\bar{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Varianz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $VAR(X)=\sigma^{2}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -828,6 +854,28 @@ Eine Funktion
 
 \begin_layout Verse
 \begin_inset Formula $\overset{\infty}{\underset{-\infty}{\int}}f(x)dx=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=\overset{\infty}{\underset{-\infty}{\int}}t\cdot f(t)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Varianz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Var(X)=E(X^{2})-[E(X)]^{2}$
 \end_inset
 
 
@@ -916,6 +964,299 @@ dies entspricht auch:
 
 \begin_layout Verse
 \begin_inset Formula $cov(x,y)=\left(\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}x_{i}y_{i}\right)-\bar{x}\bar{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Empirischer Korrelationskoeffizient
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r(x,y)=\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}\frac{(x_{i}-\bar{x})}{s(x)}\cdot\frac{(y_{i}-\bar{y})}{s(y)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+wobei 
+\begin_inset Formula $s(x)$
+\end_inset
+
+ und 
+\begin_inset Formula $s(y)$
+\end_inset
+
+ die numerische Standartabweichug ist.
+\end_layout
+
+\begin_layout Section
+Binomialverteilung
+\end_layout
+
+\begin_layout Standard
+Wird gebraucht wenn nur 2 Ereignisse eintreten können.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $q(x)=\left(\begin{array}{c}
+n\\
+x
+\end{array}\right)p^{x}(1-p)^{n-x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+n = Anzahl wiederholungen
+\end_layout
+
+\begin_layout Verse
+p = Wahrscheinlichkeit des Ereignisses
+\end_layout
+
+\begin_layout Standard
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=\underset{x\in\Omega'}{\Sigma}q(x)\cdot x=n\cdot p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Streuung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma=\sqrt{np(1-p)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Geometrische Verteilung
+\end_layout
+
+\begin_layout Standard
+Wird verwendet für Lebensdauer oder Wartezeiten
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $q(x)=(1-p)^{x-1}p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=\frac{1}{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Streuung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma=\sqrt{\frac{1-p}{p^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hypergeometrische Verteilung
+\end_layout
+
+\begin_layout Standard
+Verwendung:
+\begin_inset Newline newline
+\end_inset
+
+Eine Menge bestehe aus N Teilen unter denen sich M Teile mit einem Merkmal
+ A befinden.
+\begin_inset Newline newline
+\end_inset
+
+Man entnimmt n Teile ohne Zurücklegen.
+ x zählt die Anzahl der Teile in n mit Merkmal A.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $q(x)=\frac{\left(\begin{array}{c}
+M\\
+x
+\end{array}\right)\left(\begin{array}{c}
+N-M\\
+n-x
+\end{array}\right)}{\left(\begin{array}{c}
+N\\
+n
+\end{array}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=n\frac{M}{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Streuung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma=\sqrt{n\frac{M}{N}(1-\frac{M}{N})(1-\frac{n-1}{N-1})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Poisson Verteilung
+\end_layout
+
+\begin_layout Standard
+Verwendung:
+\end_layout
+
+\begin_layout Itemize
+Anzahl Unfälle in einer bestimmten Region und pro Zeiteinheit
+\end_layout
+
+\begin_layout Itemize
+Anzahl Anrufe pro Zeiteinheit
+\end_layout
+
+\begin_layout Itemize
+Irgendetwas pro Zeiteinheit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $q(x)=\frac{\mu^{x}}{x!}e^{-\mu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Streuung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\sigma^{2}=\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Gleichverteilung
+\end_layout
+
+\begin_layout Standard
+Unter der Gleichverteilung (Rechteckverteilung/uniforme Verteilung) über
+ dem Intervall (a,b) versteht man die Verteilung einer Variablen X, deren
+ Dichte gegeben ist durch.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $f(x)=\left\{ \begin{array}{cc}
+\frac{1}{b-a} & für\: a<x<b\\
+0 & sonst
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Erwartungswert
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E(X)=\frac{a+b}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Varianz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Var(x)=\frac{(b-a)^{2}}{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Punktschätzer
+\end_layout
+
+\begin_layout Standard
+Unbekannte Parameter einer Zufallsvariable
+\end_layout
+
+\begin_layout Itemize
+Erwartungswert
+\end_layout
+
+\begin_layout Itemize
+Varianz
+\end_layout
+
+\begin_layout Subsection
+Erwartungswert schätzen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\bar{x}=\frac{1}{n}\overset{n}{\underset{i=1}{\Sigma}}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Varianz schätzen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s^{2}=\frac{1}{n-1}\overset{n}{\underset{i=1}{\Sigma}}(x_{i}-\bar{x})^{2}$
 \end_inset
 
 
