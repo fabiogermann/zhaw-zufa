@@ -642,7 +642,7 @@ Arithmetisches Mittel
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\bar{x}=\frac{1}{n}\sum x_{i}=\frac{1}{n}(n_{1}a_{1}+...+n_{k}a_{k})$
+\begin_inset Formula $\bar{x}=\frac{1}{n}\sum x_{i}=\frac{1}{n}(n_{1}a_{1}+...+n_{k}a_{k})=\mu$
 \end_inset
 
 
@@ -661,7 +661,7 @@ Für Häufigkeitsdaten mit Ausprägungen
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\bar{x}=\overset{k}{\underset{i=1}{\sum}}a_{i}\cdot f(a_{i})=a_{1}\cdot f(a_{1})+...+a_{k}\cdot f(a_{k})$
+\begin_inset Formula $\bar{x}=\overset{k}{\underset{i=1}{\sum}}a_{i}\cdot f(a_{i})=a_{1}\cdot f(a_{1})+...+a_{k}\cdot f(a_{k})=\mu$
 \end_inset
 
 
@@ -721,7 +721,7 @@ Empirische Standardabweichung
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $s=\sqrt{s^{2}}$
+\begin_inset Formula $s=\sqrt{s^{2}}=\sigma$
 \end_inset
 
 
@@ -750,6 +750,172 @@ etwa 95.5% aller Messwerte liegen im Intervall
 \begin_layout Itemize
 etwa 99.7% aller Messwerte liegen im Intervall 
 \begin_inset Formula $[\bar{x}-3s,\bar{x}+3s]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dichtekurven und Normalverteilung
+\end_layout
+
+\begin_layout Subsection
+Normalverteilung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $f(x)=\frac{1}{\sigma\sqrt{2\pi}}\cdot e^{\frac{(x-\mu)^{2}}{2\sigma^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\sigma=s$
+\end_inset
+
+, 
+\begin_inset Formula $\mu=\bar{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Je kleiner 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ ist, desto steiler ist der Abfall und umso enger ist die Kurve um das Mittel
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+ konzentriert.
+\begin_inset Newline newline
+\end_inset
+
+Je grösser 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ ist, desto mehr Fläche liegt weiter links oder rechts von 
+\begin_inset Formula $\mu$
+\end_inset
+
+ und umso grösser ist die Streeung der x-Werte.
+\end_layout
+
+\begin_layout Subsection
+Dichtekurve
+\end_layout
+
+\begin_layout Standard
+Eine Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ist eine Dichtekurve, wenn 
+\begin_inset Formula $f(x)\geq0$
+\end_inset
+
+ ist und die von 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ überdeckte Gesamtfläche gleich 1 ist, also gilt.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\overset{\infty}{\underset{-\infty}{\int}}f(x)dx=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $f(x)=\left\{ \begin{array}{c|c}
+\frac{11}{54}x & 0\leq x\leq2\\
+-\frac{8}{27}x+1 & 2\leq x\leq3\\
+-\frac{2}{27}x+\frac{1}{2} & 3\leq x\leq4.5\\
+0 & sonst
+\end{array}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Funktion 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ ist eine Dichte, denn 
+\begin_inset Formula $f(x)\geq0$
+\end_inset
+
+ für 
+\begin_inset Formula $0\leq x\leq4.5$
+\end_inset
+
+ und
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\overset{\infty}{\underset{-\infty}{\int}}f(x)dx=\overset{2}{\underset{0}{\int}}\frac{11}{54}xdx+\overset{3}{\underset{2}{\int}}(-\frac{8}{27}x+1)dx+\overset{4.5}{\underset{3}{\int}}(-\frac{2}{27}x+\frac{1}{2})dx=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mehrdimensionale Verteilungen
+\end_layout
+
+\begin_layout Subsection
+Lineare Regression
+\end_layout
+
+\begin_layout Standard
+Finde eine gerade 
+\begin_inset Formula $y=mx+c$
+\end_inset
+
+ die möglichst eng von der Punktewolke umschlossen wird.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $m=\frac{\overset{n}{\underset{i=1}{\sum}}x_{i}y_{i}-n\bar{x}\bar{y}}{\overset{n}{\underset{i=1}{\sum}}x_{i}^{2}-n\bar{x}^{2}}$
+\end_inset
+
+ und 
+\begin_inset Formula $c=\bar{y}-m\bar{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Empirische Kovarianz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $cov(x,y)=\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}(x_{i}-\bar{x})(y_{i}-\bar{y})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dies entspricht auch:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $cov(x,y)=\left(\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}x_{i}y_{i}\right)-\bar{x}\bar{y}$
 \end_inset
 
 
