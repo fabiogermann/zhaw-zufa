@@ -64,19 +64,24 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Part*
 Deskriptive Statistik
 \end_layout
 
 \begin_layout Standard
-Arithmetisches Mittel: 
-\begin_inset Formula $\bar{x}=\frac{1}{n}\sum x_{i}=\sum f(a_{i})$
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Section
+Graphische Darstellung
+\end_layout
+
+\begin_layout Subsection
 Stamm-Blatt-Diagramm
 \end_layout
 
@@ -236,14 +241,13 @@ Stamm-Blatt-Diagramm
 
 \end_inset
 
-oder 
+oder mit runden 
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="4">
+<lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
@@ -262,29 +266,19 @@ oder
 \begin_inset Text
 
 \begin_layout Plain Layout
-0
+0|77
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-|
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(77)
 \begin_inset Formula $\longrightarrow$
 \end_inset
 
-7
+0|8
 \end_layout
 
 \end_inset
@@ -308,33 +302,19 @@ oder
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+1|04
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-|
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(04)
 \begin_inset Formula $\longrightarrow$
 \end_inset
 
-0, (33)
-\begin_inset Formula $\longrightarrow$
-\end_inset
-
-3
+1|0
 \end_layout
 
 \end_inset
@@ -345,7 +325,7 @@ oder
 \begin_inset Text
 
 \begin_layout Plain Layout
-133 
+132 
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
@@ -358,29 +338,19 @@ oder
 \begin_inset Text
 
 \begin_layout Plain Layout
-2
+1|32
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-|
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-(07)
 \begin_inset Formula $\longrightarrow$
 \end_inset
 
-1
+1|3
 \end_layout
 
 \end_inset
@@ -391,7 +361,7 @@ oder
 \begin_inset Text
 
 \begin_layout Plain Layout
-207
+227
 \begin_inset Formula $\Rightarrow$
 \end_inset
 
@@ -404,25 +374,19 @@ oder
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2|27
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Formula $\longrightarrow$
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
+2|3
 \end_layout
 
 \end_inset
@@ -435,47 +399,25 @@ oder
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 Histogramme
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename Histogramm.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 Häufigkeiten
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-absolute Häufigkeit:
-\series default
- 
-\begin_inset Formula $h(a_{j})=Anzahl\: der\, Ausprägungen\, in\, der\, Beobachtungsmenge$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-relative Häufigkeit:
-\series default
- 
-\begin_inset Formula $f(a_{j})=\frac{Anzahl\: der\, Ausprägungen\, in\, der\, Beobachtungsmenge}{Grösse\, der\, Beobachtungsmenge\,(Umfang\, der\, Stichprobe)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Anzahl Klassen: 
-\begin_inset Formula $\sqrt{n}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
+\begin_layout Verse
 Umfang der Stichprobe: 
 \begin_inset Formula $n$
 \end_inset
@@ -483,8 +425,78 @@ Umfang der Stichprobe:
 
 \end_layout
 
+\begin_layout Verse
+absolute Häufigkeit: 
+\begin_inset Formula $h(a_{j})=$
+\end_inset
+
+ Anzahl der Ausprägungen in der Beobachtungsmenge
+\end_layout
+
+\begin_layout Verse
+relative Häufigkeit: 
+\begin_inset Formula $f(a_{j})=\frac{Anzahl\: der\, Ausprägungen\, in\, der\, Beobachtungsmenge}{Grösse\, der\, Beobachtungsmenge\,(Umfang\, der\, Stichprobe)}=\frac{h(a_{j})}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+absolute Summenhäufigkeit: 
+\begin_inset Formula $G(x)=\overset{n}{\underset{i}{\sum}}h(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+Verteilungsfunktion: 
+\begin_inset Formula $H(x)=\sum f(x)=\frac{1}{n}\sum h(x)=\frac{G(x)}{n}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Klassenbreite: 
+Beispiel
+\end_layout
+
+\begin_layout Verse
+Zwei Würfel werden 1000 mal geworfen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Häufigkeiten.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Klassen, Klassenbreite
+\end_layout
+
+\begin_layout Verse
+Umfang der Stichprobe: 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+Anzahl Klassen: 
+\begin_inset Formula $\sqrt{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+Klassenbreite:
 \begin_inset Formula $\sqrt{n}$
 \end_inset
 
@@ -495,32 +507,252 @@ Klassenbreite:
  
 \end_layout
 
+\begin_layout Subsection
+Stabdiagramm
+\end_layout
+
 \begin_layout Standard
-absolute Summenhäufigkeit: 
-\begin_inset Formula $G(x)=\sum_{i=}^{n}h(x)$
+\begin_inset Graphics
+	filename Stabdiagramm.png
+	scale 50
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Verteilungsfunktion: 
-\begin_inset Formula $H(x)=\sum f(x)=\frac{1}{n}\sum h(x)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Statistische Masszahlen
-\end_layout
-
-\begin_layout Subsubsection*
-Quantile / Quartile
+\begin_layout Section
+Arbeiten mit Quartilen
 \end_layout
 
 \begin_layout Standard
 Quartile teilen die Grundgesamtheit in 4 gleich grosse Teile.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Quartile.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+1.
+ Quartil
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{1}=\frac{1}{2}\cdot(1+\frac{n+1}{2})=\frac{n+3}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sollte das Quartil zwischen zwei Indizes liegen (
+\begin_inset Formula $n_{1}\leq Q_{1}\leq n_{2}$
+\end_inset
+
+) so gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{1}=(x_{n2}-x_{n1})\cdot\frac{n+3}{4}+x_{n1}\cdot n_{2}-x_{n2}\cdot n_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+2.
+ Quartil (Median)
+\end_layout
+
+\begin_layout Standard
+n gerade:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{2}=\frac{1}{2}\cdot(x_{\frac{n}{2}}+x_{\frac{n}{2}+1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n ungerade:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{2}=x_{\frac{n+1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+3.
+ Quartil
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{2}=\frac{1}{2}\cdot(\frac{n+1}{2}+n)=\frac{3n+1}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sollte das Quartil zwischen zwei Indizes liegen (
+\begin_inset Formula $n_{1}\leq Q_{3}\leq n_{2}$
+\end_inset
+
+) so gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Q_{1}=(x_{n2}-x_{n1})\cdot\frac{3n+1}{4}+x_{n1}\cdot n_{2}-x_{n2}\cdot n_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Boxplot
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Quartile_Boxplot.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Statistische Masszahlen
+\end_layout
+
+\begin_layout Subsection
+Arithmetisches Mittel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\bar{x}=\frac{1}{n}\sum x_{i}=\frac{1}{n}(n_{1}a_{1}+...+n_{k}a_{k})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für Häufigkeitsdaten mit Ausprägungen 
+\begin_inset Formula $a_{1},...,a_{k}$
+\end_inset
+
+ und relativen Häufigkeiten 
+\begin_inset Formula $f(a_{1}),...,f(a_{k})$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\bar{x}=\overset{k}{\underset{i=1}{\sum}}a_{i}\cdot f(a_{i})=a_{1}\cdot f(a_{1})+...+a_{k}\cdot f(a_{k})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel mit den Würfeln:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\bar{x}=\overset{12}{\underset{x=2}{\sum}}xf(x)=7.013$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modalwert (Modus)
+\end_layout
+
+\begin_layout Standard
+Der Modalwert gibt an, welche Ausprägung am häufigsten vorkommt.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{mod}$
+\end_inset
+
+ bei diskreten Merkmalen: Ausprägung mit grösster Häufigkeit
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{mod}$
+\end_inset
+
+ bei stetigen Merkmalen: Maximum der Parabel, resp.
+ die Mitte der stärkst besetzten Klasse
+\end_layout
+
+\begin_layout Section
+Streungsmasse
+\end_layout
+
+\begin_layout Subsection
+Empirische Varianz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s^{2}=\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}(x_{i}-\bar{x})^{2}f(x_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Empirische Standardabweichung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $s=\sqrt{s^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dies hat folgende bedeutung:
+\end_layout
+
+\begin_layout Itemize
+etwa 68.3% aller Messwerte liegen im Intervall 
+\begin_inset Formula $[\bar{x}-s,\bar{x}+s]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+etwa 95.5% aller Messwerte liegen im Intervall 
+\begin_inset Formula $[\bar{x}-2s,\bar{x}+2s]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+etwa 99.7% aller Messwerte liegen im Intervall 
+\begin_inset Formula $[\bar{x}-3s,\bar{x}+3s]$
+\end_inset
+
+
 \end_layout
 
 \end_body
