@@ -72,6 +72,46 @@ Informationstheorie
 \end_layout
 
 \begin_layout Part
+Kompression
+\end_layout
+
+\begin_layout Section
+Elemente im Übertragungssystem
+\end_layout
+
+\begin_layout Itemize
+Quelle/Senke
+\end_layout
+
+\begin_layout Itemize
+Quellencodierung
+\end_layout
+
+\begin_layout Itemize
+Chiffrierung
+\end_layout
+
+\begin_layout Itemize
+Kanalcodierung
+\end_layout
+
+\begin_layout Itemize
+Modulation
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/jorismorger/Projects/zhaw-zufa/INT/folien/Selection_046.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
 Entropie
 \end_layout
 
@@ -294,7 +334,7 @@ Der Informationsgehalt eines Ereignisses
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I_{x}(x_{m})=\log_{2}\left(\frac{1}{P_{X}(x_{m})}\right)[\text{\text bit}]
+I_{x}(x_{m})=\log_{2}\left(\frac{1}{P_{X}(x_{m})}\right)[\text{\text{b}it}]
 \]
 
 \end_inset
