@@ -1,0 +1,392 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsart
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\rightmargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Informationstheorie
+\end_layout
+
+\begin_layout Part
+Kompression
+\end_layout
+
+\begin_layout Section
+Elemente im Übertragungssystem
+\end_layout
+
+\begin_layout Itemize
+Quelle/Senke
+\end_layout
+
+\begin_layout Itemize
+Quellencodierung
+\end_layout
+
+\begin_layout Itemize
+Chiffrierung
+\end_layout
+
+\begin_layout Itemize
+Kanalcodierung
+\end_layout
+
+\begin_layout Itemize
+Modulation
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename folien/Selection_046.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Entropie
+\end_layout
+
+\begin_layout Section
+Diskrete Informationsquellen
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symboldauer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbolrate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R=1/T$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Quellensymbol (Zufallsvariable)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X[n]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alphabet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $A=\text{\{{x_{1},x_{2},\dots,x_{M}}\}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wahrscheinlichkeit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P(X=x_{m})=P_{X}(x_{m}),m=1,\text{\dots},M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wahrscheinlichkeitsverteilung von 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum\limits _{m=1}^{M}P_{X}(x_{m})=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+gedächtnislose Quellen
+\end_layout
+
+\begin_layout Itemize
+DMS (Discrete Memoryless Source), Die Symbole 
+\begin_inset Formula $X[n]$
+\end_inset
+
+ sind unabhängig und haben identische Wahrscheinlichkeitsverteilung.
+\end_layout
+
+\begin_layout Itemize
+BMS (Binary Memoryless Source), Die unabhängigen Symbole 
+\begin_inset Formula $X[n]$
+\end_inset
+
+ sind 2-wertig, d.h.
+ 
+\begin_inset Formula $P_{X}(x_{1})=p$
+\end_inset
+
+ und 
+\begin_inset Formula $P_{X}(x_{2})=1-p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+BSS (Binary Symmetric Source), Die unabhängigen Symbole 
+\begin_inset Formula $X[n]$
+\end_inset
+
+ sind 2-wertig und es gilt: 
+\begin_inset Formula $P_{X}(x_{1})=0.5$
+\end_inset
+
+ und 
+\begin_inset Formula $P_{X}(x_{2})=0.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Informationsgehalt
+\end_layout
+
+\begin_layout Standard
+Der Informationsgehalt eines Ereignisses 
+\begin_inset Formula $X=x_{m}$
+\end_inset
+
+ ist wie folgt definiert:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{x}(x_{m})=\log_{2}\left(\frac{1}{P_{X}(x_{m})}\right)[\text{\text{b}it}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für Ereignisse von 2 (oder mehreren) Zufallsvariablen 
+\begin_inset Formula $X$
+\end_inset
+
+ und 
+\begin_inset Formula $Y$
+\end_inset
+
+ gilt sinngemäss:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{x}(x_{m})=\log_{2}\left(\frac{1}{P_{XY}(x_{i},y_{k})}\right)[\text{bit}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für 2 unabhängige Symbole 
+\begin_inset Formula $X$
+\end_inset
+
+ und 
+\begin_inset Formula $Y$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{XY}(x_{i},y_{k})=I_{X}(x_{i})+I_{Y}(y_{k})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
