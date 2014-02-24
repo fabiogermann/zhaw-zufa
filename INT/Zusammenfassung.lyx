@@ -388,5 +388,20 @@ I_{XY}(x_{i},y_{k})=I_{X}(x_{i})+I_{Y}(y_{k})
 
 \end_layout
 
+\begin_layout Standard
+Redundanz (M ist die Anzahl Symbole des Alphabets):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\log_{2}(M)-H(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
