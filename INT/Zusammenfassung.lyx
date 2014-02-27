@@ -388,14 +388,51 @@ I_{XY}(x_{i},y_{k})=I_{X}(x_{i})+I_{Y}(y_{k})
 
 \end_layout
 
+\begin_layout Section
+Redundanz
+\end_layout
+
 \begin_layout Standard
-Redundanz (M ist die Anzahl Symbole des Alphabets):
+Differenz zwischen maximaler und mittlerer Entropie.
+ Redundanz (M ist die Anzahl Symbole des Alphabets)
+\end_layout
+
+\begin_layout Standard
+Entropie ist maximal 
+\begin_inset Formula $log_{2}(M)$
+\end_inset
+
+, wenn X-Werte gleichverteilt.
+\end_layout
+
+\begin_layout Standard
+Möglichst wenig Redundanz am Ausgang des Quellencoders.
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\log_{2}(M)-H(x)
+R=log_{2}(M)-H(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Entropie
+\end_layout
+
+\begin_layout Standard
+Datenübertragung: die maximale (verlustlose) Kompression = Entropie
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{x}(x_{m})=\sum\log_{2}P_{x}(x_{i})\cdot\left(\frac{1}{P_{X}(x_{i})}\right)[\text{bit}]
 \]
 
 \end_inset
