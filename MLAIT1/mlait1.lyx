@@ -1,0 +1,1367 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Lineare Algebra
+\end_layout
+
+\begin_layout Section*
+Definitionen
+\end_layout
+
+\begin_layout Standard
+Skalare Grössen: Beschrieben durch Betrag (und allenfalls Einheit).
+ Bsp: Zeit, Masse
+\end_layout
+
+\begin_layout Standard
+Vektorielle Grössen: Beschrieben durch Betrag (Länge des Vektors) und Richtung:
+ Bsp: Kraft, Geschwindigkeit, Impuls
+\end_layout
+
+\begin_layout Subsubsection*
+Def Äquivalenz von Vektoren
+\end_layout
+
+\begin_layout Standard
+Vektor: Äquivalenzklasse aller gleichgerichteter und gleich langen 
+\begin_inset Quotes eld
+\end_inset
+
+Pfeilen
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Einzelner Pfeil: Representat.
+ Vorallem der Ortsvektor ist interessant.
+ Vektoren sind gleich mit gleicher Richtung und Länge.
+ 
+\end_layout
+
+\begin_layout Standard
+Nullvektor: Betrag null, keine Richtung
+\end_layout
+
+\begin_layout Standard
+Einheitsvektor: Betrag eins: 
+\begin_inset Formula $\ensuremath{\frac{\vec{_{a}}}{|\vec{_{a}}|}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Multiplikation eines Vektors 
+\begin_inset Formula $\vec{v}!=\vec{0}$
+\end_inset
+
+ mit einer reellen Zahl 
+\begin_inset Formula $\lambda$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda>0$
+\end_inset
+
+: 
+\begin_inset Formula $\vec{v},\lambda\vec{v}$
+\end_inset
+
+: gleiche Richtung
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+: 
+\begin_inset Formula $\vec{v},\lambda\vec{v}$
+\end_inset
+
+: entgegengesetzte Richtung
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+: 
+\begin_inset Formula $\lambda\vec{v}$
+\end_inset
+
+: Nullvektor 
+\begin_inset Formula $\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Addition, Subtraktion, Multiplikation gleich wie bei Algebra
+\end_layout
+
+\begin_layout Subsubsection*
+Linearkombination (LK)
+\end_layout
+
+\begin_layout Standard
+Ein Vektor 
+\begin_inset Formula $\vec{w}$
+\end_inset
+
+heisst Linearkombination der Vektoren 
+\begin_inset Formula $\vec{v_{1}}+\vec{v_{2}}+...+\vec{v_{n}}$
+\end_inset
+
+, wenn es Skalare 
+\begin_inset Formula $k_{1},$
+\end_inset
+
+
+\begin_inset Formula $k_{2}$
+\end_inset
+
+,..., 
+\begin_inset Formula $k_{3}$
+\end_inset
+
+ gibt, so dass: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{w}=k_{1}\vec{v_{1}}+k_{2}\vec{v_{r}}+k_{r}\vec{v_{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Parallel: 
+\begin_inset Formula $\vec{a}\uparrow\uparrow\vec{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Antiparalle: 
+\begin_inset Formula $\vec{a}\uparrow\downarrow\vec{b}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Komponentendarstellung von Vektoren
+\end_layout
+
+\begin_layout Standard
+Def: Der Ortsvektor eines Vektors ist derjenige Representan, welcher den
+ Anfangspunkt im Ursprung eines Koordinatensystems hat.
+ EIn Vektor ist eindeutig durch seinen Ortsvektor bestimmt.
+ Oft mein man mit Vektor den Ortsvektor.
+ 
+\end_layout
+
+\begin_layout Standard
+Rechtwinklickiges Koordinatensystem: (x zu mir, y nach rechts, z nach oben).
+ 
+\end_layout
+
+\begin_layout Section*
+Vektorgeometrie
+\end_layout
+
+\begin_layout Subsection*
+Berechnung des Skalarprodukts
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\bullet\vec{b}=\left(\begin{array}{c}
+a_{x}\\
+a_{y}\\
+a_{z}
+\end{array}\right)\bullet\left(\begin{array}{c}
+b_{x}\\
+b_{y}\\
+b_{z}
+\end{array}\right)=a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Gesetze des Skalarprodukts
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Formel
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kommutativgesetz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vec{a}\bullet\vec{b}=\vec{b}\bullet\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Distributivgesetz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vec{a}\bullet\vec{a}=\vec{a}\cdot\vec{a}\cdot\cos(0)=|a|^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Berechnung des Zwischenwinkels zweier Vektoren
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\cos\measuredangle(\vec{v},\vec{w})=\frac{\vec{v}\bullet\vec{w}}{\left|\vec{v}\right|\cdot\left|\vec{w}\right|}\Rightarrow\measuredangle(\vec{v},\vec{w})=\arccos\frac{\vec{v}\bullet\vec{w}}{\left|\vec{v}\right|\cdot\left|\vec{w}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}\bullet\vec{w}=\left|\vec{v}\right|\cdot\left|\vec{w}\right|\cdot cos\measuredangle(\vec{v},\vec{w})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verse
+wobei: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $0\leqq\measuredangle\leqslant\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+therefore 
+\begin_inset Formula $\measuredangle=arccos(\frac{\vec{b}\cdot\vec{a}}{|\vec{a}|\cdot|\vec{b}|})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Aussage des Skalarprodukts
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}\perp\vec{w}\Leftrightarrow\vec{v}\bullet\vec{w}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Nullvektoren stehen senkrecht zu allen Vektoren
+\end_layout
+
+\begin_layout Subsubsection*
+Berechnung des SP durch die Komponenten
+\end_layout
+
+\begin_layout Standard
+Satz: Zwei beliebige Vektoren 
+\begin_inset Formula $\vec{a}=\left(\begin{array}{c}
+a_{x}\\
+a_{y}\\
+a_{z}
+\end{array}\right)$
+\end_inset
+
+,
+\begin_inset Formula $\vec{b}=\left(\begin{array}{c}
+b_{x}\\
+b_{y}\\
+b_{z}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{a}\bullet\vec{b}=\left(\begin{array}{c}
+b_{x}\\
+b_{y}\\
+b_{z}
+\end{array}\right)\bullet\left(\begin{array}{c}
+a_{x}\\
+a_{y}\\
+a_{z}
+\end{array}\right)=a_{x}\cdot b_{x}+a_{y}\cdot b_{y}+a_{z}+b_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Berechnung der Länge eines Vektors
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}=\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left|\vec{a}\right|=\sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}=\sqrt{\vec{a}\bullet\vec{a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\bullet\vec{a}=a_{1}^{2}+a_{2}^{2}+a_{3}^{2}=\left|\vec{a}\right|^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Satz des Pythagoras
+\end_layout
+
+\begin_layout Subsubsection*
+Im Dreieck
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pythagoras.png
+	width 6.279cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Mit Vektoren
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pythagoras_vektoren.png
+	width 6.279cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{b}=\vec{c}-\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{c}=\vec{a}+(\vec{c}-\vec{a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left|\vec{c}\right|=\sqrt{\vec{c}\bullet\vec{c}}=\sqrt{(\vec{a}+(\vec{c}-\vec{a})\bullet(\vec{a}+(\vec{c}-\vec{a}))}=\sqrt{(\vec{a}+\vec{b})\bullet(\vec{a}+\vec{b})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $=\sqrt{\vec{a}\bullet\vec{a}+\vec{a}\bullet\vec{b}+\vec{c}\bullet\vec{b}+\vec{b}\bullet\vec{b}}=\sqrt{\left|\vec{a}\right|^{2}+0+0+\left|\vec{b}\right|^{2}}=\sqrt{\left|\vec{a}\right|^{2}+\left|\vec{b}\right|^{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Cosinussatz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Kosinussatz.png
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{c}=\vec{b}-\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left|\vec{b}\right|^{2}=\vec{b}\bullet\vec{b}=(\vec{a}+\vec{c})\bullet(\vec{a}+\vec{c})=\vec{a}\bullet\vec{a}+\vec{a}\bullet\vec{c}+\vec{c}\bullet\vec{a}+\vec{c}\bullet\vec{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $=\left|\vec{a}\right|^{2}+2\cos\measuredangle(\vec{a},\vec{c})\cdot\left|\vec{a}\right|\cdot\left|\vec{c}\right|+\left|\vec{c}\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(=\left|\vec{a}\right|^{2}-2\cos(180^{o}-\measuredangle)\cdot\left|\vec{a}\right|\cdot\left|\vec{c}\right|+\left|\vec{c}\right|^{2})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Daraus folgt: 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a^{2}+c^{2}-2ac\cdot\cos(\beta)=b^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Orthogonalprojektion
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Orthogonalprojektion.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Einheitsvektor in 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+-Richtung 
+\begin_inset Formula $=\frac{1}{\left|\vec{a}\right|}\cdot\vec{a}=\vec{a_{1}}(=\vec{b_{a}})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{b}\bullet\vec{a_{1}}=\left|\vec{b}\right|\cdot\left|\vec{a_{1}}\right|\cdot\cos\measuredangle(\vec{b},\vec{a_{1}})=\left|\vec{b}\right|\cdot\cos\measuredangle(\vec{b},\vec{a_{1}})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\vec{b}\right|\cdot\cos\measuredangle(\vec{b},\vec{a_{1}})\cdot\frac{\vec{a}}{\left|\vec{a}\right|}=(\vec{b}\bullet\frac{\vec{a}}{\left|\vec{a}\right|})\bullet\frac{\vec{a}}{\left|\vec{a}\right|}=(\vec{b}\bullet\frac{\vec{a}}{\left|\vec{a}\right|^{2}})\bullet\vec{a}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Kreuzprodukt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{array}\right)x\left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}
+\end{array}\right)=\left(\begin{array}{c}
+a_{2}\cdot b_{3}-a_{3}\cdot b_{2}\\
+a_{3}\cdot b_{1}-a_{1}\cdot b_{3}\\
+a_{1}\cdot b_{2}-a_{2}\cdot b_{1}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Parameterdarstellung
+\end_layout
+
+\begin_layout Standard
+Gerade = Aufpunkt + Faktor * Vektor 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $g:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+10\\
+3\\
+-12
+\end{array}\right)+s\left(\begin{array}{c}
+-5\\
+1\\
+-3
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ebene = Aufpunkt + 1.Faktor * 1.Vektor + 2.Faktor * 2.
+ Vektor 
+\end_layout
+
+\begin_layout Verse
+
+\emph on
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+10\\
+3\\
+-12
+\end{array}\right)+s\left(\begin{array}{c}
+-5\\
+1\\
+-3
+\end{array}\right)+t\left(\begin{array}{c}
+4\\
+9\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Subsection*
+Koordinatengleichung der Ebene
+\end_layout
+
+\begin_layout Standard
+Parameterdarstellung: 
+\end_layout
+
+\begin_layout Verse
+
+\emph on
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+1\\
+-1\\
+2
+\end{array}\right)+s\left(\begin{array}{c}
+-3\\
+1\\
+1
+\end{array}\right)+t\left(\begin{array}{c}
+2\\
+2\\
+-4
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kreuzprodukt der Vektoren berechnen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+-3\\
+1\\
+1
+\end{array}\right)x\left(\begin{array}{c}
+2\\
+2\\
+-4
+\end{array}\right)=\left(\begin{array}{c}
+-6\\
+-10\\
+-8
+\end{array}\right)=\left(\begin{array}{c}
+3\\
+5\\
+4
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gleichung aufstellen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $3x+5y+4z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aufpunkt einsetzen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $3-5+8=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow3x+5y+4z=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow3x+5y+4z-6=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section*
+Beispiele
+\end_layout
+
+\begin_layout Subsection*
+Schnittgerade zweier Ebenen
+\end_layout
+
+\begin_layout Standard
+Gegeben: 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{1}=\left(\begin{array}{c}
+3\\
+1\\
+2
+\end{array}\right)+u\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)+v\left(\begin{array}{c}
+0\\
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E_{2}=\left(\begin{array}{c}
+4\\
+2\\
+0
+\end{array}\right)+u\left(\begin{array}{c}
+0\\
+2\\
+-1
+\end{array}\right)+v\left(\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Normalen der Ebenen bestimmen (Kreuzprodukt)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n_{1}=\left(\begin{array}{c}
+1\\
+0\\
+0
+\end{array}\right)x\left(\begin{array}{c}
+0\\
+1\\
+1
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+-1\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n_{1}=\left(\begin{array}{c}
+4\\
+2\\
+0
+\end{array}\right)x\left(\begin{array}{c}
+0\\
+2\\
+-1
+\end{array}\right)=\left(\begin{array}{c}
+2\\
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gleichungen für Normalen aufstellen und Aufpunkte einsetzen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+0\\
+-1\\
+1
+\end{array}\right)\Rightarrow-y+z=0\Rightarrow-1+2=1\Rightarrow-x+z=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+2\\
+0\\
+0
+\end{array}\right)\Rightarrow2x=0\Rightarrow8=8\Rightarrow2x=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Normalen zu den Normalen bestimmen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r=\left(\begin{array}{c}
+0\\
+-1\\
+1
+\end{array}\right)x\left(\begin{array}{c}
+2\\
+0\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+2\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow0x+2x+2z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aufpunkt bestimmen
+\end_layout
+
+\begin_layout Verse
+Aufpunkt so wählen, dass er beide Gleichungen erfüllt
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $0x-y-z=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $2x+0y+0z=8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow\left(\begin{array}{c}
+4\\
+1\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Parameter Darstellung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r=\left(\begin{array}{c}
+4\\
+1\\
+2
+\end{array}\right)+t\left(\begin{array}{c}
+0\\
+2\\
+2
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Normalstehende Ebene
+\end_layout
+
+\begin_layout Standard
+Gegeben 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E:\; x+2y+2z-4=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A(-1/-2/0),\; B(1/1/2)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Gesucht: Ebene die Normla zur gegeben Ebene liegt, und durch die Punkt A
+ und B geht.
+ 
+\end_layout
+
+\begin_layout Itemize
+u, v berechnen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $u=n=\left(\begin{array}{c}
+1\\
+2\\
+2
+\end{array}\right)$
+\end_inset
+
+ 
+\begin_inset Formula $v=B-A=\left(\begin{array}{c}
+1\\
+1\\
+2
+\end{array}\right)-\left(\begin{array}{c}
+-1\\
+-2\\
+0
+\end{array}\right)=\left(\begin{array}{c}
+2\\
+3\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=A+s*u+t*v=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+-1\\
+-2\\
+0
+\end{array}\right)+s\left(\begin{array}{c}
+1\\
+2\\
+2
+\end{array}\right)+t\left(\begin{array}{c}
+2\\
+3\\
+2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Berechnen der Koordinatengleichung
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n_{2}=u\times v=\left(\begin{array}{c}
+1\\
+2\\
+2
+\end{array}\right)\times\left(\begin{array}{c}
+2\\
+3\\
+2
+\end{array}\right)=\left(\begin{array}{c}
+-2\\
+2\\
+-1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $-2x+2y-z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aufpunkt einsetzen (A ist der Aufpunkt)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $-2*(-1)+2*(-2)-0=-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow-2x+2y-z+2=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Drehung (Drehmatrix)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{D(45\text{°) }}=\left(\begin{array}{cc}
+cos(45\text{°)} & -sin(45\text{°)}\\
+sin(45\text{°)} & cos(45\text{°)}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Spiegelung
+\end_layout
+
+\begin_layout Itemize
+An x-Achse 
+\begin_inset Formula $\left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+An y-Achse 
+\begin_inset Formula $\left(\begin{array}{cc}
+-1 & 0\\
+0 & 1
+\end{array}\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+An Geraden 2x -5y = 0 (Wenn die Gerade nicht durch den Nullpunkt geht, gehts
+ nicht, nicht linear)
+\end_layout
+
+\begin_layout Standard
+1.
+ Normale der Gerade bestimmen: 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $n=\left(\begin{array}{c}
+2\\
+-5
+\end{array}\right)$
+\end_inset
+
+, da 
+\begin_inset Formula $n\bullet r=0$
+\end_inset
+
+, ist der Vektor 
+\begin_inset Formula $r=\left(\begin{array}{c}
+5\\
+2
+\end{array}\right)$
+\end_inset
+
+(Vektor umdrehen und eine Zahl negieren) 
+\end_layout
+
+\begin_layout Standard
+2.
+ Nun kann eine Gleichung aufgestellt werden: 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A(n*r)=(-n*r)$
+\end_inset
+
+, dies kann man schreiben als A*B =C 
+\end_layout
+
+\begin_layout Standard
+3.
+ Nun kann auf beiden Seiten von rechts mit 
+\begin_inset Formula $B^{-1}$
+\end_inset
+
+multipliziert werden und man erhält: 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=C*B^{-1}$
+\end_inset
+
+resp 
+\begin_inset Formula $A=(-n*r)*(n*r)^{-1}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+4.
+ Da wir n und r kennen, können wir nun die klammern durch Matrizen ersetzen
+ 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=\left(\begin{array}{cc}
+-2 & 5\\
+5 & 2
+\end{array}\right)*\left(\begin{array}{cc}
+2 & 5\\
+-5 & 5
+\end{array}\right)^{-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+5.
+ Nun kann es ausgerechnet werden (--> Gausches Eliminationsverfahren für
+ Invertierung) 
+\end_layout
+
+\end_body
+\end_document
