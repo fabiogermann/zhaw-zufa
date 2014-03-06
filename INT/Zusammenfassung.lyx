@@ -447,10 +447,86 @@ Binäre Entropiekurve
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/bmslinear.png
+	scale 60
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Part
+Kompression
+\end_layout
+
+\begin_layout Section*
+Huffman Code
+\end_layout
+
+\begin_layout Standard
+Abhängig von der Quellenstatistik
+\end_layout
+
+\begin_layout Subsection*
+Algorithmus
+\end_layout
+
+\begin_layout Enumerate
+Symbole nach Wahrscheinlichkeiten ordnen und Knoten eines Baums zuweisen
+\end_layout
+
+\begin_layout Enumerate
+Zwei Symbole mit kleinster Wahrscheinlichkeit in neuem Symbol zusammenfassen,
+ neuer Knoten hat Summe der Wahrscheinlichkeiten
+\end_layout
+
+\begin_layout Enumerate
+Erneutes Reduzieren des Wahrscheinlichkeitsfeldes gem.
+ Schritt 1
+\end_layout
+
+\begin_layout Enumerate
+Schritte 2 und 3 wiederholen bis 2 Symbole bzw.
+ Knoten übrig
+\end_layout
+
+\begin_layout Enumerate
+Von der Wurzel aus bei jeder Verzweigung nach oben eine „0“ und nach unten
+ eine „1“ eintragen (auch umgekehrt möglich) //Konstruktion Codebuch
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/huffmantree.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+R = Warscheinlichkeit * Codelänge (bsp: 1 * 1/8 + (3 * 1/8) * 4 = 2)
+\end_layout
+
+\begin_layout Section*
+Lempel-Ziv-Codierung
+\end_layout
+
+\begin_layout Standard
+Unabhänging von der Quellenstatistik
+\end_layout
+
+\begin_layout Subsection*
+Algorithmus
+\end_layout
+
+\begin_layout Enumerate
+Eindeutige Unterteilung der Symbolfolge Strings variabler Länge, Unterscheidung
+ nur in 1 Bit
+\end_layout
+
+\begin_layout Enumerate
+Encoding eines Strings: [Position des Präfix, neues Bit]
 \end_layout
 
 \end_body

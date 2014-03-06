@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -45,7 +46,7 @@
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation default
+\paragraph_indentation 0bp
 \quotes_language english
 \papercolumns 1
 \papersides 1
@@ -212,6 +213,7 @@ Speicherhierarchie
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/speicherhierarchie.png
+	scale 50
 
 \end_inset
 
@@ -242,6 +244,7 @@ transparent für Benutzer, Zusammenarbeit mit Memory Management Unit
 \begin_layout Itemize
 \begin_inset Graphics
 	filename images/transfer.png
+	scale 50
 
 \end_inset
 
@@ -278,6 +281,79 @@ grosse Wahrscheinlichkeit, dass Speicherzugriff auf gleiches Datum nochmals
  staffindet
 \end_layout
 
+\end_deeper
+\begin_layout Section
+Prozesse
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+Unit of Resource Ownership
+\noun default
+: eine Einheit, die Ressourcen besitzt, ein virtueller Adressraum, in dem
+ das Prozess Image steht, Kontrolle über Ressourcen (Files, I/O Geräte,
+ etc.) hat
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+Unit of Scheduling
+\noun default
+: Eine Einheit, die schedulierbar ist.
+ CPU-Scheduler weist der CPU einen Prozess zu (dispatch).
+ zum Prozess gehören der Execution State (PC, SP, Register) und eine Ausführungs
+priorität
+\end_layout
+
+\begin_layout Subsubsection*
+Zustands-Prozessmodell
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/7state.png
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Prozess und Ressourcenmanangment
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/resourcen.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Prozess Image besteht aus, ist im virtuellen Speicher (Adresse 0) abgelegt.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Benutzerprogramm (Code), Daten, Stack
+\end_layout
+
+\begin_layout Itemize
+Kontext, im Prozesskontrollblock (PCB) gespeichert
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+PCB, eine Datenstruktur mit Zustandsinformation zum Prozess
+\end_layout
+
+\end_deeper
 \end_deeper
 \end_body
 \end_document
