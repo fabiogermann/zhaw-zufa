@@ -529,5 +529,9 @@ Eindeutige Unterteilung der Symbolfolge Strings variabler Länge, Unterscheidung
 Encoding eines Strings: [Position des Präfix, neues Bit]
 \end_layout
 
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
