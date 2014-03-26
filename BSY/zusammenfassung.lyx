@@ -65,11 +65,7 @@
 \begin_body
 
 \begin_layout Title
-Betriebssysteme
-\end_layout
-
-\begin_layout Section
-Intro
+Betriebssystem
 \end_layout
 
 \begin_layout Standard
@@ -94,23 +90,54 @@ Anbieter von z.T standartisierten Diensten
 Ziel: einfache und effiziente Nutzung von Rechnersystemen
 \end_layout
 
-\begin_layout Standard
-Batch Systems: nur ein Job aus Batch im Speicher • Jobs werden sequentiell
+\begin_layout Enumerate
+Wichtig für BS:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Interrupts (erlaubt Unterbruch laufender Progamme, bessere CPU, Ausnutzung
+ durch Multitasking).
+\end_layout
+
+\begin_layout Enumerate
+System Calls (Schnitstelle zwischen User und Systembereich, schützt BS vor
+ unerlaubtem Zugriff)
+\end_layout
+
+\begin_layout Enumerate
+Speicherhierarchie (versteckt Zugriffszeiten auf Speicher, nicht-deterministisch
+e Zugriffszeiten, problematisch bei Echtzeitsystemen)
+\end_layout
+
+\begin_layout Enumerate
+Boot-Vorgang (Systeminitialisierung, abhängig von Komplexität des BS)
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Batch-Systems: nur ein Job aus Batch im Speicher • Jobs werden sequentiell
  abgearbeitet • Monitor zur Steuerung, keine Interaktion mit Anwender 
 \end_layout
 
-\begin_layout Standard
-Multiprogrammed Batch Systems: mehrere Jobs im Speicher • Scheduler notwendig
+\begin_layout Description
+Multiprogrammed-Batch-Systems: mehrere Jobs im Speicher • Scheduler notwendig
  • Interrupt und Speicherverwaltung notwendig 
 \end_layout
 
-\begin_layout Standard
-Time Sharing Systems: mehrere interaktive Jobs werden "gleichzeitig" abgearbeite
+\begin_layout Description
+Time-Sharing-Systems: mehrere interaktive Jobs werden "gleichzeitig" abgearbeite
 t • Schutz des Filesystems und Arbeitsspeichers notwendig • Mutex (gegenseitiger
  Ausschluss) notwendig - Zugriff auf Drucker, etc.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Description
+Job-Control-Language: is a scripting language used on IBM mainframe operating
+ systems to instruct the system on how to run a batch job or start a subsystem.
+ 
+\end_layout
+
+\begin_layout Section
 Interrupts
 \end_layout
 
@@ -238,7 +265,7 @@ Speicherhierarchie
 
 \begin_layout Standard
 DMA: Direct Memory Access.
- 
+ Daten gehen nicht über CPU, CPU wird somit nicht blockiert.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -265,7 +292,7 @@ transparent für Benutzer, Zusammenarbeit mit Memory Management Unit
 \begin_layout Itemize
 \begin_inset Graphics
 	filename images/transfer.png
-	scale 50
+	scale 30
 
 \end_inset
 
@@ -273,6 +300,19 @@ transparent für Benutzer, Zusammenarbeit mit Memory Management Unit
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Hit Ratio: h, Miss ratio: m (1-h), Zugriffszeit Hauptspeicher: T_m
+\end_layout
+
+\begin_layout Itemize
+Mittlere Zugriffszeit T_a auf den Hauptspeicher: T_a = h * T_c + (1-h) *
+ (T_c+T_m) = T_c +(1-h) * T_m
+\end_layout
+
+\begin_layout Itemize
+h = (T_a - (1-h) * (T_c+T_m))/T_c
+\end_layout
+
 \begin_layout Subsubsection*
 Lokalitätsprinzip
 \end_layout
@@ -316,20 +356,20 @@ Gut für Multiprozessorsysteme, grössere Kernel Funktionen sind eigenständige
  Prozesse, BS ist Sammlung von Systemprozessen
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \noun on
-Unit of Resource Ownership
+Unit-of-Resource-Ownership
 \noun default
 : eine Einheit, die Ressourcen besitzt, ein virtueller Adressraum, in dem
  das Prozess Image steht, Kontrolle über Ressourcen (Files, I/O Geräte,
  etc.) hat
 \end_layout
 
-\begin_layout Standard
+\begin_layout Description
 
 \noun on
-Unit of Scheduling
+Unit-of-Scheduling
 \noun default
 : Eine Einheit, die schedulierbar ist.
  CPU-Scheduler weist der CPU einen Prozess zu (dispatch).
@@ -342,9 +382,48 @@ Zustands-Prozessmodell
 \end_layout
 
 \begin_layout Standard
+Modellierung Prozessverhalten/7-Zustands-Modell
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/prozessverhalten.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/7state.png
 	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -386,8 +465,20 @@ PCB, eine Datenstruktur mit Zustandsinformation zum Prozess
 
 \end_deeper
 \end_deeper
+\begin_layout Description
+PCB Process Identification (PID, Parentproess, Benutzer), Process State
+ Information (Inhalt der Register, Flags, SP), Process Control Information
+ (Queues, Processprivileges,Memory Mgmt).
+ 
+\end_layout
+
 \begin_layout Subsubsection*
 Prozess erzeugung
+\end_layout
+
+\begin_layout Standard
+PID erzeugen -> Speicher für Prozess Image allozieren -> PCB initialisieren
+ -> Verkettung für Queues aufsetzen -> Weitere Datenstrukturen init
 \end_layout
 
 \begin_layout Standard
@@ -397,7 +488,7 @@ Prozess erzeugung
 
 \end_inset
 
-hak
+
 \end_layout
 
 \begin_layout Paragraph
@@ -411,11 +502,11 @@ exec(...)
 \end_layout
 
 \begin_layout Paragraph*
-fork
+COW
 \end_layout
 
 \begin_layout Standard
-COW (Copy on Write, häufig implementiert).
+fork: (Copy on Write, häufig implementiert).
  Kindprozess nicht vollständige Kopie der Eltern, nur wenn Kind schreibt
  werden Datenbereiche erzeugt.
  Alle lesbaren Bereiche können genutzt werden.
@@ -432,6 +523,41 @@ Threads sind billig, laufen innerhalb eines Prozesses.
  Threadumschaltung ist schnell: nur PC, SP und Register austauschen.
  Brauchen wenig Ressourcen, keinen neuen Adressraum oder Datenbereich oder
  Programmcode.
+ Thread blockiert: User level -> ganzer Prozess blockiert.
+ Kernel level -> nur Thread blockiert
+\end_layout
+
+\begin_layout Subsection*
+Scheduling
+\end_layout
+
+\begin_layout Description
+Non-Preemptive-Scheduling (Shortest Job First oder Shortest Remaining Time)
+ -> best at minimizing average response time, First oder FCFS: nicht blockierend
+e Prozesse werden am Stück abgearbeitet - blockierende Prozesse werden in
+ die Blocked Queue gehängt und bleiben dort, bis sie von einem entsprechenden
+ Event geweckt werden, dann werden sie in die Ready Queue gehängt --> lange
+ Antwortzeit bei verschiedene Prozesslängen.
+ Sehr einfach.
+\end_layout
+
+\begin_layout Description
+Preemptive-Scheduling Round Robin: Time slices bestimmen, jeder Prozess
+ hat max z.B.
+ 20ms dann wieder zurück in die Ready-Queue.
+ Mehr Context Switching --> Overhead
+\end_layout
+
+\begin_layout Standard
+Multilevel: batch, interaktiv, rechenintensive Arten von Jobs.
+ Jobs mit tiefen Prios können verhungern.
+ Queue pro Prio.
+\end_layout
+
+\begin_layout Standard
+Multilevel Feedback Scheduling: Jobs steigen in Prio queues auf, sinken
+ wenn Rechenintensiv nach Prozessor runter.
+ 
 \end_layout
 
 \begin_layout Subsection*
@@ -439,47 +565,282 @@ Linux System
 \end_layout
 
 \begin_layout Standard
-init.d: start/stop/reload/restart, autostart
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+cmd
 \end_layout
 
-\begin_layout Standard
-fstab: automated mounting of partitions, ex: /dev/mapper/fedora_zecomputer-home
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+init.d
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+start/stop/reload/restart, autostart
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+fstab
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+automated mounting of partitions, ex: /dev/mapper/fedora_zecomputer-home
  /home ext4 defaults 1 2
 \end_layout
 
-\begin_layout Standard
-mtab: wie fstab, einfach nur mit currently mounted
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mtab
 \end_layout
 
-\begin_layout Standard
-samba: windows support, file/printer sharing
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+wie fstab, einfach nur mit currently mounted
 \end_layout
 
-\begin_layout Standard
-nfs: schneller als samba, file sharing
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+samba
 \end_layout
 
-\begin_layout Standard
-boot: boot (loads bootloader in flopy, cd, hd etc.
- gives control to boatloader), mbr (/dev/hda(sda) excecutes grub bootloader),
- grub (choose kernel, basic configuration, excecutes kernel and initrd image),
- kernel (mounts root fs), init (Looks at the /etc/inittab file to decide
- the Linux run level.
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+windows support, file/printer sharing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nfs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+schneller als samba, file sharing
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+boot
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+boot (loads bootloader in flopy, cd, hd etc.
+ gives control to boatloader)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mbr (/dev/hda(sda) excecutes grub bootloader), g
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+grub (choose kernel, basic configuration, excecutes kernel and initrd image),
+ kernel (mounts root fs)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+init (Looks at the /etc/inittab file to decide the Linux run level.
  replaced by systemd), runlevel
 \end_layout
 
-\begin_layout Standard
-runlevels: 0-6, /etc/rc*.d directory.
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+runlevels
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-6, /etc/rc*.d directory.
  S12syslog starts before S80sendmail.
- S are used during startup, K are used during shutdown
+ S are used during startup, K during shutdown
 \end_layout
 
-\begin_layout Standard
-/etc/passwd: jorismorger:x:1000:1000:jorismorger:/home/jorismorger:/bin/zsh
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/etc/passwd
 \end_layout
 
-\begin_layout Standard
-/etc/shadow: encrypted passwords
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+jorismorger:x:1000:1000:jorismorger:/home/jorismorger:/bin/zsh
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/etc/shadow
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+encrypted passwords
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \end_body
