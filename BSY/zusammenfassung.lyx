@@ -412,14 +412,289 @@ h = Hitrate, 1-h = Missrate,
 
 \end_layout
 
-\begin_layout Itemize
-h = (T_a - (1-h) * (T_c+T_m))/T_c
+\begin_layout Standard
+Beispiel:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename images/Hitratio.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Speicher
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Prozent
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zugriffszeit
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Level 1 Cache
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95 %
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200 ps = 
+\begin_inset Formula $2\cdot10^{-10}$
+\end_inset
+
+s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Level 2 Cache
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97 %
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500 ps = 
+\begin_inset Formula $5\cdot10^{-10}$
+\end_inset
+
+s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Main Memory
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30 %
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2 ns = 
+\begin_inset Formula $2\cdot10^{-9}$
+\end_inset
+
+s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100 %
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 ms = 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $T_{a}=T_{c1}+(1-h_{c1})\cdot(T_{c2}+(1-h_{c2})\cdot(T_{M}+(1-h_{M})\cdot T_{D}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $T_{a}=2\cdot10^{-10}s+(1-0.95)\cdot(5\cdot10^{-10}s+(1-0.97)\cdot(2\cdot10^{-9}s+(1-0.3)\cdot10^{-3}s))=2\cdot10^{-10}s+0.05\cdot(5\cdot10^{-10}s+0.03\cdot(2\cdot10^{-9}s+0.7\cdot10^{-3}s))=1.05023\cdot10^{-6}s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Stack
 \end_layout
 
 \begin_layout Standard
-
+Eigenschaften
 \end_layout
 
+\begin_layout Itemize
+Sequentiell Liste von Datenelementen
+\end_layout
+
+\begin_layout Itemize
+Zugriffsverfahren LIFO (last in, first out) 
+\end_layout
+
+\begin_layout Itemize
+Zugriffpunkt top of stack
+\end_layout
+
+\begin_layout Itemize
+Zugriff über Stackpointer auf top of stack
+\end_layout
+
+\begin_layout Standard
+Anwendungen
+\end_layout
+
+\begin_layout Itemize
+Prozeduraufruf (Speicherung der Rücksprungadresse)
+\end_layout
+
+\begin_layout Itemize
+Temporäre Datenablage (mit Push und Pop)
+\end_layout
+
+\begin_layout Itemize
+Speicherung des Prozessorzustandes bei Interrupts (Flag, PC, ev.
+ Register)
+\end_layout
+
+\begin_layout Itemize
+Reentrant Prozeduren (Stackframes), Parameter und temporäre Daten werden
+ auf Stack abgelegt
+\end_layout
+
+\begin_layout Subsubsection*
+Systemstart
+\end_layout
+
+\begin_layout Standard
+Zwei Phasen
+\end_layout
+
+\begin_layout Itemize
+Hardwareabhängige Phase
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Start auf Reset-Adresse
+\end_layout
+
+\begin_layout Itemize
+Code aus Festwertspeicher ausführen (Hardwareüberprüfung, initialisierung
+ Minimalzugriff auf Disk und Netzwerk, Boot Code laden)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Start des Betriebssystems
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Boot Code ausführen
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Prozesse
 \end_layout
