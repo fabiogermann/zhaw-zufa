@@ -553,11 +553,7 @@ Token = ( Offset, Länge, nächstes Symbol)
 \end_layout
 
 \begin_layout Enumerate
-Token-Länge: log2ܵ(S+1)
-\begin_inset space ~
-\end_inset
-
-+ log2(L+1) + 8 typisch : 11 + 5 + 8 = 24 Bit
+Token-Länge: log2(S+1) + log2(L+1) + 8 typisch : 11 + 5 + 8 = 24 Bit
 \end_layout
 
 \begin_layout Enumerate
