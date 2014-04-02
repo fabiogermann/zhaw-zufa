@@ -913,6 +913,29 @@ Multilevel Feedback Scheduling: Jobs steigen in Prio queues auf, sinken
 \end_layout
 
 \begin_layout Subsection*
+Definition 
+\begin_inset Quotes eld
+\end_inset
+
+Zeiten
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/Scheduling_Zeiten.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Linux System
 \end_layout
 
@@ -1195,5 +1218,156 @@ encrypted passwords
 
 \end_layout
 
+\begin_layout Section
+Deadlocks
+\end_layout
+
+\begin_layout Subsection*
+Grundsätzliche Probleme
+\end_layout
+
+\begin_layout Itemize
+Starvation (Verhungern)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Prozess erhält keinen Zutritt zu Ressource
+\end_layout
+
+\begin_layout Itemize
+Ursache, z.B.
+ unfaire Zuweisungspolicy: FILO (Stack)
+\end_layout
+
+\begin_layout Itemize
+Abhilfe: nur faire Policies verwenden, z.B.
+ FIFO
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Deadlock (Verklemmung)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Prozesse warten gegenseitig auf Freigabe von Ressourcen
+\end_layout
+
+\begin_layout Itemize
+Die Prozesse und eventuell das gesamte System bleiben hängen
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+t
+\end_layout
+
+\begin_layout Subsection*
+Voraussetzungen
+\end_layout
+
+\begin_layout Itemize
+Mutual Exclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mindestens eine Ressource ist exklusiv reserviert
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hold and wait
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mindestens ein Task hat eine Ressource exklusiv reserviert und wartet auf
+ weitere Ressourcen
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No preemption
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+reservierte Ressourcen können dem Task nicht entzogen werden (freiwillige
+ Rückgabe nur, wenn Aufgabe gelöst)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Circular wait
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+geschlossene 
+\begin_inset Quotes eld
+\end_inset
+
+Kette
+\begin_inset Quotes erd
+\end_inset
+
+ von Tasks existiert, in der jeder Prozess mindestens eine Ressource reserviert
+ hat, die auch von einem Nachfolger in der Kette benötigt wird
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+1-3 sind Vorbedingungen, mit 4 ist es ein Deadlock.
+\end_layout
+
+\begin_layout Standard
+die Circular Wait Bedingung kann nicht gelöst werden, wenn Bedingungen 1,
+ 2 und 3 gegeben sind
+\end_layout
+
+\begin_layout Subsection*
+Umgang mit Deadlocks
+\end_layout
+
+\begin_layout Itemize
+Keine Deadlocks zulassen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+verhindern (prevention), dafür sorgen, dass mindestens eine der 4 Bedingungen
+ nicht auftritt
+\end_layout
+
+\begin_layout Itemize
+vermeiden (avoidance), Ressource wird nicht zugesprochen, falls Deadlockgefahr
+ besteht
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Deadlocks zulassen
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+diesen Zustand lösen, wenn er eingetreten ist.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Das Problem ignorieren
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+annehmen, dass kein Deadlock auftritt (die meisten Betriebsysteme verwenden
+ diese Methode)
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
