@@ -250,54 +250,6 @@ Instruktionsmenge eingeschränkt
 \end_deeper
 \end_deeper
 \begin_layout Subsubsection*
-I/O Kommunikation
-\end_layout
-
-\begin_layout Standard
-3 Techniken für Kommunikation mit I/O Geräten
-\end_layout
-
-\begin_layout Itemize
-Programmed I/O oder synchroner I/O
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Benötigt keine Interrupts, CPU wartet auf Beendigung jeder einzelnen Operation
-\end_layout
-
-\begin_layout Itemize
-Busy wait
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Interrupt Driven I/O oder asynchroner I/O
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-CPU führt während I/O Operation Code aus, wird unterbrochen, wenn I/O Operation
- beendet
-\end_layout
-
-\begin_layout Itemize
-CPU kann andere Arbeiten ausführen
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Direct Memory Access
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-ein Speicherblock mit Daten wird vom/zum Speicher übertragen ohne Rechenleistung
- der CPU zu beanspruchen
-\end_layout
-
-\end_deeper
-\begin_layout Subsubsection*
 Speicherhierarchie
 \end_layout
 
@@ -348,6 +300,19 @@ transparent für Benutzer, Zusammenarbeit mit Memory Management Unit
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+Hit Ratio: h, Miss ratio: m (1-h), Zugriffszeit Hauptspeicher: T_m
+\end_layout
+
+\begin_layout Itemize
+Mittlere Zugriffszeit T_a auf den Hauptspeicher: T_a = h * T_c + (1-h) *
+ (T_c+T_m) = T_c +(1-h) * T_m
+\end_layout
+
+\begin_layout Itemize
+h = (T_a - (1-h) * (T_c+T_m))/T_c
+\end_layout
+
 \begin_layout Subsubsection*
 Lokalitätsprinzip
 \end_layout
@@ -378,44 +343,6 @@ grosse Wahrscheinlichkeit, dass Speicherzugriff auf gleiches Datum nochmals
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection*
-Hit Ratio
-\end_layout
-
-\begin_layout Standard
-Mittlere Zugriff 
-\begin_inset Formula $T_{a}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Verse
-h = Hitrate, 1-h = Missrate, 
-\begin_inset Formula $T_{M}$
-\end_inset
-
- = Zugriffszeit auf Hauptspeicher
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $T_{a}=h\cdot T_{C}+(1-h)\cdot(T_{C}+T_{M})=T_{C}+(1-h)\cdot T_{M}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Verse
-\begin_inset Formula $h=\frac{(T_{a}-(1-h)\cdot(T_{C}+T_{M})}{T_{C}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-h = (T_a - (1-h) * (T_c+T_m))/T_c
-\end_layout
-
 \begin_layout Section
 Prozesse
 \end_layout
