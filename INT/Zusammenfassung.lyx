@@ -711,7 +711,10 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -758,7 +761,10 @@ AB
 \begin_inset Text
 
 \begin_layout Plain Layout
-✕
+\begin_inset Formula $\times$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -805,7 +811,10 @@ B
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -852,7 +861,10 @@ BB
 \begin_inset Text
 
 \begin_layout Plain Layout
-✕
+\begin_inset Formula $\times$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -899,7 +911,10 @@ B
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -946,7 +961,10 @@ BA
 \begin_inset Text
 
 \begin_layout Plain Layout
-✕
+\begin_inset Formula $\times$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -993,7 +1011,10 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1040,7 +1061,10 @@ AB
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1087,7 +1111,10 @@ ABA
 \begin_inset Text
 
 \begin_layout Plain Layout
-✕
+\begin_inset Formula $\times$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1134,7 +1161,10 @@ A
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1181,7 +1211,10 @@ AB
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1228,7 +1261,10 @@ ABA
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1275,7 +1311,10 @@ ABAC
 \begin_inset Text
 
 \begin_layout Plain Layout
-✕
+\begin_inset Formula $\times$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1322,7 +1361,10 @@ C
 \begin_inset Text
 
 \begin_layout Plain Layout
-✓
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
 \end_layout
 
 \end_inset
