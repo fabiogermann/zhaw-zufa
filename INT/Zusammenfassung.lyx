@@ -616,7 +616,7 @@ x
 \end_layout
 
 \end_deeper
-\begin_layout Subsection
+\begin_layout Subsection*
 Beispiel Encoding
 \end_layout
 
@@ -1438,7 +1438,7 @@ C,eof
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 Bsp Decoding (Lösung ist in String J)
 \end_layout
 
