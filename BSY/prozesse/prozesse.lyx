@@ -113,7 +113,7 @@ Modellierung Prozessverhalten/7-Zustands-Modell
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/aquila/GitHub/zhaw-zufa/BSY/images/prozessverhalten.png
+	filename images/prozessverhalten.png
 	scale 50
 
 \end_inset
@@ -128,7 +128,7 @@ Modellierung Prozessverhalten/7-Zustands-Modell
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/aquila/GitHub/zhaw-zufa/BSY/images/7state.png
+	filename images/7state.png
 	scale 50
 
 \end_inset
@@ -152,7 +152,7 @@ Prozess und Ressourcenmanangment
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename /home/aquila/GitHub/zhaw-zufa/BSY/images/resourcen.png
+	filename images/resourcen.png
 	scale 50
 
 \end_inset
@@ -199,7 +199,7 @@ PID erzeugen -> Speicher für Prozess Image allozieren -> PCB initialisieren
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename /home/aquila/GitHub/zhaw-zufa/BSY/images/processcreation.png
+	filename images/processcreation.png
 	scale 50
 
 \end_inset
@@ -241,6 +241,45 @@ Threads sind billig, laufen innerhalb eines Prozesses.
  Programmcode.
  Thread blockiert: User level -> ganzer Prozess blockiert.
  Kernel level -> nur Thread blockiert
+\end_layout
+
+\begin_layout Subsubsection*
+Zombie, Orphan, Daemon
+\end_layout
+
+\begin_layout Standard
+Zombie
+\end_layout
+
+\begin_layout Itemize
+Terminiert ein Prozess, so ist dies ein Zombie, bis der Parent Prozess den
+ Status des Prozesses abfragt.
+\end_layout
+
+\begin_layout Standard
+Orphan (Waise)
+\end_layout
+
+\begin_layout Itemize
+Terminiert der Parent Prozess vor dem Child Prozess, so wird der Child Prozess
+ zum Waisen.
+\begin_inset Newline newline
+\end_inset
+
+Diesem wird der Prozess mit der PID 1 als Parent zugeordnet
+\end_layout
+
+\begin_layout Standard
+Daemon
+\end_layout
+
+\begin_layout Itemize
+Ein Daemon ordnet sich bewusst den Prozess mit PID 1 als Parent zu.
+\begin_inset Newline newline
+\end_inset
+
+Somit ist er für den Benutzer nicht mehr sichtbar und agiert als Systemprozess
+ im Hintergrund.
 \end_layout
 
 \end_body
