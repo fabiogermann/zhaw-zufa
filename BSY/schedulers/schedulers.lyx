@@ -79,6 +79,30 @@ Medium-Term-Scheduling (Memory Scheduling): auslagern auf disk / zurückholen
 Short-Term-Scheduling (CPU Scheduling): zuteilung Rechenleistung, whos next?
 \end_layout
 
+\begin_layout Standard
+IO-Bound: short CPU Bursts
+\end_layout
+
+\begin_layout Standard
+CPU-Bound: long CPU Bursts
+\end_layout
+
+\begin_layout Standard
+-> je schneller die CPU, desto eher IO bound
+\end_layout
+
+\begin_layout Standard
+Schätzfunktion: 
+\begin_inset Formula $S_{n+1}=\alpha\cdot T_{n}+(1-\alpha)\cdot S_{n}$
+\end_inset
+
+ bei S1=0 hohe Startpriorität
+\end_layout
+
+\begin_layout Standard
+Preemption: Pausierung und zurückstellung in die ReqdyQueue
+\end_layout
+
 \begin_layout Itemize
 Preemptive (interaktiv (antwortzeit: schnelle Reaktion, erwartung: erfüllen
  der Anwendererwartungen): Anwender wartet, Umschalten notwendig)
@@ -86,8 +110,8 @@ Preemptive (interaktiv (antwortzeit: schnelle Reaktion, erwartung: erfüllen
 
 \begin_deeper
 \begin_layout Itemize
-FCFS, SPN, SJN, Pri.
- Sched.
+FCFS, SPN(starv,notfair,oh), SJN(starv,notfair,oh), Pri.
+ Sched.(starv)
 \end_layout
 
 \end_deeper
@@ -98,7 +122,8 @@ abe, cup: möglichst 100%): kein Anwenderterminal, am Stück verarbeitet)
 
 \begin_deeper
 \begin_layout Itemize
-RR, ML, MLF
+RR(notfair:IO, nostarv,nooh,troughput: abh v timeslice), ML(starv:lowprio,
+ rr pro queue), MLF(starv,notfair:CUP (nostarv with dyn prio)
 \end_layout
 
 \end_deeper
@@ -158,6 +183,13 @@ filename "nonpre.lyx"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sched_que.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
 
 \end_layout
 
@@ -167,6 +199,13 @@ filename "nonpre.lyx"
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename img/sched_diag.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
 
 \end_layout
 
