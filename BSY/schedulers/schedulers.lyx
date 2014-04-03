@@ -103,6 +103,18 @@ Schätzfunktion:
 Preemption: Pausierung und zurückstellung in die ReqdyQueue
 \end_layout
 
+\begin_layout Standard
+Unix-Sched: 
+\begin_inset Formula $CPU_{i}[j]=\frac{CPU_{i}[j-1]}{2}$
+\end_inset
+
+ und 
+\begin_inset Formula $P_{i}[j]=base_{i}+\frac{CPU_{i}[j]}{2}+nice_{i}$
+\end_inset
+
+ (prio drop while high CPU) (RT,Kern,TimeShare)
+\end_layout
+
 \begin_layout Itemize
 Preemptive (interaktiv (antwortzeit: schnelle Reaktion, erwartung: erfüllen
  der Anwendererwartungen): Anwender wartet, Umschalten notwendig)
@@ -129,12 +141,13 @@ RR(notfair:IO, nostarv,nooh,troughput: abh v timeslice), ML(starv:lowprio,
 \end_deeper
 \begin_layout Itemize
 Real-Time (deadlines: kein datenverlust, ):(Zur richtigen Zeit verfügbar,
- periodische jobs)
+ periodische jobs) (krit:period,sporadisch, nonkrit,notnessecary)
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-RM, DS, CE
+RateMonotonic (prio relativ zu repetitionsrate,preem,tasks müssen unabhängig
+ sein), DeadlineS, CyclicExec(statisches sched, nonpreem)
 \end_layout
 
 \end_deeper
