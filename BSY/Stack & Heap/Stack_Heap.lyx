@@ -1,0 +1,159 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Subsubsection*
+Stack
+\end_layout
+
+\begin_layout Standard
+Eigenschaften
+\end_layout
+
+\begin_layout Itemize
+Sequentiell Liste von Datenelementen
+\end_layout
+
+\begin_layout Itemize
+Zugriffsverfahren LIFO (last in, first out) 
+\end_layout
+
+\begin_layout Itemize
+Zugriffpunkt top of stack
+\end_layout
+
+\begin_layout Itemize
+Zugriff über Stackpointer auf top of stack
+\end_layout
+
+\begin_layout Standard
+Anwendungen
+\end_layout
+
+\begin_layout Itemize
+Prozeduraufruf (Speicherung der Rücksprungadresse)
+\end_layout
+
+\begin_layout Itemize
+Temporäre Datenablage (mit Push und Pop)
+\end_layout
+
+\begin_layout Itemize
+Speicherung des Prozessorzustandes bei Interrupts (Flag, PC, ev.
+ Register)
+\end_layout
+
+\begin_layout Itemize
+Reentrant Prozeduren (Stackframes), Parameter und temporäre Daten werden
+ auf Stack abgelegt
+\end_layout
+
+\begin_layout Subsubsection*
+Heap
+\end_layout
+
+\begin_layout Standard
+Eigenschaften
+\end_layout
+
+\begin_layout Standard
+Anwendungen
+\end_layout
+
+\begin_layout Subsubsection*
+Systemstart
+\end_layout
+
+\begin_layout Standard
+Zwei Phasen
+\end_layout
+
+\begin_layout Itemize
+Hardwareabhängige Phase
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Start auf Reset-Adresse
+\end_layout
+
+\begin_layout Itemize
+Code aus Festwertspeicher ausführen (Hardwareüberprüfung, initialisierung
+ Minimalzugriff auf Disk und Netzwerk, Boot Code laden)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Start des Betriebssystems
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Boot Code ausführen
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
