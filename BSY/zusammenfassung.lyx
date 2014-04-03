@@ -617,87 +617,22 @@ HD
 \end_layout
 
 \begin_layout Subsubsection*
-Stack
+\begin_inset CommandInset include
+LatexCommand input
+filename "Stack & Heap/Stack_Heap.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Eigenschaften
+
 \end_layout
 
-\begin_layout Itemize
-Sequentiell Liste von Datenelementen
-\end_layout
-
-\begin_layout Itemize
-Zugriffsverfahren LIFO (last in, first out) 
-\end_layout
-
-\begin_layout Itemize
-Zugriffpunkt top of stack
-\end_layout
-
-\begin_layout Itemize
-Zugriff über Stackpointer auf top of stack
-\end_layout
-
-\begin_layout Standard
-Anwendungen
-\end_layout
-
-\begin_layout Itemize
-Prozeduraufruf (Speicherung der Rücksprungadresse)
-\end_layout
-
-\begin_layout Itemize
-Temporäre Datenablage (mit Push und Pop)
-\end_layout
-
-\begin_layout Itemize
-Speicherung des Prozessorzustandes bei Interrupts (Flag, PC, ev.
- Register)
-\end_layout
-
-\begin_layout Itemize
-Reentrant Prozeduren (Stackframes), Parameter und temporäre Daten werden
- auf Stack abgelegt
-\end_layout
-
-\begin_layout Subsubsection*
-Systemstart
-\end_layout
-
-\begin_layout Standard
-Zwei Phasen
-\end_layout
-
-\begin_layout Itemize
-Hardwareabhängige Phase
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Start auf Reset-Adresse
-\end_layout
-
-\begin_layout Itemize
-Code aus Festwertspeicher ausführen (Hardwareüberprüfung, initialisierung
- Minimalzugriff auf Disk und Netzwerk, Boot Code laden)
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Start des Betriebssystems
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Boot Code ausführen
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "prozesse/prozesse.lyx"
 
 \end_inset
@@ -707,7 +642,7 @@ filename "prozesse/prozesse.lyx"
 
 \begin_layout Subsection*
 \begin_inset CommandInset include
-LatexCommand include
+LatexCommand input
 filename "schedulers/schedulers.lyx"
 
 \end_inset

@@ -151,21 +151,40 @@ RateMonotonic (prio relativ zu repetitionsrate,preem,tasks müssen unabhängig
 \end_layout
 
 \end_deeper
+\begin_layout Subsection*
+Preemptive
+\end_layout
+
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "preemp.lyx"
+Round Robin: Time slices bestimmen, jeder Prozess hat max z.B.
+ 20ms dann wieder zurück in die Ready-Queue.
+ Mehr Context Switching --> Overhead
+\end_layout
 
-\end_inset
+\begin_layout Subsection*
+NonPreemptive
+\end_layout
 
+\begin_layout Standard
+(Shortest Job First oder Shortest Remaining Time) -> best at minimizing
+ average response time, First oder FCFS: nicht blockierende Prozesse werden
+ am Stück abgearbeitet - blockierende Prozesse werden in die Blocked Queue
+ gehängt und bleiben dort, bis sie von einem entsprechenden Event geweckt
+ werden, dann werden sie in die Ready Queue gehängt --> lange Antwortzeit
+ bei verschiedene Prozesslängen.
+ Sehr einfach.
+\end_layout
 
-\begin_inset CommandInset include
-LatexCommand include
-filename "nonpre.lyx"
+\begin_layout Standard
+Multilevel: batch, interaktiv, rechenintensive Arten von Jobs.
+ Jobs mit tiefen Prios können verhungern.
+ Queue pro Prio.
+\end_layout
 
-\end_inset
-
-
+\begin_layout Standard
+Multilevel Feedback Scheduling: Jobs steigen in Prio queues auf, sinken
+ wenn Rechenintensiv nach Prozessor runter.
+ 
 \end_layout
 
 \begin_layout Standard
