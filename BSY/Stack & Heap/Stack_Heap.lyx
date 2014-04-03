@@ -111,18 +111,6 @@ Reentrant Prozeduren (Stackframes), Parameter und temporäre Daten werden
 \end_layout
 
 \begin_layout Subsubsection*
-Heap
-\end_layout
-
-\begin_layout Standard
-Eigenschaften
-\end_layout
-
-\begin_layout Standard
-Anwendungen
-\end_layout
-
-\begin_layout Subsubsection*
 Systemstart
 \end_layout
 
