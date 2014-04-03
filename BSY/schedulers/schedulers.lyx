@@ -63,8 +63,25 @@
 Schedulers
 \end_layout
 
+\begin_layout Standard
+Für Alle gilt: Fairness, Einhalten von Policies, System optimal nutzen
+\end_layout
+
+\begin_layout Standard
+Long-Term-Scheduling (Admission Scheduling): degree of multiprocessing
+\end_layout
+
+\begin_layout Standard
+Medium-Term-Scheduling (Memory Scheduling): auslagern auf disk / zurückholen
+\end_layout
+
+\begin_layout Standard
+Short-Term-Scheduling (CPU Scheduling): zuteilung Rechenleistung, whos next?
+\end_layout
+
 \begin_layout Itemize
-Preemptive (interaktiv)
+Preemptive (interaktiv (antwortzeit: schnelle Reaktion, erwartung: erfüllen
+ der Anwendererwartungen): Anwender wartet, Umschalten notwendig)
 \end_layout
 
 \begin_deeper
@@ -75,7 +92,8 @@ FCFS, SPN, SJN, Pri.
 
 \end_deeper
 \begin_layout Itemize
-Non-Preemptive (batch)
+Non-Preemptive (batch (Durchsatz: #jobs/zeit, turnaround zeit: terminierung/aufg
+abe, cup: möglichst 100%): kein Anwenderterminal, am Stück verarbeitet)
 \end_layout
 
 \begin_deeper
@@ -85,7 +103,8 @@ RR, ML, MLF
 
 \end_deeper
 \begin_layout Itemize
-Real-Time
+Real-Time (deadlines: kein datenverlust, ):(Zur richtigen Zeit verfügbar,
+ periodische jobs)
 \end_layout
 
 \begin_deeper
