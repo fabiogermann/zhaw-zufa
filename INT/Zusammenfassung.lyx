@@ -2454,5 +2454,116 @@ a_{0}=(a_{18}+a_{5}+a_{2}+a_{1})modulo2
 
 \end_layout
 
+\begin_layout Subsection
+Binäre Block-Codes
+\end_layout
+
+\begin_layout Subsubsection
+Hamming-Gewicht 
+\begin_inset Formula $w_{H}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+entspricht der Anzahl 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ im Codewort 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Hamming-Distanz 
+\begin_inset Formula $d_{H}(x_{i},x_{j})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+entspricht der Anzahl unterschiedlicher Positionen in 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ und 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Minimaldistanz 
+\begin_inset Formula $d_{min}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{min}=min_{ij}d_{H}(x_{i},x_{j})=min_{ij}w_{H}(x_{i}+x_{j})=min_{k}w_{H}(x_{k})=w_{min}(i\neq j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für linearen (N,K) Block-Codes 
+\end_layout
+
+\begin_layout Subsubsection
+Beispiel: (3,2)-Blockcode
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K=2$
+\end_inset
+
+, 
+\begin_inset Formula $N=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2^{K}=4$
+\end_inset
+
+ Infoworte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\{[00],[01],[10],[11]\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+even Parity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=\{[000],[101],[110],[011]\}$
+\end_inset
+
+(vorderstes Bit ist hier Paritybit)
+\end_layout
+
 \end_body
 \end_document
