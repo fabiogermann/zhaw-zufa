@@ -458,7 +458,7 @@ Binäre Entropiekurve
 Kompression
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Huffman Code
 \end_layout
 
@@ -508,7 +508,7 @@ Von der Wurzel aus bei jeder Verzweigung nach oben eine „0“ und nach unten
 R = Warscheinlichkeit * Codelänge (bsp: 1 * 1/8 + (3 * 1/8) * 4 = 2)
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Lempel-Ziv-Codierung
 \end_layout
 
@@ -529,7 +529,7 @@ Eindeutige Unterteilung der Symbolfolge Strings variabler Länge, Unterscheidung
 Encoding eines Strings: [Position des Präfix, neues Bit]
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 LZ77
 \end_layout
 
@@ -566,11 +566,11 @@ wenn keine Übereinstimmung: (0,0, nächstes Symbol)
  Schiebefenster um Länge +1 nach rechts verschieben
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 LZ78
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 LZW
 \end_layout
 
@@ -2023,7 +2023,7 @@ R
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 JPG
 \end_layout
 
