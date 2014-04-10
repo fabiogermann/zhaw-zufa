@@ -432,7 +432,7 @@ Datenübertragung: die maximale (verlustlose) Kompression = Entropie
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H_{x}(x_{m})=\sum\log_{2}P_{x}(x_{i})\cdot\left(\frac{1}{P_{X}(x_{i})}\right)[\text{bit}]
+H(X)=\sum_{i=1}^{M}P_{x}(x_{i})\cdot\log_{2}\left(\frac{1}{P_{X}(x_{i})}\right)[\text{bit}]
 \]
 
 \end_inset
