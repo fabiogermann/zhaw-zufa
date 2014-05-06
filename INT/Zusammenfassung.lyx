@@ -2500,6 +2500,16 @@ Die m-Sequenz der Länge P und die zyklisch verschobene Kopie haben fast
 Beispiel
 \end_layout
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename LFSR.pdf
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Binäre Block-Codes
 \end_layout
