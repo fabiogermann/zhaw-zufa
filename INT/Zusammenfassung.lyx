@@ -24,6 +24,7 @@ figs-within-sections
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -131,9 +132,9 @@ Diskrete Informationsquellen
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -553,10 +554,10 @@ Data: 0 1 0 0 0 0 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="3">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1031,12 +1032,12 @@ Anfangswörterbuch: 1 : A, 2 : B, 3 : C
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="16" columns="5">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2477,7 +2478,7 @@ Die relative Häufigkeit von runs der Länge
 \end_inset
 
  beträgt 
-\begin_inset Formula $1/2k$
+\begin_inset Formula $(1/2)^{k}$
 \end_inset
 
  für 
@@ -2485,7 +2486,7 @@ Die relative Häufigkeit von runs der Länge
 \end_inset
 
  und 
-\begin_inset Formula $1⁄2(k-1)$
+\begin_inset Formula $1⁄2^{(k-1)}$
 \end_inset
 
  für 
@@ -2505,8 +2506,17 @@ Die m-Sequenz der Länge P und die zyklisch verschobene Kopie haben fast
  50 % überein- stimmende Bits und 50 % verschiedene Bits
 \end_layout
 
-\begin_layout Section
-Fehlerkorrektur
+\begin_layout Paragraph*
+Beispiel
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename LFSR.pdf
+
+\end_inset
+
 \end_layout
 
 \begin_layout Subsection
