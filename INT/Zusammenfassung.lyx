@@ -2514,6 +2514,7 @@ Beispiel
 \begin_inset External
 	template PDFPages
 	filename LFSR.pdf
+	extra LaTeX "pages=-"
 
 \end_inset
 
@@ -2612,11 +2613,11 @@ Beispiel: (3,2)-Blockcode
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $K=2$
+\begin_inset Formula $\text{Anzahl Informationsbits}=K=2$
 \end_inset
 
 , 
-\begin_inset Formula $N=3$
+\begin_inset Formula $\text{Länge eines Codewortes}=N=3$
 \end_inset
 
 
@@ -2627,6 +2628,13 @@ Beispiel: (3,2)-Blockcode
 \end_inset
 
  Infoworte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Coderate}=R=\frac{K}{N}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
