@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass amsart
@@ -17,6 +17,7 @@ figs-within-sections
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
@@ -34,15 +35,24 @@ figs-within-sections
 \use_hyperref false
 \papersize a4paper
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -432,7 +442,7 @@ Datenübertragung: die maximale (verlustlose) Kompression = Entropie
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H_{x}(x_{m})=\sum\log_{2}P_{x}(x_{i})\cdot\left(\frac{1}{P_{X}(x_{i})}\right)[\text{bit}]
+H(X)=\sum_{i=1}^{M}P_{x}(x_{i})\cdot\log_{2}\left(\frac{1}{P_{X}(x_{i})}\right)[\text{bit}]
 \]
 
 \end_inset
@@ -458,7 +468,7 @@ Binäre Entropiekurve
 Kompression
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Huffman Code
 \end_layout
 
@@ -508,7 +518,7 @@ Von der Wurzel aus bei jeder Verzweigung nach oben eine „0“ und nach unten
 R = Warscheinlichkeit * Codelänge (bsp: 1 * 1/8 + (3 * 1/8) * 4 = 2)
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Lempel-Ziv-Codierung
 \end_layout
 
@@ -516,7 +526,7 @@ Lempel-Ziv-Codierung
 Unabhänging von der Quellenstatistik
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Algorithmus
 \end_layout
 
@@ -529,7 +539,398 @@ Eindeutige Unterteilung der Symbolfolge Strings variabler Länge, Unterscheidung
 Encoding eines Strings: [Position des Präfix, neues Bit]
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection
+Beispiel
+\end_layout
+
+\begin_layout Standard
+Data: 0 1 0 0 0 0 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0 
+\begin_inset Formula $\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wörterbuch-Nr.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Input
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Output
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0 -> neuer String; neues Bit = 0 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0000 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 -> neuer String; neues Bit = 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0000 1]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00 -> 0 gleich wie 1.
+ String; neues Bit = 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0001 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+001 -> 00 gleich wie 3.
+ String; neues Bit = 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0011 1]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 -> 1 gleich wie 2.
+ String; neues Bit = 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0010 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+000 -> 00 gleich wie 3.
+ String; neues Bit = 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0011 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+101 -> 10 gleich wie 5.
+ String; neues Bit = 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0101 1]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0000 -> 000 gleich wie 6.
+ String; neues Bit = 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0110 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+01 -> 0 gleich wie 1.
+ String; neues Bit = 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[0001 1]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+010 -> 01 gleich wie 9.
+ String; neues Bit = 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[1001 0]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\dots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 LZ77
 \end_layout
 
@@ -566,11 +967,11 @@ wenn keine Übereinstimmung: (0,0, nächstes Symbol)
  Schiebefenster um Länge +1 nach rechts verschieben
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 LZ78
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 LZW
 \end_layout
 
@@ -1445,16 +1846,16 @@ Bsp Decoding (Lösung ist in String J)
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="9">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1631,11 +2032,11 @@ R
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2023,7 +2424,7 @@ R
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 JPG
 \end_layout
 
@@ -2036,7 +2437,7 @@ statt Redundanzreduktion vorallem Irrelevanzreduktion (Qualitätsverlust,
 RLE
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 PN-Sequenzen
 \end_layout
 
@@ -2049,7 +2450,7 @@ LSFR
 \end_layout
 
 \begin_layout Standard
-Für Randomgenerator
+Für (Pseudo-)Randomgenerator
 \end_layout
 
 \begin_layout Standard
@@ -2061,6 +2462,218 @@ a_{0}=(a_{18}+a_{5}+a_{2}+a_{1})modulo2
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Zufallseigenschaften der m-Sequenzen
+\end_layout
+
+\begin_layout Itemize
+m-Sequenzen sind fast ausgeglichen in Bezug auf die Anzahl Einsen und Nullen
+\end_layout
+
+\begin_layout Itemize
+Die relative Häufigkeit von runs der Länge 
+\begin_inset Formula $k$
+\end_inset
+
+ beträgt 
+\begin_inset Formula $(1/2)^{k}$
+\end_inset
+
+ für 
+\begin_inset Formula $k\leq(n-1)$
+\end_inset
+
+ und 
+\begin_inset Formula $1⁄2^{(k-1)}$
+\end_inset
+
+ für 
+\begin_inset Formula $k=n$
+\end_inset
+
+.
+ Ein „run“ ist das Aufeinanderfolgen mehrere Nullen oder Einsen.
+ So weist zum Beispiel die Bitfolge ...
+ 00110101000111001101...
+ folgende runs auf: Run 1 kommt 6x vor, run 2 kommt 4x vor und run 3 kommt
+ 2x vor.
+\end_layout
+
+\begin_layout Itemize
+Die m-Sequenz der Länge P und die zyklisch verschobene Kopie haben fast
+ 50 % überein- stimmende Bits und 50 % verschiedene Bits
+\end_layout
+
+\begin_layout Paragraph*
+Beispiel
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename LFSR.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+\end_layout
+
+\begin_layout Subsection
+Binäre Block-Codes
+\end_layout
+
+\begin_layout Standard
+N: Anzahl Bits in einem Wort nach dem Encoding i.e [1,1,1,0,1,1] -> 6
+\end_layout
+
+\begin_layout Standard
+K: 2^K = Anzahl Infoworte, i.e {[1,1,1],[1,0,1]} -> 2 oder Anzahl Bits in
+ einem Wort vor dem Encoding
+\end_layout
+
+\begin_layout Standard
+Coderate 
+\begin_inset Formula $R=\frac{K}{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Hamming-Gewicht 
+\begin_inset Formula $w_{H}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+entspricht der Anzahl 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ im Codewort 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Hamming-Distanz 
+\begin_inset Formula $d_{H}(x_{i},x_{j})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+entspricht der Anzahl unterschiedlicher Positionen in 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ und 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Minimaldistanz 
+\begin_inset Formula $d_{min}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{min}=min_{ij}d_{H}(x_{i},x_{j})=min_{ij}w_{H}(x_{i}+x_{j})=min_{k}w_{H}(x_{k})=w_{min}(i\neq j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für linearen (N,K) Block-Codes 
+\end_layout
+
+\begin_layout Subsubsection
+Beispiel: (3,2)-Blockcode
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Anzahl Informationsbits}=K=2$
+\end_inset
+
+, 
+\begin_inset Formula $\text{Länge eines Codewortes}=N=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2^{K}=4$
+\end_inset
+
+ Infoworte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Coderate}=R=\frac{K}{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\{[00],[01],[10],[11]\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+even Parity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=\{[000],[101],[110],[011]\}$
+\end_inset
+
+(vorderstes Bit ist hier Paritybit)
+\end_layout
+
+\begin_layout Subsubsection
+Begriff ‚linearer (N,K) Block-Code C’ 
+\end_layout
+
+\begin_layout Standard
+Falls die modulo-2 Summe zweier Codewörter wieder ein Codewort ergibt, dann
+ ist der Block Code linear.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Begriff ‚linearer, zyklischer (N,K) Block-Code C’
+\end_layout
+
+\begin_layout Standard
+Falls die zyklische Verschiebung eines Codeworts wieder ein Codewort ergibt,
+ ist der Code ausser- dem zyklisch.
+ Aufgrund dieser Eigenschaft sind die verschiedenen Codeworte sehr einfach
+ mit Hilfe eines LFSR (Linear Feedback Shift Register) realisierbar.
 \end_layout
 
 \end_body
