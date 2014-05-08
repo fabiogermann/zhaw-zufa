@@ -73,6 +73,10 @@
 
 \begin_body
 
+\begin_layout Subsection*
+Deadlocks
+\end_layout
+
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="3">
@@ -87,7 +91,7 @@
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/semaphore.png
-	width 5cm
+	width 6cm
 
 \end_inset
 
@@ -102,7 +106,7 @@
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/spinlock.png
-	width 5cm
+	width 6cm
 
 \end_inset
 
@@ -117,7 +121,7 @@
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/TAS.png
-	width 5cm
+	width 6cm
 
 \end_inset
 
@@ -144,6 +148,108 @@ Preemtable (ohne Nebenwirkungen entziehbar) -> CPU, Hauptspeicher
 
 \begin_layout Itemize
 Nonpreemptable (Nebenwirkungen) -> Drucker, CD-Brenner
+\end_layout
+
+\begin_layout Subsubsection*
+Grundsätzliche Probleme
+\end_layout
+
+\begin_layout Itemize
+Starvation (Verhungern)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Prozess erhält keinen Zutritt zu Ressource
+\end_layout
+
+\begin_layout Itemize
+Ursache, z.B.
+ unfaire Zuweisungspolicy: FILO (Stack)
+\end_layout
+
+\begin_layout Itemize
+Abhilfe: nur faire Policies verwenden, z.B.
+ FIFO
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Deadlock (Verklemmung)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Prozesse warten gegenseitig auf Freigabe von Ressourcen
+\end_layout
+
+\begin_layout Itemize
+Die Prozesse und eventuell das gesamte System bleiben hängen
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Voraussetzungen
+\end_layout
+
+\begin_layout Itemize
+Mutual Exclusion
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mindestens eine Ressource ist exklusiv reserviert
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Hold and wait
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mindestens ein Task hat eine Ressource exklusiv reserviert und wartet auf
+ weitere Ressourcen
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+No preemption
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+reservierte Ressourcen können dem Task nicht entzogen werden (freiwillige
+ Rückgabe nur, wenn Aufgabe gelöst)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Circular wait
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+geschlossene 
+\begin_inset Quotes eld
+\end_inset
+
+Kettenot be delayed infinitly
+\begin_inset Quotes erd
+\end_inset
+
+ von Tasks existiert, in der jeder Prozess mindestens eine Ressource reserviert
+ hat, die auch von einem Nachfolger in der Kette benötigt wird
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+1-3 sind Vorbedingungen, mit 4 ist es ein Deadlock.
+\end_layout
+
+\begin_layout Standard
+die Circular Wait Bedingung kann nicht gelöst werden, wenn Bedingungen 1,
+ 2 und 3 gegeben sind
 \end_layout
 
 \begin_layout Subsubsection*
@@ -300,6 +406,10 @@ Mutex: Zugriff auf kritische Ressource
 Synchronisation: Reihenfolge der Verarbeitung (Barriere)
 \end_layout
 
+\begin_layout Section*
+Paging
+\end_layout
+
 \begin_layout Subsubsection*
 Buddy-Algo
 \end_layout
@@ -310,6 +420,11 @@ solange Blockgrösse halbieren bis Block minimaler Grösse zur verfügung steht
 
 \begin_layout Subsubsection*
 Paging
+\end_layout
+
+\begin_layout Standard
+Aktuelle Betriebssysteme nur Paging, Segmentation wird auf logischer Ebene
+ realisiert (Zugriffsrechte auf Pages Code, Stack, Data).
 \end_layout
 
 \begin_layout Itemize
