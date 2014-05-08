@@ -456,7 +456,7 @@ Pagesize = Framesize (1, 4, 8 KB)
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/paging.png
-	width 5cm
+	width 7cm
 
 \end_inset
 
@@ -471,7 +471,7 @@ Pagesize = Framesize (1, 4, 8 KB)
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/paging-exampl.png
-	width 5cm
+	width 7cm
 
 \end_inset
 
@@ -514,7 +514,7 @@ pro Prozess eine Segment-Tabelle (OS) (lookup + Add)
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/segmentation.png
-	width 5cm
+	width 7cm
 
 \end_inset
 
