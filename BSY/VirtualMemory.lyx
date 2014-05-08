@@ -73,11 +73,6 @@
 
 \begin_body
 
-\begin_layout Standard
-Aktuelle Betriebssysteme nur Paging, Segmentation wird auf logischer Ebene
- realisiert (Zugriffsrechte auf Pages Code,Stack,Data)
-\end_layout
-
 \begin_layout Subsection*
 Virtual Memory
 \end_layout
@@ -212,6 +207,13 @@ Virtual Memory
 </row>
 </lyxtabular>
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
 \end_inset
 
 
