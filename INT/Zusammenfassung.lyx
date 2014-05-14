@@ -24,7 +24,6 @@ figs-within-sections
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -132,9 +131,9 @@ Diskrete Informationsquellen
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -554,10 +553,10 @@ Data: 0 1 0 0 0 0 1 1 0 0 0 0 1 0 1 0 0 0 0 0 1 0 1 0
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="12" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -1032,12 +1031,12 @@ Anfangswörterbuch: 1 : A, 2 : B, 3 : C
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="16" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -2518,6 +2517,7 @@ Beispiel
 
 \end_inset
 
+
 \end_layout
 
 \begin_layout Subsection
@@ -2674,6 +2674,133 @@ Falls die zyklische Verschiebung eines Codeworts wieder ein Codewort ergibt,
  ist der Code ausser- dem zyklisch.
  Aufgrund dieser Eigenschaft sind die verschiedenen Codeworte sehr einfach
  mit Hilfe eines LFSR (Linear Feedback Shift Register) realisierbar.
+\end_layout
+
+\begin_layout Subsubsection
+Generator-Matrix
+\end_layout
+
+\begin_layout Standard
+Für jeden linearen 
+\begin_inset Formula $(N,K)$
+\end_inset
+
+ Code gibt es eine 
+\begin_inset Formula $K\times N$
+\end_inset
+
+ Generator-Matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[x_{0},\dots,x_{N-1}]=[u_{0},\dots,u_{K-1}]\cdot G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Generator-Matrix hat die Form 
+\begin_inset Formula $G=[PI_{K}]$
+\end_inset
+
+, 
+\begin_inset Formula $I_{K}$
+\end_inset
+
+:
+\begin_inset Formula $K\times K$
+\end_inset
+
+-Einheitsmatrix
+\end_layout
+
+\begin_layout Subsubsection
+Parity-Check-Matrix
+\end_layout
+
+\begin_layout Standard
+Jeder lineare 
+\begin_inset Formula $(N,K)$
+\end_inset
+
+ Code hat eine 
+\begin_inset Formula $(N-K)\times N$
+\end_inset
+
+ Parity-Check-Matrix 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[x_{0},\dots,x_{N-1}]\cdot H^{T}=[0,\dots,0]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn 
+\begin_inset Formula $G=[PI_{K}]$
+\end_inset
+
+ in systematischer Form, dann 
+\begin_inset Formula $H=[I_{N-K}P^{T}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Syndrom
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{{s}}=[s_{0},\dots,s_{N-K-1}]=\vec{{y}}\cdot H^{T}=(\vec{{x}}+\vec{{e}})\cdot H^{T}=\vec{{e}}\cdot H^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei 
+\begin_inset Formula $\vec{{e}}$
+\end_inset
+
+ der Fehler ist und 
+\begin_inset Formula $\vec{{y}}$
+\end_inset
+
+ das neue Codewort mit dem Fehler adiert (also ein potenziell falsches Wort,
+ falls 
+\begin_inset Formula $\vec{{e}}\neq\vec{{0}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Das Syndrom ist nur vom Fehler abhängig.
+ Falls keine Fehler übertragen wurden ist 
+\begin_inset Formula $\vec{s}=\vec{0}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
