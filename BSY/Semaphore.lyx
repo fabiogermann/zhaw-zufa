@@ -55,7 +55,7 @@
 \leftmargin 1cm
 \topmargin 1cm
 \rightmargin 1cm
-\bottommargin 1cm
+\bottommargin 1.5cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -406,7 +406,7 @@ Mutex: Zugriff auf kritische Ressource
 Synchronisation: Reihenfolge der Verarbeitung (Barriere)
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Paging
 \end_layout
 
@@ -456,7 +456,7 @@ Pagesize = Framesize (1, 4, 8 KB)
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/paging.png
-	width 7cm
+	width 8cm
 
 \end_inset
 
@@ -471,7 +471,7 @@ Pagesize = Framesize (1, 4, 8 KB)
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/paging-exampl.png
-	width 7cm
+	width 8cm
 
 \end_inset
 
@@ -514,7 +514,7 @@ pro Prozess eine Segment-Tabelle (OS) (lookup + Add)
 \begin_layout Standard
 \begin_inset Graphics
 	filename images/segmentation.png
-	width 7cm
+	width 8cm
 
 \end_inset
 
