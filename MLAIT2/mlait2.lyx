@@ -394,7 +394,7 @@ Der Normal-Vektor lässt sich aus der Gleichung ablesen, die Richtungsvektoren
 
 \begin_layout Enumerate
 Anschliessend lässt sich eine Gleichung aufstellen: 
-\begin_inset Formula $A\cdot\left(n|r\right)=\left(\begin{array}[t]{cc}
+\begin_inset Formula $A\cdot\left(n|r\right)=\left(\begin{array}{cc}
 s & t\\
 u & v
 \end{array}\right)$
@@ -405,7 +405,7 @@ u & v
 
 \begin_layout Enumerate
 Und nach A auflösen: 
-\begin_inset Formula $A=\left(\begin{array}[t]{cc}
+\begin_inset Formula $A=\left(\begin{array}{cc}
 s & t\\
 u & v
 \end{array}\right)\cdot\left(n|r\right)^{-1}$
@@ -440,14 +440,14 @@ Geben sie die vier Einträge der zu P gehörenden Projektionsmatrix A in der
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\vec{n}=\left(\begin{array}[t]{c}
+\begin_inset Formula $\vec{n}=\left(\begin{array}{c}
 2\\
 3
 \end{array}\right)$
 \end_inset
 
 , 
-\begin_inset Formula $\vec{r}=\left(\begin{array}[t]{c}
+\begin_inset Formula $\vec{r}=\left(\begin{array}{c}
 3\\
 -2
 \end{array}\right)$
@@ -457,14 +457,14 @@ Geben sie die vier Einträge der zu P gehörenden Projektionsmatrix A in der
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $A\cdot\vec{n}=\left(\begin{array}[t]{c}
+\begin_inset Formula $A\cdot\vec{n}=\left(\begin{array}{c}
 0\\
 0
 \end{array}\right)$
 \end_inset
 
 , 
-\begin_inset Formula $A\cdot\vec{r}=\left(\begin{array}[t]{c}
+\begin_inset Formula $A\cdot\vec{r}=\left(\begin{array}{c}
 3\\
 -2
 \end{array}\right)$
@@ -474,10 +474,10 @@ Geben sie die vier Einträge der zu P gehörenden Projektionsmatrix A in der
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\Rightarrow A\cdot(\vec{n}|\vec{r})=A\cdot\left(\begin{array}[t]{cc}
+\begin_inset Formula $\Rightarrow A\cdot(\vec{n}|\vec{r})=A\cdot\left(\begin{array}{cc}
 2 & 3\\
 3 & -2
-\end{array}\right)=\left(\begin{array}[t]{cc}
+\end{array}\right)=\left(\begin{array}{cc}
 0 & 3\\
 0 & -2
 \end{array}\right)$
@@ -487,10 +487,10 @@ Geben sie die vier Einträge der zu P gehörenden Projektionsmatrix A in der
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\Rightarrow A=\left(\begin{array}[t]{cc}
+\begin_inset Formula $\Rightarrow A=\left(\begin{array}{cc}
 0 & 3\\
 0 & -2
-\end{array}\right)\cdot\left(\begin{array}[t]{cc}
+\end{array}\right)\cdot\left(\begin{array}{cc}
 2 & 3\\
 3 & -2
 \end{array}\right)^{-1}$
@@ -702,6 +702,31 @@ xa_{3}+yb_{3}+zc_{3}
 
 \end_layout
 
+\begin_layout Standard
+Es gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cdot(\vec{v}+\vec{w})=A\cdot\vec{v}+A\cdot\vec{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cdot(\alpha\vec{v})=\alpha A\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cdot\vec{0}=\vec{0}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Matrix-Matrix Multiplikation
 \end_layout
@@ -837,7 +862,7 @@ Sie müssen folgende Gleichung erfüllen:
 
 \begin_layout Standard
 Bei der Matrix 
-\begin_inset Formula $A=\left(\begin{array}[t]{cc}
+\begin_inset Formula $A=\left(\begin{array}{cc}
 1 & 3\\
 2 & 6
 \end{array}\right)$
@@ -847,10 +872,10 @@ Bei der Matrix
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\left(\begin{array}[t]{ccc}
+\begin_inset Formula $\left(\begin{array}{ccc}
 1 & 3 & 0\\
 2 & 6 & 0
-\end{array}\right)\Rightarrow\left(\begin{array}[t]{ccc}
+\end{array}\right)\Rightarrow\left(\begin{array}{ccc}
 1 & 3 & 0\\
 0 & 0 & 0
 \end{array}\right)$
@@ -860,12 +885,12 @@ Bei der Matrix
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\Rightarrow Kern(A)=\{\alpha\cdot\left(\begin{array}[t]{c}
+\begin_inset Formula $\Rightarrow Kern(A)=\{\alpha\cdot\left(\begin{array}{c}
 -3\\
 1
-\end{array}\right),\alpha\varepsilon\mathbb{R}\}=\{\alpha\cdot\left(\begin{array}[t]{c}
-3\\
--1
+\end{array}\right),\alpha\varepsilon\mathbb{R}\}=\{\alpha\cdot\left(\begin{array}{c}
+-3\\
+1
 \end{array}\right),\alpha\varepsilon\mathbb{R}\}$
 \end_inset
 
@@ -883,7 +908,7 @@ Das Bild einer Matrix sind diejenigen Vektoren die mit der Matrix abgebildet
 \end_inset
 
 Das Bild für die Matrix 
-\begin_inset Formula $A=\left(\begin{array}[t]{cc}
+\begin_inset Formula $A=\left(\begin{array}{cc}
 1 & 3\\
 2 & 6
 \end{array}\right)$
@@ -893,13 +918,396 @@ Das Bild für die Matrix
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $Bild(A)=\{\alpha\cdot\left(\begin{array}[t]{c}
+\begin_inset Formula $Bild(A)=\{\alpha\cdot\left(\begin{array}{c}
 1\\
 2
-\end{array}\right)+\beta\cdot\left(\begin{array}[t]{c}
+\end{array}\right)+\beta\cdot\left(\begin{array}{c}
 3\\
 6
 \end{array}\right),\alpha\beta\varepsilon\mathbb{R}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Vektorräume
+\end_layout
+
+\begin_layout Subsubsection*
+Vektorraumaxiome
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ heisst Vektorraum über 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+, wenn für alle 
+\begin_inset Formula $u,v,w\:\epsilon\: V$
+\end_inset
+
+ und 
+\begin_inset Formula $\lambda,\mu\:\epsilon\:\mathbb{H}$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Itemize
+Abgeschlossenheit: 
+\begin_inset Formula $u+v\:\epsilon\: V$
+\end_inset
+
+ und 
+\begin_inset Formula $\lambda v\:\epsilon\: V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Assoziativität: 
+\begin_inset Formula $u+(v+w)=(u+v)+w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Neutrales Element: Es existiert ein 
+\begin_inset Formula $0\:\epsilon\: V$
+\end_inset
+
+ mit 
+\begin_inset Formula $v+0=v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+entgegengesetztes Element: Es gibt ein 
+\begin_inset Formula $-v\:\epsilon\: V$
+\end_inset
+
+ sodaa 
+\begin_inset Formula $v+(-v)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kommutativität: 
+\begin_inset Formula $v+w=w+v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda(v+w)=\lambda v+\lambda w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\lambda+\mu)v=\lambda v+\mu v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda(\mu v)=(\lambda\mu)v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1v=v$
+\end_inset
+
+, wobei 1 das multiplikative neutrale Element von 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+ ist.
+\end_layout
+
+\begin_layout Subsubsection*
+Unterräume
+\end_layout
+
+\begin_layout Subsection*
+Symmetrische reelle Matrizen
+\end_layout
+
+\begin_layout Subsubsection*
+Formel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{-1}\Longleftrightarrow A^{-1}=V\cdot\Lambda^{-1}\cdot V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Berechnungen
+\end_layout
+
+\begin_layout Enumerate
+Eigenwerte berechnen
+\end_layout
+
+\begin_layout Enumerate
+Eigenvektoren berechnen (Wenn es eine orthogonale Matrix sein, muss, müssen
+ die Eigenvektoren orthogonal sein)
+\end_layout
+
+\begin_layout Enumerate
+Eigenvektoren normieren
+\end_layout
+
+\begin_layout Enumerate
+Gleichung 
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{^{T}}$
+\end_inset
+
+ aufstellen wobei gilt 
+\begin_inset Formula $V=$
+\end_inset
+
+Eigenvektoren, 
+\begin_inset Formula $V^{-1}=V^{T}$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda=\left(\begin{array}{cc}
+\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\begin_inset Newline newline
+\end_inset
+
+Berechnen Sie die Eigenwerte der Matrix 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+3 & 1\\
+1 & 3
+\end{array}\right)$
+\end_inset
+
+ sowie eine orthogonale Matrix V, die A diagonalisiert, das heisst 
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{^{T}}$
+\end_inset
+
+, 
+\begin_inset Formula $A=diag(\lambda_{1},\lambda_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $V^{-1}=V^{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(A-\lambda I)=\left(\begin{array}{cc}
+3-\lambda & 1\\
+1 & 3-\lambda
+\end{array}\right)=(3-\lambda)(3-\lambda)-1=\lambda^{2}-6\lambda+8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow\lambda_{1,2}=4/2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ist also:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+4 & 0\\
+0 & 2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+3-4 & 1\\
+1 & 3-4
+\end{array}\right)=\left(\begin{array}{cc}
+-1 & 1\\
+1 & -1
+\end{array}\right)\Rightarrow\left(\begin{array}{cc}
+-1 & 1\\
+0 & 0
+\end{array}\right)\Rightarrow v_{\text{1}}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+3-2 & 1\\
+1 & 3-2
+\end{array}\right)=\left(\begin{array}{cc}
+1 & 1\\
+1 & 1
+\end{array}\right)\Rightarrow\left(\begin{array}{cc}
+1 & 1\\
+0 & 0
+\end{array}\right)\Rightarrow v_{\text{2}}=\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kontrolle:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}\bullet v_{2}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)\bullet\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)=1\cdot1+1\cdot(-1)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normierung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|v_{1}|=\sqrt{x^{2}+y^{2}}=\sqrt{1^{2}+1^{2}}=\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|v_{2}|=\sqrt{x^{2}+y^{2}}=\sqrt{1^{2}+(-1)^{2}}=\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Folglich sehen die Normierten Vektoren wie folgt aus:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}=\left(\begin{array}{c}
+\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $v_{2}=\left(\begin{array}{c}
+\frac{1}{\sqrt{2}}\\
+\frac{-1}{\sqrt{2}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Orthogonale Matrix ist folglich:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $V=\left(\begin{array}{cc}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Und zum Schluss:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{^{T}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+3 & 1\\
+1 & 3
+\end{array}\right)=\left(\begin{array}{cc}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}
+\end{array}\right)\cdot\left(\begin{array}{cc}
+4 & 0\\
+0 & 2
+\end{array}\right)\cdot\left(\begin{array}{cc}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}
+\end{array}\right)^{T}$
 \end_inset
 
 
@@ -915,14 +1323,14 @@ Kanonische Basisvektoren
 
 \begin_layout Standard
 Sind die Vektoren 
-\begin_inset Formula $l_{1}=\left(\begin{array}[t]{c}
+\begin_inset Formula $l_{1}=\left(\begin{array}{c}
 1\\
 0
 \end{array}\right)$
 \end_inset
 
  und 
-\begin_inset Formula $l_{2}=\left(\begin{array}[t]{c}
+\begin_inset Formula $l_{2}=\left(\begin{array}{c}
 0\\
 1
 \end{array}\right)$
@@ -936,13 +1344,13 @@ Mit ihnen lassen sich beliebige Vektoren Darstellen:
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\left(\begin{array}[t]{c}
+\begin_inset Formula $\left(\begin{array}{c}
 3\\
 4
-\end{array}\right)=3\cdot\left(\begin{array}[t]{c}
+\end{array}\right)=3\cdot\left(\begin{array}{c}
 1\\
 0
-\end{array}\right)+4\left(\begin{array}[t]{c}
+\end{array}\right)+4\left(\begin{array}{c}
 0\\
 1
 \end{array}\right)$
@@ -958,10 +1366,10 @@ Neue Basis verwenden
 \begin_layout Standard
 Es können auch andere Basen verwendet werden, zb.
  
-\begin_inset Formula $b_{1}=\left(\begin{array}[t]{c}
+\begin_inset Formula $b_{1}=\left(\begin{array}{c}
 1\\
 1
-\end{array}\right),b_{2}=\left(\begin{array}[t]{c}
+\end{array}\right),b_{2}=\left(\begin{array}{c}
 1\\
 -1
 \end{array}\right)$
@@ -971,19 +1379,19 @@ Es können auch andere Basen verwendet werden, zb.
 \end_layout
 
 \begin_layout Verse
-\begin_inset Formula $\left(\begin{array}[t]{c}
+\begin_inset Formula $\left(\begin{array}{c}
 3\\
 4
-\end{array}\right)=\alpha\cdot\left(\begin{array}[t]{c}
+\end{array}\right)=\alpha\cdot\left(\begin{array}{c}
 1\\
 1
-\end{array}\right)+\beta\cdot\left(\begin{array}[t]{c}
+\end{array}\right)+\beta\cdot\left(\begin{array}{c}
 1\\
 -1
-\end{array}\right)=\left(\begin{array}[t]{cc}
+\end{array}\right)=\left(\begin{array}{cc}
 1 & 1\\
 1 & -1
-\end{array}\right)\cdot\left(\begin{array}[t]{c}
+\end{array}\right)\cdot\left(\begin{array}{c}
 \alpha\\
 \beta
 \end{array}\right)$
@@ -994,7 +1402,7 @@ Es können auch andere Basen verwendet werden, zb.
 
 \begin_layout Standard
 Wobei es sich bei der Matrix 
-\begin_inset Formula $B=\left(\begin{array}[t]{cc}
+\begin_inset Formula $B=\left(\begin{array}{cc}
 1 & 1\\
 1 & -1
 \end{array}\right)$
@@ -1012,6 +1420,38 @@ Daraus folgt:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection*
+Basis prüfen
+\end_layout
+
+\begin_layout Standard
+Um zu prüfen ob Vektoren eine Basis von 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ist, kann die Determinante ausgerechnet werden.
+\end_layout
+
+\begin_layout Itemize
+Determinante = 0 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ Keine Basis, da linear abhängig
+\end_layout
+
+\begin_layout Itemize
+Determinante 
+\begin_inset Formula $\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ Ist eine Basis
 \end_layout
 
 \begin_layout Subsection*
@@ -1079,11 +1519,52 @@ a_{31} & a_{32} & a_{33}
 
 \end_layout
 
+\begin_layout Subsubsection*
+NxN Matrizen
+\end_layout
+
 \begin_layout Standard
-\begin_inset Formula $\left(\begin{array}[t]{ccc}
-+ & - & +\\
-- & + & -\\
-+ & - & +
+Grundsätzlich kann die Determinate mit folgendem Trick berechnet werden:
+\end_layout
+
+\begin_layout Itemize
+Eine Zeile auswählen, am besten eine mit vielen 0en
+\end_layout
+
+\begin_layout Itemize
+Für jeden Eintrag Kreuzweise abdecken
+\end_layout
+
+\begin_layout Standard
+Zum Beispiel Zeile 2:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cccc}
+a & b & c & d\\
+e & f & g & h\\
+i & j & k & l\\
+m & n & o & p
+\end{array}\right)\Rightarrow\left(\begin{array}{cccc}
+ & b & c & d\\
+e\\
+ & j & k & l\\
+ & n & o & p
+\end{array}\right),\left(\begin{array}{cccc}
+a &  & c & d\\
+ & f\\
+i &  & k & l\\
+m &  & o & p
+\end{array}\right),\left(\begin{array}{cccc}
+a & b &  & d\\
+ &  & g\\
+i & j &  & l\\
+m & n &  & p
+\end{array}\right),\left(\begin{array}{cccc}
+a & b & c\\
+ &  &  & h\\
+i & j & k\\
+m & n & o
 \end{array}\right)$
 \end_inset
 
@@ -1091,6 +1572,42 @@ a_{31} & a_{32} & a_{33}
 \end_layout
 
 \begin_layout Standard
+Anschliessend können mit der Hilfmatrix 
+\begin_inset Formula $\left(\begin{array}{cccc}
++ & - & + & -\\
+- & + & - & +\\
++ & - & + & -\\
+- & + & - & +
+\end{array}\right)$
+\end_inset
+
+ die Vorzeichen ermittelt werden.
+\begin_inset Newline newline
+\end_inset
+
+Schlussendliche sie die Determinante wie folgt aus:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Det(A)=-e\cdot det\left(\begin{array}{ccc}
+b & c & d\\
+j & k & l\\
+n & o & p
+\end{array}\right)+f\cdot det\left(\begin{array}{ccc}
+a & c & d\\
+i & k & l\\
+m & o & p
+\end{array}\right)-g\cdot det\left(\begin{array}{ccc}
+a & b & d\\
+i & j & l\\
+m & n & p
+\end{array}\right)+h\cdot det\left(\begin{array}{ccc}
+a & b & c\\
+i & j & k\\
+m & n & o
+\end{array}\right)$
+\end_inset
+
 
 \end_layout
 
