@@ -81,5 +81,30 @@ Caesar Cipher: Shift des Alphabets um bestimmten Offset (3).
  Generell kann eine Substitutions-Tabelle geführt werden (26! Mögl.).
 \end_layout
 
+\begin_layout Standard
+Schwäche: Frequenzanalyse
+\end_layout
+
+\begin_layout Subsection*
+Vigenere Cipher
+\end_layout
+
+\begin_layout Standard
+Matrix bei der jede Zeile um das um 1 weiterrotierte Alphabet steht.
+ Der Key wird aneinandergereight, sodass er länger oder gleich lang ist
+ wie die Nachricht.
+ 
+\begin_inset Formula $Cypertext[i]=BuchstabeInMatrix(plaintext[i],keystring[i])$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Schwäche: Schlüssellänge duch Digramm und Trigramm Abstand finden.Für jeden
+ Key-Character eigene Frequenzanalyse durchführen.
+ 
+\end_layout
+
 \end_body
 \end_document

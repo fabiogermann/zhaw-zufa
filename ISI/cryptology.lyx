@@ -113,5 +113,27 @@ Non-Repudiation: Der Sender kann im Nachherein nicht die Herkunft der Nachticht
  verleugnen.
 \end_layout
 
+\begin_layout Standard
+Begriffe:
+\end_layout
+
+\begin_layout Itemize
+Cipher: kryptografischer Algorithmus
+\end_layout
+
+\begin_layout Itemize
+Keyspace: Bereich aller möglicher Schlüssel
+\end_layout
+
+\begin_layout Itemize
+Informations-theoretisch sicher: kann nicht, mit allen Mitteln, gebrochen
+ werden (One Time Pad)
+\end_layout
+
+\begin_layout Itemize
+Berechenbar sicher: es ist beweisbar, dass es keinen besseren Weg gibt als
+ alle Schlüssel zu testen.
+\end_layout
+
 \end_body
 \end_document
