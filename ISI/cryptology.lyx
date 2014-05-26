@@ -68,8 +68,49 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Section*
+Intro
+\end_layout
 
+\begin_layout Standard
+Definitionen:
+\end_layout
+
+\begin_layout Itemize
+Cryptology besteht aus Cryptography und Cryptoanalysis
+\end_layout
+
+\begin_layout Itemize
+Cryptography: Die Kunst & Wissenschaft eine Nachricht geheim zu halten.
+\end_layout
+
+\begin_layout Itemize
+Cryptoanalysis: Die Kunst & Wissenschaft ein verschlüsselter Text zu brechen.
+\end_layout
+
+\begin_layout Standard
+Ziele:
+\end_layout
+
+\begin_layout Itemize
+Confidentiality (aka.
+ Privacy): Die Nachricht kann nur vom bestimmten Empfänger gelesen werden.
+ (Historisch ist das die Hauptaufgabe)
+\end_layout
+
+\begin_layout Itemize
+Authentication: Der Empfänger kann sich der Herkunft der Nachrich sicher
+ sein.
+\end_layout
+
+\begin_layout Itemize
+Integrity: Der Empfänger der Nachricht kann sicher sein, dass diese nicht
+ verändert wurde.
+\end_layout
+
+\begin_layout Itemize
+Non-Repudiation: Der Sender kann im Nachherein nicht die Herkunft der Nachticht
+ verleugnen.
 \end_layout
 
 \end_body
