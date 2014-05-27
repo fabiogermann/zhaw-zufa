@@ -1611,6 +1611,56 @@ m & n & o
 
 \end_layout
 
+\begin_layout Subsection*
+Rechnen mit Determinanten
+\end_layout
+
+\begin_layout Standard
+Für Matrizen der Dimension n gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(\sqrt{5}\cdot A)=\sqrt{5}^{n}\cdot det(A)=5^{\frac{n}{2}}\cdot det(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det((A^{-1})^{T})=det(A^{-1})=\frac{1}{det(A)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(AB)=det(A)\cdot det(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det((AB)^{3})=det(AB)^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(A^{3}B^{3})=det(A)^{3}\cdot det(B)^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(AB^{-1})=det(A)\cdot det(B^{-1})=\frac{det(A)}{det(B)}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Eigenwert & Eigenvektor
 \end_layout
