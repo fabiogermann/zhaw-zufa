@@ -106,5 +106,24 @@ Schwäche: Schlüssellänge duch Digramm und Trigramm Abstand finden.Für jeden
  
 \end_layout
 
+\begin_layout Subsection*
+Transposition Cipher
+\end_layout
+
+\begin_layout Standard
+Die Nachricht wird kontinuierlich auf Zeilen der Länge 9 (9 Kolonnen = Key
+ 9) geschrieben.
+ Anschliessend werden die Spalten permutiert (Key = Permutationsreihenfolge)
+ und wider aneinandergereiht.
+\end_layout
+
+\begin_layout Standard
+Schwäche: Inkrementelle (sprachbedingt di und tri Grupppen) Attake.
+ Man rät die Anzahl Spalten, nimmt dann einen n-Char Block und vergleicht
+ diesen mit jedem anderen n-Char Block.
+ Sollten 4 mögliche 2 Zeichenblöcke (ER, AN) auftauchen, so ist es warscheinlich
+, dass die Spalten nebeneinander sind.
+\end_layout
+
 \end_body
 \end_document
