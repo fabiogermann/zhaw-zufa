@@ -135,5 +135,37 @@ Berechenbar sicher: es ist beweisbar, dass es keinen besseren Weg gibt als
  alle Schlüssel zu testen.
 \end_layout
 
+\begin_layout Itemize
+Confusion: Substitutionsoperationen
+\end_layout
+
+\begin_layout Itemize
+Diffusion: Permutationsoperationen
+\end_layout
+
+\begin_layout Itemize
+Entropie: Informationsgehalt: 
+\begin_inset Formula $H=\sum_{i=1}^{n}p(i)log_{2}(\frac{1}{p(i)})$
+\end_inset
+
+ Die Entropie ist dann maximal, wenn alle möglichen Out-Zustände gleich
+ warscheinlich sind.
+\end_layout
+
+\begin_layout Itemize
+Entropie eines Kryptografischen Keys: Falls alle Bits unabhängig und zufällig
+ gewählt sind gilt 
+\begin_inset Formula $128Bit\rightarrow Entropie:\,128$
+\end_inset
+
+ .
+ Falls die Bits jedoch verschiedene Warscheinlichkeiten haben sinkt die
+ Key-Stärke.
+\end_layout
+
+\begin_layout Itemize
+
+\end_layout
+
 \end_body
 \end_document
