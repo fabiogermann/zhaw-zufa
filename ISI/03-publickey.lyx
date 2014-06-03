@@ -217,5 +217,13 @@ Entschlüsselung:
 
 \end_layout
 
+\begin_layout Subsection*
+PublicKey VS SecretKey
+\end_layout
+
+\begin_layout Standard
+RSA ist ca 1000 mal langsamer als SecretKeyCiphers -> Hybrid Encryption
+\end_layout
+
 \end_body
 \end_document
