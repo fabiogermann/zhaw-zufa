@@ -217,6 +217,22 @@ Entschlüsselung:
 
 \end_layout
 
+\begin_layout Standard
+Schnellere Berechnung durch Exponentiation: 
+\begin_inset Formula $y=x^{e}$
+\end_inset
+
+ wird als x hoch ein 2er-potenz-polynom dargestellt.
+ Dieses wird durch Umformen auf eine Multiplikation von Exponential-Terme
+ gebracht.
+ K+1 Terme, K multiplikationen.
+ Nach erstellen der Basen (K multipl.) kommt man auf die Formel: 
+\begin_inset Formula $2*floor(log2(e))$
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout Subsection*
 PublicKey VS SecretKey
 \end_layout
