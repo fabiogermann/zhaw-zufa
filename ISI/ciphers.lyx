@@ -141,68 +141,7 @@ Schwäche: Keine, jedoch dürfen die Schlüsselbits NIE wiederverwendet werden.
 \end_layout
 
 \begin_layout Subsection*
-Secret Key (oder Symmetic) Cryptosystem
-\end_layout
 
-\begin_layout Standard
-Der gleiche Schlüssel wird für die Ver- bzw.
- Entschlüsselung verwendet, wobei der Schüssel über einen sicheren Kanal
- ausgetauscht werden muss, und unbedingt gehein gehalten werden muss.
- Der Schüssel sollte von Zeit zu Zeit gewechselt werden.
-\end_layout
-
-\begin_layout Standard
-Schwäche: Problem bei der sicheren Key Verteilung
-\end_layout
-
-\begin_layout Subsubsection*
-Block Ciphers
-\end_layout
-
-\begin_layout Standard
-Der Plaintext wird in Blöcke von n Bits aufgeteilt (64,128,256) und dann
- mit einem Schlüssel vom m Bits (unsicher: 40,56,64,80 sicher: 128,168,192,256).
- Das Mapping des Plaintexts soll einen möglichst zufällig aussehenden Ciphertext
- erzeugen.
- Ca 50% aller Bits sollen verschieden sein.
-\end_layout
-
-\begin_layout Standard
-Beispiele: DES, 3DES (enc-dec-enc), IDEA, CAST, Blowfish, RC2, RC5, AES
-\end_layout
-
-\begin_layout Subsubsection*
-BC Mode - Electronic Code Book ECB
-\end_layout
-
-\begin_layout Standard
-Jeder Plaintext Block wird auf einen Ciphtertext Block gemapp.
- Enc/Dec wird über einen Block nach dem anderen.
- 
-\end_layout
-
-\begin_layout Standard
-Schwäche: Jeder Plaintext-Block mappt immer auf den gleichen Ciphertext-Block.
-\end_layout
-
-\begin_layout Subsubsection*
-BC Mode - Cipher Block Chaining CBC
-\end_layout
-
-\begin_layout Standard
-Jeder Plaintext-Block wird mit dem vorhergehenden Ciphertextblock XOR verknüpft
- und erst dann verschlüsselt.
- Der InitialisierungsVektor soll jedoch nur einmal Verwendet werden.
-\end_layout
-
-\begin_layout Standard
-Schwäche: Dummheit des Menschen bei der Interpretation.
- (Modifizieren eines gesendeten Blockes.
- (Erwünschte änderung plus nebenwirkung)
-\end_layout
-
-\begin_layout Subsubsection*
-Stream Ciphers
 \end_layout
 
 \begin_layout Standard
