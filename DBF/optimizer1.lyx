@@ -313,6 +313,55 @@ Mit einer sortierten RID Liste muss jede Tablepage höchstens einmal gelesen
 \end_layout
 
 \begin_layout Subsection*
+Number of Matching Index Columns (MATCHCOLS)
+\end_layout
+
+\begin_layout Standard
+Die maximale Anzahl Index Spalten, die gebraucht werden können zur Beschränkung
+ des zu besuchenden Sektors von Index Leafpages heisst.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Bsp.
+\end_layout
+
+\begin_layout Itemize
+= = = 3
+\end_layout
+
+\begin_layout Itemize
+= > > 2
+\end_layout
+
+\begin_layout Itemize
+BETWEEN = > 1
+\end_layout
+
+\begin_layout Itemize
+= BETWEEN = 2
+\end_layout
+
+\begin_layout Itemize
+= IN > 2
+\end_layout
+
+\begin_layout Itemize
+> > > 1
+\end_layout
+
+\begin_layout Itemize
+Like x% = = 1
+\end_layout
+
+\begin_layout Itemize
+Like %x% == 0
+\end_layout
+
+\begin_layout Subsection*
 Berechnungen
 \end_layout
 
@@ -351,12 +400,23 @@ P(T1) = Anzahl Table Space Pages, auf denen Zeilen der Tabelle T1 liegen
 D(I1) = Anzahl Levels des Index I1
 \end_layout
 
+\begin_layout Itemize
+W(T1) = Anzahle verschiedener Werte die in einer Tabelle vorkommen
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma$
+\end_inset
+
+ = Clusterratio vom Index
+\end_layout
+
 \begin_layout Subsubsection*
 Formeln
 \end_layout
 
-\begin_layout Standard
-Anzahl Index-Einträge:
+\begin_layout Paragraph*
+Anzahl Index-Einträge
 \end_layout
 
 \begin_layout Verse
@@ -567,6 +627,559 @@ Beispiel:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Paragraph*
+Filterfaktor Matchcols
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{1}{W(T1.Name)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{1}{W(T1.Name)}\cdot\frac{1}{W(T1.Vorname)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Filterfaktor Zugriff
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $FF(Name='Müller')\cdot Z(T1)=\frac{1}{W(T1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei a or b
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a+b-(a\cdot b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Zahlen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $N=FF(Name='Müller')\cdot Z(T1)=\frac{1}{W(T1)}\cdot Z(T1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+RID Sort
+\end_layout
+
+\begin_layout Standard
+Anzahl Tablespace Pages welche entsprechende Einträge enhalten
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(1-(1-\frac{1}{P})^{N})\cdot P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kosten für die Sortierung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $0.001\cdot N\cdot log_{2}(N)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Zugriffskosten ohne RID Sort (falls Table Space Zugriff nötig)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(D(I1)-1)+FFMatchcols\cdot L(I1)+FFZugriff\cdot(\gamma\cdot P(T1)+(1-\gamma)\cdot Z(T1))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Zugriffskosten mit RID Sort (falls Table Space Zugriff nötig)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(D(I1)-1)+FFMatchcols\cdot L(I1)+0.001\cdot N\cdot log_{2}(N)+(1-(1-\frac{1}{P(T1)})^{N})\cdot P(T1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Recovery
+\end_layout
+
+\begin_layout Subsection*
+Transaktionen
+\end_layout
+
+\begin_layout Standard
+ACID:
+\end_layout
+
+\begin_layout Itemize
+Atomicity: man will eine Bank Transaktion als ganzes oder gar nicht 
+\end_layout
+
+\begin_layout Itemize
+Consistency: nach der Transaktion soll die DB wieder konsistent sein 
+\end_layout
+
+\begin_layout Itemize
+Isolation: keine Störung durch andere Transaktionen 
+\end_layout
+
+\begin_layout Itemize
+Durability: Datenbank soll Daten der Transaktion nicht verlieren
+\end_layout
+
+\begin_layout Standard
+LUR = Logical Unit of Recovery:
+\end_layout
+
+\begin_layout Itemize
+Begin Transaction
+\end_layout
+
+\begin_layout Itemize
+End Transaction
+\end_layout
+
+\begin_layout Itemize
+Commit oder Rollback
+\end_layout
+
+\begin_layout Standard
+Image Copie = Backup
+\begin_inset Newline newline
+\end_inset
+
+Log:
+\end_layout
+
+\begin_layout Itemize
+Alles wird geloggt
+\end_layout
+
+\begin_layout Itemize
+Log schliesst mit EndLUR ab (beim Commit)
+\end_layout
+
+\begin_layout Itemize
+Nur wiederherstellbar was abgeschlossen wurde.
+\end_layout
+
+\begin_layout Itemize
+Jeder Log erhält eine LSN (Log Sequence Number)
+\end_layout
+
+\begin_layout Standard
+Rollback:
+\end_layout
+
+\begin_layout Itemize
+Alle nichtfertigen LUR's müssen zurückgesetzt werden
+\end_layout
+
+\begin_layout Itemize
+Es müssen als infos über den vorherigen Zustand vorhanden sein (UNDO-Infos)
+\end_layout
+
+\begin_layout Itemize
+Die Infos müssen zuerst im Log abgelegt werden, bevor der Update auf der
+ DB passier
+\begin_inset Newline newline
+\end_inset
+
+Write ahead Log (WAL)
+\end_layout
+
+\begin_layout Itemize
+Werden als REDO Logs Records geloggt und werden Compensation Log Records
+ (CLR) genannt.
+\end_layout
+
+\begin_layout Standard
+Checkpoints werden gebraucht um nicht den ganzen Logspace checken zu müssen.
+\end_layout
+
+\begin_layout Section*
+Concurrency
+\end_layout
+
+\begin_layout Subsection*
+Konfliktsituationen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+no problem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....R1(x).....R2(x)........T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+non repeatable read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....R1(x).....W2(x).......T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dirty read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....W1(x)....R2(x)........T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dirty write
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....W1(x)....W2(x).......T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Isolation Levels
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dirty Read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+non repeatable read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phantom
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Serializable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repeatable read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Read committed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Read uncommitted
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X = verhindert
+\end_layout
+
+\begin_layout Subsection*
+Locks
+\end_layout
+
+\begin_layout Standard
+Um dirty write zu vermeiden, setzen die Systeme vor dem Schreiben einen
+ X-Lock, einen Exclusive Lock, der bis zum (kurz nach) Commit gehalten wird.
+\begin_inset Newline newline
+\end_inset
+
+Besitzt eine Transaktion einen Exclusive Lock auf einem Objekt, dann kriegt
+ keine andere Transaktion Zugriff auf dieses Objekt
+\end_layout
+
+\begin_layout Itemize
+Read-Lock = Share-Lock
+\end_layout
+
+\begin_layout Itemize
+Write-Lock = Exclusive-Lock
+\end_layout
+
+\begin_layout Itemize
+Update-Lock
+\end_layout
+
+\begin_layout Standard
+Der Stärke nach:
+\begin_inset Newline newline
+\end_inset
+
+Share-Lock 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Update-Lock
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Exclusive-Lock
 \end_layout
 
 \end_body
