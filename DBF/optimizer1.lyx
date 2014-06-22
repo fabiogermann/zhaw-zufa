@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -28,15 +28,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -89,10 +98,10 @@ Index
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <row>
 <cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -201,6 +210,976 @@ Index-über-mehrere-Attribute: Die einzelnen Records im Index sind Lexikografisc
 \begin_layout Description
 non-unique-index: Kommen Werte mehrfach vor, dann wird in den Leafpages
  ein wert nur einmal gespeichert z.B.: (Hans,Meier,R1,R4,R8).
+\end_layout
+
+\begin_layout Subsection*
+Table Space
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename TableSpace.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Table Space Scan
+\end_layout
+
+\begin_layout Standard
+Wenn ein Index für den Zugriff nicht benützt wird oder werden kann, wählt
+ das System als Zugriffspfad (access path) einen Table Space Scan (Table
+ File Scan, Table Scan)
+\begin_inset Newline newline
+\end_inset
+
+Das heisst, dass alle Table File Pages gelesen werden, was sehr aufwendig
+ sein kann
+\end_layout
+
+\begin_layout Subsection*
+Index Leaf Page Scan
+\end_layout
+
+\begin_layout Standard
+Man hangelt sich von links nach rechts durch die ganzen Index Leaf Pages.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Beispiel::
+\begin_inset Newline newline
+\end_inset
+
+SELECT DISTINCT Strasse FROM Person WHERE Strasse LIKE '%bach%'
+\end_layout
+
+\begin_layout Subsection*
+Index Acces without RID sorting
+\end_layout
+
+\begin_layout Standard
+SELECT Name, Address, … FROM Table WHERE Name BETWEEN ‘Frehner’ AND ‘Meier’
+ ORDER BY Name
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Zugriffspfad sticht von Rootpage herunter zum ersten Leafpage Eintrag ‘Frehner’,
+ von da weg den Leafpages entlang bis zum letzten ‘Meier’
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Für jeden Index Leafpage Eintrag wird der zugehörige Table File Eintrag
+ geholt (via RID).
+ So ist der Output zwar sortiert, aber viele Tablespace Pages müssen eventuell
+ mehrmals gelesen (geholt) werden
+\end_layout
+
+\begin_layout Subsection*
+Index Access with RID sorting
+\end_layout
+
+\begin_layout Standard
+SELECT Name, Adress, … FROM Table WHERE Name BETWEEN ‘Frehner’ AND ‘Meier’
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Hier wird kein sortierter Output verlangt.
+ Die gesuchten RIDs können aus den Index Leafpages gesammelt und anschliessend
+ sortiert werden.
+\begin_inset Newline newline
+\end_inset
+
+Mit einer sortierten RID Liste muss jede Tablepage höchstens einmal gelesen
+ werden, und erst noch in aufsteigender Reihenfolge
+\end_layout
+
+\begin_layout Subsection*
+Number of Matching Index Columns (MATCHCOLS)
+\end_layout
+
+\begin_layout Standard
+Die maximale Anzahl Index Spalten, die gebraucht werden können zur Beschränkung
+ des zu besuchenden Sektors von Index Leafpages heisst.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Bsp.
+\end_layout
+
+\begin_layout Itemize
+= = = 3
+\end_layout
+
+\begin_layout Itemize
+= > > 2
+\end_layout
+
+\begin_layout Itemize
+BETWEEN = > 1
+\end_layout
+
+\begin_layout Itemize
+= BETWEEN = 2
+\end_layout
+
+\begin_layout Itemize
+= IN > 2
+\end_layout
+
+\begin_layout Itemize
+> > > 1
+\end_layout
+
+\begin_layout Itemize
+Like x% = = 1
+\end_layout
+
+\begin_layout Itemize
+Like %x% == 0
+\end_layout
+
+\begin_layout Subsection*
+Berechnungen
+\end_layout
+
+\begin_layout Subsubsection*
+Begriffe
+\end_layout
+
+\begin_layout Itemize
+T1 = Tabelle
+\end_layout
+
+\begin_layout Itemize
+I1 = Index
+\end_layout
+
+\begin_layout Itemize
+Z(T1) = Zeilen
+\end_layout
+
+\begin_layout Itemize
+L(I1) = Anzahl Index Leaf Pages
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\alpha$
+\end_inset
+
+ = Einträge Pro Leafpage
+\end_layout
+
+\begin_layout Itemize
+P(T1) = Anzahl Table Space Pages, auf denen Zeilen der Tabelle T1 liegen
+\end_layout
+
+\begin_layout Itemize
+D(I1) = Anzahl Levels des Index I1
+\end_layout
+
+\begin_layout Itemize
+W(T1) = Anzahle verschiedener Werte die in einer Tabelle vorkommen
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\gamma$
+\end_inset
+
+ = Clusterratio vom Index
+\end_layout
+
+\begin_layout Subsubsection*
+Formeln
+\end_layout
+
+\begin_layout Paragraph*
+Anzahl Index-Einträge
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\alpha=\frac{Z(T1)}{L(I1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Z(T1)\cdot(1+\frac{1}{(\alpha-1)})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="9">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{(\alpha-1)}$
+\end_inset
+
+ in %
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Filterfaktor Matchcols
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{1}{W(T1.Name)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{1}{W(T1.Name)}\cdot\frac{1}{W(T1.Vorname)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Filterfaktor Zugriff
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $FF(Name='Müller')\cdot Z(T1)=\frac{1}{W(T1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei a or b
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a+b-(a\cdot b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Zahlen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $N=FF(Name='Müller')\cdot Z(T1)=\frac{1}{W(T1)}\cdot Z(T1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+RID Sort
+\end_layout
+
+\begin_layout Standard
+Anzahl Tablespace Pages welche entsprechende Einträge enhalten
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(1-(1-\frac{1}{P})^{N})\cdot P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kosten für die Sortierung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $0.001\cdot N\cdot log_{2}(N)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Zugriffskosten ohne RID Sort (falls Table Space Zugriff nötig)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(D(I1)-1)+FFMatchcols\cdot L(I1)+FFZugriff\cdot(\gamma\cdot P(T1)+(1-\gamma)\cdot Z(T1))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Zugriffskosten mit RID Sort (falls Table Space Zugriff nötig)
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(D(I1)-1)+FFMatchcols\cdot L(I1)+0.001\cdot N\cdot log_{2}(N)+(1-(1-\frac{1}{P(T1)})^{N})\cdot P(T1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Recovery
+\end_layout
+
+\begin_layout Subsection*
+Transaktionen
+\end_layout
+
+\begin_layout Standard
+ACID:
+\end_layout
+
+\begin_layout Itemize
+Atomicity: man will eine Bank Transaktion als ganzes oder gar nicht 
+\end_layout
+
+\begin_layout Itemize
+Consistency: nach der Transaktion soll die DB wieder konsistent sein 
+\end_layout
+
+\begin_layout Itemize
+Isolation: keine Störung durch andere Transaktionen 
+\end_layout
+
+\begin_layout Itemize
+Durability: Datenbank soll Daten der Transaktion nicht verlieren
+\end_layout
+
+\begin_layout Standard
+LUR = Logical Unit of Recovery:
+\end_layout
+
+\begin_layout Itemize
+Begin Transaction
+\end_layout
+
+\begin_layout Itemize
+End Transaction
+\end_layout
+
+\begin_layout Itemize
+Commit oder Rollback
+\end_layout
+
+\begin_layout Standard
+Image Copie = Backup
+\begin_inset Newline newline
+\end_inset
+
+Log:
+\end_layout
+
+\begin_layout Itemize
+Alles wird geloggt
+\end_layout
+
+\begin_layout Itemize
+Log schliesst mit EndLUR ab (beim Commit)
+\end_layout
+
+\begin_layout Itemize
+Nur wiederherstellbar was abgeschlossen wurde.
+\end_layout
+
+\begin_layout Itemize
+Jeder Log erhält eine LSN (Log Sequence Number)
+\end_layout
+
+\begin_layout Standard
+Rollback:
+\end_layout
+
+\begin_layout Itemize
+Alle nichtfertigen LUR's müssen zurückgesetzt werden
+\end_layout
+
+\begin_layout Itemize
+Es müssen als infos über den vorherigen Zustand vorhanden sein (UNDO-Infos)
+\end_layout
+
+\begin_layout Itemize
+Die Infos müssen zuerst im Log abgelegt werden, bevor der Update auf der
+ DB passier
+\begin_inset Newline newline
+\end_inset
+
+Write ahead Log (WAL)
+\end_layout
+
+\begin_layout Itemize
+Werden als REDO Logs Records geloggt und werden Compensation Log Records
+ (CLR) genannt.
+\end_layout
+
+\begin_layout Standard
+Checkpoints werden gebraucht um nicht den ganzen Logspace checken zu müssen.
+\end_layout
+
+\begin_layout Section*
+Concurrency
+\end_layout
+
+\begin_layout Subsection*
+Konfliktsituationen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+no problem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....R1(x).....R2(x)........T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+non repeatable read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....R1(x).....W2(x).......T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dirty read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....W1(x)....R2(x)........T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dirty write
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.....W1(x)....W2(x).......T1end.....
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Isolation Levels
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dirty Read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+non repeatable read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phantom
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Serializable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repeatable read
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Read committed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Read uncommitted
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+X = verhindert
+\end_layout
+
+\begin_layout Subsection*
+Locks
+\end_layout
+
+\begin_layout Standard
+Um dirty write zu vermeiden, setzen die Systeme vor dem Schreiben einen
+ X-Lock, einen Exclusive Lock, der bis zum (kurz nach) Commit gehalten wird.
+\begin_inset Newline newline
+\end_inset
+
+Besitzt eine Transaktion einen Exclusive Lock auf einem Objekt, dann kriegt
+ keine andere Transaktion Zugriff auf dieses Objekt
+\end_layout
+
+\begin_layout Itemize
+Read-Lock = Share-Lock
+\end_layout
+
+\begin_layout Itemize
+Write-Lock = Exclusive-Lock
+\end_layout
+
+\begin_layout Itemize
+Update-Lock
+\end_layout
+
+\begin_layout Standard
+Der Stärke nach:
+\begin_inset Newline newline
+\end_inset
+
+Share-Lock 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Update-Lock
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Exclusive-Lock
 \end_layout
 
 \end_body
