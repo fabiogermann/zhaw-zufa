@@ -2786,8 +2786,8 @@ Wobei
 \begin_inset Formula $\vec{{y}}$
 \end_inset
 
- das neue Codewort mit dem Fehler adiert (also ein potenziell falsches Wort,
- falls 
+ das neue Codewort mit dem Fehler addiert (also ein potenziell falsches
+ Wort, falls 
 \begin_inset Formula $\vec{{e}}\neq\vec{{0}}$
 \end_inset
 
@@ -2801,6 +2801,45 @@ Das Syndrom ist nur vom Fehler abhängig.
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Fehlererkennung
+\end_layout
+
+\begin_layout Standard
+alle Muster mit 
+\begin_inset Formula $\leq(d_{min}-1)$
+\end_inset
+
+ Fehler sind erkennbar
+\end_layout
+
+\begin_layout Subsubsection
+Fehlerkorrektur
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\leq\lfloor(d_{min}-1)/2\rfloor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+TODO
+\end_layout
+
+\begin_layout Standard
+BSC
+\end_layout
+
+\begin_layout Standard
+Tabelle mit primitiven Polynomen
+\end_layout
+
+\begin_layout Standard
+Minimale Hammingdistanz verbessern
 \end_layout
 
 \end_body
