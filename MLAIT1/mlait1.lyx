@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,15 +29,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -72,7 +81,7 @@ Lineare Algebra
 Vektorgeometrie
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Berechnung des Skalarprodukts
 \end_layout
 
@@ -85,13 +94,13 @@ a_{z}
 b_{x}\\
 b_{y}\\
 b_{z}
-\end{array}\right)=a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}$
+\end{array}\right)=a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}=\left|\vec{a}\right|\cdot\left|\vec{b}\right|\cdot cos\measuredangle(\vec{a},\vec{b})$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Berechnung des Zwischenwinkels zweier Vektoren
 \end_layout
 
@@ -102,14 +111,7 @@ Berechnung des Zwischenwinkels zweier Vektoren
 
 \end_layout
 
-\begin_layout Verse
-\begin_inset Formula $\vec{v}\bullet\vec{w}=\left|\vec{v}\right|\cdot\left|\vec{w}\right|\cdot cos\measuredangle(\vec{v},\vec{w})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Aussage des Skalarprodukts 0
 \end_layout
 
@@ -124,7 +126,7 @@ Aussage des Skalarprodukts 0
 Nullvektoren stehen senkrecht zu allen Vektoren
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Berechnung der Länge eines Vektors
 \end_layout
 
@@ -153,6 +155,36 @@ a_{3}
 
 \end_layout
 
+\begin_layout Subsubsection*
+Einheitsvektor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{e_{a}}=\frac{1}{\vec{a}}\cdot\vec{a}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Mittelpunkt 
+\begin_inset Formula $M$
+\end_inset
+
+ der Strecke 
+\begin_inset Formula $AB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{r_{M}}=\frac{1}{2}(\vec{r_{A}}+\vec{r_{B}})$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Satz des Pythagoras
 \end_layout
@@ -164,7 +196,7 @@ Im Dreieck
 \begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="1">
-<features booktabs="true" tabularvalignment="middle">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -211,7 +243,7 @@ Mit Vektoren
 \begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -272,7 +304,7 @@ Cosinussatz
 \begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -344,7 +376,7 @@ Orthogonalprojektion
 \begin_layout Verse
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="1">
-<features tabularvalignment="middle">
+<features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
@@ -370,27 +402,15 @@ Orthogonalprojektion
 
 \end_layout
 
-\begin_layout Enumerate
-Einheitsvektor in 
-\begin_inset Formula $\vec{a}$
-\end_inset
-
--Richtung 
-\begin_inset Formula $=\frac{1}{\left|\vec{a}\right|}\cdot\vec{a}=\vec{a_{1}}(=\vec{b_{a}})$
+\begin_layout Standard
+\begin_inset Formula $|\vec{b_{a}}|=|\vec{b}|\cdot cos\measuredangle(\vec{a},\vec{b})$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Formula $\vec{b}\bullet\vec{a_{1}}=\left|\vec{b}\right|\cdot\left|\vec{a_{1}}\right|\cdot\cos\measuredangle(\vec{b},\vec{a_{1}})=\left|\vec{b}\right|\cdot\cos\measuredangle(\vec{b},\vec{a_{1}})$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $\left|\vec{b}\right|\cdot\cos\measuredangle(\vec{b},\vec{a_{1}})\cdot\frac{\vec{a}}{\left|\vec{a}\right|}=(\vec{b}\bullet\frac{\vec{a}}{\left|\vec{a}\right|})\bullet\frac{\vec{a}}{\left|\vec{a}\right|}=(\vec{b}\bullet\frac{\vec{a}}{\left|\vec{a}\right|^{2}})\bullet\vec{a}$
+\begin_layout Standard
+\begin_inset Formula $\vec{b_{a}}=\frac{\vec{a}\cdot\vec{b}}{|\vec{a}|^{2}}$
 \end_inset
 
 
@@ -1233,15 +1253,15 @@ Cos-Table
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="9">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
 <row>
 <cell alignment="center" valignment="top" usebox="none">
