@@ -513,8 +513,35 @@ Von der Wurzel aus bei jeder Verzweigung nach oben eine „0“ und nach unten
 
 \end_layout
 
+\begin_layout Subsection*
+mittlere Codewortlänge 
+\begin_inset Formula $E[L]$
+\end_inset
+
+, respektive Rate 
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 R = Warscheinlichkeit * Codelänge (bsp: 1 * 1/8 + (3 * 1/8) * 4 = 2)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R=E[L]=\sum_{m=1}^{M}P_{X}(x_{m})\cdot L(x_{m})$
+\end_inset
+
+ mit der Wahrscheindlichkeit 
+\begin_inset Formula $P_{X}(x_{m)}$
+\end_inset
+
+ und der Länge 
+\begin_inset Formula $L(x_{m})$
+\end_inset
+
+ für ein Zeichen
 \end_layout
 
 \begin_layout Section
@@ -953,7 +980,11 @@ Token = ( Offset, Länge, nächstes Symbol)
 \end_layout
 
 \begin_layout Enumerate
-Token-Länge: log2(S+1) + log2(L+1) + 8 typisch : 11 + 5 + 8 = 24 Bit
+Token-Länge: 
+\begin_inset Formula $\log_{2}(S+1)+\log_{2}(L+1)+8$
+\end_inset
+
+ typisch : 11 + 5 + 8 = 24 Bit
 \end_layout
 
 \begin_layout Enumerate
