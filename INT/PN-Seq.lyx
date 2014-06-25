@@ -80,6 +80,27 @@ Pseude Noise Sequenzen
 LSFR
 \end_layout
 
+\begin_layout Itemize
+Periode 
+\begin_inset Formula $P\leq2^{n}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pseudozufall
+\end_layout
+
+\begin_layout Itemize
+Feedbackpolynom 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+prim.
+ Polynom zB:(3,1,0)
+\end_layout
+
 \begin_layout Standard
 Für (Pseudo-)Randomgenerator
 \end_layout
@@ -95,16 +116,32 @@ a_{0}=(a_{18}+a_{5}+a_{2}+a_{1})modulo2
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection*
 Zufallseigenschaften der m-Sequenzen
 \end_layout
 
 \begin_layout Itemize
-m-Sequenzen sind fast ausgeglichen in Bezug auf die Anzahl Einsen und Nullen
+m-Sequenzen sind fast ausgeglichen in der Anzahl 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+ und 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Die relative Häufigkeit von runs der Länge 
+Häufigkeit von runs der Länge 
 \begin_inset Formula $k$
 \end_inset
 
@@ -126,15 +163,37 @@ Die relative Häufigkeit von runs der Länge
 
 .
  Ein „run“ ist das Aufeinanderfolgen mehrere Nullen oder Einsen.
- So weist zum Beispiel die Bitfolge ...
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So weist zum Beispiel die Bitfolge ...
  00110101000111001101...
  folgende runs auf: Run 1 kommt 6x vor, run 2 kommt 4x vor und run 3 kommt
  2x vor.
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Die m-Sequenz der Länge P und die zyklisch verschobene Kopie haben fast
- 50 % überein- stimmende Bits und 50 % verschiedene Bits
+ 50 % übereinstimmende Bits und 50 % verschiedene Bits
+\end_layout
+
+\begin_layout Itemize
+Maximallängensequenz 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+PN-Sequenz
+\end_layout
+
+\begin_layout Itemize
+PN-Sequenz 
+\begin_inset Formula $\nrightarrow$
+\end_inset
+
+Maximallängensequenz
 \end_layout
 
 \end_body
