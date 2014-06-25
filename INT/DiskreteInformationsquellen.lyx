@@ -172,5 +172,73 @@ Umgekehrt, wenn R < H, kann die Quelle auf keinen Fall verlustlos codiert
  werden.
 \end_layout
 
+\begin_layout Section*
+BSC - Binary Symmetric Channel
+\end_layout
+
+\begin_layout Paragraph*
+Kapazität
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=maxp(x)[H(Y)-H(Y|X)]$
+\end_inset
+
+, 
+\begin_inset Formula $C_{BSC}=1-h(\varepsilon)^{(Bit/Kanalbenützung)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Kanaleigenschaften
+\end_layout
+
+\begin_layout Itemize
+Rauschen im Kanal beschränkt nicht die Zuverlässigkeit der Übertragung,
+ nur die Übertragungsrate
+\end_layout
+
+\begin_layout Itemize
+Verschiedene Kanäle mit einer Zahl vergleichbar
+\end_layout
+
+\begin_layout Itemize
+Je grösser die Blocklänge N, desto komplexer der decoder
+\end_layout
+
+\begin_layout Subsection*
+AWGN-Kanal 
+\end_layout
+
+\begin_layout Standard
+(Additive White Gaussian Noise)
+\end_layout
+
+\begin_layout Standard
+Coderate 
+\begin_inset Formula 
+\[
+R=\frac{\#Infobits}{\#Codebits}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kapazität: 
+\begin_inset Formula 
+\[
+C_{AWGN}=B\bullet log2(1+\frac{Signalleistung}{Bandbreite[Hz]\bullet Rauschleistungsdichte[W/Hz]}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
