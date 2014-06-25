@@ -161,7 +161,7 @@ Alphabet
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $A=\text{\{{x_{1},x_{2},\dots,x_{M}}\}}$
+\begin_inset Formula $A=\text{(\ensuremath{x_{1}},\ensuremath{x_{2}},\ensuremath{\dots},\ensuremath{x_{M}}})$
 \end_inset
 
 
@@ -304,7 +304,7 @@ Entropie
 Datenübertragung: die maximale (verlustlose) Kompression = Entropie
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -315,11 +315,7 @@ Datenübertragung: die maximale (verlustlose) Kompression = Entropie
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula 
-\[
-H(X)=\sum_{i=1}^{M}P_{x}(x_{i})\cdot\log_{2}\left(\frac{1}{P_{X}(x_{i})}\right)[\text{bit}]
-\]
-
+\begin_inset Formula $H(X)=\sum_{1}^{M}P_{x}(x_{i})\bullet log2(\frac{1}{P_{x}(x_{i})})[bit]$
 \end_inset
 
 
