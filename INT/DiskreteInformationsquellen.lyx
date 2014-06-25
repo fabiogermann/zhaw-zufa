@@ -1,0 +1,313 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Diskrete Informationsquellen
+\end_layout
+
+\begin_layout Subsection*
+DMS (Discrete Memoryless Source)
+\end_layout
+
+\begin_layout Standard
+X[n] unabhängig, besitzen identische Wahrscheinlichkeitsverteilung.
+\end_layout
+
+\begin_layout Subsection*
+BMS (Binary Memoryless Source)
+\end_layout
+
+\begin_layout Standard
+M = 2, d.h.
+ 
+\begin_inset Formula $P_{x}(x_{1})$
+\end_inset
+
+ = p und 
+\begin_inset Formula $P_{x}(x_{2})$
+\end_inset
+
+ = 1-p
+\end_layout
+
+\begin_layout Subsection*
+BSS (Binary Symmetric Source)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{x}(x_{1})=P_{x}(x_{2})=0.5$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+coin-flipping
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Quellencodierungstheorem (Shannon, 1948)
+\end_layout
+
+\begin_layout Standard
+Die Quelle kann verlustlos codiert werden, solange die Coderate R 
+\begin_inset Formula $\geq$
+\end_inset
+
+ H.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Umgekehrt, wenn R < H, kann die Quelle auf keinen Fall verlustlos codiert
+ werden.
+\end_layout
+
+\begin_layout Section*
+Huffman-Codierung
+\end_layout
+
+\begin_layout Enumerate
+Symbole nach Wahrscheinlichkeit ordnen
+\end_layout
+
+\begin_layout Enumerate
+kleinste Wahrscheinlichkeiten zusammenfassen
+\end_layout
+
+\begin_layout Subsection*
+Eigenschaften
+\end_layout
+
+\begin_layout Itemize
+Prefixfreier Code
+\end_layout
+
+\begin_layout Itemize
+Huffman-Codes sind optimal
+\end_layout
+
+\begin_layout Itemize
+Minimale mittlere Codewortlänge
+\end_layout
+
+\begin_layout Subsection*
+Nachteile
+\end_layout
+
+\begin_layout Itemize
+Huffman-Codes hängen stark von der Quellenstatistik ab
+\end_layout
+
+\begin_layout Itemize
+Quellenstatistik muss im voraus bekannt sein (ev.
+ zuerst „messen“)
+\end_layout
+
+\begin_layout Itemize
+Komplexität wächst exponentiell mit der Blocklänge n
+\end_layout
+
+\begin_layout Standard
+Codierung von n Symbolen eine DMS:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $H(X)\leq R\leq H(X)+\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Lempel-Ziv-Codierung
+\end_layout
+
+\begin_layout Subsection*
+Vorteile
+\end_layout
+
+\begin_layout Itemize
+Unabhängig von der Quellenstatistik
+\end_layout
+
+\begin_layout Itemize
+Universelle Anwendung
+\end_layout
+
+\begin_layout Itemize
+Asymptotisch optimal, d.h.
+ Codewortlänge R -> H(X) (von oben)
+\end_layout
+
+\begin_layout Subsection*
+Nachteile
+\end_layout
+
+\begin_layout Itemize
+Anzahl Strings / Grösse des Wörterbuchs beschränkt
+\end_layout
+
+\begin_layout Itemize
+Schlechte Kompression bei kleinen Eingangsbitfolgen
+\end_layout
+
+\begin_layout Section*
+LZ77
+\end_layout
+
+\begin_layout Standard
+Token = (Offset, Anzahl Zeichen, 
+\begin_inset Quotes eld
+\end_inset
+
+Nächstes Zeichen
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Section*
+Statisches Wörterbuch
+\end_layout
+
+\begin_layout Standard
+Wie oft muss ein Wort im Wörterbuch sein, damit Kompressionsrate R<1?
+\end_layout
+
+\begin_layout Itemize
+Anzahl der Wörter = N
+\end_layout
+
+\begin_layout Itemize
+P sei die Wahrscheinlichkeit, dass ein Wort im Buch gefunden wird
+\end_layout
+
+\begin_layout Itemize
+Mittlere Wortgrösse: 5 Bytes bzw.
+ 40 Bit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Statisches_Wörterbuch.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lösung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $R=\frac{N\cdot P\cdot20Bit+N\cdot(1-P)\cdot48Bit}{N\cdot40Bit}=\frac{48-28\cdot P}{40}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Longleftrightarrow P=\frac{48-40\cdot R}{28}=\frac{48-40\cdot1}{28}=\frac{8}{28}\simeq0.29$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+RLE (Run-Length-Encoding)
+\end_layout
+
+\begin_layout Itemize
+333333333 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+(@,9,3)
+\end_layout
+
+\begin_layout Itemize
+@ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+(@,1,@)
+\end_layout
+
+\begin_layout Standard
+Wird nur gebraucht wenn Token nicht länger als Orginaltext.
+\end_layout
+
+\end_body
+\end_document
