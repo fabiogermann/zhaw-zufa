@@ -92,5 +92,104 @@ RLE (Run-Length-Encoding)
 Wird nur gebraucht wenn Token nicht länger als Orginaltext.
 \end_layout
 
+\begin_layout Itemize
+Bildcodierung: 8, 8 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,8,9,7,9 -> 33
+\end_layout
+
+\begin_layout Standard
+Komprimierung: 8,8 - 1,1,1,2,@,6,1,2,@,6,1,2,@,6,1,2,1,1,8,9,7,9 -> 24
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Bildcodierung zeilenweise: 8, 8
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+1,1,1,2,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+1,1,1,2,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+1,1,1,2,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+1,1,1,2,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+7,1,eol,
+\end_layout
+
+\begin_layout Itemize
+0,8,eol,
+\end_layout
+
+\begin_layout Itemize
+7,1,eol,
+\end_layout
+
+\begin_layout Itemize
+0,8,eol -> 50 
+\end_layout
+
+\begin_layout Standard
+Komprimierung zeile: keine wirkliche komprimierung
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Bildcodierung spaltenweise: 8,8 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+5,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+0,4,1,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+5,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+0,4,1,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+0,4,1,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+5,1,1,1,eol,
+\end_layout
+
+\begin_layout Itemize
+0,4,1,1,1,1,
+\end_layout
+
+\begin_layout Itemize
+eol,4,4,eol -> 48
+\end_layout
+
+\begin_layout Standard
+Komprimierung spalte: 8,8 - 5,1,1,1,eol,0,4,@,4,1,eol,5,1,1,1,eol,0,@,4,1,eol,0,
+@,4,1,eol,5,1,1,1,eol,0,@,4,1,eol,4,4,eol -> 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
