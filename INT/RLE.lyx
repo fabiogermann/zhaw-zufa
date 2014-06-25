@@ -89,7 +89,7 @@ RLE (Run-Length-Encoding)
 \end_layout
 
 \begin_layout Standard
-Wird nur gebraucht wenn Token nicht länger als Orginaltext.
+Wird nur gebraucht wenn Token nicht länger als Orginaltext (mind @A4).
 \end_layout
 
 \begin_layout Itemize
