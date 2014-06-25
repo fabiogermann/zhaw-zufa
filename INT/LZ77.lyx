@@ -69,6 +69,38 @@
 \begin_body
 
 \begin_layout Section*
+Statisches Wörterbuch
+\end_layout
+
+\begin_layout Standard
+Wie oft muss ein Wort im Wörterbuch sein, damit Kompressionsrate R<1?
+\end_layout
+
+\begin_layout Itemize
+Anzahl der Wörter = N
+\end_layout
+
+\begin_layout Itemize
+P sei die Wahrscheinlichkeit, dass ein Wort im Buch gefunden wird
+\end_layout
+
+\begin_layout Itemize
+Mittlere Wortgrösse: 5 Bytes bzw.
+ 40 Bit
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename /home/aquila/GitHub/zhaw-zufa/INT/Statisches_Wörterbuch.png
+	lyxscale 75
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 LZ77
 \end_layout
 
@@ -88,7 +120,15 @@ Token der längsten (letzten) Übereinstimmung ausgeben
 
 \begin_deeper
 \begin_layout Enumerate
-Token = ( Offset, Länge, nächstes Symbol)
+Token = (Offset, Anzahl Zeichen, 
+\begin_inset Quotes eld
+\end_inset
+
+Nächstes Zeichen
+\begin_inset Quotes erd
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Enumerate

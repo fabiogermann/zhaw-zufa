@@ -72,8 +72,48 @@
 Huffman Code
 \end_layout
 
+\begin_layout Paragraph*
+Eigenschaften
+\end_layout
+
+\begin_layout Itemize
+Prefixfreier Code
+\end_layout
+
+\begin_layout Itemize
+Huffman-Codes sind optimal
+\end_layout
+
+\begin_layout Itemize
+Minimale mittlere Codewortlänge
+\end_layout
+
+\begin_layout Paragraph*
+Nachteile
+\end_layout
+
+\begin_layout Itemize
+Huffman-Codes hängen stark von der Quellenstatistik ab
+\end_layout
+
+\begin_layout Itemize
+Quellenstatistik muss im voraus bekannt sein (ev.
+ zuerst „messen“)
+\end_layout
+
+\begin_layout Itemize
+Komplexität wächst exponentiell mit der Blocklänge n
+\end_layout
+
 \begin_layout Standard
-Abhängig von der Quellenstatistik
+Codierung von n Symbolen eine DMS:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $H(X)\leq R\leq H(X)+\frac{1}{n}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*

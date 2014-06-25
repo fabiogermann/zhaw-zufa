@@ -69,7 +69,27 @@
 \begin_body
 
 \begin_layout Section*
-RLE
+RLE (Run-Length-Encoding)
+\end_layout
+
+\begin_layout Itemize
+333333333 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+(@,9,3)
+\end_layout
+
+\begin_layout Itemize
+@ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+(@,1,@)
+\end_layout
+
+\begin_layout Standard
+Wird nur gebraucht wenn Token nicht länger als Orginaltext.
 \end_layout
 
 \end_body

@@ -72,8 +72,33 @@
 Lempel-Ziv
 \end_layout
 
-\begin_layout Standard
-Unabhänging von der Quellenstatistik
+\begin_layout Paragraph*
+Vorteile
+\end_layout
+
+\begin_layout Itemize
+Unabhängig von der Quellenstatistik
+\end_layout
+
+\begin_layout Itemize
+Universelle Anwendung
+\end_layout
+
+\begin_layout Itemize
+Asymptotisch optimal, d.h.
+ Codewortlänge R -> H(X) (von oben)
+\end_layout
+
+\begin_layout Paragraph*
+Nachteile
+\end_layout
+
+\begin_layout Itemize
+Anzahl Strings / Grösse des Wörterbuchs beschränkt
+\end_layout
+
+\begin_layout Itemize
+Schlechte Kompression bei kleinen Eingangsbitfolgen
 \end_layout
 
 \begin_layout Subsection*
