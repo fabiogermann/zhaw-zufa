@@ -72,5 +72,307 @@
 BlockCodes
 \end_layout
 
+\begin_layout Standard
+N: Anzahl Bits in einem Wort nach dem Encoding i.e [1,1,1,0,1,1] -> 6
+\end_layout
+
+\begin_layout Standard
+K: 2^K = Anzahl Infoworte, i.e {[1,1,1],[1,0,1]} -> 2 oder Anzahl Bits in
+ einem Wort vor dem Encoding
+\end_layout
+
+\begin_layout Standard
+Coderate 
+\begin_inset Formula $R=\frac{K}{N}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Hamming-Gewicht 
+\begin_inset Formula $w_{H}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+entspricht der Anzahl 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $1$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ im Codewort 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Hamming-Distanz 
+\begin_inset Formula $d_{H}(x_{i},x_{j})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+entspricht der Anzahl unterschiedlicher Positionen in 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ und 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Minimaldistanz 
+\begin_inset Formula $d_{min}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{min}=min_{ij}d_{H}(x_{i},x_{j})=min_{ij}w_{H}(x_{i}+x_{j})=min_{k}w_{H}(x_{k})=w_{min}(i\neq j)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für linearen (N,K) Block-Codes 
+\end_layout
+
+\begin_layout Subsubsection
+Beispiel: (3,2)-Blockcode
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Anzahl Informationsbits}=K=2$
+\end_inset
+
+, 
+\begin_inset Formula $\text{Länge eines Codewortes}=N=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2^{K}=4$
+\end_inset
+
+ Infoworte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Coderate}=R=\frac{K}{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\{[00],[01],[10],[11]\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+even Parity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C=\{[000],[101],[110],[011]\}$
+\end_inset
+
+(vorderstes Bit ist hier Paritybit)
+\end_layout
+
+\begin_layout Subsubsection
+Begriff ‚linearer (N,K) Block-Code C’ 
+\end_layout
+
+\begin_layout Standard
+Falls die modulo-2 Summe zweier Codewörter wieder ein Codewort ergibt, dann
+ ist der Block Code linear.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Begriff ‚linearer, zyklischer (N,K) Block-Code C’
+\end_layout
+
+\begin_layout Standard
+Falls die zyklische Verschiebung eines Codeworts wieder ein Codewort ergibt,
+ ist der Code ausser- dem zyklisch.
+ Aufgrund dieser Eigenschaft sind die verschiedenen Codeworte sehr einfach
+ mit Hilfe eines LFSR (Linear Feedback Shift Register) realisierbar.
+\end_layout
+
+\begin_layout Subsubsection
+Generator-Matrix
+\end_layout
+
+\begin_layout Standard
+Für jeden linearen 
+\begin_inset Formula $(N,K)$
+\end_inset
+
+ Code gibt es eine 
+\begin_inset Formula $K\times N$
+\end_inset
+
+ Generator-Matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[x_{0},\dots,x_{N-1}]=[u_{0},\dots,u_{K-1}]\cdot G
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Generator-Matrix hat die Form 
+\begin_inset Formula $G=[PI_{K}]$
+\end_inset
+
+, 
+\begin_inset Formula $I_{K}$
+\end_inset
+
+:
+\begin_inset Formula $K\times K$
+\end_inset
+
+-Einheitsmatrix
+\end_layout
+
+\begin_layout Subsubsection
+Parity-Check-Matrix
+\end_layout
+
+\begin_layout Standard
+Jeder lineare 
+\begin_inset Formula $(N,K)$
+\end_inset
+
+ Code hat eine 
+\begin_inset Formula $(N-K)\times N$
+\end_inset
+
+ Parity-Check-Matrix 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[x_{0},\dots,x_{N-1}]\cdot H^{T}=[0,\dots,0]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn 
+\begin_inset Formula $G=[PI_{K}]$
+\end_inset
+
+ in systematischer Form, dann 
+\begin_inset Formula $H=[I_{N-K}P^{T}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Syndrom
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{{s}}=[s_{0},\dots,s_{N-K-1}]=\vec{{y}}\cdot H^{T}=(\vec{{x}}+\vec{{e}})\cdot H^{T}=\vec{{e}}\cdot H^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei 
+\begin_inset Formula $\vec{{e}}$
+\end_inset
+
+ der Fehler ist und 
+\begin_inset Formula $\vec{{y}}$
+\end_inset
+
+ das neue Codewort mit dem Fehler addiert (also ein potenziell falsches
+ Wort, falls 
+\begin_inset Formula $\vec{{e}}\neq\vec{{0}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Das Syndrom ist nur vom Fehler abhängig.
+ Falls keine Fehler übertragen wurden ist 
+\begin_inset Formula $\vec{s}=\vec{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Fehlererkennung
+\end_layout
+
+\begin_layout Standard
+alle Muster mit 
+\begin_inset Formula $\leq(d_{min}-1)$
+\end_inset
+
+ Fehler sind erkennbar
+\end_layout
+
+\begin_layout Subsubsection
+Fehlerkorrektur
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\leq\lfloor(d_{min}-1)/2\rfloor$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

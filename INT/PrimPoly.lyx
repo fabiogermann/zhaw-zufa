@@ -69,72 +69,7 @@
 \begin_body
 
 \begin_layout Section*
-PN-Sequenzen
-\end_layout
-
-\begin_layout Standard
-Pseude Noise Sequenzen
-\end_layout
-
-\begin_layout Subsubsection*
-LSFR
-\end_layout
-
-\begin_layout Standard
-Für (Pseudo-)Randomgenerator
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-a_{0}=(a_{18}+a_{5}+a_{2}+a_{1})modulo2
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Zufallseigenschaften der m-Sequenzen
-\end_layout
-
-\begin_layout Itemize
-m-Sequenzen sind fast ausgeglichen in Bezug auf die Anzahl Einsen und Nullen
-\end_layout
-
-\begin_layout Itemize
-Die relative Häufigkeit von runs der Länge 
-\begin_inset Formula $k$
-\end_inset
-
- beträgt 
-\begin_inset Formula $(1/2)^{k}$
-\end_inset
-
- für 
-\begin_inset Formula $k\leq(n-1)$
-\end_inset
-
- und 
-\begin_inset Formula $1⁄2^{(k-1)}$
-\end_inset
-
- für 
-\begin_inset Formula $k=n$
-\end_inset
-
-.
- Ein „run“ ist das Aufeinanderfolgen mehrere Nullen oder Einsen.
- So weist zum Beispiel die Bitfolge ...
- 00110101000111001101...
- folgende runs auf: Run 1 kommt 6x vor, run 2 kommt 4x vor und run 3 kommt
- 2x vor.
-\end_layout
-
-\begin_layout Itemize
-Die m-Sequenz der Länge P und die zyklisch verschobene Kopie haben fast
- 50 % überein- stimmende Bits und 50 % verschiedene Bits
+PrimitivePolynome
 \end_layout
 
 \end_body

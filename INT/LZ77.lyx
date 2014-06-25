@@ -72,5 +72,42 @@
 LZ77
 \end_layout
 
+\begin_layout Enumerate
+Erstes Symbol des Vorschau-Buffers im Such-Buffer suchen
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+rückwärts von rechts nach links
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Token der längsten (letzten) Übereinstimmung ausgeben
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Token = ( Offset, Länge, nächstes Symbol)
+\end_layout
+
+\begin_layout Enumerate
+Token-Länge: 
+\begin_inset Formula $\log_{2}(S+1)+\log_{2}(L+1)+8$
+\end_inset
+
+ typisch : 11 + 5 + 8 = 24 Bit
+\end_layout
+
+\begin_layout Enumerate
+wenn keine Übereinstimmung: (0,0, nächstes Symbol) 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+3.
+ Schiebefenster um Länge +1 nach rechts verschieben
+\end_layout
+
 \end_body
 \end_document
