@@ -159,7 +159,8 @@ Quellencodierungstheorem (Shannon, 1948)
 \end_layout
 
 \begin_layout Standard
-Die Quelle kann verlustlos codiert werden, solange die Coderate R 
+Die Quelle kann verlustlos codiert werden, solange die Coderate (Durchschnitt.
+ Codelänge) R 
 \begin_inset Formula $\geq$
 \end_inset
 
@@ -170,6 +171,14 @@ Die Quelle kann verlustlos codiert werden, solange die Coderate R
 
 Umgekehrt, wenn R < H, kann die Quelle auf keinen Fall verlustlos codiert
  werden.
+\end_layout
+
+\begin_layout Subsection*
+Optimale Codierung
+\end_layout
+
+\begin_layout Standard
+Mittlere Codewortlänge = Entropie
 \end_layout
 
 \begin_layout Section*

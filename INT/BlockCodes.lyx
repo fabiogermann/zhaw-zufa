@@ -72,16 +72,16 @@
 BlockCodes
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 N: Anzahl Bits in einem Wort nach dem Encoding i.e [1,1,1,0,1,1] -> 6
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 K: 2^K = Anzahl Infoworte, i.e {[1,1,1],[1,0,1]} -> 2 oder Anzahl Bits in
  einem Wort vor dem Encoding
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Coderate 
 \begin_inset Formula $R=\frac{K}{N}$
 \end_inset
@@ -89,7 +89,29 @@ Coderate
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Itemize
+Minimum Distance Encoding
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+wenige Fehler sind warscheinlicher als viele
+\end_layout
+
+\begin_layout Itemize
+Zuweisung and 
+\begin_inset Quotes eld
+\end_inset
+
+nächstgelegenes
+\begin_inset Quotes erd
+\end_inset
+
+ Codewort
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
 Hamming-Gewicht 
 \begin_inset Formula $w_{H}(x)$
 \end_inset
@@ -117,7 +139,7 @@ entspricht der Anzahl
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Hamming-Distanz 
 \begin_inset Formula $d_{H}(x_{i},x_{j})$
 \end_inset
@@ -137,7 +159,7 @@ entspricht der Anzahl unterschiedlicher Positionen in
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Minimaldistanz 
 \begin_inset Formula $d_{min}$
 \end_inset
@@ -156,16 +178,16 @@ Minimaldistanz
 Für linearen (N,K) Block-Codes 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Beispiel: (3,2)-Blockcode
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\text{Anzahl Informationsbits}=K=2$
+\begin_inset Formula $\text{Anzahl Informationsbits (Infowort u)}=K=2$
 \end_inset
 
 , 
-\begin_inset Formula $\text{Länge eines Codewortes}=N=3$
+\begin_inset Formula $\text{Länge eines Codewortes (x)}=N=3$
 \end_inset
 
 
@@ -203,7 +225,24 @@ even Parity
 (vorderstes Bit ist hier Paritybit)
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
+Begriff ‚systematischer Block-Code ’ 
+\end_layout
+
+\begin_layout Standard
+Infowort 
+\begin_inset Quotes eld
+\end_inset
+
+enblock
+\begin_inset Quotes erd
+\end_inset
+
+ in Codewort.
+ Cw = Parity+Iw
+\end_layout
+
+\begin_layout Subsubsection*
 Begriff ‚linearer (N,K) Block-Code C’ 
 \end_layout
 
@@ -213,7 +252,7 @@ Falls die modulo-2 Summe zweier Codewörter wieder ein Codewort ergibt, dann
  
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Begriff ‚linearer, zyklischer (N,K) Block-Code C’
 \end_layout
 
@@ -224,7 +263,7 @@ Falls die zyklische Verschiebung eines Codeworts wieder ein Codewort ergibt,
  mit Hilfe eines LFSR (Linear Feedback Shift Register) realisierbar.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Generator-Matrix
 \end_layout
 
@@ -271,7 +310,7 @@ Die Generator-Matrix hat die Form
 -Einheitsmatrix
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Parity-Check-Matrix
 \end_layout
 
@@ -314,7 +353,7 @@ Wenn
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Syndrom
 \end_layout
 
@@ -351,7 +390,7 @@ Das Syndrom ist nur vom Fehler abhängig.
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Fehlererkennung
 \end_layout
 
@@ -363,12 +402,30 @@ alle Muster mit
  Fehler sind erkennbar
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsubsection*
 Fehlerkorrektur
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $t\leq\lfloor(d_{min}-1)/2\rfloor$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+(N,K,t)BC = NK-BC der t Fehler korribieren Kann
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=\sum_{0}^{t}(\begin{array}[t]{c}
+N\\
+i
+\end{array})\bullet\varepsilon^{i}\bullet(1-\varepsilon)^{N-i}=\sum_{0}^{t}(\frac{N!}{i!\bullet(N-1)!})\bullet\varepsilon^{i}\bullet(1-\varepsilon)^{N-i}
+\]
+
 \end_inset
 
 
