@@ -420,10 +420,7 @@ Fehlerkorrektur
 \begin_layout Verse
 \begin_inset Formula 
 \[
-P=\sum_{0}^{t}(\begin{array}[t]{c}
-N\\
-i
-\end{array})\bullet\varepsilon^{i}\bullet(1-\varepsilon)^{N-i}=\sum_{0}^{t}(\frac{N!}{i!\bullet(N-i)!})\bullet\varepsilon^{i}\bullet(1-\varepsilon)^{N-i}
+P=\sum_{i=0}^{t}\binom{N}{i}\cdot\varepsilon^{i}\cdot(1-\varepsilon)^{N-i}=\sum_{i=0}^{t}\left(\frac{N!}{i!\cdot(N-i)!}\right)\cdot\varepsilon^{i}\cdot(1-\varepsilon)^{N-i}
 \]
 
 \end_inset
