@@ -1,0 +1,2356 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+Lineare Algebra
+\end_layout
+
+\begin_layout Section*
+Vektorgeometrie
+\end_layout
+
+\begin_layout Subsection*
+Berechnung des Skalarprodukts
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\bullet\vec{b}=\left(\begin{array}{c}
+a_{x}\\
+a_{y}\\
+a_{z}
+\end{array}\right)\bullet\left(\begin{array}{c}
+b_{x}\\
+b_{y}\\
+b_{z}
+\end{array}\right)=a_{x}b_{x}+a_{y}b_{y}+a_{z}b_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Berechnung des Zwischenwinkels zweier Vektoren
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\cos\measuredangle(\vec{v},\vec{w})=\frac{\vec{v}\bullet\vec{w}}{\left|\vec{v}\right|\cdot\left|\vec{w}\right|}\Rightarrow\measuredangle(\vec{v},\vec{w})=\arccos\frac{\vec{v}\bullet\vec{w}}{\left|\vec{v}\right|\cdot\left|\vec{w}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}\bullet\vec{w}=\left|\vec{v}\right|\cdot\left|\vec{w}\right|\cdot cos\measuredangle(\vec{v},\vec{w})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Aussage des Skalarprodukts 0
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{v}\perp\vec{w}\Leftrightarrow\vec{v}\bullet\vec{w}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nullvektoren stehen senkrecht zu allen Vektoren
+\end_layout
+
+\begin_layout Subsection*
+Berechnung der Länge eines Vektors
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}=\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left|\vec{a}\right|=\sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}=\sqrt{\vec{a}\bullet\vec{a}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{a}\bullet\vec{a}=a_{1}^{2}+a_{2}^{2}+a_{3}^{2}=\left|\vec{a}\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Satz des Pythagoras
+\end_layout
+
+\begin_layout Subsubsection*
+Im Dreieck
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pythagoras.png
+	width 6.279cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{2}+b^{2}=c^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Mit Vektoren
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename pythagoras_vektoren.png
+	width 6.279cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{b}=\vec{c}-\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{c}=\vec{a}+(\vec{c}-\vec{a})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left|\vec{c}\right|=\sqrt{\vec{c}\bullet\vec{c}}=\sqrt{(\vec{a}+(\vec{c}-\vec{a})\bullet(\vec{a}+(\vec{c}-\vec{a}))}=\sqrt{(\vec{a}+\vec{b})\bullet(\vec{a}+\vec{b})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $=\sqrt{\vec{a}\bullet\vec{a}+\vec{a}\bullet\vec{b}+\vec{c}\bullet\vec{b}+\vec{b}\bullet\vec{b}}=\sqrt{\left|\vec{a}\right|^{2}+0+0+\left|\vec{b}\right|^{2}}=\sqrt{\left|\vec{a}\right|^{2}+\left|\vec{b}\right|^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Cosinussatz
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Kosinussatz.png
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{c}=\vec{b}-\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left|\vec{b}\right|^{2}=\vec{b}\bullet\vec{b}=(\vec{a}+\vec{c})\bullet(\vec{a}+\vec{c})=\vec{a}\bullet\vec{a}+\vec{a}\bullet\vec{c}+\vec{c}\bullet\vec{a}+\vec{c}\bullet\vec{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $=\left|\vec{a}\right|^{2}+2\cos\measuredangle(\vec{a},\vec{c})\cdot\left|\vec{a}\right|\cdot\left|\vec{c}\right|+\left|\vec{c}\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(=\left|\vec{a}\right|^{2}-2\cos(180^{o}-\measuredangle)\cdot\left|\vec{a}\right|\cdot\left|\vec{c}\right|+\left|\vec{c}\right|^{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Daraus folgt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a^{2}+c^{2}-2ac\cdot\cos(\beta)=b^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Orthogonalprojektion
+\end_layout
+
+\begin_layout Verse
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Orthogonalprojektion.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Bestimmen von Vektoren, von denen wir wissen wohin sie Abgebildet werden
+\begin_inset Newline newline
+\end_inset
+
+(In der Regel der Normal- und 1 oder 2 Richtungs-Vektoren)
+\end_layout
+
+\begin_layout Enumerate
+Der Normal-Vektor lässt sich aus der Gleichung ablesen, die Richtungsvektoren
+ müssen die Gleichung erfüllen.
+\end_layout
+
+\begin_layout Enumerate
+Anschliessend lässt sich eine Gleichung aufstellen: 
+\begin_inset Formula $A\cdot\left(n|r\right)=\left(\begin{array}{cc}
+s & t\\
+u & v
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Und nach A auflösen: 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+s & t\\
+u & v
+\end{array}\right)\cdot\left(n|r\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Gegeben sei im 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ die Orthogonalprojektion P auf die Gerade g gegeben durch 
+\begin_inset Formula $2x+3y=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Geben sie die vier Einträge der zu P gehörenden Projektionsmatrix A in der
+ kanonischen Basis an.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\vec{n}=\left(\begin{array}{c}
+2\\
+3
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{r}=\left(\begin{array}{c}
+3\\
+-2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A\cdot\vec{n}=\left(\begin{array}{c}
+0\\
+0
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $A\cdot\vec{r}=\left(\begin{array}{c}
+3\\
+-2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow A\cdot(\vec{n}|\vec{r})=A\cdot\left(\begin{array}{cc}
+2 & 3\\
+3 & -2
+\end{array}\right)=\left(\begin{array}{cc}
+0 & 3\\
+0 & -2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow A=\left(\begin{array}{cc}
+0 & 3\\
+0 & -2
+\end{array}\right)\cdot\left(\begin{array}{cc}
+2 & 3\\
+3 & -2
+\end{array}\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Kreuzprodukt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}
+\end{array}\right)x\left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}
+\end{array}\right)=\left(\begin{array}{c}
+a_{2}\cdot b_{3}-a_{3}\cdot b_{2}\\
+a_{3}\cdot b_{1}-a_{1}\cdot b_{3}\\
+a_{1}\cdot b_{2}-a_{2}\cdot b_{1}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Parameterdarstellung
+\end_layout
+
+\begin_layout Standard
+Gerade = Aufpunkt + Faktor * Vektor
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $g:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+10\\
+3\\
+-12
+\end{array}\right)+s\left(\begin{array}{c}
+-5\\
+1\\
+-3
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ebene = Aufpunkt + 1.Faktor * 1.Vektor + 2.Faktor * 2.
+ Vektor
+\end_layout
+
+\begin_layout Verse
+
+\emph on
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+10\\
+3\\
+-12
+\end{array}\right)+s\left(\begin{array}{c}
+-5\\
+1\\
+-3
+\end{array}\right)+t\left(\begin{array}{c}
+4\\
+9\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Koordinatengleichung der Ebene
+\end_layout
+
+\begin_layout Standard
+Parameterdarstellung:
+\end_layout
+
+\begin_layout Verse
+
+\emph on
+\begin_inset Formula $E:\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+1\\
+-1\\
+2
+\end{array}\right)+s\left(\begin{array}{c}
+-3\\
+1\\
+1
+\end{array}\right)+t\left(\begin{array}{c}
+2\\
+2\\
+-4
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kreuzprodukt der Vektoren berechnen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+-3\\
+1\\
+1
+\end{array}\right)x\left(\begin{array}{c}
+2\\
+2\\
+-4
+\end{array}\right)=\left(\begin{array}{c}
+-6\\
+-10\\
+-8
+\end{array}\right)=\left(\begin{array}{c}
+3\\
+5\\
+4
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gleichung aufstellen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $3x+5y+4z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aufpunkt einsetzen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $3-5+8=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow3x+5y+4z=6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow3x+5y+4z-6=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Matrizen
+\end_layout
+
+\begin_layout Subsection*
+Matrix-Vektor Multiplikation
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{ccc}
+a_{1} & b_{1} & c_{1}\\
+a_{2} & b_{2} & c_{2}\\
+a_{3} & b_{3} & c_{2}
+\end{array}\right)\cdot\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\left(\begin{array}{c}
+xa_{1}+yb_{1}+zc_{1}\\
+xa_{2}+yb_{2}+zc_{2}\\
+xa_{3}+yb_{3}+zc_{3}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es gilt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cdot(\vec{v}+\vec{w})=A\cdot\vec{v}+A\cdot\vec{w}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cdot(\alpha\vec{v})=\alpha A\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cdot\vec{0}=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Matrix-Matrix Multiplikation
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right)\cdot\left(\begin{array}{cc}
+q & r\\
+s & t
+\end{array}\right)=\left(\begin{array}{cc}
+(aq+bs) & (ar+bt)\\
+(cq+ds) & (cr+dt)
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Interpretion
+\end_layout
+
+\begin_layout Standard
+Interpretation als lineare Operation auf die Spalten von A:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A\cdot B=\left(\left\{ \begin{array}{c}
+2\\
+-1
+\end{array}\right\} \left\{ \begin{array}{c}
+-5\\
+3
+\end{array}\right\} \right)\cdot\left(\begin{array}{cc}
+2 & 0\\
+0 & 3
+\end{array}\right)=\left(\left\{ \begin{array}{c}
+4\\
+-2
+\end{array}\right\} \left\{ \begin{array}{c}
+-15\\
+9
+\end{array}\right\} \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Interpretation als lineare Operation auf die Zeilen von A:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $B\cdot A=\left(\begin{array}{cc}
+2 & 0\\
+0 & 3
+\end{array}\right)\cdot\left(\begin{array}{cc}
+\{2 & -5\}\\
+\{-1 & 3\}
+\end{array}\right)=\left(\begin{array}{cc}
+\{4 & -10\}\\
+\{-3 & 9\}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Das Inverse einer Matrix
+\end_layout
+
+\begin_layout Standard
+Für das Inverse 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ einer Matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ gilt 
+\begin_inset Formula $A\cdot A^{-1}=I$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Eine quadratische Matrix lässt sich genau dann invertieren, wenn Ihre Spalten
+ linear unabhängig sind:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=\left(\begin{array}{cc}
+a & b\\
+c & d
+\end{array}\right)\Rightarrow A^{-1}=\frac{1}{ad-bc}\cdot\left(\begin{array}{cc}
+d & -b\\
+-c & a
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ist eine Matrix grösser (als quadr.) so lässt sich das Inverse mit dem Gausschen
+ Eliminationsverfahren ermittelt.
+\end_layout
+
+\begin_layout Subsection*
+Kern einer Matrix
+\end_layout
+
+\begin_layout Standard
+Der Kern einer Matrix sind diejenigen Vektoren die durch die Matrix auf
+ den Nullpunkt abgebildet werden.
+\begin_inset Newline newline
+\end_inset
+
+Sie müssen folgende Gleichung erfüllen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A\cdot v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei der Matrix 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 3\\
+2 & 6
+\end{array}\right)$
+\end_inset
+
+ lässt sich der Kern mit dem Gauss wie folgt berechnen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{ccc}
+1 & 3 & 0\\
+2 & 6 & 0
+\end{array}\right)\Rightarrow\left(\begin{array}{ccc}
+1 & 3 & 0\\
+0 & 0 & 0
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow Kern(A)=\{\alpha\cdot\left(\begin{array}{c}
+-3\\
+1
+\end{array}\right),\alpha\varepsilon\mathbb{R}\}=\{\alpha\cdot\left(\begin{array}{c}
+-3\\
+1
+\end{array}\right),\alpha\varepsilon\mathbb{R}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Bild einer Matrix
+\end_layout
+
+\begin_layout Standard
+Das Bild einer Matrix sind diejenigen Vektoren die mit der Matrix abgebildet
+ werden können.
+\begin_inset Newline newline
+\end_inset
+
+Das Bild für die Matrix 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+1 & 3\\
+2 & 6
+\end{array}\right)$
+\end_inset
+
+ wird wie folgt berechnet:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Bild(A)=\{\alpha\cdot\left(\begin{array}{c}
+1\\
+2
+\end{array}\right)+\beta\cdot\left(\begin{array}{c}
+3\\
+6
+\end{array}\right),\alpha\beta\varepsilon\mathbb{R}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Vektorräume
+\end_layout
+
+\begin_layout Subsubsection*
+Vektorraumaxiome
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ heisst Vektorraum über 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+, wenn für alle 
+\begin_inset Formula $u,v,w\:\epsilon\: V$
+\end_inset
+
+ und 
+\begin_inset Formula $\lambda,\mu\:\epsilon\:\mathbb{H}$
+\end_inset
+
+ gilt:
+\end_layout
+
+\begin_layout Itemize
+Abgeschlossenheit: 
+\begin_inset Formula $u+v\:\epsilon\: V$
+\end_inset
+
+ und 
+\begin_inset Formula $\lambda v\:\epsilon\: V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Assoziativität: 
+\begin_inset Formula $u+(v+w)=(u+v)+w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Neutrales Element: Es existiert ein 
+\begin_inset Formula $0\:\epsilon\: V$
+\end_inset
+
+ mit 
+\begin_inset Formula $v+0=v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+entgegengesetztes Element: Es gibt ein 
+\begin_inset Formula $-v\:\epsilon\: V$
+\end_inset
+
+ sodaa 
+\begin_inset Formula $v+(-v)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kommutativität: 
+\begin_inset Formula $v+w=w+v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda(v+w)=\lambda v+\lambda w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(\lambda+\mu)v=\lambda v+\mu v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\lambda(\mu v)=(\lambda\mu)v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $1v=v$
+\end_inset
+
+, wobei 1 das multiplikative neutrale Element von 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+ ist.
+\end_layout
+
+\begin_layout Subsubsection*
+Unterräume
+\end_layout
+
+\begin_layout Subsection*
+Symmetrische reelle Matrizen
+\end_layout
+
+\begin_layout Subsubsection*
+Formel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{-1}\Longleftrightarrow A^{-1}=V\cdot\Lambda^{-1}\cdot V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Berechnungen
+\end_layout
+
+\begin_layout Enumerate
+Eigenwerte berechnen
+\end_layout
+
+\begin_layout Enumerate
+Eigenvektoren berechnen (Wenn es eine orthogonale Matrix sein, muss, müssen
+ die Eigenvektoren orthogonal sein)
+\end_layout
+
+\begin_layout Enumerate
+Eigenvektoren normieren
+\end_layout
+
+\begin_layout Enumerate
+Gleichung 
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{^{T}}$
+\end_inset
+
+ aufstellen wobei gilt 
+\begin_inset Formula $V=$
+\end_inset
+
+Eigenvektoren, 
+\begin_inset Formula $V^{-1}=V^{T}$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda=\left(\begin{array}{cc}
+\lambda_{1} & 0\\
+0 & \lambda_{2}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\begin_inset Newline newline
+\end_inset
+
+Berechnen Sie die Eigenwerte der Matrix 
+\begin_inset Formula $A=\left(\begin{array}{cc}
+3 & 1\\
+1 & 3
+\end{array}\right)$
+\end_inset
+
+ sowie eine orthogonale Matrix V, die A diagonalisiert, das heisst 
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{^{T}}$
+\end_inset
+
+, 
+\begin_inset Formula $A=diag(\lambda_{1},\lambda_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $V^{-1}=V^{T}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(A-\lambda I)=\left(\begin{array}{cc}
+3-\lambda & 1\\
+1 & 3-\lambda
+\end{array}\right)=(3-\lambda)(3-\lambda)-1=\lambda^{2}-6\lambda+8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\Rightarrow\lambda_{1,2}=4/2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ist also:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+4 & 0\\
+0 & 2
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+3-4 & 1\\
+1 & 3-4
+\end{array}\right)=\left(\begin{array}{cc}
+-1 & 1\\
+1 & -1
+\end{array}\right)\Rightarrow\left(\begin{array}{cc}
+-1 & 1\\
+0 & 0
+\end{array}\right)\Rightarrow v_{\text{1}}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+3-2 & 1\\
+1 & 3-2
+\end{array}\right)=\left(\begin{array}{cc}
+1 & 1\\
+1 & 1
+\end{array}\right)\Rightarrow\left(\begin{array}{cc}
+1 & 1\\
+0 & 0
+\end{array}\right)\Rightarrow v_{\text{2}}=\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kontrolle:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}\bullet v_{2}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)\bullet\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)=1\cdot1+1\cdot(-1)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Normierung:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|v_{1}|=\sqrt{x^{2}+y^{2}}=\sqrt{1^{2}+1^{2}}=\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|v_{2}|=\sqrt{x^{2}+y^{2}}=\sqrt{1^{2}+(-1)^{2}}=\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Folglich sehen die Normierten Vektoren wie folgt aus:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v_{1}=\left(\begin{array}{c}
+\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $v_{2}=\left(\begin{array}{c}
+\frac{1}{\sqrt{2}}\\
+\frac{-1}{\sqrt{2}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Orthogonale Matrix ist folglich:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $V=\left(\begin{array}{cc}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Und zum Schluss:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A=V\cdot\Lambda\cdot V^{^{T}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cc}
+3 & 1\\
+1 & 3
+\end{array}\right)=\left(\begin{array}{cc}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}
+\end{array}\right)\cdot\left(\begin{array}{cc}
+4 & 0\\
+0 & 2
+\end{array}\right)\cdot\left(\begin{array}{cc}
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}}
+\end{array}\right)^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Basen
+\end_layout
+
+\begin_layout Subsection*
+Kanonische Basisvektoren
+\end_layout
+
+\begin_layout Standard
+Sind die Vektoren 
+\begin_inset Formula $l_{1}=\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)$
+\end_inset
+
+ und 
+\begin_inset Formula $l_{2}=\left(\begin{array}{c}
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Mit ihnen lassen sich beliebige Vektoren Darstellen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+3\\
+4
+\end{array}\right)=3\cdot\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)+4\left(\begin{array}{c}
+0\\
+1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Neue Basis verwenden
+\end_layout
+
+\begin_layout Standard
+Es können auch andere Basen verwendet werden, zb.
+ 
+\begin_inset Formula $b_{1}=\left(\begin{array}{c}
+1\\
+1
+\end{array}\right),b_{2}=\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{c}
+3\\
+4
+\end{array}\right)=\alpha\cdot\left(\begin{array}{c}
+1\\
+1
+\end{array}\right)+\beta\cdot\left(\begin{array}{c}
+1\\
+-1
+\end{array}\right)=\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)\cdot\left(\begin{array}{c}
+\alpha\\
+\beta
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei es sich bei der Matrix 
+\begin_inset Formula $B=\left(\begin{array}{cc}
+1 & 1\\
+1 & -1
+\end{array}\right)$
+\end_inset
+
+ nun um die neue Basis handelt.
+\begin_inset Newline newline
+\end_inset
+
+Daraus folgt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $v=B\cdot v_{B}=C\cdot v_{C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Basis prüfen
+\end_layout
+
+\begin_layout Standard
+Um zu prüfen ob Vektoren eine Basis von 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ist, kann die Determinante ausgerechnet werden.
+\end_layout
+
+\begin_layout Itemize
+Determinante = 0 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ Keine Basis, da linear abhängig
+\end_layout
+
+\begin_layout Itemize
+Determinante 
+\begin_inset Formula $\neq0$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ Ist eine Basis
+\end_layout
+
+\begin_layout Subsection*
+Basiswechsel
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A_{B}=B^{-1}\cdot A\cdot B\Longleftrightarrow A=B\cdot A_{B}\cdot B^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei Potenzen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A^{10}=(B\cdot A_{B}\cdot B^{-1})^{10}=B\cdot A_{B}^{10}\cdot B^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Determinate einer Matrix
+\end_layout
+
+\begin_layout Subsubsection*
+2x2 Matrizen
+\end_layout
+
+\begin_layout Standard
+Die Determinate einer Matrix mit linear unabhängigen Zeilen und Spalten
+ lässt sich wie folgt berechnen:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Det\left(\begin{array}{cc}
+a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{array}\right)=a_{11}\cdot a_{22}-a_{21}\cdot a_{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Enthält die Matrix jedoch linear abhängige Zeilen oder Spalten oder eine
+ Zeile oder Spalte besteht nur aus Nullen, so ist die Determinate 0.
+\end_layout
+
+\begin_layout Subsubsection*
+3x3 Matrizen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Det(A)=\left(\begin{array}{ccc}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{array}\right)=a_{11}(a_{22}a_{33}-a_{23}a_{32})-a_{12}(a_{21}a_{33}-a_{23}a_{31})+a_{13}(a_{21}a_{32}-a_{22}a_{31})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+NxN Matrizen
+\end_layout
+
+\begin_layout Standard
+Grundsätzlich kann die Determinate mit folgendem Trick berechnet werden:
+\end_layout
+
+\begin_layout Itemize
+Eine Zeile auswählen, am besten eine mit vielen 0en
+\end_layout
+
+\begin_layout Itemize
+Für jeden Eintrag Kreuzweise abdecken
+\end_layout
+
+\begin_layout Standard
+Zum Beispiel Zeile 2:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{cccc}
+a & b & c & d\\
+e & f & g & h\\
+i & j & k & l\\
+m & n & o & p
+\end{array}\right)\Rightarrow\left(\begin{array}{cccc}
+ & b & c & d\\
+e\\
+ & j & k & l\\
+ & n & o & p
+\end{array}\right),\left(\begin{array}{cccc}
+a &  & c & d\\
+ & f\\
+i &  & k & l\\
+m &  & o & p
+\end{array}\right),\left(\begin{array}{cccc}
+a & b &  & d\\
+ &  & g\\
+i & j &  & l\\
+m & n &  & p
+\end{array}\right),\left(\begin{array}{cccc}
+a & b & c\\
+ &  &  & h\\
+i & j & k\\
+m & n & o
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Anschliessend können mit der Hilfmatrix 
+\begin_inset Formula $\left(\begin{array}{cccc}
++ & - & + & -\\
+- & + & - & +\\
++ & - & + & -\\
+- & + & - & +
+\end{array}\right)$
+\end_inset
+
+ die Vorzeichen ermittelt werden.
+\begin_inset Newline newline
+\end_inset
+
+Schlussendliche sie die Determinante wie folgt aus:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $Det(A)=-e\cdot det\left(\begin{array}{ccc}
+b & c & d\\
+j & k & l\\
+n & o & p
+\end{array}\right)+f\cdot det\left(\begin{array}{ccc}
+a & c & d\\
+i & k & l\\
+m & o & p
+\end{array}\right)-g\cdot det\left(\begin{array}{ccc}
+a & b & d\\
+i & j & l\\
+m & n & p
+\end{array}\right)+h\cdot det\left(\begin{array}{ccc}
+a & b & c\\
+i & j & k\\
+m & n & o
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Rechnen mit Determinanten
+\end_layout
+
+\begin_layout Standard
+Für Matrizen der Dimension n gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(\sqrt{5}\cdot A)=\sqrt{5}^{n}\cdot det(A)=5^{\frac{n}{2}}\cdot det(A)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det((A^{-1})^{T})=det(A^{-1})=\frac{1}{det(A)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(AB)=det(A)\cdot det(B)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det((AB)^{3})=det(AB)^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(A^{3}B^{3})=det(A)^{3}\cdot det(B)^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(AB^{-1})=det(A)\cdot det(B^{-1})=\frac{det(A)}{det(B)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Eigenwert & Eigenvektor
+\end_layout
+
+\begin_layout Standard
+Es gilt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $A\vec{v}=\lambda\cdot\vec{v}\:,\lambda\epsilon\mathbb{R},\vec{v}\neq\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei es sich bei 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ um den Eigenwert handelt und bei 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ um den Eigenvektor.
+\begin_inset Newline newline
+\end_inset
+
+Daraus folgt:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(A-\lambda I)\cdot\vec{v}=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nun können mit Hilfe der Determinaten die Eigenwerte berechnet werden (ausmultip
+lizieren und in Mitternachtsformel einsetzen.
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $det(A-\lambda I)=\left(\begin{array}{cc}
+a_{11}-\lambda & a_{12}\\
+a_{21} & a_{22}-\lambda
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\lambda_{1,2}=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um nun die Eigenvektoren zu erhalten, setzt man die möglichen 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ ein und wendet auf diese Matrix den Gauss an und eine Zeile zu eliminieren.
+\begin_inset Newline newline
+\end_inset
+
+Anschliessend können die erhaltenen Werte umgedreht werden, und einer der
+ beiden negiert werden.
+\begin_inset Newline newline
+\end_inset
+
+Beispiel:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\left(\begin{array}{ccc}
+-3 & -1 & |0\\
+3 & 3 & |0
+\end{array}\right)\Rightarrow\left(\begin{array}{ccc}
+-3 & -1 & |0\\
+0 & 0 & |0
+\end{array}\right)\Rightarrow v=\left(\begin{array}{c}
+1\\
+-3
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Komplexe Zahlen
+\end_layout
+
+\begin_layout Standard
+Komplexe Zahlen bestehen aus einem rellen Teil 
+\begin_inset Formula $a$
+\end_inset
+
+ und einem imaginärem Teil 
+\begin_inset Formula $i\cdot b$
+\end_inset
+
+ und sehen wie folgt aus:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $z=a+i\cdot b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wobei 
+\begin_inset Formula $i$
+\end_inset
+
+ folgendermassen definiert ist:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $i=\sqrt{-1}\Leftrightarrow i^{2}=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Komplex konjugiert
+\end_layout
+
+\begin_layout Standard
+Komplex konjugiert nennt man eine komplexe Zahl, wenn das Vorzeichen des
+ imaginären Teiles geändert wird:
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $z=a+i\cdot b\Rightarrow\bar{z}=a-i\cdot b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Addition
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $z_{1}+z_{2}=(a_{1}+ib_{1})+(a_{2}+ib_{2})=(a_{1}+a_{2})+i\cdot(b_{1}+b_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Subtraktion
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $z_{1}-z_{2}=(a_{1}+ib_{1})-(a_{2}+ib_{2})=(a_{1}-a_{2})+i\cdot(b_{1}-b_{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Multiplikation
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $z_{1}\cdot z_{2}=(a_{1}+ib_{1})\cdot(a_{2}+ib_{2})=a_{1}a_{2}+ib_{1}a_{2}+a_{1}ib_{2}+ib_{1}ib_{2}=a_{1}a_{2}+ib_{1}a_{2}+a_{1}ib_{2}-b_{1}\cdot b_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $|z|^{2}=z\cdot\bar{z}=(a+i\cdot b)(a-i\cdot b)=a^{2}+b^{2}\Leftrightarrow|z|=\sqrt{z\cdot\bar{z}}=\sqrt{(a+i\cdot b)(a-i\cdot b)}=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(a+i\cdot b)^{2}=a2+2iab-b^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $(a-i\cdot b)^{2}=a2-2iab-b^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $i^{0}=i^{4}=i^{8}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $i^{1}=i^{5}=i^{9}=i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $i^{2}=i^{6}=i^{10}=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $i^{3}=i^{7}=i^{11}=-i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Division
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{z_{1}}{z_{2}}=\frac{z_{1}\cdot\bar{z_{2}}}{z_{2}\cdot\bar{z_{2}}}=\frac{z_{1}\cdot\bar{z_{2}}}{|z_{2}|^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $\frac{1}{z}=\frac{\bar{z}}{z\cdot\bar{z}}=\frac{\bar{z}}{|z|^{2}}=\frac{a-ib}{a^{2}+b^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Nullstellen
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $x^{4}=1\Rightarrow x_{1}=1,\: x_{2}=-1,\: x_{3}=i,\: x_{4}=-i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $x_{1,2}=\frac{-b\pm\sqrt{b^{2}-4ac}}{2a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sollte 
+\begin_inset Formula $b^{2}-4ac$
+\end_inset
+
+ eine negative Zahl ergeben, so kann 
+\begin_inset Formula $-1$
+\end_inset
+
+ mit 
+\begin_inset Formula $i^{2}$
+\end_inset
+
+ ersetzt werden.
+\end_layout
+
+\begin_layout Section*
+Polarkoordinaten
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r=|z|=\sqrt{z\cdot\bar{z}}=\sqrt{(a+i\cdot b)(a-i\cdot b)}=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $a=r\cdot cos(\gamma)\Rightarrow cos(\gamma)=\frac{a}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $b=r\cdot sin(\gamma)\Rightarrow sin(\gamma)=\frac{b}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $tan(\gamma)=\frac{b}{a}=\frac{r\cdot sin(\gamma)}{r\cdot cos(\gamma)}=\frac{sin(\gamma)}{cos(\gamma)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Graphics
+	filename Poolarkordinaten.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Verse
+\begin_inset Formula $r\cdot e^{i\gamma}=a+i\cdot b=\sqrt{a^{2}+b^{2}}\cdot e^{i\cdot arctan(\frac{b}{a})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Hilfsmittel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Degree_Radian.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Cos-Table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="9">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $30^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $120^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $135^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $150^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Radian
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\pi}{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\pi}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\pi}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2\pi}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3\pi}{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{5\pi}{6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wert
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\sqrt{3}}{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{\sqrt{3}}{\sqrt{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
