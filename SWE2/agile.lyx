@@ -145,23 +145,202 @@ technical or integration issue
 \end_layout
 
 \begin_layout Section*
-Agile Manifesto
+Agile 
 \end_layout
 
-\begin_layout Itemize
-Individuals and interactions - over processes and tools
+\begin_layout Subsection*
+Manifesto
 \end_layout
 
-\begin_layout Itemize
-Working software - over comprehensive documentation
-\end_layout
-
-\begin_layout Itemize
+\begin_layout Enumerate
 Customer collaboration - over contract negotiation
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Enumerate
 Responding to change - over following a plan
+\end_layout
+
+\begin_layout Enumerate
+Working software - over comprehensive documentation
+\end_layout
+
+\begin_layout Enumerate
+Individuals and interactions - over processes and tools
+\end_layout
+
+\begin_layout Subsection*
+Principles
+\end_layout
+
+\begin_layout Itemize
+business works together with developers on daily basis
+\end_layout
+
+\begin_layout Itemize
+build projects around motivated individuals - trust, self organizing team
+\end_layout
+
+\begin_layout Itemize
+efficient and effective communication
+\end_layout
+
+\begin_layout Itemize
+measure of progess is the working software
+\end_layout
+
+\begin_layout Itemize
+sustainable development -> constant pace indefinitely
+\end_layout
+
+\begin_layout Section*
+eXtreme Programming
+\end_layout
+
+\begin_layout Subsection*
+4 variables
+\end_layout
+
+\begin_layout Enumerate
+Time
+\end_layout
+
+\begin_layout Enumerate
+Resource
+\end_layout
+
+\begin_layout Enumerate
+Quality
+\end_layout
+
+\begin_layout Enumerate
+Scope
+\end_layout
+
+\begin_layout Standard
+Customers and Managers can only set 3 Variables - 4th is set by dev team.
+\end_layout
+
+\begin_layout Subsection*
+Values
+\end_layout
+
+\begin_layout Itemize
+Communication: work together, daily communication
+\end_layout
+
+\begin_layout Itemize
+Simplicity: maximize the value created, resonable costs
+\end_layout
+
+\begin_layout Itemize
+Feedback: demonstrate early, iteration delivers working software, adapt
+ process
+\end_layout
+
+\begin_layout Itemize
+Courage: truth about progess, no documented excuses, adapt to change
+\end_layout
+
+\begin_layout Itemize
+Respect: business expertise vs dev expertise
+\end_layout
+
+\begin_layout Subsection*
+Principles
+\end_layout
+
+\begin_layout Itemize
+rapid feedback
+\end_layout
+
+\begin_layout Itemize
+simplicity
+\end_layout
+
+\begin_layout Itemize
+incremental change
+\end_layout
+
+\begin_layout Itemize
+(embrace change)
+\end_layout
+
+\begin_layout Itemize
+quality work
+\end_layout
+
+\begin_layout Itemize
+(teach learning)
+\end_layout
+
+\begin_layout Itemize
+(concrete experimants)
+\end_layout
+
+\begin_layout Itemize
+(honest communication)
+\end_layout
+
+\begin_layout Itemize
+(work with peoples instincts)
+\end_layout
+
+\begin_layout Itemize
+(accepted responsibility)
+\end_layout
+
+\begin_layout Subsection*
+Practices
+\end_layout
+
+\begin_layout Itemize
+Planning Game: balance between business(scope, priority, release composition,
+ release dates) and tecnical (estimates, consequences, process, detail schedule)
+\end_layout
+
+\begin_layout Itemize
+small releases
+\end_layout
+
+\begin_layout Itemize
+metaphor: everybody has a common understanding, shared vocabulary
+\end_layout
+
+\begin_layout Itemize
+simple design: no duplicate logic
+\end_layout
+
+\begin_layout Itemize
+testing (automated testing)
+\end_layout
+
+\begin_layout Itemize
+refacoring
+\end_layout
+
+\begin_layout Itemize
+pair programming
+\end_layout
+
+\begin_layout Itemize
+collective ownership: anybody who sees an opportunity to add value is req.
+ to do it
+\end_layout
+
+\begin_layout Itemize
+continuous integration: automated integration and testing , daily
+\end_layout
+
+\begin_layout Itemize
+40h week
+\end_layout
+
+\begin_layout Itemize
+on-site customer
+\end_layout
+
+\begin_layout Itemize
+coding standards
 \end_layout
 
 \end_body
