@@ -748,15 +748,64 @@ Dynamic MBean
 \end_layout
 
 \begin_layout Itemize
-Schnittstallen durch MBeanInfo Klasse definiert
+Schnittstellen durch MBeanInfo Klasse definiert
 \end_layout
 
 \begin_layout Itemize
 Schnittstelle kan zur Runtime verändert werden
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Entwickler hat mehr Kontrolle über Schnittstelle
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 komplexe Implementierung
+\end_layout
+
+\begin_layout Itemize
+Mgmt Interafces werden dynamisch zur Runtime erzeugt
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+int.
+ kann modifiziert werden ohne Codeänderung
+\end_layout
+
+\begin_layout Itemize
+int.
+ kann sich dem Zustand der Ressource anpassen
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+MBeans implementieren das Interface DynamicMBean
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Methoden get/setAttribute(s), getMBeanInfo und invoke
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_11-45-25.png
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_11-45-42.png
+	width 8cm
+
+\end_inset
+
+
 \end_layout
 
 \end_body
