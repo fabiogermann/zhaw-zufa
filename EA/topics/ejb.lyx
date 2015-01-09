@@ -414,8 +414,349 @@ eigentliche Implementation der Funk.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
+Monitoring & Management
+\end_layout
 
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="10cm">
+<column alignment="left" valignment="top" width="6cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monitoring Aspekte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anforderungen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_10-09-49.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+platform unabhängig
+\end_layout
+
+\begin_layout Itemize
+protokoll unabhängig
+\end_layout
+
+\begin_layout Itemize
+informations modell unabhängig
+\end_layout
+
+\begin_layout Itemize
+mgmt Anwendung unabhängig
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vphantom{}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="3cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Performance Daten/Statistiken
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transaktionen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Connection Pools
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Überwachung der App.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zustellung von Nachrichten
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Ermitteln der Aufrufe für Serverlets JSP
+\end_layout
+
+\begin_layout Itemize
+Performance Resourcenben., Antwortzeiten
+\end_layout
+
+\begin_layout Itemize
+Logs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Anzahl Commits, Rollbacks pro EJB
+\end_layout
+
+\begin_layout Itemize
+avg # locked Beans
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Anzahl von Connections im Pool
+\end_layout
+
+\begin_layout Itemize
+avg Wartezeiten auf Pool-Connect.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Auslesen/Ändern von Appl.
+ Param.
+ zur Laufzeit
+\end_layout
+
+\begin_layout Itemize
+Backend Ressourc.
+\end_layout
+
+\begin_layout Itemize
+Fachliche Prop.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Fehler
+\end_layout
+
+\begin_layout Itemize
+Zustandsänderungen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Java Management Extention JMX
+\end_layout
+
+\begin_layout Itemize
+besteht aus einer API und Services für das Management (eine Architektur)
+\end_layout
+
+\begin_layout Itemize
+ermöglicht Überwachen von Java Appl.
+ mit std.
+ Management Konsolen
+\end_layout
+
+\begin_layout Itemize
+unabhängig von Java EE entstanden
+\end_layout
+
+\begin_layout Subsection*
+JMX Architektur
+\end_layout
+
+\begin_layout Itemize
+<RessourceName>MBean (Interface)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Schnittstelle des MBeans
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+<RessourceName (Klasse)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+implementiert das Interface, greift auf Ressource zu
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+<RessourceName>Agent
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+registriert das MBean, announce der Funktionalitäten
+\end_layout
+
+\begin_layout Itemize
+Klasse registriert sich oft auch selbst
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_10-58-08.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Standard MBean
+\end_layout
+
+\begin_layout Itemize
+Schnittstelle durch Java Interface definiert (definiert in <RessourceName>MBean)
+\end_layout
+
+\begin_layout Itemize
+einfachster Weg für JMX Instrumentierung
+\end_layout
+
+\begin_layout Itemize
+statisches Interface
+\end_layout
+
+\begin_layout Itemize
+exportiert werden public Attribute, Methoden, Konstruktoren und Notifikationen
+\end_layout
+
+\begin_layout Itemize
+meist als Singleton
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_11-21-59.png
+	width 9cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_11-22-21.png
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Dynamic MBean
+\end_layout
+
+\begin_layout Itemize
+Schnittstallen durch MBeanInfo Klasse definiert
+\end_layout
+
+\begin_layout Itemize
+Schnittstelle kan zur Runtime verändert werden
+\end_layout
+
+\begin_layout Itemize
+komplexe Implementierung
 \end_layout
 
 \end_body
