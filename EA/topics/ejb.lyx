@@ -128,7 +128,7 @@ stateless: speichert keine Informationen zw.
 \end_layout
 
 \begin_layout Itemize
-stateless: Instanz über mehrere Calls hinweg einem Client zugewiesen (mit
+stateful: Instanz über mehrere Calls hinweg einem Client zugewiesen (mit
  release() freig.
  oder timeout, con.
  cut)
@@ -287,6 +287,270 @@ kann Teil einer Transaktion sein
 \end_layout
 
 \begin_layout Subsection*
+Stateless Session Bean
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_12-49-29.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_12-49-45.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Threading
+\end_layout
+
+\begin_layout Itemize
+Das SLSB selber ist single-threaded, d.h.
+ es befindet sich jeweils nur ein Thread in Bearbeitung innerhalb eines
+ Beans: Container weist einem neuen Aufrufer jeweils ein eigenes SLSB und
+ Thread zu
+\end_layout
+
+\begin_layout Itemize
+EJBs sollen selber keine Threads starten, sondern das dem EJB Container
+ überlassen.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ist eine nicht immer leicht einzuhaltende Einschränkung (z.B.
+ bei Verwendung von Log4J)
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Lebenszyklus
+\end_layout
+
+\begin_layout Itemize
+Das Bean kann sich über Zustandsänderungen via Callback informieren lassen
+ falls irgendwelche Initialisierungs-/Aufräumarbeiten (MethodenAnnotation)
+ (ala: @PostConstruct <br> public void initializs()...)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+@PostConstruct: The annotated method is called by the container immediately
+ after a bean instance is instantiated.
+\end_layout
+
+\begin_layout Itemize
+@PreDestroy: The annotated method is called before the container destroys
+ an unused or expired bean instance from its object pool.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="9cm">
+<column alignment="left" valignment="top" width="9cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+stateless SLSB (taxi bsp)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+stateful SFSB (taxi bsp)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
++ Taxi wird optimal ausgenutzt; Voraussetzung: gute Balance zwischen Anzahl
+ Kunden und Taxis
+\end_layout
+
+\begin_layout Itemize
+- alles was ich benötige muss ich mitnehmen & darf nichts liegen lassen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
++ kann etwas dort deponieren
+\end_layout
+
+\begin_layout Itemize
++ mein Auto ist sicher verfügbar
+\end_layout
+
+\begin_layout Itemize
+- Wagen wird schlecht ausgenutzt (steht herum)
+\end_layout
+
+\begin_layout Itemize
+- Parkplatz kann voll sein
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Stateful Session Bean
+\end_layout
+
+\begin_layout Itemize
+Stateful: Zustand wird zwischen Client-Aufrufen gehalten; eine Instanz ist
+ über mehrere Methodenaufrufe explizit einem Client zugeordnet
+\end_layout
+
+\begin_layout Itemize
+Bleiben dem Klienten zugeordnet bis sie
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+mittels remove() vom Klienten wieder freigegeben werden
+\end_layout
+
+\begin_layout Itemize
+nach einem bestimmten Timeout, vom Server selbständig freigegeben werden
+ (Annahme: Klient hat Verbindung verloren oder ist abgestürzt)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Stateful Session Beans sind
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+weniger Effizient, da Instanzen aufbewahrt und wieder zugeordnet werden
+ müssen
+\end_layout
+
+\begin_layout Itemize
+nicht „location transparent“ (Ortsunabhängig) weil der Zustand typischerweise
+ im Hauptspeicher oder Dateisystem des Servers gespeichert wird
+\end_layout
+
+\begin_layout Itemize
+Herstellerabhängige Lösungen für Server-Cluster
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Stateful Session Beans werden mit @stateful gekennzeichnet
+\end_layout
+
+\begin_layout Itemize
+Stateful SB muss Serializable implementieren
+\end_layout
+
+\begin_layout Itemize
+Bean dem Klient zugeordnet: Typische Anwendung ShoppingCart
+\end_layout
+
+\begin_layout Itemize
+Definition der Interfaces gleich wie bei stateless SB
+\end_layout
+
+\begin_layout Itemize
+Zusätzlicher Zustand: "Passive": länger nicht mehr gebrauchte Objekte werden
+ aus dem Hauptspeicher entfernt
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-05-30.png
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-05-53.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Callbacks
+\end_layout
+
+\begin_layout Itemize
+@PostConstruct: see stateless session bean
+\end_layout
+
+\begin_layout Itemize
+@PreDestroy: see stateless session bean
+\end_layout
+
+\begin_layout Itemize
+@PrePassivate: If a stateful session bean instance is idle for too long,
+ the container may passivate it and store its state to a cache.
+ The method tagged by this annotation is called before the container passivates
+ the bean instance.
+ This annotation is applicable only to stateful session beans.
+\end_layout
+
+\begin_layout Itemize
+@PostActivate: When the client uses the passivated stateful session bean
+ again, a new instance is created and the bean state is restored.
+ The method that tagged this annotation is called when the activated bean
+ instance is ready.
+ This annotation is only applicable to stateful session beans.
+\end_layout
+
+\begin_layout Itemize
+@Remove tag.
+ It is not a callback method since the application, not the container, calls
+ the @Remove method on the bean stub to remove the bean instance in the
+ container object pool.
+\end_layout
+
+\begin_layout Itemize
+@Init: This annotation designates initialization methods for a stateful
+ session bean.
+ It is different from the @PostConstruct annotation in that multiple methods
+ can be tagged with @Init in a stateful session bean.
+ However, each bean instance can have only one @Init method invoked.
+ The EJB 3.0 container determines which @Init method to invoke depending
+ on how the bean is created (see the EJB 3.0 specification for details).
+ The @PostConstruct method is called after the @Init method.
+\end_layout
+
+\begin_layout Subsection*
 EJB Komponente Aufbau
 \end_layout
 
@@ -361,6 +625,17 @@ EJB3 ist gegenüber EJB2.1 eine Vereinfachung
 EJB Implementation
 \end_layout
 
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="left" valignment="top" width="11cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
 \begin_layout Itemize
 BeanNameBean.java/class
 \end_layout
@@ -369,14 +644,110 @@ BeanNameBean.java/class
 eigentliche Implementation der Funk.
 \end_layout
 
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+myEJB.ear
+\end_layout
+
+\begin_layout Plain Layout
+| - META-INF
+\end_layout
+
+\begin_layout Plain Layout
+| .
+ | - application.xml
+\end_layout
+
+\begin_layout Plain Layout
+| - beans.jar
+\end_layout
+
+\begin_layout Plain Layout
+| .
+ | - META-INF
+\end_layout
+
+\begin_layout Plain Layout
+| .
+ | .
+ | - ejb-jar.xml
+\end_layout
+
+\begin_layout Plain Layout
+| .
+ | - MyBean.class
+\end_layout
+
+\begin_layout Plain Layout
+| - web.war
+\end_layout
+
+\begin_layout Plain Layout
+| .
+ | - hello.jsp
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<ear destfile="${build.dir}/myapp.ear" 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+appxml="${src.dir}/metadata/application.xml">
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<fileset dir="${build.dir}" includes="*.jar,*.war"/> 
+\end_layout
+
+\begin_layout Plain Layout
+</ear>
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
+<lyxtabular version="3" rows="3" columns="2">
 <features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="10cm">
+<column alignment="left" valignment="top" width="10cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -391,7 +762,7 @@ eigentliche Implementation der Funk.
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -402,6 +773,550 @@ eigentliche Implementation der Funk.
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ejb-jar.xml
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+application.xml (beschreibt struktur der EAR datei)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<ejb-jar>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<description>jBoss test application </description>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<display-name>Test</display-name>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<enterprise-beans>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<session>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<ejb-name>Teller</ejb-name>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<remote>org.jboss.ejb3.test.bank.Teller</remote>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<ejb-class>org.jboss.ejb3.test.bank.TellerBean</ejb-class>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<session-type>Stateless</session-type>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<transaction-type>Container</transaction-type>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+</session>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<enterprise-beans>
+\end_layout
+
+\begin_layout Plain Layout
+<ejb-jar>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<?xml version="1.0" encoding="UTF-8"?> 
+\end_layout
+
+\begin_layout Plain Layout
+<application xmlns="..." version="1.4" xmlns:xsi="..." xsi:schemaLocation="...">
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<display-name>trail</display-name>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<description>Einfaches Beispiel</description>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<module>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<ejb>beans.jar</ejb>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+</module>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+<module>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<web>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<web-uri>web.war</web-uri>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+<context-root>trail</context-root>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+</web>
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+</module>
+\end_layout
+
+\begin_layout Plain Layout
+</application>
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Datenbank Zugriff
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="10cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+normal
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EJB Variante
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-27-41.png
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-28-03.png
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Datenbank-Treiber Typ ist hart kodiert: Unterhaltssproblem
+\end_layout
+
+\begin_layout Itemize
+Die Initialisierungsstring der Datenbank ist im Programm hart kodiert: dito
+\end_layout
+
+\begin_layout Itemize
+ebenso Benutzername und Passwort: Sicherheitsproblem
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Datenbank-Parameter werden ausserhalb Anwendung (im Container) definiert
+\end_layout
+
+\begin_layout Itemize
+Diesen Parametern wird ein symbolischer Namen zugewiesen: z.B.
+ Dozenten und unter diesem ins JNDI Verzeichnis als DataSource eingetragen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="8cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-31-50.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Connection con = DozentenDS.getConnection();
+\end_layout
+
+\begin_layout Plain Layout
+con.setAutoCommit(false); 
+\end_layout
+
+\begin_layout Plain Layout
+logger.info("got connection"); 
+\end_layout
+
+\begin_layout Plain Layout
+PreparedStatement statement = 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $\quad$
+\end_inset
+
+con.prepareStatement("SELECT * FROM Dozenten WHERE name LIKE ?"); 
+\end_layout
+
+\begin_layout Plain Layout
+statement.setString(1, name + "%"); 
+\end_layout
+
+\begin_layout Plain Layout
+ResultSet rs = statement.executeQuery(); 
+\end_layout
+
+\begin_layout Plain Layout
+LinkedList list = new LinkedList(); 
+\end_layout
+
+\begin_layout Plain Layout
+while (rs.next()) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+Professor st = new Professor(rs.getLong("SCHLUESSEL"), 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $\quad$
+\end_inset
+
+rs .getString("NAME"), 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\begin_inset Formula $\quad$
+\end_inset
+
+rs.getString("FIRSTNAME")); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+list.add(st); 
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+zusätzlich mit Connection Pooling! (DB preis pro Verbindung!)
 \end_layout
 
 \end_inset
@@ -420,7 +1335,7 @@ Monitoring & Management
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
+<lyxtabular version="3" rows="4" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="10cm">
 <column alignment="left" valignment="top" width="6cm">
@@ -445,7 +1360,7 @@ Anforderungen
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -460,7 +1375,7 @@ Anforderungen
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Itemize
@@ -477,6 +1392,46 @@ informations modell unabhängig
 
 \begin_layout Itemize
 mgmt Anwendung unabhängig
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1003,6 +1958,82 @@ location in code is marked
 \end_layout
 
 \begin_layout Section*
+Dependency Injection
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-48-10.png
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-47-24.png
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_13-47-44.png
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+beliebige ins JNDI eingetragene Resourcen können so verwendet werden: mappedName
+=<jndi-name>
+\end_layout
+
+\begin_layout Itemize
+lokale Resourcen (unter java:comp/env/ im JNDI Verzeichnis) werden ohne
+ Präfix referenziert @Resource(mappedName="queue/A")
+\end_layout
+
+\begin_layout Itemize
+Bekannte Resourcen müssen nicht benannt werden: @Resource SessionContext,
+ @Resource TimeService
+\end_layout
+
+\begin_layout Itemize
+andere Beans können so referenziert werden
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+@EJB (mappedName="java:global/Professor/ProfessorSessionBean!myBeans.ProfessorSes
+sionBeanRemote")
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Lokales Bean mit einem Interface; es wird nach Klasse gesucht, die dieses
+ Interface implementiert
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+@EJB (beanInterface="myBeans.ProfessorSessionBeanLocal") Professor prof;
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+nur @EJB steht, wird automatisch nach Bean mit passendem Interface Typ gesucht;
+ für Referencen auf local Interfaces
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+@EJB ProfessorSessionBeanLocal prof;
+\end_layout
+
+\end_deeper
+\begin_layout Section*
 Java Annotations (neu Java 5 - 1.5)
 \end_layout
 
@@ -1021,14 +2052,14 @@ werden von Compiler überprüft (import notwendig)
 \begin_layout Standard
 \begin_inset Graphics
 	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-43-59.png
-	height 3cm
+	height 1.5cm
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-44-26.png
-	height 3cm
+	height 1.5cm
 
 \end_inset
 
@@ -1049,7 +2080,7 @@ Beispiel:
 
 \begin_inset Graphics
 	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-46-56.png
-	width 6cm
+	width 5cm
 
 \end_inset
 
@@ -1066,7 +2097,7 @@ Beispiel:
 
 \begin_inset Graphics
 	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-47-45.png
-	height 2cm
+	height 1.3cm
 
 \end_inset
 
@@ -1136,7 +2167,7 @@ Vor / Nachteile
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1196,7 +2227,7 @@ if(obsolete !=null)
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
