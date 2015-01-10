@@ -1064,6 +1064,126 @@ application.xml (beschreibt struktur der EAR datei)
 \end_layout
 
 \begin_layout Subsection*
+Local/Remote Client von Session Bean
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="5cm">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Enumerate
+Lookup mittels JNDI (Local und Remote Stubs haben unterschiedliche JNDI
+ Einträge)
+\end_layout
+
+\begin_layout Enumerate
+Aufrufen
+\end_layout
+
+\begin_layout Enumerate
+Bei stateful SB am Schluss (wenn nicht mehr gebraucht): remove()
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clientside
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+InitialContext ctx = new InitialContext(); 
+\end_layout
+
+\begin_layout Plain Layout
+helloBean = (HelloSession) ctx.lookup("java:global/trail.HelloSession"); 
+\end_layout
+
+\begin_layout Plain Layout
+helloBean.hello()
+\end_layout
+
+\begin_layout Plain Layout
+// stateful only helloBean.remove()
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+// jdni.properties (wenn nicht "localhost" Property anpassen )
+\end_layout
+
+\begin_layout Plain Layout
+java.naming.provider.url=rmi://localhost:1099
+\end_layout
+
+\begin_layout Plain Layout
+java.naming.factory.initial=com.sun.jndi.rmi.registry.RegistryContextFactory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Serverside
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@EJB (mappedName="java:global/trail.HelloSession")
+\end_layout
+
+\begin_layout Plain Layout
+HelloSession helloBean;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Datenbank Zugriff
 \end_layout
 
@@ -1133,7 +1253,7 @@ EJB Variante
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Itemize
@@ -1150,7 +1270,7 @@ ebenso Benutzername und Passwort: Sicherheitsproblem
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Itemize
@@ -1360,7 +1480,7 @@ Anforderungen
 </cell>
 </row>
 <row>
-<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1375,7 +1495,7 @@ Anforderungen
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Itemize
@@ -1407,7 +1527,7 @@ mgmt Anwendung unabhängig
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1461,7 +1581,7 @@ mgmt Anwendung unabhängig
 <column alignment="left" valignment="top" width="4cm">
 <column alignment="left" valignment="top" width="3cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1470,7 +1590,7 @@ Performance Daten/Statistiken
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1479,7 +1599,7 @@ Transaktionen
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1488,7 +1608,7 @@ Connection Pools
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1497,7 +1617,7 @@ Connection Pools
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2265,6 +2385,527 @@ An die Programmquelle gebunden
 
 \begin_layout Itemize
 nicht nachträglich ohne Neukompilation geändert werden
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Entity Beans
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_14-52-03.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_14-52-36.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="6.5cm">
+<column alignment="left" valignment="top" width="6.5cm">
+<column alignment="left" valignment="top" width="6.5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Klassen-Name = Tabellen-Name, mit @Table übersteuert
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Entity Manager tracks changes and is responsible for the sync with the DB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mittels Persistence Query Language Abfragen durchgeführt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+import javax.persistence.*; 
+\end_layout
+
+\begin_layout Plain Layout
+@Entity 
+\end_layout
+
+\begin_layout Plain Layout
+@Table(name = "Dozenten") 
+\end_layout
+
+\begin_layout Plain Layout
+public class Dozent implements Serializable { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+private string kurzzeichen; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+private String name; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+private String vorname; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+...
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public Dozent () {} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public Dozent (....) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+this.id = id; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+...
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@Id 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public String getKurzzeichen () { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+return kurzzeichen; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public void setKurzzeichen (String id) {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+this.id = id; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@Column(name="FamilienName") 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public String getName () { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+return name; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+// Other getter and setter methods ...
+ 
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@Stateless 
+\end_layout
+
+\begin_layout Plain Layout
+public class DozentService {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@PersistenceContext (unitName="myprofpu") 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+private EntityManager em; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+....
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public add (Dozent dozent) {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+em.persist(dozent); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public remove (String id) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+Dozent doz = (Dozent)em.find(Dozent.class,id);
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+em.remove(doz); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public setTelNumber (String id, String telNumber) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+Dozent doz = (Dozent)em.find(Dozent.class,id);
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+doz.setTelNumber(telNumber);
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+// em.flush(); nicht nötig
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+public Collection <Dozent> findByName (String namePattern) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+return em.createQuery( 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+"SELECT p 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+FROM Dozent r 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+WHERE r.name 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+LIKE :name") 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+.setParameter ("name", namePattern) 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+.getResultList(); 
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\hfill$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+SQL angelehnte Syntax
+\end_layout
+
+\begin_layout Itemize
+Werte von Objekten können "eingeflochten" werden
+\end_layout
+
+\begin_layout Itemize
+Datenbankunabhängig
+\end_layout
+
+\begin_layout Itemize
+Platzhalter in Ausdrücken
+\end_layout
+
+\begin_layout Itemize
+Resultat kann Collection<> sein
 \end_layout
 
 \end_inset
