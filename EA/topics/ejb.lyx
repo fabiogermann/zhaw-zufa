@@ -1003,7 +1003,7 @@ location in code is marked
 \end_layout
 
 \begin_layout Section*
-Java Annotations
+Java Annotations (neu Java 5 - 1.5)
 \end_layout
 
 \begin_layout Itemize
@@ -1012,6 +1012,238 @@ Imperative Programmierung: es wird beschrieben, wie etwas gemacht wird
 
 \begin_layout Itemize
 Deklarative Programmierung: es wird beschrieben, was gemacht wird
+\end_layout
+
+\begin_layout Itemize
+werden von Compiler überprüft (import notwendig)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-43-59.png
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-44-26.png
+	height 3cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-46-29.png
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-46-56.png
+	width 6cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-47-20.png
+	width 6cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-47-45.png
+	height 2cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Beispiel 2: @Obsolete(reason=Obsolete.Reason.SECURITY)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-54-13.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Attribute für Annotationen
+\end_layout
+
+\begin_layout Itemize
+@Target: Art der annotierten Entität Klasse, Methode, …?
+\end_layout
+
+\begin_layout Itemize
+@Retention: Sichbarkeit der Annotation.
+ Compiler oder auch zur Laufzeit?
+\end_layout
+
+\begin_layout Itemize
+@Documented: Annotation soll Teil der javadoc Dokumentation sein
+\end_layout
+
+\begin_layout Itemize
+@Inherited: Annotation sind auch für Nachfolge-Entitäten (z.B.
+ in der erbenden Klasse) gültig
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="9cm">
+<column alignment="left" valignment="top" width="9cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Auslesen von Annotationen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vor / Nachteile
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Class c = MyClass.class; (Relfection)
+\end_layout
+
+\begin_layout Plain Layout
+Class c = myClass.getClass(); (vorh.
+ Instanz)
+\end_layout
+
+\begin_layout Plain Layout
+Obsolete obsolete = c.getAnnotation(Obsolete.class); System.out.print(obsolete.value(
+));
+\end_layout
+
+\begin_layout Plain Layout
+Method[] methods = c.getDeclaredMethods(); 
+\end_layout
+
+\begin_layout Plain Layout
+for(Method m : methods) {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+Obsolete obsolete = m.getAnnotation(Obsolete.class); 
+\begin_inset Formula $.\quad$
+\end_inset
+
+if(obsolete !=null)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+{ System.out.print(obsolete.value(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vorteile:
+\end_layout
+
+\begin_layout Itemize
+Trennung von Core und System Level Concerns
+\end_layout
+
+\begin_layout Itemize
+Schritt in Richtung deklarative Programmierung
+\end_layout
+
+\begin_layout Itemize
+Teil der Java Sprache & von Compiler überpr.
+\end_layout
+
+\begin_layout Itemize
+Die Abhängigkeiten zur Umgebung können explizit und damit überprüfbar gemacht
+ werden
+\end_layout
+
+\begin_layout Itemize
+Stelle im Code auf die sie wirken
+\end_layout
+
+\begin_layout Plain Layout
+Nachteile
+\end_layout
+
+\begin_layout Itemize
+An die Programmquelle gebunden
+\end_layout
+
+\begin_layout Itemize
+nicht nachträglich ohne Neukompilation geändert werden
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \end_body
