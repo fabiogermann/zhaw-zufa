@@ -695,7 +695,7 @@ Klasse registriert sich oft auch selbst
 \begin_layout Standard
 \begin_inset Graphics
 	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_10-58-08.png
-	width 7cm
+	width 9cm
 
 \end_inset
 
@@ -806,6 +806,212 @@ Methoden get/setAttribute(s), getMBeanInfo und invoke
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection*
+Lokaler Zugriff (programmatisch)
+\end_layout
+
+\begin_layout Itemize
+Zugriff auf lokales Bean
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_22-07-37.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_22-09-11.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Driekt über Proxy-Instanz
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_22-08-12.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+MBeanServer Method
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_22-08-28.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Remote Zugriff
+\end_layout
+
+\begin_layout Standard
+Einstellungen für den Remote Zugriff
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-12-30.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-09_22-09-31.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Aspekte (Facet/Issue)
+\end_layout
+
+\begin_layout Subsection*
+Problem
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-25-41.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Lösung EJB 2.1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-27-10.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+deklarative Form: was (aber nicht wie -> dem Container überlassen)
+\end_layout
+
+\begin_layout Itemize
+Separation von technischen Aspekten
+\end_layout
+
+\begin_layout Itemize
+zur Runtime konfigurierbar
+\end_layout
+
+\begin_layout Itemize
+getrennt von Code, schwer wartbar, fehleranfällig
+\end_layout
+
+\begin_layout Subsection*
+Lösung EJB 3 +
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-28-04.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Behandlung
+\end_layout
+
+\begin_layout Itemize
+Interception (des Aufrufes durch Container)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Programmfluss wird unterbrochen
+\end_layout
+
+\begin_layout Itemize
+Before-/After-/Instead-Interception
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dependency Injection
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Container injects reference or value into bean
+\end_layout
+
+\begin_layout Itemize
+location in code is marked
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-10_11-35-54.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Java Annotations
+\end_layout
+
+\begin_layout Itemize
+Imperative Programmierung: es wird beschrieben, wie etwas gemacht wird
+\end_layout
+
+\begin_layout Itemize
+Deklarative Programmierung: es wird beschrieben, was gemacht wird
 \end_layout
 
 \end_body
