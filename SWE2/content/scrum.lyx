@@ -1,0 +1,320 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Scrum
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/SWE2/img/2015-01-11_18-57-01.png
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Product Backlog
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the requirements
+\end_layout
+
+\begin_layout Itemize
+list of desired work
+\end_layout
+
+\begin_layout Itemize
+prioritized by product owner
+\end_layout
+
+\begin_layout Itemize
+reprioritized at start of each sprint
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sprint Backlog
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+estimated work remaining updated
+\end_layout
+
+\begin_layout Itemize
+open for everybody
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sprint
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+analog XP iterations
+\end_layout
+
+\begin_layout Itemize
+2-4 weeks
+\end_layout
+
+\begin_layout Itemize
+constant duration
+\end_layout
+
+\begin_layout Itemize
+design/code/test within sprint
+\end_layout
+
+\begin_layout Itemize
+no changes during a sprint
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Product Owner
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+define features
+\end_layout
+
+\begin_layout Itemize
+decide releasedate
+\end_layout
+
+\begin_layout Itemize
+prioritize features
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Scrum Master
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+responsible for scrum values
+\end_layout
+
+\begin_layout Itemize
+ensures cooperation
+\end_layout
+
+\begin_layout Itemize
+shield team
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Team
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+5-9 ppl / fulltime
+\end_layout
+
+\begin_layout Itemize
+cross functional
+\end_layout
+
+\begin_layout Itemize
+member change only between sprints
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sprint planning meeting
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+sprint prioritization (prod.
+ backlog & sprint goal)
+\end_layout
+
+\begin_layout Itemize
+sprint planning (create sprint backlog & estimates)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sprint retrospective
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+after sprint
+\end_layout
+
+\begin_layout Itemize
+look at what is and what is not working
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chicken and Pigs
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+pig = commited = team member (to goal)
+\end_layout
+
+\begin_layout Itemize
+chicken = everyb.else (not allowed to interfere at daily scrum meetings)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Daily Scrum Meeting
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+15min, standup
+\end_layout
+
+\begin_layout Itemize
+done yesterday? do today? problems?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Task Board vs.
+ Sprint Burndown Chart!!!
+\end_layout
+
+\begin_layout Section*
+Scrum vs XP
+\end_layout
+
+\begin_layout Itemize
+Scrum focuses on management and organization practices
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Incremental & Iterative
+\end_layout
+
+\begin_layout Itemize
+Analysis, design, development, testing performed throughout iteration
+\end_layout
+
+\begin_layout Itemize
+Team design and architectural input
+\end_layout
+
+\begin_layout Itemize
+Self organizing cross-functional teams
+\end_layout
+
+\begin_layout Itemize
+Minimal creation of “Interim” documents
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+XP focuses mostly on actual programming practices
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Continual Refactoring
+\end_layout
+
+\begin_layout Itemize
+Simplest solution that fulfils functional and non-functional requirements
+\end_layout
+
+\begin_layout Itemize
+Automated Unit testing & Code Coverage checking
+\end_layout
+
+\begin_layout Itemize
+TDD
+\end_layout
+
+\begin_layout Itemize
+CI
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
