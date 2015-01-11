@@ -1,0 +1,248 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Unit Testing
+\end_layout
+
+\begin_layout Standard
+Testing can only show the presence of a defect but not the absence of defects!
+\end_layout
+
+\begin_layout Standard
+Testing is the process of evaluating a software to determine if it meets
+ the customers requirements.
+ This means, there must be well specified requirements to test against (→
+ expected results)
+\end_layout
+
+\begin_layout Subsubsection*
+Software Faliures
+\end_layout
+
+\begin_layout Itemize
+1991 Patriot Missile Faliuref
+\end_layout
+
+\begin_layout Itemize
+1991 Offshore Platform
+\end_layout
+
+\begin_layout Itemize
+1998 Ariane 5 (overflow)
+\end_layout
+
+\begin_layout Itemize
+1999 Mars Rover (units integration)
+\end_layout
+
+\begin_layout Itemize
+2005/2010 ALG-II / Bankcards year handling
+\end_layout
+
+\begin_layout Subsubsection*
+Regression Testing
+\end_layout
+
+\begin_layout Standard
+Rerun existing tests on the changed code to assure no new bugs have benn
+ introduces, a bug has been fixed
+\end_layout
+
+\begin_layout Subsubsection*
+Validation
+\end_layout
+
+\begin_layout Standard
+The process of evaluating software at the end of software development to
+ ensure compliance with intended usage.
+\end_layout
+
+\begin_layout Subsubsection*
+Verification
+\end_layout
+
+\begin_layout Standard
+The process of determining whether the products of a given phase of the
+ software development process fulfill the requirements established during
+ the previous phase
+\end_layout
+
+\begin_layout Subsection*
+JUnit
+\end_layout
+
+\begin_layout Itemize
+one test class is responsible for testing a single class
+\end_layout
+
+\begin_layout Itemize
+naming convention: ClassnameTest
+\end_layout
+
+\begin_layout Itemize
+a test method takes no argument and has no return value
+\end_layout
+
+\begin_layout Itemize
+test method compleately independent
+\end_layout
+
+\begin_layout Itemize
+test method is public with @Test annotation
+\end_layout
+
+\begin_layout Itemize
+naming convention: testMethodname
+\end_layout
+
+\begin_layout Itemize
+setup / teardown methods (@Before/@After)
+\end_layout
+
+\begin_layout Itemize
+assertEquals(value...), assertSame(Obj...), assertNull(obj...), fail()
+\end_layout
+
+\begin_layout Itemize
+testing of exceptions also possible (try-catch with inverted logic!)
+\end_layout
+
+\begin_layout Subsection*
+Good Tests ATRIP
+\end_layout
+
+\begin_layout Itemize
+Automatic ...invoking the tests and checking the results
+\end_layout
+
+\begin_layout Itemize
+Thorough …test everything that is likely to break => Code coverage
+\end_layout
+
+\begin_layout Itemize
+Repeatable …able to run over and over again, producing same results
+\end_layout
+
+\begin_layout Itemize
+Independent …no test relies on an other test
+\end_layout
+
+\begin_layout Itemize
+Professional …use same professional standards as for the production code
+\end_layout
+
+\begin_layout Subsubsection*
+Equivalence Classes
+\end_layout
+
+\begin_layout Standard
+valid/invalid ranges of a function 
+\end_layout
+
+\begin_layout Subsubsection*
+Boundary Value Analysis
+\end_layout
+
+\begin_layout Standard
+not only values in the ranges of the equivalence classes, also the exact
+ boundary values
+\end_layout
+
+\begin_layout Subsection*
+RIGHT-BICEP
+\end_layout
+
+\begin_layout Itemize
+Right - Are the results right?
+\end_layout
+
+\begin_layout Itemize
+B - Are all boundary conditions CORRECT?
+\end_layout
+
+\begin_layout Itemize
+I - Can you check inverse relationships? (suqare-sqrroot)
+\end_layout
+
+\begin_layout Itemize
+C - Can you cross-check results using other means?
+\end_layout
+
+\begin_layout Itemize
+E - Can you force error conditions to happen?
+\end_layout
+
+\begin_layout Itemize
+P - Are performance characteristics within bounds? JUnitPerf
+\end_layout
+
+\end_body
+\end_document
