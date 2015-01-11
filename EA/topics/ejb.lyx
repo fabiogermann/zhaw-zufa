@@ -555,6 +555,564 @@ Callbacks
 \end_layout
 
 \begin_layout Subsection*
+Message Driven Bea MDB
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="10cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Zur zeitliche Entkopplung von Sender und Empfänger aber keine inhaltliche
+ Entkopplung: Sender und Empfänger müssen beide das Meldungsformat verstehen
+\end_layout
+
+\begin_layout Itemize
+Reliable Messaging: Sicherstellen, dass Meldung auch abgeliefert wird, heisst
+ aber nicht, dass sie erfolgreich verarbeitet wurde
+\end_layout
+
+\begin_layout Itemize
+Asynchrones Messaging ist wesentlich komplexer in der Handhabung als einfaches
+ RPC Modell, insbesondere im Fehlerfall.
+\end_layout
+
+\begin_layout Plain Layout
+Einsatz:
+\end_layout
+
+\begin_layout Itemize
+Um Spitzen beim Anfallen von Meldungen kontinuierlich zu verarbeiten ->
+ Meldungssystem als Puffer verwendet
+\end_layout
+
+\begin_layout Itemize
+Wenn Empfänger der Nachricht nicht dauern on-line ist
+\end_layout
+
+\begin_layout Itemize
+Um bei lange andauernden Berechnungen den Klienten nicht zu blockieren
+\end_layout
+
+\begin_layout Itemize
+Um Daten zwischen 2 Systemen im Hintergrund abzugleichen (wenn keine andere
+ Lösung möglich)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Publish-and-Subscribe
+\end_layout
+
+\begin_layout Itemize
+Ein Klient senden (publizieren) Meldung an einen Topic-Kanal
+\end_layout
+
+\begin_layout Itemize
+Alle Empfänger die sich bei diesem Topic-Kanal angemeldet haben (subscribe)
+ bekommen die Meldung zugeschickt
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Queue (Point-to-Point)
+\end_layout
+
+\begin_layout Itemize
+Ein Klient sendet eine Meldung an eine Queue
+\end_layout
+
+\begin_layout Itemize
+Auf der Empfängerseite kann mittels polling oder call-back der Empfänger
+ die Meldung empfangen
+\end_layout
+
+\begin_layout Itemize
+Empfänger können die Meldungen nach gewissen Kriterien filtern
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="left" valignment="top" width="6cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Connection Factories
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ist ein Objekt um Connecions zu erzeugen.
+ Es kapselt die entsprechenden Verbindungsparameter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@Resource(mappedName="jms/HelloFactory") 
+\end_layout
+
+\begin_layout Plain Layout
+private static QueueConnectionFactory connectionFactory;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Queue
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ist der Kanal über den die Meldungen versendet werden
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@Resource(mappedName="jms/Hello") 
+\end_layout
+
+\begin_layout Plain Layout
+private Queue queue;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Connection
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+kapselt eine Verbindung z.B.
+ als TCP/IP Socket.
+ Sessions werden darüber erstellt - durch Schliessen der Verbindung werden
+ auch alle Sessions geschlossen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Connection connection = connectionFactory.createConnection();
+\end_layout
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\begin_layout Plain Layout
+connection.close();
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Session
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eine Session wird für die Erstellung und das Konsumieren von Meldungen verwendet.
+ Eine Session selber wird via die Connection erstellt - Schliessen der Session
+ blockiert bis alle Meldungen abgeschickt sind
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Session session = connection.CreateSession(false, Session.AUTO_ACKNOWLEDGE);
+\end_layout
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\begin_layout Plain Layout
+session.close();
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message Producers
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ist ein Objekt, das für das Versenden von Meldungen verwendet wird
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MessageProducer producer = session.createProducer(queue);
+\end_layout
+
+\begin_layout Plain Layout
+producer.send(message);
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message Consumers
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ist ein Objekt, das für das Empfangen von Meldungen verwendet wird.
+ Es implementiert das MessageConsumer Interface
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MessageConsumer consumer = session.createConsumer(queue);
+\end_layout
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\begin_layout Plain Layout
+Message m = consumer.recieve(); (polling)
+\end_layout
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\begin_layout Plain Layout
+Listener mylist = new Listener(); (callback)
+\end_layout
+
+\begin_layout Plain Layout
+consumer.setMessageListener(mylist);
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\qquad$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Typen von Meldungen
+\end_layout
+
+\begin_layout Itemize
+TextMessage: Übermittelt einzelnen Text-String.
+\end_layout
+
+\begin_layout Itemize
+MapMessage: Übermittelt (mehrere) Attribute als Key/Value-Paare.
+ Dabei können die Values nicht nur Strings sein, sondern auch viele andere
+ Java-Typen.
+\end_layout
+
+\begin_layout Itemize
+ObjectMessage: Übermittelt ein Java-Object (welches 'Serializable' implementiere
+n muss).
+\end_layout
+
+\begin_layout Itemize
+StreamMessage: Übermittelt Streams ähnlich wie 'DataOutputStream'.
+ Anders als 'BytesMessage' übergibt 'StreamMessage' auch Datentypen.
+\end_layout
+
+\begin_layout Itemize
+BytesMessage: Übermittelt Streams ähnlich wie 'DataOutputStream'.
+ Anders als 'StreamMessage' übergibt 'BytesMessage' nicht interpretierte
+ Rohdaten.
+\end_layout
+
+\begin_layout Subsubsection*
+MDBs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="10cm">
+<column alignment="left" valignment="top" width="10cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Implementiert das javax.jms.MessageListener Interface
+\end_layout
+
+\begin_layout Itemize
+Die Klasse muss mit @MessageDriven Annotation versehen sein
+\end_layout
+
+\begin_layout Itemize
+Mit mappedName wird der JNDI Eintrag bestimmt unter der das MDB Meldungen
+ konsumiert
+\end_layout
+
+\begin_layout Itemize
+Wenn eine neue Nachricht ankommt, wird die onMessage Methode aufgerufen
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+import javax.ejb.*; 
+\end_layout
+
+\begin_layout Plain Layout
+import javax.jms.*; 
+\end_layout
+
+\begin_layout Plain Layout
+@MessageDriven(mappedName = "jms/Hello", activationConfig = { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue
+ = "Auto-acknowledge"),
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@ActivationConfigProperty(propertyName = "destinationType", propertyValue
+ = "javax.jms.Queue") 
+\end_layout
+
+\begin_layout Plain Layout
+}) 
+\end_layout
+
+\begin_layout Plain Layout
+public class HelloMessageBean implements MessageListener {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@Resource 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+private MessageDrivenContext mdc; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public void onMessage(Message inMessage) {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+if (inMessage instanceof TextMessage) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+TextMessage msg = (TextMessage)inMessage; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+logger.info("Hallo "+ msg.getText()); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 EJB Komponente Aufbau
 \end_layout
 
@@ -3491,6 +4049,27 @@ Oftmals soll auch eine Exception geworfen werden.
 \begin_inset Graphics
 	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-11_16-20-10.png
 	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Interceptor Definition / Verwendung
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-11_17-13-22.png
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-11_17-13-40.png
+	width 10cm
 
 \end_inset
 
