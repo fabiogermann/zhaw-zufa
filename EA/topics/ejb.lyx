@@ -77,7 +77,11 @@
 Enterprise Java Bean
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Standard
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="3">
 <features rotate="0" tabularvalignment="middle">
@@ -233,7 +237,7 @@ kann Teil einer Transaktion sein
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -248,7 +252,7 @@ kann Teil einer Transaktion sein
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -263,7 +267,7 @@ kann Teil einer Transaktion sein
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2912,6 +2916,581 @@ Resultat kann Collection<> sein
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Transactions
+\end_layout
+
+\begin_layout Subsection*
+Bean Managed Transaction Demarcation (BMTD/JTA)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="8cm">
+<column alignment="left" valignment="top" width="12cm">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Steuerung über das Java Transaction API (JTA) ermöglicht das Setzen der
+ Transaktionsgrenzen (Transaction Demarcation) unabhängig von eigentlichen
+ Ressourcen (z.B.
+ DB Connections)
+\end_layout
+
+\begin_layout Itemize
+Der EJB Container übernimmt die Koordination (Transaction Manager) und "kennt"
+ alle involvierten Ressourcen (z.B.
+ JDBC Connections, EntityManger, etc.) und ruft diese entsprechend auf
+\end_layout
+
+\begin_layout Itemize
+Der Aufruf über das javax.transaction.UserTransaction Objekt wird vom SessionConte
+xt Objekt zur Verfügung gestellt 
+\end_layout
+
+\begin_layout Itemize
+um BMTD zu verwenden muss die oder Klasse (oder Methode) mit @TransactionManagem
+ent(BEAN) annotiert sein
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+import javax.ejb.*; @TransactionManagement(TransactionManagementType.BEAN)
+ 
+\end_layout
+
+\begin_layout Plain Layout
+@Stateless 
+\end_layout
+
+\begin_layout Plain Layout
+public class BankService { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@Resource SessionContext ctx; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+@PersistenceContext EntityManager em; 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+public void transfer(int accA,int accB, double amount){ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+try { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+UserTransaction utx = ctx.getUserTransaction() 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+utx.begin(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+em.find(Account.class, accId).withdraw(amount); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+em.find(Account.class, accId).deposit(amount); utx.commit(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+} catch (Exception e) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+utx.rollback(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\quad$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Folgend: Klient ist anderes EJB oder "echter" Klient (JSF) und kann Transaktion
+ steuern, jedoch eher zurückhalten und nie über unzuverlässiges Netzerk
+ (Inet)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probleme
+\end_layout
+
+\begin_layout Itemize
+"Nested Transaction": EJB kann weiters EJB aufrufen, das ebenfalls eine
+ Transaktionsklammer (begin ,commit) gesetzt hat.
+ Dieses kann sich sogar auf einer anderen Maschine befinden.
+\end_layout
+
+\begin_layout Itemize
+Transaktion auf Klientenmaschine gestartet; Klient kann Verbindung verlieren
+ oder abstürzen ->DB Locks bleiben gesetzt
+\end_layout
+
+\begin_layout Itemize
+FAZIT: -> BMTD nur in Ausnahmefällen verwenden (Anfänger am besten gar nicht)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+InitialContext ctx = new InitialContext(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+UserTransaction utx = (UserTransaction)ctx.lookup("java:comp/UserTransaction");
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+try { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+utx.begin(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+BankService bank = ctx.lookup("sample/BankService");
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+bank.transfer(12323,134343,10.0); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+utx.commit(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} catch (Exception e) { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+try { 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+logger.error("rolling back transaction"); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+utx.rollback(); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+throw new AppException (e); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+} catch (Exception e2) {
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+logger.fatal("error rolling back transaction"); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+throw e2); 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $.\quad$
+\end_inset
+
+} 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Container Managed Transactions Demarcation (CMTD)
+\end_layout
+
+\begin_layout Itemize
+Container übernimmt Steuerung der Transaktion
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Startet eine Transaktion "bei Bedarf"
+\end_layout
+
+\begin_layout Itemize
+Stellt das korrekte Verhalten der Transaktion auch im Fehlerfall sicher,
+ z.B.
+ Rollback
+\end_layout
+
+\begin_layout Itemize
+Insbesondere Fehlerbehandlung in verteilter Umgebung ist komplex
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Zuerst müssen vom EJB Container alle Ressourcen, die an Transaktion beteiligt
+ sind bestimmt werden →Transaction Scope
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+kein Problem, wenn alle Ressourcen über Container angefordert wurden
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Konsequenz
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bean selber darf die Transaktion nicht mehr selber steuern (z.B.
+ ein Commit veranlassen)
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+Deklarative Transaktionssteuerung
+\end_layout
+
+\begin_layout Itemize
+EJB gibt Hinweis, wie der Container mit Transaktionen umgehen soll
+\end_layout
+
+\begin_layout Itemize
+Container übernimmt die eigentliche Steuerung
+\end_layout
+
+\begin_layout Itemize
+@TransactionManagement(CONTAINER):Die Transaktionsgrenzen (Transaktion Demarcati
+on) wird vom Container bestimmt (ist der Default)
+\end_layout
+
+\begin_layout Itemize
+@TransactionAttribute(...)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+REQUIRED: Eine EJB mit diesem TX-Attribut wird immer in einem TX-Kontext
+ ausgeführt.
+ Wird ein TX-Kontext vom Clienten mitgegeben, wird dieser genutzt.
+ Andernfalls wird ein TX-Kontext durch den EJB-Container erzeugt.
+\end_layout
+
+\begin_layout Itemize
+SUPPORTS: Ist dieses TX-Attribut gesetzt, kann ein EJB wahlweise mit oder
+ ohne TX ausgeführt werden.
+ Wird ein TX-Kontext mitgegeben, so wird die gerufene Methode in diesm Kontext
+ ausgeführt.
+ Der Entwickler ist dafür zuständig, den Code in der EJB entsprechend für
+ eine Ausführung mit oder ohne TX zu implementieren
+\end_layout
+
+\begin_layout Itemize
+NOTSUPPORTED: Bei Aufruf des EJB in einem Transaktionskontext wird die TX
+ suspendiert, bis die im EJB gerufene Methode ausgeführt wurde.
+ (ohne TX aufgerufen)
+\end_layout
+
+\begin_layout Itemize
+REQUIRES_NEW: Es wird eine neue TX durch den EJB-Container erzeugt, in der
+ die gerufene Methode ausgeführt wird.
+ Eine ggf.
+ mitgegeben TX wird für die Ausführung der gerufenen Methode suspendiert
+ und nach der Ausführung wieder aktiviert.
+\end_layout
+
+\begin_layout Itemize
+MANDATORY: Ein EJB mit diesem TX-Attribut muss zwingend in einer bestehenden
+ TX aufgerufen werden.
+ Beim Aufruf ohne mitgegebenem TX-Kontext wird vom EJB-Container eine Transactio
+nRequiredException geworfen.
+\end_layout
+
+\begin_layout Itemize
+NEVER: Es ist nicht zulässig, eine Methode einer mit diesem TX-Attribut
+ versehenes EJB mit einem TX-Kontext aufzurufen.
+ Geschieht dies doch, wird vom EJB-Container eine RemoteException beim entfernte
+n oder eine EJBException beim lokalen Zugriff geworfen.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Fehlerbehandlung
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Falls eine Bedingung in der Anwendungslogik verletzt wird, kann mit setRollbackO
+nly ein Rollback der gesamten Transaktion erzwungen werden.
+\end_layout
+
+\begin_layout Itemize
+Oftmals soll auch eine Exception geworfen werden.
+ Wenn eine Exception von einer Klasse die mit @ApplicationException(rollback
+ = true) annotiert wurde, geworfen wird, dann kann ebenfalls nur noch Rollback
+ ausgeführt werden.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-11_16-19-51.png
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/aquila/GitHub/zhaw-zufa/EA/images/2015-01-11_16-20-10.png
+	width 8cm
 
 \end_inset
 
